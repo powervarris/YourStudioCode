@@ -1,0 +1,198 @@
+@model YourStudioFinal.Models.Booking.BookingModel
+@{
+	ViewBag.Title = "ha";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="~/css/Booking/crtBook.css">
+</head>
+<body>
+
+    <header>
+	    <nav class="navbar navbar-expand-lg navbar-light">
+		    <div class="container-fluid">
+			    <div class="navbar-header">
+				    <span>
+					    <img src="~/photos/logo.png" class="logonav" alt="">
+					    <img src="~/photos/logo2.png" class="logonav2" alt="">
+					    <i class="fas fa-bars menu-icon"></i>
+				    </span>
+			    </div>
+			    <div class="collapse navbar-collapse" id="navbar">
+				    <ul class="navbar-nav ml-auto navbar-right">
+					    <li class="nav-item active">
+						    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+					    </li>
+					    <li class="nav-item active">
+						    <a class="nav-link" asp-controller="Gallery" asp-action="Index">Gallery</a>
+					    </li>
+					    <li class="nav-item active ">
+						    <a class="nav-link" href="#">Packages</a>
+					    </li>
+
+
+					    <li class="nav-item dropdown active">
+						    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Booking
+						    </a>
+						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							    <a class="dropdown-item" asp-action="Index">Create Booking</a>
+							    <a class="dropdown-item" asp-action="BList">Booking List</a>
+						    </div>
+					    </li>
+
+					    <li class="nav-item dropdown active">
+						    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Inquiry
+						    </a>
+						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+						    </div>
+					    </li>
+
+					    <li class="nav-item">
+						    <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+					    </li>
+
+
+				    </ul>
+			    </div>
+		    </div>
+	    </nav>
+    </header>
+
+<div class="DAT inline">
+	<div>SELECT DATE AND TIME</div>
+</div>
+
+<div class="PST inline">
+	<div>Philippine Standard Time (GMT + 8)</div>
+</div>
+
+<hr/>
+
+<section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center">
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="calendar" class="calendar">
+					<div class="header">
+						<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+						<div class="text" data-render="month-year"></div>
+						<a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+					</div>
+					<div class="months" data-flow="left">
+						<div class="month month-a">
+							<div class="render render-a"></div>
+						</div>
+						<div class="month month-b">
+							<div class="render render-b"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section style="position: relative; margin-top: 100px;">
+	<div id="slctDate" style="position: absolute; top: 50%; left: 53%; transform: translate(-50%, -100%); font-family: 'Palatino Linotype'; font-weight:bold; font-size:30px;"></div>
+</section>
+
+<section class="time-container">
+	<section class="time" style="display: inline-block;">
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">09:30 am</div>
+			<div class="btnT" data-original-color="white">10:00 am</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">10:30 am</div>
+			<div class="btnT" data-original-color="white">11:00 am</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">01:30 pm</div>
+			<div class="btnT" data-original-color="white">02:00 pm</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">02:30 pm</div>
+			<div class="btnT" data-original-color="white">03:00 pm</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">03:30 pm</div>
+			<div class="btnT" data-original-color="white">04:00 pm</div>
+		</div>
+	</section>
+</section>
+
+<section id="Srvc">
+	<div id="SrvcDtl">Service Details</div>
+	<div>@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</div>
+	<div id="slctDate2"></div>
+	<div id="slctTime"></div>
+	<div>20 mins</div>
+	<div>199</div>
+	<hr/>
+	<div class="btnB" data-original-color="Black">BOOK</div>
+</section>
+
+<link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet"/>
+
+@section scripts {
+
+	<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+	<script src="~/bootstraps.min.js"></script>
+
+	<script src="~/js/jquery.min.js"></script>
+	<script src="~/js/popper.js"></script>
+	<script src="~/js/main.js"></script>
+
+}
+
+<script>
+		$(document).ready(function () {
+			var $prevButton = null;
+
+			$(".btnT").on("mousedown", function () {
+				if ($prevButton && $prevButton[0] !== this) {
+					$prevButton.addClass("released").removeClass("pressed");
+					$prevButton.css("background-color", $prevButton.data("original-color"));
+				}
+				$prevButton = $(this);
+				$(this).addClass("pressed").removeClass("released");
+				$(this).css("background-color", "grey");
+			});
+
+			$(".btnT").on("mouseup mouseleave", function () {
+			});
+
+			$(".btnT").on("click", function () {
+				$prevButton = $(this);
+			});
+
+			$(document).on("click", ".table .row .cell span", ".calendar .header .text span", function () {
+				var selectedDate = $(this).text();
+				$("#slctDay").text(selectedDate);
+				console.log('Selected date:', selectedDate);
+				var selectedMonth = $(".calendar .header .text span").text();
+				$("#slctDate").text(selectedDate + ' ' + selectedMonth);
+				console.log('Selected month:', selectedMonth);
+				$("#slctDate2").text(selectedDate + ' ' + selectedMonth);
+				console.log('Selected month:', selectedMonth);
+			});
+
+
+
+			$(".time .btnT").on("click", function () {
+				var selectedTime = $(this).text();
+				$("#slctTime").text('Selected Time: ' + selectedTime);
+				console.log('Selected time:', selectedTime);
+			});
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fullcalendar/bootstrap": "^6.1.10",
+    "@fullcalendar/core": "^6.1.10"
+  }
+}

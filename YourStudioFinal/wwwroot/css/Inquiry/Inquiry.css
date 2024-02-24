@@ -1,0 +1,21 @@
+﻿body {
+}
+.inquiry-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+
+.inquiry-item {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.inquiry-details {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}

@@ -1,0 +1,177 @@
+﻿@model YourStudioFinal.Models.Booking.BookingModel
+@{
+	ViewBag.Title = "BList";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="~/css/Booking/blist.css">
+	<link rel="stylesheet" href="~/css/Booking/jquery.css">
+</head>
+<body>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<span>
+					<img src="~/photos/logo.png" class="logonav" alt="">
+					<img src="~/photos/logo2.png" class="logonav2" alt="">
+					<i class="fas fa-bars menu-icon"></i>
+				</span>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav ml-auto navbar-right">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Gallery</a>
+					</li>
+					<li class="nav-item active ">
+						<a class="nav-link" href="#">Packages</a>
+					</li>
+
+
+					<li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Booking
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" asp-action="Index">Create Booking</a>
+							<a class="dropdown-item" asp-action="BList">Booking List</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Inquiry
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="/Home/Index">Create Inquiry</a>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<section class="Book">
+	<div id="YB">YOUR BOOKING</div>
+	<div id="VL"></div>
+	<div id="btn1" class="blist" data-original-color="white">August 05, 2023 | Saturday - 1:30 pm</div>
+	<div id="btn2" class="blist" data-original-color="white">September 06, 2023 | Saturday - 2:30 pm</div>
+</section>
+
+<section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center">
+		</div>
+		<div class="row">
+			<div class="col-md-10">
+				<div id="datepicker"></div>
+			</div>
+		</div>
+	</div>
+
+</section>
+<section class="time-container">
+	<section class="time" style="display: inline-block;">
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white" id="btnT_0930">09:30 am</div>
+			<div class="btnT" data-original-color="white" id="btnT_1000">10:00 am</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white" id="btnT_1030">10:30 am</div>
+			<div class="btnT" data-original-color="white" id="btnT_1100">11:00 am</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white" id="btnT_1300">01:30 pm</div>
+			<div class="btnT" data-original-color="white" id="btnT_1400">02:00 pm</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white" id="btnT_1430">02:30 pm</div>
+			<div class="btnT" data-original-color="white" id="btnT_1500">03:00 pm</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white" id="btnT_1530">03:30 pm</div>
+			<div class="btnT" data-original-color="white" id="btnT_1600">04:00 pm</div>
+		</div>
+	</section>
+</section>
+
+<section id="Srvc">
+	<div id="VL2"></div>
+	<div id="SrvcDtl">Service Details</div>
+	<div>PLACEHOLDER USER</div>
+	<div id="slctDate2">PLACEHOLDER DATE</div>
+	<div id="slctTime">PLACEHOLDER TIME</div>
+	<div>PLACEHOLDER CONTACT</div>
+	<div>499</div>
+	<hr/>
+	<button class="btn btn-primary inline" id="btnG">ACCEPT</button>
+	<button class="btn btn-primary inline" id="btnR">DECLINE</button>
+	<button class="btn btn-primary inline" id="btnBL">EDIT</button>
+	<button class="btn btn-primary inline" id="btnGR">REMOVE</button>
+</section>
+
+
+@section scripts {
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+}
+
+<script>
+		$(function () {
+
+			var $prevElement = null;
+			$(".blist").on("mousedown", function () {
+				if ($prevElement && $prevElement[0] !== this) {
+					$prevElement.addClass("released").removeClass("pressed");
+					$prevElement.css("background-color", $prevElement.data("original-color"));
+				}
+				$prevElement = $(this);
+				$(this).addClass("pressed").removeClass("released");
+				$(this).css("background-color", "#FFA629");
+			});
+
+			$(".blist").on("mouseup mouseleave", function () {
+			});
+
+			$(".blist").on("click", function () {
+				$prevButton = $(this);
+			});
+
+			$("#datepicker").datepicker();
+
+			$("#btn1").on("click", function () {
+				$("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
+				$(".ftco-section").show();
+				$(".time-container").show();
+				console.log("You clicked btn1");
+				$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
+				$("#btnT_1300").css("background-color", "gray"); // turn the button with id 'btnT_1300' to gray
+			});
+
+			$("#btn2").on("click", function () {
+				$("#datepicker").datepicker("setDate", new Date(2023, 8, 6));
+				$(".ftco-section").show();
+				$(".time-container").show();
+				console.log("You clicked btn2");
+				$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
+				$("#btnT_1430").css("background-color", "gray"); // turn the button with id 'btnT_1430' to gray
+			});
+
+		});
+	</script>
+
+</body>
+</html>
+
