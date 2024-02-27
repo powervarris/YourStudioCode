@@ -8,6 +8,7 @@
 
     <ItemGroup>
     <Folder Include="wwwroot\css\bootstrap\" />
+    <Folder Include="wwwroot\uploads" />
   </ItemGroup>
 
   <ItemGroup>
@@ -116,6 +117,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
     <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\uploads\feb93b02-8a31-4346-b6de-19181198980d\IMG20210429002258.png" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,7 @@
 @{
 }
 
+@model YourStudioFinal.Models.Gallery.Gallery?
 
 <!DOCTYPE html>
 <html>
@@ -85,31 +86,29 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav ml-auto navbar-right">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" asp-controller="Gallery" asp-action="Index">Gallery</a>
                         </li>
                         <li class="nav-item active ">
                             <a class="nav-link" href="#">Packages</a>
                         </li>
 
-                        <li class="nav-item active ">
-                            <a class="nav-link" href="#">Booking List</a>
-                        </li>
+                        <li class="nav-item dropdown active">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Booking
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
+                                                        </div>
+                            </li>
 
                         <li class="nav-item active ">
-                            <a class="nav-link" href="#">Booking</a>
+                            <a class="nav-link" asp-controller="Inquiry" asp-action="clientInquiry">Inquiry</a>
                         </li>
-
-                        <li class="nav-item active ">
-                            <a class="nav-link" href="#">Inquiry</a>
-                        </li>
-
-                        <li class="nav-item active ">
-                            <a class="nav-link" href="#">Add Admin</a>
-                        </li>
-
+                        
                         <li class="nav-item">
                             <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
                         </li>
@@ -140,13 +139,21 @@
     </main>
 
    <div class="searchbar">
-    <form class="form-inline ">
-        <input class="form-control form-control-sm mr-3 w-10" type="text" placeholder="Search a filter"
-               aria-label="Search">
-        <i class="fas fa-search" aria-hidden="true"></i>
-    </form>
-    </div>
-    <div class="navbaradjust">
+   <form class="form-inline ">
+       <input class="form-control form-control-sm mr-3 w-10" type="text" placeholder="Search a filter"
+              aria-label="Search">
+       <i class="fas fa-search" aria-hidden="true"></i>
+   </form>
+   </div>
+       
+
+            <form id="imageUpload" enctype="multipart/form-data" asp-action="Upload"> 
+                <input type="file" name="image" id="image" class="form-control-file" accept="image/*" multiple/>
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </form>
+            <a class="dropdown-item" href="#">Edit</a>
+            <a class="dropdown-item" href="#">Delete</a>
+<div class="navbaradjust">
     <ul class="nav2list">
         <li class="nav2">
               
@@ -169,87 +176,28 @@
     </ul>
     </div>
 
-    <div class="wrap">
-        <div class="">
-        <button class="button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Content   </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#uploadModal">Add</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Edit</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Delete</a>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="uploadModalLabel">Upload Image</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- Your image upload form goes here -->
-                            <form id="imageUploadForm" enctype="multipart/form-data">
-                                <input type="file" name="image" id="image" class="form-control-file">
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" id="uploadButton">Upload</button>
+    <div class="container">
+        @{
+            if (Model.GalleryFiles.Count == 0)
+            {
+                <text>
+                    <h1> No items found </h1>
+                </text>
+            }
+            else
+            {
+                for (int i = 0; i < Model.GalleryFiles.Count; i++)
+                {
+                    <div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank">
+                                <img src="@System.IO.Path.Combine("uploads", Model.GalleryFiles[i].fileName)" alt="Forest" width="600" height="400">
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            </div>
-
-
-        <script>
-            // JavaScript code to handle image upload
-            $(document).ready(function () {
-                $('#uploadButton').click(function () {
-                    var formData = new FormData();
-                    var image = $('#image')[0].files[0];
-                    formData.append('image', image);
-
-                    $.ajax({
-                        url: '/upload-image', // Replace this with the endpoint to handle image upload
-                        type: 'POST',
-                        data: formData,
-                        contentType: false,
-                        processData: false,
-                        success: function (response) {
-                            // Handle success response
-                            console.log('Image uploaded successfully');
-                            $('#uploadModal').modal('hide');
-                        },
-                        error: function (xhr, status, error) {
-                            // Handle error response
-                            console.error('Error uploading image:', error);
-                        }
-                    });
-                });
-            });
-        </script>
-    </div>
-
-    <div class="container">
-    @{
-        var itemsCount = 20;
-    }
-    @for (int i = 0; i < itemsCount; i++)
-    {
-        <text>  <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="img_forest.jpg">
-                <img src="https://placehold.jp/300x400.png" alt="Forest" width="600" height="400">
-            </a>
-            </div>
-       </div></text>
-       
-    }
+                }
+            }
+        }
     </div>
     
     <footer>

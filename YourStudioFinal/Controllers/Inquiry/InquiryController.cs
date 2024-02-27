@@ -36,4 +36,10 @@ public class InquiryController : Controller
         _context.SaveChanges();
         return RedirectToAction("clientInquiry");
     }
+    
+    public IActionResult Inquirylist()
+    {
+        return View();
+    }
+    
     }

@@ -1,12 +1,15 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity;
+using YourStudioFinal.Models.Booking;
 
 namespace YourStudioFinal.Models;
 
     public class User : IdentityUser
     {
         public List<Inquiry> Inquiries { get; set; }
+        
+        public List<BookingModel> Bookings { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
         [StringLength(20, MinimumLength = 8, ErrorMessage = "Password should be between 8 and 20 characters")]
@@ -17,5 +20,4 @@ namespace YourStudioFinal.Models;
         public string mobileNumber { get; set; }
         
         public DateTime dateCreated { get; set; }
-
     }

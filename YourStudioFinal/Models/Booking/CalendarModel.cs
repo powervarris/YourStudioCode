@@ -4,7 +4,7 @@ public class CalendarModel
 {
     public int Year { get; set; }
     public List<DateTime> Dates { get; set; }
-
+    
     public CalendarModel(int year)
     {
         Year = year;

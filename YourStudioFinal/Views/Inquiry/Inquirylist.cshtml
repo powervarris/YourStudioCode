@@ -1,0 +1,46 @@
+﻿@model Inquiry
+@{
+	ViewBag.Title = "Inquiryist";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/Inquiry/iList.css" rel="stylesheet" />
+
+</head>
+<body>
+	<div id="content-container">
+	<div class="left-column">
+		<div id="YB">INQUIRY LIST</div>
+			<div id="btn1" class="blist" data-original-color="white"><h1>@Model.Name</h1><p>@Model.Message</p></div>
+	</div>
+		<div class="vertical-line"></div>
+	<div class="right-column">
+
+			@if (Model != null)
+			{
+				<p><strong>Name:</strong> @Model.Name</p>
+				<hr />
+				<p><strong>Message:</strong> @Model.Message</p>
+			}
+			else
+			{
+				<p>No inquiry details available.</p>
+			}
+	</div>
+	</div>
+
+</body>
+</html>
+<footer>
+	<div class="footer">
+		<hr />
+		<div class="social-icons">
+			<a href="#" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+			<a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+			<a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+		</div>
+	</div>
+	<p class="copyright">&copy; 2023 Your Studio</p>
+</footer>

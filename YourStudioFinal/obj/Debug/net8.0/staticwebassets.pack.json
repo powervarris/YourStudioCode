@@ -829,6 +829,26 @@
       "PackagePath": "staticwebassets\\scss\\style.scss"
     },
     {
+      "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\33375a6c-104d-473e-a324-e90605da2bb0\\427078309_1113851839787291_3927656377980131691_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\33375a6c-104d-473e-a324-e90605da2bb0\\427078309_1113851839787291_3927656377980131691_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\33375a6c-104d-473e-a324-e90605da2bb0\\429094328_1448582142397357_7661173535967887002_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\33375a6c-104d-473e-a324-e90605da2bb0\\429094328_1448582142397357_7661173535967887002_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\33375a6c-104d-473e-a324-e90605da2bb0\\429111580_1814768235603259_4092280028252694532_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\33375a6c-104d-473e-a324-e90605da2bb0\\429111580_1814768235603259_4092280028252694532_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\33375a6c-104d-473e-a324-e90605da2bb0\\receipt.png",
+      "PackagePath": "staticwebassets\\uploads\\33375a6c-104d-473e-a324-e90605da2bb0\\receipt.png"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\receipt.png",
+      "PackagePath": "staticwebassets\\uploads\\receipt.png"
+    },
+    {
       "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\urstud.jpg",
       "PackagePath": "staticwebassets\\urstud.jpg"
     },

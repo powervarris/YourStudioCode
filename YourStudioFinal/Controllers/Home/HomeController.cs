@@ -28,6 +28,10 @@ public class HomeController : Controller
             ViewBag.User = UserDetails;
             ViewBag.isLogged = true;
         }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
         return View();
     }
 

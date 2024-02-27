@@ -52,10 +52,10 @@
                                 <li>
                                     <div id="mySidenav" class="sidenav">
                                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                        <a href="#">Username</a>
-                                        <a href="#">Email@email.com</a>
-                                        <a href="#">Mobile</a>
-                                        <a href="#">Logout</a>
+                                        <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
+                                        <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
+                                        <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
+                                        <a>Logout</a>
                                     </div>
                                     <span onclick="openNav()">
                                         <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
@@ -223,21 +223,26 @@
 
     <div class="container">
         @{
-            var itemsCount = 20;
-        }
-        @for (int i = 0; i < itemsCount; i++)
-        {
-            <text>
-                <div class="responsive">
-                    <div class="gallery">
-                        <a target="_blank" href="img_forest.jpg">
-                            <img src="https://placehold.jp/300x400.png" alt="Forest" width="600" height="400">
-                        </a>
-                    </div>
-                </div>
-            </text>
-
-        }
+                    if (Model.GalleryFiles.Count == 0)
+                    {
+                        <text>
+                            <h1> No items found </h1>
+                        </text>
+                    }
+                    else
+                    {
+                        for (int i = 0; i < Model.GalleryFiles.Count; i++)
+                        {
+                            <div class="responsive">
+                                <div class="gallery">
+                                    <a target="_blank">
+                                        <img src="@System.IO.Path.Combine("uploads", Model.GalleryFiles[i].fileName)" alt="Forest" width="600" height="400">
+                                    </a>
+                                </div>
+                            </div>
+                        }
+                    }
+                }
     </div>
 
     <footer>

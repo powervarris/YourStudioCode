@@ -26,7 +26,7 @@
 						    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
 					    </li>
 					    <li class="nav-item active">
-						    <a class="nav-link" asp-controller="Gallery" asp-action="Index">Gallery</a>
+						    <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
 					    </li>
 					    <li class="nav-item active ">
 						    <a class="nav-link" href="#">Packages</a>
@@ -125,6 +125,20 @@
 			<div class="btnT" data-original-color="white">03:30 pm</div>
 			<div class="btnT" data-original-color="white">04:00 pm</div>
 		</div>
+		
+		@* <form> *@
+		@* 	<select id="packagelist" name="packagelist"> *@
+		@* 		<option> - Select Your Package - </option> *@
+		@* 		<option value="199">Your Student</option> *@
+		@* 		<option value="499">Your Duo</option> *@
+		@* 		<option value="699">Your Squad</option> *@
+		@* 		<option value="899">Your Barkada</option> *@
+		@* 		<option value="1499">Your Family</option> *@
+		@* 		<option value="1299">Your Fur Baby</option> *@
+		@* 		<option value="899">Your Graduation</option> *@
+		@* 		<option value="1499">Your Homr Service</option> *@
+		@* 	</select> *@
+  @*       		</form> *@
 	</section>
 </section>
 
@@ -133,11 +147,40 @@
 	<div>@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</div>
 	<div id="slctDate2"></div>
 	<div id="slctTime"></div>
-	<div>20 mins</div>
+	<div id="packagelist"></div>
 	<div>199</div>
 	<hr/>
-	<div class="btnB" data-original-color="Black">BOOK</div>
+	<button type="button" class="btnB" data-toggle="modal" data-target="#exampleModalCenter">
+      Book Now!
+    </button>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Ops Teka Muna!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+	    <div class="modal-body">
+		    <form asp-action="AddBooking" method="post" enctype="multipart/form-data">
+			    <input name="date" id="formDate" style="display: none"/>
+			    <input name="time" id="formTime" style="display: none"/>
+			    <input name="package" id="formPackage" style="display: none"/>
+			    <input type="file" name="image" id="image" class="form-control-file" accept="image/*"/>
+			    <button type="submit" class="btnB" data-original-color="Black">BOOK</button>
+		    </form>
+	    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet"/>
 
@@ -175,22 +218,30 @@
 
 			$(document).on("click", ".table .row .cell span", ".calendar .header .text span", function () {
 				var selectedDate = $(this).text();
-				$("#slctDay").text(selectedDate);
-				console.log('Selected date:', selectedDate);
 				var selectedMonth = $(".calendar .header .text span").text();
+				$("#slctDay").text(selectedDate);
+				$("#formDate").val(selectedDate + ' ' + selectedMonth);
+				console.log('Selected date:', selectedDate);
 				$("#slctDate").text(selectedDate + ' ' + selectedMonth);
+				
 				console.log('Selected month:', selectedMonth);
 				$("#slctDate2").text(selectedDate + ' ' + selectedMonth);
 				console.log('Selected month:', selectedMonth);
 			});
-
-
+			
 
 			$(".time .btnT").on("click", function () {
 				var selectedTime = $(this).text();
 				$("#slctTime").text('Selected Time: ' + selectedTime);
+				$("#formTime").val(selectedTime);
 				console.log('Selected time:', selectedTime);
 			});
+			
+			// $(".btnB").on("click", function () {
+			// 	var selectedPackage = $(this).val();
+			// 	$("#packagelist").text('Selected Package: ' + selectedPackage);
+			// 	console.log('Selected package:', selectedPackage);
+			// });
 		});
 	</script>
 
