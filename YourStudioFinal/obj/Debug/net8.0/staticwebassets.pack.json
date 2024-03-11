@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\assets\\logofull.png"
     },
     {
+      "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\css\\Booking\\Booking.css",
+      "PackagePath": "staticwebassets\\css\\Booking\\Booking.css"
+    },
+    {
       "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\css\\Booking\\blist.css",
       "PackagePath": "staticwebassets\\css\\Booking\\blist.css"
     },
@@ -839,6 +843,10 @@
     {
       "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\e921b1e7-9399-4601-97e3-2ceabb9cc8fc\\American-Quarter-Horse-stallion.jpg",
       "PackagePath": "staticwebassets\\uploads\\e921b1e7-9399-4601-97e3-2ceabb9cc8fc\\American-Quarter-Horse-stallion.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\receipt.png",
+      "PackagePath": "staticwebassets\\uploads\\receipt.png"
     },
     {
       "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\urstud.jpg",

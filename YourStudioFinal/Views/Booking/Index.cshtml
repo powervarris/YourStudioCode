@@ -126,6 +126,25 @@
 			<div class="btnT" data-original-color="white">04:00 pm</div>
 		</div>
 		
+		<label for="packages">Packages:</label>
+		<select name="packages" id="package" onchange="changePrice(this.value)">
+			<option value="199">Your Student</option>
+			<option value="499">Your Duo</option>
+			<option value="699">Your Squad</option>
+			<option value="899">Your Barkada</option>
+			<option value="1499">Your Family</option>
+			<option value="1299">Your Fur Baby</option>
+			<option value="899">Your Graduation</option>
+			<option value="1499">Your Home Service</option>
+		</select>
+		
+		<label for="addOns">Add-Ons:</label>
+                  <select name="addOns" id="addOn" onchange="changePrice2(this.value)">
+                    <option value="249">Additional Head</option>
+                    <option value="299">Additional Fur Baby</option>
+                    <option value="199">Additional 15 Minutes</option>>
+                  </select>
+
 		@* <form> *@
 		@* 	<select id="packagelist" name="packagelist"> *@
 		@* 		<option> - Select Your Package - </option> *@
@@ -148,7 +167,8 @@
 	<div id="slctDate2"></div>
 	<div id="slctTime"></div>
 	<div id="packagelist"></div>
-	<div>199</div>
+	<div id="packages"></div>
+	<div id="addOns">Total Add-Ons: </div>
 	<hr/>
 	<button type="button" class="btnB" data-toggle="modal" data-target="#exampleModalCenter">
       Book Now!
@@ -169,7 +189,8 @@
 		    <form asp-action="AddBooking" method="post" enctype="multipart/form-data">
 			    <input name="date" id="formDate" style="display: none"/>
 			    <input name="time" id="formTime" style="display: none"/>
-			    <input name="package" id="formPackage" style="display: none"/>
+			    <input name="packages" id="formPackage" style="display: none"/>
+			    <input name="addOns" id="formAddOns" style="display: none"/>
 			    <input type="file" name="image" id="image" class="form-control-file" accept="image/*"/>
 			    <button type="submit" class="btnB" data-original-color="Black">BOOK</button>
 		    </form>
@@ -243,6 +264,18 @@
 			// 	console.log('Selected package:', selectedPackage);
 			// });
 		});
+		
+		function changePrice(price) {
+			$("#packages").text("Total Package: " + price);
+			console.log('Selected package:', price);
+			$("#formPackage").val(price);
+		};
+		
+		function changePrice2(price2) {
+			$("#addOns").text("Total Add-Ons: " + price2);
+			console.log('Selected Add-ons:', price2);
+			$("#formAddOns").val(price2);
+		};
 	</script>
 
 </body>

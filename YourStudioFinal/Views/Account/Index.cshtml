@@ -3,7 +3,7 @@
 }
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,61 +11,69 @@
 
     <link rel="stylesheet" href="~/fonts/icomoon/style.css">
 
-    <link href="~/fonts/style.css" rel="stylesheet" />
+    <link href="~/fonts/style.css" rel="stylesheet"/>
 
     <!-- Bootstrap CSS -->
-    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
-    
+    <link href="~/css/bootstrap.min.css" rel="stylesheet"/>
+
     <!-- Style -->
-    <link href="~/css/first/login.css" rel="stylesheet" />
+    <link href="~/css/first/login.css" rel="stylesheet"/>
 
     <title>Login #2</title>
-  </head>
+</head>
 <body>
+    @{
+    		if (TempData["Error"] != null)
+    		{
+    			<script>
+    			alert("@TempData["Error"]");
+    			</script>	
+    		}
+    	}
 <header>
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Left side content, taking up 50% -->
-                <div class="col-md-6">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left side content, taking up 50% -->
+            <div class="col-md-6">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
 
-                        <span>
-                            <a href="#" class=""></a>
-                            <img src="~/logo.png" class="logonav" alt="" id="img2">
-                            <img src="~/logo2.png" class="logonav2" alt="" id="img2">
-                        </span>
-                    </a>
-                   
-                </div>
-                <!-- Right side content, taking up 50% -->
-                <div class="col-md-6" style="background-color:#FDF8F2">
-                    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light " style="background-color:#FDF8F2">
-                        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" style="background-color:#FDF8F2">
-                            <ul class="navbar-nav" >
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Gallery" asp-action="Index">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Packages" asp-action="Index">Packages</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Booking" asp-action="Index">Booking</a>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Inquiry" asp-action="clientInquiry">Inquiry</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Index">Login</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+                    <span>
+                        <a href="#" class=""></a>
+                        <img src="~/logo.png" class="logonav" alt="" id="img2">
+                        <img src="~/logo2.png" class="logonav2" alt="" id="img2">
+                    </span>
+                </a>
+
+            </div>
+            <!-- Right side content, taking up 50% -->
+            <div class="col-md-6" style="background-color:#FDF8F2">
+                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light " style="background-color:#FDF8F2">
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" style="background-color:#FDF8F2">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Gallery" asp-action="Index">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Packages" asp-action="Index">Packages</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Booking" asp-action="Index">Booking</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Inquiry" asp-action="clientInquiry">Inquiry</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Index">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 <div class="d-lg-flex half" style="background-image: url('background.png');">
     <div class="d-lg-flex half">
         <div class="d-lg-flex half"></div>

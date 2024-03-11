@@ -191,3 +191,10 @@
     background-color: gray;
     border: hidden;
 }
+
+#details {
+    position: absolute;
+    top: 300px;
+    left: 1400px;
+    font-family: 'Palatino Linotype';
+}

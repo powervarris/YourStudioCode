@@ -1,4 +1,4 @@
-﻿@model YourStudioFinal.Models.Booking.BookingModel
+﻿@model List<YourStudioFinal.Models.Booking.BookingModel>
 @{
 	ViewBag.Title = "BList";
 }
@@ -66,8 +66,14 @@
 <section class="Book">
 	<div id="YB">YOUR BOOKING</div>
 	<div id="VL"></div>
-	<div id="btn1" class="blist" data-original-color="white">August 05, 2023 | Saturday - 1:30 pm</div>
-	<div id="btn2" class="blist" data-original-color="white">September 06, 2023 | Saturday - 2:30 pm</div>
+	@* <div id="btn1" class="blist" data-original-color="white">August 05, 2023 | Saturday - 1:30 pm</div> *@
+	@* <div id="btn2" class="blist" data-original-color="white">September 06, 2023 | Saturday - 2:30 pm</div> *@
+	@{
+		foreach (var item in Model.Select((value, i) => ( value, i )))
+		{
+			<div id="@("btn" + item.i)" class="blist" data-original-color="white" onclick="clickHandler(this.id)">@item.value.accountUser.UserName @item.value.date @item.value.time</div>
+		}
+	}
 </section>
 
 <section class="ftco-section">
@@ -108,20 +114,44 @@
 </section>
 
 <section id="Srvc">
-	<div id="VL2"></div>
-	<div id="SrvcDtl">Service Details</div>
-	<div>PLACEHOLDER USER</div>
-	<div id="slctDate2">PLACEHOLDER DATE</div>
-	<div id="slctTime">PLACEHOLDER TIME</div>
-	<div>PLACEHOLDER CONTACT</div>
-	<div>499</div>
-	<hr/>
-	<button class="btn btn-primary inline" id="btnG">ACCEPT</button>
-	<button class="btn btn-primary inline" id="btnR">DECLINE</button>
-	<button class="btn btn-primary inline" id="btnBL">EDIT</button>
-	<button class="btn btn-primary inline" id="btnGR">REMOVE</button>
+@{
+		foreach (var item in Model.Select((value, i) => ( value, i )))
+		{
+			<div id="@("srvc" + item.i)" style="display: none">
+				<div id="VL2"></div>
+				<div id="SrvcDtl">Booking Details</div>
+				<div>
+					<h6><b>Date and Time: </b> @item.value.date @item.value.time</h6>
+				</div>
+				<div>
+					<h6><b>Client: </b> @item.value.accountUser.UserName</h6>
+				</div>
+				<div>
+					<h6><b>Contact Details: </b> @item.value.accountUser.Email</h6>
+				</div>
+				<div>
+					<h6><b>Your Package: </b> @item.value.packages</h6>
+				</div>
+				<div>
+					<h6><b>Add-ons: </b>@item.value.addOns</h6>
+				</div>
+				<div>
+					<h6><b>Total: </b> @(Convert.ToInt32(item.value.packages)+Convert.ToInt32(item.value.addOns))</h6>
+				</div>
+				<div>
+					<h6><b>Payment Details: </b></h6>
+				</div>
+				@* <div>@item.value.accountUser.Contact</div> *@
+				@* <div>@item.value.accountUser.PackagePrice</div> *@
+				<hr/>
+				<button class="btn btn-primary inline" id="btnG">Accept</button>
+				<button class="btn btn-primary inline" id="btnR">Decline</button>
+				<button class="btn btn-primary inline" id="btnBL">Edit</button>
+				<button class="btn btn-primary inline" id="btnGR">Remove</button>
+			</div>
+		}
+	}
 </section>
-
 
 @section scripts {
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -129,6 +159,19 @@
 }
 
 <script>
+		function clickHandler (element){
+			// $("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
+            // $(".ftco-section").show();
+            // $(".time-container").show();
+            // console.log("You clicked btn1");
+            // $("[id^='btnT_']").css("background-color", "white");
+            // $("#btnT_1300").css("background-color", "gray");
+            $("[id^=srvc]").hide();
+			$("#srvc" + element.substr(3)).show();
+			
+		};
+	
+
 		$(function () {
 
 			var $prevElement = null;
@@ -151,23 +194,23 @@
 
 			$("#datepicker").datepicker();
 
-			$("#btn1").on("click", function () {
-				$("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
-				$(".ftco-section").show();
-				$(".time-container").show();
-				console.log("You clicked btn1");
-				$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
-				$("#btnT_1300").css("background-color", "gray"); // turn the button with id 'btnT_1300' to gray
-			});
-
-			$("#btn2").on("click", function () {
-				$("#datepicker").datepicker("setDate", new Date(2023, 8, 6));
-				$(".ftco-section").show();
-				$(".time-container").show();
-				console.log("You clicked btn2");
-				$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
-				$("#btnT_1430").css("background-color", "gray"); // turn the button with id 'btnT_1430' to gray
-			});
+			// $(".btn").on("click", function () {
+			// 	$("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
+			// 	$(".ftco-section").show();
+			// 	$(".time-container").show();
+			// 	console.log("You clicked btn1");
+			// 	$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
+			// 	$("#btnT_1300").css("background-color", "gray"); // turn the button with id 'btnT_1300' to gray
+			// });
+			//
+			// $("#btn2").on("click", function () {
+			// 	$("#datepicker").datepicker("setDate", new Date(2023, 8, 6));
+			// 	$(".ftco-section").show();
+			// 	$(".time-container").show();
+			// 	console.log("You clicked btn2");
+			// 	$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
+			// 	$("#btnT_1430").css("background-color", "gray"); // turn the button with id 'btnT_1430' to gray
+			// });
 
 		});
 	</script>

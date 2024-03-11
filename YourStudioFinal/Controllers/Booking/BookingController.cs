@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using YourStudioFinal.data;
 using YourStudioFinal.Models;
 using YourStudioFinal.Models.Booking;
@@ -21,13 +22,19 @@ public class BookingController : Controller
     }
     
     // GET
-    public async Task<ViewResult> Index()
+    public async Task<ActionResult> Index()
     {
         var UserDetails = await _userManager.GetUserAsync(User);
         if (UserDetails != null)
         {
             ViewBag.User = UserDetails;
             ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+            TempData["Error"] = "You need to login to access this page";
+            return RedirectToAction("Index", "Account");
         }
         return View();
     }
@@ -59,6 +66,13 @@ public class BookingController : Controller
     }
     
     public IActionResult BList()
+    {
+        return View(_context.Booking.Include(x => x.accountUser)
+            .Include(x => x.payment)
+            .ToList());
+    }
+
+    public IActionResult Booking()
     {
         return View();
     }

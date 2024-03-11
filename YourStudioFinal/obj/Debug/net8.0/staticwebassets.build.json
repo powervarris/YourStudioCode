@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LpixLZ83dMGjLE4CSB0pVkdSDqrc/9YKxErst2faAjs=",
+  "Hash": "hJ3CqfUKnzjL63A+AlWtxZg6jQ6vZlgo+3KXqETR+8U=",
   "Source": "YourStudioFinal",
   "BasePath": "_content/YourStudioFinal",
   "Mode": "Default",
@@ -1383,6 +1383,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Booking\\blist.css"
+    },
+    {
+      "Identity": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\css\\Booking\\Booking.css",
+      "SourceId": "YourStudioFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\",
+      "BasePath": "_content/YourStudioFinal",
+      "RelativePath": "css/Booking/Booking.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Booking\\Booking.css"
     },
     {
       "Identity": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\css\\Booking\\crtBook.css",
@@ -5164,6 +5183,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\e921b1e7-9399-4601-97e3-2ceabb9cc8fc\\American-Quarter-Horse-stallion.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\receipt.png",
+      "SourceId": "YourStudioFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\",
+      "BasePath": "_content/YourStudioFinal",
+      "RelativePath": "uploads/receipt.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\receipt.png"
     },
     {
       "Identity": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\urstud.jpg",
