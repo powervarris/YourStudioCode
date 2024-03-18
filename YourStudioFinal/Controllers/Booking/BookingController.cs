@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -65,15 +64,39 @@ public class BookingController : Controller
         return RedirectToAction("Index");
     }
     
-    public IActionResult BList()
+    public async Task<ActionResult> BList()
     {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+            TempData["Error"] = "You need to login to access this page";
+            return RedirectToAction("Index", "Account");
+        }
         return View(_context.Booking.Include(x => x.accountUser)
             .Include(x => x.payment)
             .ToList());
     }
 
-    public IActionResult Booking()
+    public async Task<ActionResult> Booking()
     {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+            TempData["Error"] = "You need to login to access this page";
+            return RedirectToAction("Index", "Account");
+        }
         return View();
     }
 }

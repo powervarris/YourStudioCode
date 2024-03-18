@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hJ3CqfUKnzjL63A+AlWtxZg6jQ6vZlgo+3KXqETR+8U=",
+  "Hash": "/6CMpq781u+Dp+sXyGBzhealMFgrBXEIE+S3eNrZFlo=",
   "Source": "YourStudioFinal",
   "BasePath": "_content/YourStudioFinal",
   "Mode": "Default",
@@ -1801,6 +1801,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Inquiry\\crtINQ.css"
+    },
+    {
+      "Identity": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\css\\Inquiry\\iList.css",
+      "SourceId": "YourStudioFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\",
+      "BasePath": "_content/YourStudioFinal",
+      "RelativePath": "css/Inquiry/iList.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Inquiry\\iList.css"
     },
     {
       "Identity": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\css\\Inquiry\\Inquiry.css",
@@ -5164,6 +5183,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\429847036_380278821419536_5068961888312646852_n.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\a48f6104-95cc-45fc-b9d0-774d7e961cc5\\431172644_847611553838820_2079989786200731601_n.jpg",
+      "SourceId": "YourStudioFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\",
+      "BasePath": "_content/YourStudioFinal",
+      "RelativePath": "uploads/a48f6104-95cc-45fc-b9d0-774d7e961cc5/431172644_847611553838820_2079989786200731601_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a48f6104-95cc-45fc-b9d0-774d7e961cc5\\431172644_847611553838820_2079989786200731601_n.jpg"
     },
     {
       "Identity": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\e921b1e7-9399-4601-97e3-2ceabb9cc8fc\\American-Quarter-Horse-stallion.jpg",

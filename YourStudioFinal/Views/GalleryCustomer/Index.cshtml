@@ -36,18 +36,23 @@
 
 <body style="background-color:#FDF8F2;">
     <header>
-
-
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Left links -->
-                        <div class="menu-adjust">
+           
+    
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler"
+                                type="button"
+                                data-mdb-toggle="collapse"
+                                data-mdb-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="menu-adjust">
+                            <!-- Left links -->
                             <ul class="navbar-nav me-3">
                                 <li>
                                     <div id="mySidenav" class="sidenav">
@@ -55,70 +60,78 @@
                                         <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
                                         <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
                                         <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
-                                        <a>Logout</a>
+                                        <a asp-action="Logout">Logout</a>
                                     </div>
                                     <span onclick="openNav()">
                                         <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
                                             <i class="fas fa-bars pe-2 menu"></i>
                                     </span>
-
-                                </li>
-                            </ul>
-                        </div>
+                               
+                                     </li>
+                                    </ul>
+                            </div>
+                                    </div>
+                        <script>
+                            function openNav() {
+                                document.getElementById("mySidenav").style.width = "250px";
+                            }
+    
+                            function closeNav() {
+                                document.getElementById("mySidenav").style.width = "0";
+                            }
+                        </script>
+                        <span>
+                            <a href="#" class="topnav"></a>
+                            <img src="~/assets/logo.png" class="logonav" alt="">
+                            <img src="~/assets/logo2.png" class="logonav2" alt="">
+                        </span>
                     </div>
-                    <script>
-                        function openNav() {
-                            document.getElementById("mySidenav").style.width = "250px";
-                        }
-
-                        function closeNav() {
-                            document.getElementById("mySidenav").style.width = "0";
-                        }
-                    </script>
-                    <span>
-                        <a href="#" class="topnav"></a>
-                        <img src="~/assets/logo.png" class="logonav" alt="">
-                        <img src="~/assets/logo2.png" class="logonav2" alt="">
-                    </span>
-                </div>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav ml-auto navbar-right">
-                        <li class="nav-item active">
-                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" asp-action="Index">Gallery</a>
-                        </li>
-                        <li class="nav-item active ">
-                            <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
-                        </li>
-
-                        
-
-                        <li class="nav-item active ">
-                            <a class="nav-link" asp-controller="Booking" asp-action="Index">Booking</a>
-                        </li>
-
-                        <li class="nav-item active ">
-                            <a class="nav-link" asp-controller="Inquiry" asp-action="clientInquiry">Inquiry</a>
-                        </li>
-
-                      
-
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-                        </li>
-
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-
-
-    </header>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav ml-auto navbar-right">
+                            <li class="nav-item active">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                            </li>
+                            <li class="nav-item active ">
+                                <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+                            </li>
+    
+    
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Booking
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
+    
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Booking List</a>
+                                </div>
+                                </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+                            </li>
+    
+    
+                        </ul>
+                    </div>
+                    </div>
+            </nav>
+                    
+                
+    
+            
+            </header>
 
     <main>
         <h1 class="text-center">
@@ -134,13 +147,6 @@
 
     </main>
 
-    <div class="searchbar">
-        <form class="form-inline ">
-            <input class="form-control form-control-sm mr-3 w-10" type="text" placeholder="Search a filter"
-                   aria-label="Search">
-            <i class="fas fa-search" aria-hidden="true"></i>
-        </form>
-    </div>
     <div class="navbaradjust">
         <ul class="nav2list">
             <li class="nav2">

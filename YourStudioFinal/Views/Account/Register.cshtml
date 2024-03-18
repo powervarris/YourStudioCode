@@ -16,48 +16,57 @@
 </head>
 <body>
 <header>
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Left side content, taking up 50% -->
-                <div class="col-md-6">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+	    <nav class="navbar navbar-expand-lg navbar-light">
+		    <div class="container-fluid">
+			    <div class="navbar-header">
+				    <span>
+					    <img src="~/photos/logo.png" class="logonav" alt="">
+					    <img src="~/photos/logo2.png" class="logonav2" alt="">
+					    <i class="fas fa-bars menu-icon"></i>
+				    </span>
+			    </div>
+			    <div class="collapse navbar-collapse" id="navbar">
+				    <ul class="navbar-nav ml-auto navbar-right">
+					    <li class="nav-item active">
+						    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+					    </li>
+					    <li class="nav-item active">
+						    <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+					    </li>
+					    <li class="nav-item active ">
+						    <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+					    </li>
 
-                        <span>
-                            <a href="#" class=""></a>
-                            <img src="~/logo.png" class="logonav" alt="" id="img2">
-                            <img src="~/logo2.png" class="logonav2" alt="" id="img2">
-                        </span>
-                    </a>
-                   
-                </div>
-                <!-- Right side content, taking up 50% -->
-                <div class="col-md-6" style="background-color:#FDF8F2">
-                    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light " style="background-color:#FDF8F2">
-                        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" style="background-color:#FDF8F2">
-                            <ul class="navbar-nav" >
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Gallery" asp-action="Index">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Packages" asp-action="Index">Packages</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Booking" asp-action="Index">Booking</a>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Inquiry" asp-action="clientInquiry">Inquiry</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Index">Login</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
+
+					    <li class="nav-item dropdown active">
+						    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Booking
+						    </a>
+						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							    <a class="dropdown-item" asp-action="Index">Create Booking</a>
+							    <a class="dropdown-item" asp-action="BList">Booking List</a>
+						    </div>
+					    </li>
+
+					    <li class="nav-item dropdown active">
+						    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Inquiry
+						    </a>
+						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+							    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+						    </div>
+					    </li>
+
+					    <li class="nav-item">
+						    <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+					    </li>
+
+
+				    </ul>
+			    </div>
+		    </div>
+	    </nav>
     </header>
 
 <div class="d-lg-flex half" style="background-color:#FDF8F2;">

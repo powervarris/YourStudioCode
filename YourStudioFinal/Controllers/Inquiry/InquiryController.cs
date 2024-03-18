@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using YourStudioFinal.data;
 using YourStudioFinal.Models;
 
@@ -21,10 +22,20 @@ public class InquiryController : Controller
         _context = context;
         _logger = logger;
     }
-
-    [Authorize]
-    public IActionResult clientInquiry()
+    public async Task<ActionResult> clientInquiry()
     {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+            TempData["Error"] = "You need to login to access this page";
+            return RedirectToAction("Index", "Account");
+        }
         return View();
     }
 
@@ -37,9 +48,21 @@ public class InquiryController : Controller
         return RedirectToAction("clientInquiry");
     }
     
-    public IActionResult Inquirylist()
+    public async Task<ActionResult> Inquirylist()
     {
-        return View();
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+            TempData["Error"] = "You need to login to access this page";
+            return RedirectToAction("Index", "Account");
+        }
+        return View(_context.Inquiries.Include(e => e.accountUser).ToList());
     }
     
     }

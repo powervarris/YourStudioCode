@@ -1,4 +1,4 @@
-﻿@model Inquiry
+﻿@model List<YourStudioFinal.Models.Inquiry>
 @{
 	ViewBag.Title = "Inquiryist";
 }
@@ -10,26 +10,102 @@
 
 </head>
 <body>
-	<div id="content-container">
+
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<span>
+					<img src="~/photos/logo.png" class="logonav" alt="">
+					<img src="~/photos/logo2.png" class="logonav2" alt="">
+					<i class="fas fa-bars menu-icon"></i>
+				</span>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav ml-auto navbar-right">
+					<li class="nav-item active">
+						<a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+					</li>
+					<li class="nav-item active ">
+						<a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+					</li>
+
+
+					<li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Booking
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+							<a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Inquiry
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+							<a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+<div id="content-container">
 	<div class="left-column">
 		<div id="YB">INQUIRY LIST</div>
-			<div id="btn1" class="blist" data-original-color="white"><h1>@Model.Name</h1><p>@Model.Message</p></div>
-	</div>
-		<div class="vertical-line"></div>
-	<div class="right-column">
 
-			@if (Model != null)
+		@{
+			foreach (var inquiry in Model.Select((value, i) => (value, i)))
 			{
-				<p><strong>Name:</strong> @Model.Name</p>
-				<hr />
-				<p><strong>Message:</strong> @Model.Message</p>
+				<div id="@("btn" + inquiry.i)" class="blist" data-original-color="white" onclick="clickHandler(this.id)">
+					<h2>@inquiry.value.Name</h2>
+					<h6>@inquiry.value.accountUser.UserName</h6>
+				</div>
 			}
-			else
+		}
+	</div>
+	<div class="vertical-line"></div>
+	<div class="right-column">
+		@{
+			foreach (var inquiry in Model.Select((value, i) => (value, i)))
 			{
-				<p>No inquiry details available.</p>
+				<div id="@("srvc" + inquiry.i)" style="display: none">
+					<div>Inquiry Details</div>
+					<div>Title: @inquiry.value.Name</div>
+					<div>Message: @inquiry.value.Message</div>
+				</div>
 			}
+		}
 	</div>
-	</div>
+</div>
+
+<script>
+		function clickHandler (element){
+			// $("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
+            // $(".ftco-section").show();
+            // $(".time-container").show();
+            // console.log("You clicked btn1");
+            // $("[id^='btnT_']").css("background-color", "white");
+            // $("#btnT_1300").css("background-color", "gray");
+            $("[id^=srvc]").hide();
+			$("#srvc" + element.substr(3)).show();
+			
+		};
+	</script>
 
 </body>
 </html>

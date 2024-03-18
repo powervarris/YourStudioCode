@@ -109,9 +109,13 @@
                             </div>
                         </li>
                         
-                        <li class="nav-item active ">
-                            <a class="nav-link" asp-controller="Inquiry" asp-action="clientInquiry">Inquiry</a>
-                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Booking List</a>
+                            </div>
+                            </li>
 
                         <li class="nav-item">
                             <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>

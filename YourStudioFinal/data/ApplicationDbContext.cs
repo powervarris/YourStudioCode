@@ -24,6 +24,7 @@ public class ApplicationDbContext : IdentityDbContext<User>
     
     public DbSet<BookingModel> Booking { get; set; }
     public DbSet<PaymentModel> Payment { get; set; }
+    public DbSet<Inquiry> Inquiries { get; set; }
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)

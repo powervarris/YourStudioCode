@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\css\\Inquiry\\crtINQ.css"
     },
     {
+      "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\css\\Inquiry\\iList.css",
+      "PackagePath": "staticwebassets\\css\\Inquiry\\iList.css"
+    },
+    {
       "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\css\\bg_1.jpg",
       "PackagePath": "staticwebassets\\css\\bg_1.jpg"
     },
@@ -839,6 +843,10 @@
     {
       "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\429847036_380278821419536_5068961888312646852_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\429847036_380278821419536_5068961888312646852_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\a48f6104-95cc-45fc-b9d0-774d7e961cc5\\431172644_847611553838820_2079989786200731601_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a48f6104-95cc-45fc-b9d0-774d7e961cc5\\431172644_847611553838820_2079989786200731601_n.jpg"
     },
     {
       "Id": "C:\\Users\\Varris\\RiderProjects\\YourStudioFinal\\wwwroot\\uploads\\e921b1e7-9399-4601-97e3-2ceabb9cc8fc\\American-Quarter-Horse-stallion.jpg",
