@@ -11,125 +11,131 @@
 
     <link rel="stylesheet" href="~/fonts/icomoon/style.css">
 
-    <link href="~/fonts/style.css" rel="stylesheet"/>
+    <link href="~/fonts/style.css" rel="stylesheet" />
 
-    <!-- Bootstrap CSS -->
-    <link href="~/css/bootstrap.min.css" rel="stylesheet"/>
+
 
     <!-- Style -->
-    <link href="~/css/first/login.css" rel="stylesheet"/>
+    <link href="~/css/first/login.css" rel="stylesheet" />
 
     <title>Login #2</title>
 </head>
 <body>
     @{
-    		if (TempData["Error"] != null)
-    		{
-    			<script>
-    			alert("@TempData["Error"]");
-    			</script>	
-    		}
-    	}
-<header>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Left side content, taking up 50% -->
-            <div class="col-md-6">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-
+        if (TempData["Error"] != null)
+        {
+            <script>
+                alert("@TempData["Error"]");
+            </script>
+        }
+    }
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
                     <span>
-                        <a href="#" class=""></a>
-                        <img src="~/logo.png" class="logonav" alt="" id="img2">
-                        <img src="~/logo2.png" class="logonav2" alt="" id="img2">
+                        <i class="fas fa-bars menu-icon"></i>
+                        <img src="~/css/logo.png" class="logonav" alt="logoimage1" style="width:80px;height:auto">
+                        <img src="~/css/logo2.png" class="logonav2" alt="logoimage2" style="width:150px;height:auto">
+
                     </span>
-                </a>
-
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="navbar-nav ml-auto navbar-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="#">Packages</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                Booking
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-action="Register" asp-controller="Account">
+                                Sign up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!-- Right side content, taking up 50% -->
-            <div class="col-md-6" style="background-color:#FDF8F2">
-                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light " style="background-color:#FDF8F2">
-                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" style="background-color:#FDF8F2">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Packages" asp-action="Index">Packages</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Booking" asp-action="Index">Booking</a>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Inquiry" asp-action="clientInquiry">Inquiry</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Index">Login</a>
-                            </li>
-                        </ul>
+        </nav>
+    </header>
+
+    <div class="container-fluid ps-md-0">
+        <div class="row g-0">
+
+            <div class="col-md-8 col-lg-6">
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-8 mx-auto">
+                                <div class="greeting-container">
+                                    <h3 id="greeting"><strong></strong></h3>
+                                </div>
+                                <form>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Username</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                                        <label class="form-check-label" for="rememberPasswordCheck">
+                                            Remember password
+                                        </label>
+                                        <label class="form-check-label" style="margin-left:250px">
+                                            <p class="" style="color:black">
+                                                No Acccount Yet?
+                                                <a class="link-danger" style="color:blue" asp-action="Register" asp-controller="Account">Sign up</a>
+                                            </p>
+                                        </label>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Sign in</button>
+                                        <div class="text-center">
+                                            <a class="small" asp-action="Forget" asp-controller="Account">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                </nav>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
-<div class="d-lg-flex half" style="background-image: url('background.png');">
-    <div class="d-lg-flex half">
-        <div class="d-lg-flex half"></div>
-        <div class="bg order-1 order-md-2" id="img1">
-            <img src="~/img2.jpg" style="transform:rotate(-10deg)"/>
-        </div>
-        <div class="bg order-1 order-md-2" id="img1">
-            <img src="~/img1.jpg" style="margin-left:310px; z-index:3"/>
-        </div>
-        <div class="bg order-1 order-md-2" id="img1">
-            <img src="~/img3.jpg"style="margin-left:600px; transform:rotate(10deg)"/>
-        </div>
-    </div>
-
-    <div class="contents order-2 order-md-1">
-
-
-        <div class="container">
-            <div class="row align-items-center justify-content-center" style="background-color:white">
-                <div class="col-md-7">
-                    <div class="greeting-container">
-                        <h3 id="greeting"><strong></strong></h3>
+            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+                <div class="d-lg-flex half">
+                    <div class="d-lg-flex half"></div>
+                    <div class="bg order-1 order-md-2" id="img1">
+                        <img src="~/css/img2.jpg" style="margin-left:-80px;transform:rotate(-10deg)" />
                     </div>
-                    <div>
-
-
-
+                    <div class="bg order-1 order-md-2" id="img1">
+                        <img src="~/css/img1.jpg" style="margin-left:210px; z-index:3" />
                     </div>
-                    <form asp-action="loginUser" method="post">
-                        <div class="form-group first">
-                            <input type="text" class="form-control" name="UserName" placeholder="Username" id="username">
-                        </div>
-                        <div class="form-group last mb-3">
-                            <input type="password" class="form-control" name="password" placeholder="Password" id="password">
-                        </div>
-                        <div class="d-flex mb-5 align-items-center">
-                            <p class="" style="color:black">No Acccount Yet? <a class="link-danger" style="color:blue" asp-action="Register" asp-controller="Account">Sign up</a></p>
-                            <span class="ml-auto"><a href="#" class="forgot-pass" style="color:blue">Forgot Password?</a></span>
-                        </div>
-                        <input type="submit" value="LOG IN" class="btn btn-block btn-primary" style="font-family:'Palatino Linotype';font-size:30px">
-                    </form>
+                    <div class="bg order-1 order-md-2" id="img1">
+                        <img src="~/css/img3.jpg" style="margin-left:500px; transform:rotate(10deg)" />
+                    </div>
+                    <div style="position:relative; left:450px; top:580px">
+                        <h2 class="tag">YOUR<STRONG>STUDIO</STRONG></h2>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<i class="bi bi-facebook"></i>
-<script src="~/js/bootstrap.min.js"></script>
-<script src="~/js/jquery-3.3.1.min.js"></script>
-<script src="~/js/main.js"></script>
-<script src="~/js/popper.min.js"></script>
-<script>
+    <script>
         var currentHour = new Date().getHours();
 
         var greetingElement = document.getElementById("greeting");
-       
+
         if (currentHour >= 0 && currentHour < 12) {
             greetingElement.innerHTML = "<h1>GOOD MORNING</h1>";
         } else if (currentHour >= 12 && currentHour < 18) {

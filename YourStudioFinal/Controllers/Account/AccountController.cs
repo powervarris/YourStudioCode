@@ -12,11 +12,11 @@ namespace YourStudioFinal.Controllers.Account;
 public class AccountController : Controller
 {
     private readonly ILogger<AccountController> _logger;
-        
+
     private readonly ApplicationDbContext _context;
-        
+
     private readonly UserManager<User> _userManager;
-        
+
     private readonly SignInManager<User> _signInManager;
     public AccountController(ILogger<AccountController> logger, ApplicationDbContext context, UserManager<User> userManager, SignInManager<User> signInManager)
     {
@@ -25,17 +25,24 @@ public class AccountController : Controller
         _userManager = userManager;
         _signInManager = signInManager;
     }
-    
+
     public IActionResult Index()
     {
         return View();
     }
-    
+
     public IActionResult Register()
     {
         return View();
     }
-
+    public IActionResult Forget()
+    {
+        return View();
+    }
+    public IActionResult Otipi()
+    {
+        return View();
+    }
     [HttpPost]
     public async Task<IActionResult> AddUser(User usermodel)
     {
@@ -49,11 +56,11 @@ public class AccountController : Controller
     [HttpPost]
     public async Task<IActionResult> loginUser(User usermodel)
     {
-        var loginResult = await _signInManager.PasswordSignInAsync (usermodel.UserName, usermodel.password, false, false);
+        var loginResult = await _signInManager.PasswordSignInAsync(usermodel.UserName, usermodel.password, false, false);
         if (loginResult.Succeeded)
         {
             return RedirectToAction("Index", "Home");
-                
+
         }
         return RedirectToAction("Register");
     }

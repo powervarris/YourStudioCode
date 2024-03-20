@@ -1,0 +1,11 @@
+﻿body {
+    background-image: url('background.png');
+    align-content: center;
+    justify-content: center;
+    position: relative
+}
+
+.form-gap {
+    align-content: center;
+    justify-content: center
+}
