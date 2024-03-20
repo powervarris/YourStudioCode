@@ -28,18 +28,32 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar">
                     <ul class="navbar-nav ml-auto navbar-right">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" asp-controller="Gallery" asp-action="Index">Gallery</a>
                         </li>
                         <li class="nav-item active ">
-                            <a class="nav-link" href="#">Packages</a>
+                            <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Booking
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Inquiry
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                </div>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" asp-action="Index" asp-controller="Home">
@@ -62,23 +76,23 @@
                                 <div class="greeting-container">
                                     <h3 id="greeting"><strong></strong></h3>
                                 </div>
-                                <form>
+                                <form asp-action="AddUser" method="post">
                                     <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="UserName" required="required">
                                         <label for="floatingInput">Username</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="required">
                                         <label for="floatingPassword">Password</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="required">
                                         <label for="floatingPassword">Confirm Password</label>
                                         <div class="form-floating mb-3">
-                                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                            <input type="email" class="form-control" id="floatingPassword" placeholder="Password" name="Email" required="required">
                                             <label for="floatingPassword">Email Address</label>
                                             <div class="form-floating mb-3">
-                                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                                <input type="number" class="form-control" id="floatingPassword" placeholder="Password" name="mobileNumber" minlength="11" maxlength="11" required="required">
                                                 <label for="floatingPassword">Phone Number</label>
                                             </div>
                                         </div>
