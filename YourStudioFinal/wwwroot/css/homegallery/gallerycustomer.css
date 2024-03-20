@@ -4,16 +4,18 @@
 
 
 .menu {
+    margin-left: -2000px;
 }
 
 .menu-adjust {
-    margin-left: -430px;
+    margin-left: -520px;
+    margin-top: 20px;
 }
 
 .nav-item {
     margin-top: -50px;
     font-family: 'Calibri';
-    font-size: 19px;
+    font-size: 20px;
     margin-right: 20px;
 }
 
@@ -32,10 +34,7 @@
     margin-left: -20px;
 }
 
-/*.topnav {
-    margin-top: 250px;
-    
-}*/
+
 .fa-bars {
     margin-top: -15px;
     margin-left: 50px;
@@ -57,11 +56,6 @@
     gap: 2px;
 }
 
-
-.searchbar {
-    margin-top: 20px;
-    margin-left: 190px;
-}
 
 
 
@@ -163,21 +157,10 @@ div.desc {
     margin-top: 35px;
 }
 
-.navbar-nav {
-    font-family: 'Calibri';
-    font-size: 19px;
-    gap: 20px;
-    margin-left: -20px;
-}
 
-.menu-adjust {
-    margin-top: 30px;
-}
 
-#navbar {
-    margin-left: -85px;
-    display: flex;
-}
+
+
 
 #uploadModal {
     display: none;
