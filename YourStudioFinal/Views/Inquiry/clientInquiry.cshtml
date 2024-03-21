@@ -7,144 +7,201 @@
 
 <body>
 
-<header>
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<span>
-					<img src="~/photos/logo.png" class="logonav" alt="">
-					<img src="~/photos/logo2.png" class="logonav2" alt="">
-					<i class="fas fa-bars menu-icon"></i>
-				</span>
-			</div>
-			<div class="collapse navbar-collapse" id="navbar">
-				<ul class="navbar-nav ml-auto navbar-right">
-					<li class="nav-item active">
-						<a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
-					</li>
-					<li class="nav-item active ">
-						<a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
-					</li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <span>
+                        <img src="~/photos/logo.png" class="logonav" alt="">
+                        <img src="~/photos/logo2.png" class="logonav2" alt="">
+                        <i class="fas fa-bars menu-icon"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto navbar-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                        </li>
+                        <li class="nav-item active ">
+                            <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+                        </li>
 
 
-					<li class="nav-item dropdown active">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Booking
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-							<a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
-						</div>
-					</li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Booking
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
+                            </div>
+                        </li>
 
-					<li class="nav-item dropdown active">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Inquiry
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
-							<a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-						</div>
-					</li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Inquiry
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                            </div>
+                        </li>
 
-					<li class="nav-item">
-						<a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-</header>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<div class="Inquiry">
-    <div>YOUR INQUIRY</div>
-</div>
-
-@using (Html.BeginForm("Submit", "Inquiry", FormMethod.Post))
-{
-
-    <div class="form-box">
-        <div><strong>Send Inquiry</strong> | Inquiry List</div>
-        <br/>
-        @Html.TextBoxFor(model => model.Name, new { placeholder = "Title", rows = 6, style = "width: 100%; border-radius: 5px;" })
-        <br/>
-        <br/>
-
-        @Html.TextAreaFor(model => model.Message, new { placeholder = "Message", rows = 6, style = "width: 100%; border-radius: 5px;" })
-        <br/>
-        <br/>
-
-        <div class="BtnCont">
-            <input type="submit" value="DRAFT" id="DrfBtn"/>
-            <input type="submit" value="SEND" id="SbtBtn"/>
+    <section class="container">
+        <div class="Inquiry">
+            <div>YOUR INQUIRY</div>
         </div>
 
-    </div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+        @using (Html.BeginForm("Submit", "Inquiry", FormMethod.Post))
+        {
 
-    <div class="FAQ">
-        <div>FREQUENTLY ASKED QUESTIONS</div>
-    </div>
+        <div class="form-box">
+                <div><strong>Send Inquiry</strong> | Inquiry List</div>
+                <br />
+            @Html.TextBoxFor(model => model.Name, new { placeholder = "Title", rows = 6, style = "width: 100%; border-radius: 5px;" })
+            <br /> <br />
 
-    <br/>
-    <section class="FAQcont" id="faq1">
-        <div><strong>General |</strong> Photo Studio Experience</div>
+            @Html.TextAreaFor(model => model.Message, new { placeholder = "Message", rows = 6, style = "width: 100%; border-radius: 5px;" })
+            <br /> <br />
 
-        <br/>
-        <span class="additional-text">CAN WE GET THE <strong>DIGITAL COPY?</strong></span>
-        <span id="toggleText1" class="clickable-text" onclick="toggleMessage('toggleText1', 'hiddenMessage1')">V</span>
-
-        <div id="hiddenMessage1" class="hidden-message">
-            <br/>
-            <p>This is the first hidden message. Click the text to toggle visibility.</p>
+            <div class="BtnCont">
+                <input type="submit" value="DRAFT" id="DrfBtn" />
+                <input type="submit" value="SEND" id="SbtBtn" />
+            </div>
         </div>
-
-        <hr/>
+        <br /> <br /> <br /> <br /> <br />
+        }
     </section>
-
-    <section class="FAQcont" id="faq2">
-        <span class="additional-text">DO YOU ACCEPT <strong>WALK-IN CLIENTS</strong></span>
-        <span id="toggleText2" class="clickable-text" onclick="toggleMessage('toggleText2', 'hiddenMessage2')">V</span>
-
-        <div id="hiddenMessage2" class="hidden-message">
-            <br/>
-            <p>This is the second hidden message. Click the text to toggle visibility.</p>
+    <section class="container">
+        <div class="FAQ">
+            <div>FREQUENTLY ASKED QUESTIONS</div>
         </div>
 
-        <hr/>
-    </section>
+        <br />
+        <section class="FAQcont" id="faq1">
+            <div><strong>General |</strong> Photo Studio Experience</div>
 
-    <section class="FAQcont" id="faq3">
-        <span class="additional-text">WHERE ARE YOU <strong>LOCATED?</strong></span>
-        <span id="toggleText3" class="clickable-text" onclick="toggleMessage('toggleText3', 'hiddenMessage3')">V</span>
+            <br />
+            <span class="additional-text">How do I book a session?</span>
+            <span id="toggleText1" class="clickable-text" onclick="toggleMessage('toggleText1', 'hiddenMessage1')">V</span>
 
-        <div id="hiddenMessage3" class="hidden-message">
-            <br/>
-            <p>This is the second hidden message. Click the text to toggle visibility.</p>
-        </div>
+            <div id="hiddenMessage1" class="hidden-message">
+                <br />
+                <span>Visit this link to fill out our booking form</span>
+            </div>
 
-        <hr/>
+            <hr />
+        </section>
+
+        <section class="FAQcont" id="faq2">
+            <span class="additional-text">Is there a dressing room at the studio for outfit changes?</span>
+            <span id="toggleText2" class="clickable-text" onclick="toggleMessage('toggleText2', 'hiddenMessage2')">V</span>
+
+            <div id="hiddenMessage2" class="hidden-message">
+                <br />
+                <span><strong>YES!</strong> Feel free to change into your photoshoot attire at the studio</span>
+            </div>
+
+            <hr />
+        </section>
+
+        <section class="FAQcont" id="faq3">
+            <span class="additional-text">Is there parking available outside the studio?</span>
+            <span id="toggleText3" class="clickable-text" onclick="toggleMessage('toggleText3', 'hiddenMessage3')">V</span>
+
+            <div id="hiddenMessage3" class="hidden-message">
+                <br />
+                <span>Yes, there are available parking.</span>
+            </div>
+
+            <hr />
+        </section>
+
+        <section class="FAQcont" id="faq4">
+            <span class="additional-text">What are your open hours?</span>
+            <span id="toggleText4" class="clickable-text" onclick="toggleMessage('toggleText4', 'hiddenMessage4')">V</span>
+
+            <div id="hiddenMessage4" class="hidden-message">
+                <br />
+                <span><strong>Your Studio</strong> is open 9am - 6pm daily </span>
+            </div>
+
+            <hr />
+        </section>
+
+        <section class="FAQcont" id="faq5">
+            <span class="additional-text">Do I need to make a downpayment upon booking?</span>
+            <span id="toggleText5" class="clickable-text" onclick="toggleMessage('toggleText5', 'hiddenMessage5')">V</span>
+
+            <div id="hiddenMessage5" class="hidden-message">
+                <br />
+                <span>Yup! We ask for an <strong>initial deposit of ₱500</strong> to secure your booking (THE REMAINING BALANCE CAN BE PAID ON THE DAY OF THE PHOTOSHOOT) </span>
+            </div>
+
+            <hr />
+        </section>
+
+        <section class="FAQcont" id="faq6">
+            <span class="additional-text">Can we bring a cake for a cake smash set-up during the photoshoot?</span>
+            <span id="toggleText6" class="clickable-text" onclick="toggleMessage('toggleText6', 'hiddenMessage6')">V</span>
+
+            <div id="hiddenMessage6" class="hidden-message">
+                <br />
+                <span><strong>Sure!</strong> We're happy to accommodate it with a cleaning fee of <strong>₱300.</strong></span>
+            </div>
+
+            <hr />
+        </section>
+
+        <section class="FAQcont" id="faq7">
+            <span class="additional-text">Can I bring props for the photoshoot?</span>
+            <span id="toggleText7" class="clickable-text" onclick="toggleMessage('toggleText7', 'hiddenMessage7')">V</span>
+
+            <div id="hiddenMessage7" class="hidden-message">
+                <br />
+                <span><strong>Of course!</strong> We love the creativity!</span>
+            </div>
+
+            <hr />
+        </section>
+
+        <section class="FAQcont" id="faq8">
+            <span class="additional-text">Do you have any reccomendations for a hair & makeup artist?</span>
+            <span id="toggleText8" class="clickable-text" onclick="toggleMessage('toggleText8', 'hiddenMessage8')">V</span>
+
+            <div id="hiddenMessage8" class="hidden-message">
+                <br />
+                <span>Right now, we're not in partnership with any HMUA yet, but we'll let you know once we are</span>
+            </div>
+
+            <hr />
+        </section>
     </section>
 
     <script>
-            function toggleMessage(toggleTextId, hiddenMessageId) {
-                var hiddenMessage = document.getElementById(hiddenMessageId);
-                var toggleText = document.getElementById(toggleTextId);
-                var currentDisplay = hiddenMessage.style.display;
+        function toggleMessage(toggleTextId, hiddenMessageId) {
+            var hiddenMessage = document.getElementById(hiddenMessageId);
+            var toggleText = document.getElementById(toggleTextId);
+            var currentDisplay = hiddenMessage.style.display;
 
-                hiddenMessage.style.display = (currentDisplay === 'none') ? 'block' : 'none';
-                toggleText.innerHTML = (currentDisplay === 'none') ? 'Λ' : 'V';
-            }
-        </script>
+            hiddenMessage.style.display = (currentDisplay === 'none') ? 'block' : 'none';
+            toggleText.innerHTML = (currentDisplay === 'none') ? 'Λ' : 'V';
+        }
+    </script>
 
-}
+    }
 </body>
 </html>
 
