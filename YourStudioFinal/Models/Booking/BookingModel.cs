@@ -15,6 +15,8 @@ public class BookingModel
     // public string slctTime { get; set; }
     public DateTime dateCreated { get; set; }
     
+    public string status { get; set; }
+    
     public string date { get; set; }
     public string time { get; set; }
     

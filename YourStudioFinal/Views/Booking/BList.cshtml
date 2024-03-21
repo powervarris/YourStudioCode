@@ -23,13 +23,13 @@
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="navbar-nav ml-auto navbar-right">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home</a>
+						<a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Gallery</a>
+						<a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
 					</li>
 					<li class="nav-item active ">
-						<a class="nav-link" href="#">Packages</a>
+						<a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
 					</li>
 
 
@@ -56,8 +56,6 @@
 					<li class="nav-item">
 						<a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
 					</li>
-
-
 				</ul>
 			</div>
 		</div>
@@ -138,6 +136,9 @@
 				</div>
 				<div>
 					<h6><b>Total: </b> @(Convert.ToInt32(item.value.packages)+Convert.ToInt32(item.value.addOns))</h6>
+				</div>
+				<div>
+					<h6><b>Status: @item.value.status</b></h6>
 				</div>
 				<div>
 					<h6><b>Payment Details: </b></h6>

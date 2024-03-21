@@ -42,6 +42,7 @@ public class BookingController : Controller
     public async Task<IActionResult> AddBooking(BookingModel bookingModel, [FromForm(Name = "image")]IFormFile image)
     {
         bookingModel.dateCreated = DateTime.Now;
+        bookingModel.status = "Pending";
         bookingModel.accountUser = _userManager.GetUserAsync(HttpContext.User).Result;
         new PaymentModel();
         var Payment = new PaymentModel();
@@ -83,6 +84,19 @@ public class BookingController : Controller
             .ToList());
     }
 
+    [HttpPost]
+    public async Task<IActionResult> acceptBooking(BookingModel bookingModel)
+    {
+        // BookingModel ? bookingChanges = _context.Booking.FirstOrDefault(u => u.Id == bookingModel.Id);
+        // if (bookingChanges != null)
+        // {
+            bookingModel.status = "Accepted";
+            _context.Update(bookingModel);
+            _context.SaveChanges();
+        // }
+        return RedirectToAction("BList");
+    }
+
     public async Task<ActionResult> Booking()
     {
         var UserDetails = await _userManager.GetUserAsync(User);
@@ -97,6 +111,8 @@ public class BookingController : Controller
             TempData["Error"] = "You need to login to access this page";
             return RedirectToAction("Index", "Account");
         }
-        return View();
+        return View(_context.Booking.Include(x => x.accountUser)
+            .Include(x => x.payment)
+            .ToList());
     }
 }

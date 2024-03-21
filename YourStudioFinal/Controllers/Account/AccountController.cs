@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using YourStudioFinal.Models;
 using YourStudioFinal.data;
-using YourStudioFinal.Models;
 
 namespace YourStudioFinal.Controllers.Account;
 
@@ -64,6 +63,12 @@ public class AccountController : Controller
         }
         return RedirectToAction("Register");
     }
+
+    // public async Task<IActionResult> Logout()
+    // {
+    //     await _signInManager.SignOutAsync();
+    //     return RedirectToAction("Index", "Home");
+    // }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

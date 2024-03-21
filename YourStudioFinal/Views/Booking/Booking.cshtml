@@ -1,4 +1,4 @@
-@model YourStudioFinal.Models.Booking.BookingModel
+@model List<YourStudioFinal.Models.Booking.BookingModel>
 @{
 	ViewBag.Title = "Booking";
 }
@@ -14,57 +14,44 @@
 		<div>YOUR BOOKING LIST</div>
 	</div>
 
-    <div class="form-box">
-        <div><strong>Accepted</strong> | Declined | Pending </div>
-        <br />
+<div class="form-box">
+    <div><strong>Accepted</strong> | Declined | Pending </div>
+    <br />
 
-        <table class="custom-table">
-            <tr>
-                <td>Date</td>
-                <td>Time</td>
-                <td>Customer ID</td>
-                <td>Username</td>
-                <td>Mobile Number</td>
-                <td>Email</td>
-                <td>Package</td>
-                <td>Price</td>
-            </tr>
-            <tr>
-                <td>2024-02-26</td>
-                <td>15:30</td>
-                <td>123456</td>
-                <td>JohnDoe</td>
-                <td>123-456-7890</td>
-                <td>johndoe@example.com</td>
-                <td>Basic</td>
-                <td>$50</td>
-            </tr>
-
-            <tr>
-                <td>2024-02-25</td>
-                <td>16:30</td>
-                <td>654321</td>
-                <td>JaneDoe</td>
-                <td>098-765-4321</td>
-                <td>janedoe@example.com</td>
-                <td>Premium</td>
-                <td>$100</td>
-            </tr>
-
-            <tr>
-                <td>2024-02-24</td>
-                <td>17:30</td>
-                <td>111111</td>
-                <td>BobSmith</td>
-                <td>111-111-1111</td>
-                <td>bobsmith@example.com</td>
-                <td>Standard</td>
-                <td>$75</td>
-            </tr>
-
-        </table>
-
-        <br />
+    @{
+    if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            if (item.status == "Pending")
+            {
+    <table class="custom-table">
+    <tr>
+        <td>Date</td>
+        <td>Time</td>
+        <td>Customer ID</td>
+        <td>Username</td>
+        <td>Mobile Number</td>
+        <td>Email</td>
+        <td>Package</td>
+        <td>Price</td>
+    </tr>
+    <tr>
+        <td>@item.date</td>
+        <td>@item.time</td>
+        <td>N/A</td>
+        <td>@item.accountUser.UserName</td>
+        <td>@item.accountUser.mobileNumber</td>
+        <td>@item.accountUser.Email</td>
+        <td>@item.packages</td>
+        <td>price</td>
+        </tr>
+    </table>
+                    }
+                }
+            }
+        }
+    <br />
 
         <div class="BtnCont">
             <div id="RmvBtn">REMOVE</div>

@@ -128,7 +128,8 @@
 		</div>
 		
 		<label for="packages">Packages:</label>
-		<select name="packages" id="package" onchange="changePrice(this.value)">
+		<select name="packages" id="package" value="0" onchange="changePrice(this.value)">
+			<option value="0"> - None - </option>
 			<option value="199">Your Student</option>
 			<option value="499">Your Duo</option>
 			<option value="699">Your Squad</option>
@@ -140,25 +141,12 @@
 		</select>
 		
 		<label for="addOns">Add-Ons:</label>
-                  <select name="addOns" id="addOn" onchange="changePrice2(this.value)">
-                    <option value="249">Additional Head</option>
-                    <option value="299">Additional Fur Baby</option>
-                    <option value="199">Additional 15 Minutes</option>>
-                  </select>
-
-		@* <form> *@
-		@* 	<select id="packagelist" name="packagelist"> *@
-		@* 		<option> - Select Your Package - </option> *@
-		@* 		<option value="199">Your Student</option> *@
-		@* 		<option value="499">Your Duo</option> *@
-		@* 		<option value="699">Your Squad</option> *@
-		@* 		<option value="899">Your Barkada</option> *@
-		@* 		<option value="1499">Your Family</option> *@
-		@* 		<option value="1299">Your Fur Baby</option> *@
-		@* 		<option value="899">Your Graduation</option> *@
-		@* 		<option value="1499">Your Homr Service</option> *@
-		@* 	</select> *@
-  @*       		</form> *@
+		<select name="addOns" id="addOn" value="0" onchange="changePrice2(this.value)">
+			<option value="0"> - None - </option>
+			<option value="249">Additional Head</option>
+			<option value="299">Additional Fur Baby</option>
+			<option value="199">Additional 15 Minutes</option>>
+		</select>
 	</section>
 </section>
 
