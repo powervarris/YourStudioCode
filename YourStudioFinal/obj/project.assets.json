@@ -4752,19 +4752,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\phone\\.nuget\\packages\\": {}
+    "C:\\Users\\Kenshin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj",
+      "projectUniqueName": "C:\\Users\\Kenshin\\Source\\Repos\\YourStudioCodeapril1\\YourStudioFinal\\YourStudioFinal.csproj",
       "projectName": "YourStudioFinal",
-      "projectPath": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj",
-      "packagesPath": "C:\\Users\\phone\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudioCode\\YourStudioFinal\\obj\\",
+      "projectPath": "C:\\Users\\Kenshin\\Source\\Repos\\YourStudioCodeapril1\\YourStudioFinal\\YourStudioFinal.csproj",
+      "packagesPath": "C:\\Users\\Kenshin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kenshin\\Source\\Repos\\YourStudioCodeapril1\\YourStudioFinal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\phone\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kenshin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4843,7 +4843,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

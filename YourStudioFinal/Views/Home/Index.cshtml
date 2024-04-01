@@ -146,6 +146,7 @@
     </header>
 
     <main>
+        
         <div class="header-text"></div>
         <h1 class="text-center">
             <span class="freeze">FREEZING</span>
@@ -177,9 +178,9 @@
             <span class="time">MEMORIES</span>
         </h1>
         <div class="learn1">
-            <p class="text-center1">LEARN MORE! -></p>
+            <a class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1" style="">LEARN MORE! -></p></a>
         </div>
-
+        </div>
         <h1 class="text-center">
             <span class="your">YOUR</span>
             <span class="packages">PACKAGES</span>
@@ -273,13 +274,14 @@
             </div>
         </div>
         <div class="learn2">
-            <p class="text-center1" style="">LEARN MORE! -></p>
+            <a class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1" style="">LEARN MORE! -></p></a>
+            
         </div>
 
     </main>
 
     <!-- Site footer -->
-    <footer class="site-footer">
+    <!--<footer class="site-footer">
         <div class="container">
             <p class="text-center1">
 
@@ -300,12 +302,44 @@
             </div>
 
         </div>
-
+        
 
 
 
     </footer>
+            -->
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <p class="text-center2">
 
+                    <span class="about">ABOUT</span> <span class="us">US</span>
+                </p>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <img class="imgresize" src="~/assets/logofull.png"> <img />
+                    </div>
+
+                    <div class="col-xs-2 col-md-5">
+                        <p class="pright">
+                            Indoor & Outdoor Professional Photography |  Bacoor, Cavite 🇵🇭<br><br>
+                            🏠 Headshots | Portrait | Couple | Group | Maternity | Toddler | Pets<br> <br>
+                            🌳 Prenup | Baptismal | Birthday | Graduation | Corporate <br>
+                            </p>
+                          
+
+                           
+                        </p>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                    </div>
+
+                </div>
+
+            </div>
+
+    </footer>
 
 
     <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.js"
