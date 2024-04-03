@@ -65,6 +65,7 @@
                                         <ul class="navbar-nav me-3">
                                             <li>
                                                 <div id="mySidenav" class="sidenav">
+                                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                                     <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
                                                     <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
                                                     <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
@@ -93,7 +94,7 @@
                     </ul>
                     <ul class="navbar-nav ml-auto navbar-right">
                         <li class="nav-item active">
-                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
@@ -102,6 +103,7 @@
                             <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
                         </li>
 
+
                         <li class="nav-item dropdown active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Booking
@@ -109,6 +111,7 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
                                 <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
+
 
                             </div>
                         </li>
@@ -120,7 +123,6 @@
                                 <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Booking List</a>
                             </div>
                         </li>
-
 
                         <li class="nav-item">
                             <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
@@ -142,22 +144,14 @@
 
     </header>
 
-    <main>
+    
+       
         <h1 class="text-center">
             <span class="gall">GALLERY</span>
 
         </h1>
         <br />
 
-
-
-
-
-
-    </main>
-
-
-    </div>
     <div class="navbaradjust">
         <ul class="nav2list">
             <li class="nav2">
@@ -184,6 +178,7 @@
             </li>
         </ul>
     </div>
+  
 
 
     <!-- Modal -->
@@ -282,12 +277,6 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-
-
     <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.js"
             asp-fallback-src="~/lib/jquery/dist/jquery.js"
             asp-fallback-test="window.jQuery"
@@ -301,6 +290,10 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 
