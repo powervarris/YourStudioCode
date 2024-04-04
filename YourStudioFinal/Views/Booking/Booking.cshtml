@@ -6,61 +6,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="~/css/booking/Booking.css" rel="stylesheet" />
+    <link href="~/css/booking/Book.css" rel="stylesheet" />
 </head>
 <body>
 
-	<div class="Book">
-		<div>YOUR BOOKING LIST</div>
-	</div>
+    <section class="containers">
+        <div class="Book">
+            <div>YOUR BOOKING LIST</div>
+        </div>
+    </section>
 
-<div class="form-box">
-    <div><strong>Accepted</strong> | Declined | Pending </div>
-    <br />
+    <section class="containers">
+        <div class="form-box">
+            <div><strong>Accepted</strong> | Declined | Pending </div>
+            <br />
 
-    @{
-    if (Model != null)
-    {
-        foreach (var item in Model)
-        {
-            if (item.status == "Pending")
-            {
-    <table class="custom-table">
-    <tr>
-        <td>Date</td>
-        <td>Time</td>
-        <td>Customer ID</td>
-        <td>Username</td>
-        <td>Mobile Number</td>
-        <td>Email</td>
-        <td>Package</td>
-        <td>Price</td>
-    </tr>
-    <tr>
-        <td>@item.date</td>
-        <td>@item.time</td>
-        <td>N/A</td>
-        <td>@item.accountUser.UserName</td>
-        <td>@item.accountUser.mobileNumber</td>
-        <td>@item.accountUser.Email</td>
-        <td>@item.packages</td>
-        <td>price</td>
-        </tr>
-    </table>
+            @{
+                if (Model != null)
+                {
+                    foreach (var item in Model)
+                    {
+                        if (item.status == "Pending")
+                        {
+                            <table class="custom-table">
+                                <tr>
+                                    <td>Date</td>
+                                    <td>Time</td>
+                                    <td>Customer ID</td>
+                                    <td>Username</td>
+                                    <td>Mobile Number</td>
+                                    <td>Email</td>
+                                    <td>Package</td>
+                                    <td>Price</td>
+                                </tr>
+                                <tr>
+                                    <td>@item.date</td>
+                                    <td>@item.time</td>
+                                    <td>N/A</td>
+                                    <td>@item.accountUser.UserName</td>
+                                    <td>@item.accountUser.mobileNumber</td>
+                                    <td>@item.accountUser.Email</td>
+                                    <td>@item.packages</td>
+                                    <td>price</td>
+                                </tr>
+                            </table>
+                        }
                     }
                 }
             }
-        }
-    <br />
+            <br />
 
-        <div class="BtnCont">
-            <div id="RmvBtn">REMOVE</div>
+            <div class="BtnCont">
+                <div id="RmvBtn">REMOVE</div>
+            </div>
         </div>
-    </div>
+    </section>
 
 
 
-    
 </body>
 </html>
 
