@@ -1,6 +1,7 @@
 ﻿@model List<YourStudioFinal.Models.Booking.BookingModel>
+
 @{
-	ViewBag.Title = "BList";
+	ViewBag.Title = "Booking List";
 }
 
 <!DOCTYPE html>
@@ -68,7 +69,7 @@
 	@* <div id="btn1" class="blist" data-original-color="white">August 05, 2023 | Saturday - 1:30 pm</div> *@
 	@* <div id="btn2" class="blist" data-original-color="white">September 06, 2023 | Saturday - 2:30 pm</div> *@
 	@{
-		foreach (var item in Model.Select((value, i) => ( value, i )))
+		@foreach (var item in Model.OrderByDescending(x => x.dateCreated).Select((value, i) => ( value, i )))
 		{
 			<div id="@("btn" + item.i)" class="blist" data-original-color="white" onclick="clickHandler(this.id)">@item.value.accountUser.UserName @item.value.date @item.value.time</div>
 		}
@@ -146,10 +147,12 @@
 				@* <div>@item.value.accountUser.Contact</div> *@
 				@* <div>@item.value.accountUser.PackagePrice</div> *@
 				<hr/>
-				<button class="btn btn-primary inline" id="btnG">Accept</button>
-				<button class="btn btn-primary inline" id="btnR">Decline</button>
-				<button class="btn btn-primary inline" id="btnBL">Edit</button>
-				<button class="btn btn-primary inline" id="btnGR">Remove</button>
+				<form>
+					@Html.ActionLink("Accept", "acceptBooking", "Booking", new { id = item.value.Id }, new { @class = "btn btn-primary inline", @id="btnG" })
+					@Html.ActionLink("Decline", "rejectBooking", "Booking", new { id = item.value.Id }, new { @class = "btn btn-primary inline", @id="btnR"})
+					<button type="button" class="btn btn-primary inline" id="btnBL">Edit</button>
+					<button type="button" class="btn btn-primary inline" id="btnGR">Remove</button>
+				</form>
 			</div>
 		}
 	}

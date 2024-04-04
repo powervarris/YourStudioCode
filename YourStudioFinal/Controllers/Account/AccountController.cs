@@ -42,6 +42,8 @@ public class AccountController : Controller
     {
         return View();
     }
+    
+    
     [HttpPost]
     public async Task<IActionResult> AddUser(User usermodel)
     {
@@ -49,6 +51,7 @@ public class AccountController : Controller
         PasswordHasher<User> passwordHasher = new PasswordHasher<User>();
         usermodel.PasswordHash = passwordHasher.HashPassword(usermodel, usermodel.password);
         await _userManager.CreateAsync(usermodel);
+        await _userManager.AddToRoleAsync(usermodel, "User");
         return RedirectToAction("Index");
     }
 
@@ -75,4 +78,5 @@ public class AccountController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+    
 }

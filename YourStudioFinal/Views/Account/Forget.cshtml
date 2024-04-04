@@ -1,4 +1,6 @@
-﻿<html>
+﻿@model ForgetPassword
+
+<html>
 <head>
     <link href="~/css/login/forget.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
@@ -23,8 +25,8 @@
                                 <div class="row gy-3 overflow-hidden">
                                     <div class="col-12">
                                         <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
-                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" name="Email" id="email" placeholder="name@example.com" asp-for="Email" required>
+                                            <label for="email" asp-for="Email" class="form-label">Email</label>
                                         </div>
                                     </div>
                                     <div class="col-12">

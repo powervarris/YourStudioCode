@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using YourStudioFinal.data;
+using YourStudioFinal.Models;
 using YourStudioFinal.Models.Gallery;
 
 namespace YourStudioFinal.Controllers
@@ -8,14 +10,27 @@ namespace YourStudioFinal.Controllers
     public class GalleryController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<User> _userManager;
 
-        public GalleryController(ApplicationDbContext context)
+        public GalleryController(ApplicationDbContext context, UserManager<User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         public async Task<IActionResult> Index()
         {
+            var UserDetails = await _userManager.GetUserAsync(User);
+            if (UserDetails != null)
+            {
+                ViewBag.User = UserDetails;
+                ViewBag.isLogged = true;
+            }
+            else
+            {
+                ViewBag.isLogged = false;
+            }
+            
             var gallery = await _context.Gallery.FirstOrDefaultAsync();
 
             if (gallery == null)

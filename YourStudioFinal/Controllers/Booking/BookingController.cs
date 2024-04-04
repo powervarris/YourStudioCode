@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +8,6 @@ using YourStudioFinal.Models.Booking;
 
 namespace YourStudioFinal.Controllers.Booking;
 
-// [Authorize]
 public class BookingController : Controller
 {
     private readonly UserManager<User> _userManager;
@@ -20,7 +20,9 @@ public class BookingController : Controller
         _context = context;
     }
     
+    
     // GET
+    [Authorize(Roles = "User, Admin")]
     public async Task<ActionResult> Index()
     {
         var UserDetails = await _userManager.GetUserAsync(User);
@@ -38,6 +40,7 @@ public class BookingController : Controller
         return View();
     }
     
+    [Authorize(Roles = "User, Admin")]
     [HttpPost]
     public async Task<IActionResult> AddBooking(BookingModel bookingModel, [FromForm(Name = "image")]IFormFile image)
     {
@@ -65,6 +68,7 @@ public class BookingController : Controller
         return RedirectToAction("Index");
     }
     
+    [Authorize(Roles = "Admin")]
     public async Task<ActionResult> BList()
     {
         var UserDetails = await _userManager.GetUserAsync(User);
@@ -83,20 +87,36 @@ public class BookingController : Controller
             .Include(x => x.payment)
             .ToList());
     }
-
-    [HttpPost]
-    public async Task<IActionResult> acceptBooking(BookingModel bookingModel)
+    
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> acceptBooking(string Id)
     {
-        // BookingModel ? bookingChanges = _context.Booking.FirstOrDefault(u => u.Id == bookingModel.Id);
-        // if (bookingChanges != null)
-        // {
-            bookingModel.status = "Accepted";
-            _context.Update(bookingModel);
+        var bookingmodel = _context.Booking.FirstOrDefault(x => x.Id == Id);
+        if (bookingmodel != null)
+        {
+            bookingmodel.status = "Accepted";
+            _context.Update(bookingmodel);
             _context.SaveChanges();
-        // }
+        }
+
+        return RedirectToAction("BList");
+    }
+    
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> rejectBooking(string Id)
+    {
+        var bookingmodel = _context.Booking.FirstOrDefault(x => x.Id == Id);
+        if (bookingmodel != null)
+        {
+            bookingmodel.status = "Rejected";
+            _context.Update(bookingmodel);
+            _context.SaveChanges();
+        }
+
         return RedirectToAction("BList");
     }
 
+    [Authorize(Roles = "User, Admin")]
     public async Task<ActionResult> Booking()
     {
         var UserDetails = await _userManager.GetUserAsync(User);
@@ -111,8 +131,9 @@ public class BookingController : Controller
             TempData["Error"] = "You need to login to access this page";
             return RedirectToAction("Index", "Account");
         }
-        return View(_context.Booking.Include(x => x.accountUser)
-            .Include(x => x.payment)
-            .ToList());
+        
+        return View(new FilterBookingModel("Pending", _context.Booking.Include(x => x.accountUser).Include(x => x.payment).ToList())); 
+
     }
+
 }

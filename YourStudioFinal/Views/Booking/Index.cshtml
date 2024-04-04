@@ -64,111 +64,108 @@
 	    </nav>
     </header>
 
+<div class="DAT inline">
+	<div>SELECT DATE AND TIME</div>
+</div>
 
-	<section class="container one">
-		<div class="DAT inline">
-			<div>SELECT DATE AND TIME</div>
+<div class="PST inline">
+	<div>Philippine Standard Time (GMT + 8)</div>
+</div>
+
+<hr/>
+
+<section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center">
 		</div>
-
-		<div class="PST inline">
-			<div>Philippine Standard Time (GMT + 8)</div>
-		</div>
-		<hr />
-	</section>
-
-	<section class="container one">
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row justify-content-center">
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div id="calendar" class="calendar">
-							<div class="header">
-								<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
-								<div class="text" data-render="month-year"></div>
-								<a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
-							</div>
-							<div class="months" data-flow="left">
-								<div class="month month-a">
-									<div class="render render-a"></div>
-								</div>
-								<div class="month month-b">
-									<div class="render render-b"></div>
-								</div>
-							</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="calendar" class="calendar">
+					<div class="header">
+						<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+						<div class="text" data-render="month-year"></div>
+						<a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+					</div>
+					<div class="months" data-flow="left">
+						<div class="month month-a">
+							<div class="render render-a"></div>
+						</div>
+						<div class="month month-b">
+							<div class="render render-b"></div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</div>
+</section>
 
-		<section style="position: relative; margin-top: 100px;">
-			<div id="slctDate" style="position: absolute; transform: translate(-50%, -100%); font-family: 'Palatino Linotype'; font-weight:bold; font-size:30px;"></div>
-		</section>
+<section style="position: relative; margin-top: 100px;">
+	<div id="slctDate" style="position: absolute; top: 50%; left: 53%; transform: translate(-50%, -100%); font-family: 'Palatino Linotype'; font-weight:bold; font-size:30px;"></div>
+</section>
 
-		<section class="time-container">
-			<section class="time" style="display: inline-block;">
-				<div class="btn-row">
-					<div class="btnT" data-original-color="white">09:30 am</div>
-					<div class="btnT" data-original-color="white">10:00 am</div>
-				</div>
-				<div class="btn-row">
-					<div class="btnT" data-original-color="white">10:30 am</div>
-					<div class="btnT" data-original-color="white">11:00 am</div>
-				</div>
-				<div class="btn-row">
-					<div class="btnT" data-original-color="white">01:30 pm</div>
-					<div class="btnT" data-original-color="white">02:00 pm</div>
-				</div>
-				<div class="btn-row">
-					<div class="btnT" data-original-color="white">02:30 pm</div>
-					<div class="btnT" data-original-color="white">03:00 pm</div>
-				</div>
-				<div class="btn-row">
-					<div class="btnT" data-original-color="white">03:30 pm</div>
-					<div class="btnT" data-original-color="white">04:00 pm</div>
-				</div>
-			</section>
-		</section>
-
-		<section class="pack">
-			<label for="packages">Packages:</label>
-			<select name="packages" id="package" onchange="changePrice(this.value)">
-				<option value="199">Your Student</option>
-				<option value="499">Your Duo</option>
-				<option value="699">Your Squad</option>
-				<option value="899">Your Barkada</option>
-				<option value="1499">Your Family</option>
-				<option value="1299">Your Fur Baby</option>
-				<option value="899">Your Graduation</option>
-				<option value="1499">Your Home Service</option>
-			</select>
-		</section>
-
-		<section class="Adds">
-			<label for="addOns">Add-Ons:</label>
-			<select name="addOns" id="addOn" onchange="changePrice2(this.value)">
-				<option value="249">Additional Head</option>
-				<option value="299">Additional Fur Baby</option>
-				<option value="199">Additional 15 Minutes</option>>
-			</select>
-		</section>
-
-		<section id="Srvc">
-			<div id="SrvcDtl">Service Details</div>
-			<div>@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</div>
-			<div id="slctDate2"></div>
-			<div id="slctTime"></div>
-			<div id="packagelist"></div>
-			<div id="packages"></div>
-			<div id="addOns">Total Add-Ons: </div>
-			<hr />
-			<button type="button" class="btnB" data-toggle="modal" data-target="#exampleModalCenter">
-				Book Now!
-			</button>
-		</section>
+<section class="time-container">
+	<section class="time" style="display: inline-block;">
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">09:30 am</div>
+			<div class="btnT" data-original-color="white">10:00 am</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">10:30 am</div>
+			<div class="btnT" data-original-color="white">11:00 am</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">01:30 pm</div>
+			<div class="btnT" data-original-color="white">02:00 pm</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">02:30 pm</div>
+			<div class="btnT" data-original-color="white">03:00 pm</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">03:30 pm</div>
+			<div class="btnT" data-original-color="white">04:00 pm</div>
+		</div>
+		
+		<label for="packages">Packages:</label>
+		<select name="packages" id="package" value="0" onchange="changePrice(this.value)">
+			<option value="0"> - Choose - </option>
+			<option value="0">None</option>
+			<option value="199">Your Student</option>
+			<option value="499">Your Duo</option>
+			<option value="699">Your Squad</option>
+			<option value="899">Your Barkada</option>
+			<option value="1499">Your Family</option>
+			<option value="1299">Your Fur Baby</option>
+			<option value="899">Your Graduation</option>
+			<option value="1499">Your Home Service</option>
+		</select>
+		
+		<label for="addOns">Add-Ons:</label>
+		<select name="addOns" id="addOn" value="0" onchange="changePrice2(this.value)">
+			<option value="0"> - Choose - </option>
+			<option value="0">None</option>
+			<option value="249">Additional Head</option>
+			<option value="299">Additional Fur Baby</option>
+			<option value="199">Additional 15 Minutes</option>>
+		</select>
 	</section>
+</section>
+
+<section id="Srvc">
+	<div id="SrvcDtl">Service Details</div>
+	<div>@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</div>
+	<div id="slctDate2"></div>
+	<div id="slctTime"></div>
+	<div id="packagelist"></div>
+	<div id="packages"></div>
+	<div id="addOns">Total Add-Ons: </div>
+	<hr/>
+	<button type="button" class="btnB" data-toggle="modal" data-target="#exampleModalCenter">
+      Book Now!
+    </button>
+</section>
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
