@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XS7MhJJp4TkJA5thqlCKKuTjMASkR71tDPvcAD3y68M=",
+  "Hash": "/7af4XfDHeB7ovktXnPevOuTabkHvSsjTaEaWgfIQ5g=",
   "Source": "YourStudioFinal",
   "BasePath": "_content/YourStudioFinal",
   "Mode": "Default",
@@ -5316,6 +5316,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\edc5fee0-966b-48b5-8028-059d37ab4caf\\431172644_847611553838820_2079989786200731601_n.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO-15IMH05\\Desktop\\urstudiofinalcode\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\Lab Activity2_Monteclaro.png",
+      "SourceId": "YourStudioFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO-15IMH05\\Desktop\\urstudiofinalcode\\YourStudioCode\\YourStudioFinal\\wwwroot\\",
+      "BasePath": "_content/YourStudioFinal",
+      "RelativePath": "uploads/Lab Activity2_Monteclaro.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Lab Activity2_Monteclaro.png"
     },
     {
       "Identity": "C:\\Users\\LENOVO-15IMH05\\Desktop\\urstudiofinalcode\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\receipt.png",

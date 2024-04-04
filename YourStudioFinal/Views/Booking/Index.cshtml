@@ -206,8 +206,7 @@
 	<script src="~/js/main.js"></script>
 
 }
-
-<script>
+	<script>
 		$(document).ready(function () {
 			var $prevButton = null;
 
@@ -231,16 +230,21 @@
 			$(document).on("click", ".table .row .cell span", ".calendar .header .text span", function () {
 				var selectedDate = $(this).text();
 				var selectedMonth = $(".calendar .header .text span").text();
+				var clickedDate = new Date(selectedMonth + " " + selectedDate + ", " + new Date().getFullYear());
+				var currentDate = new Date();
+
+				if (clickedDate < currentDate) {
+					return false;
+				}
+
 				$("#slctDay").text(selectedDate);
 				$("#formDate").val(selectedDate + ' ' + selectedMonth);
 				console.log('Selected date:', selectedDate);
 				$("#slctDate").text(selectedDate + ' ' + selectedMonth);
-				
 				console.log('Selected month:', selectedMonth);
 				$("#slctDate2").text(selectedDate + ' ' + selectedMonth);
 				console.log('Selected month:', selectedMonth);
 			});
-			
 
 			$(".time .btnT").on("click", function () {
 				var selectedTime = $(this).text();
@@ -248,20 +252,20 @@
 				$("#formTime").val(selectedTime);
 				console.log('Selected time:', selectedTime);
 			});
-			
 			// $(".btnB").on("click", function () {
 			// 	var selectedPackage = $(this).val();
 			// 	$("#packagelist").text('Selected Package: ' + selectedPackage);
 			// 	console.log('Selected package:', selectedPackage);
 			// });
+
 		});
-		
+
 		function changePrice(price) {
 			$("#packages").text("Total Package: " + price);
 			console.log('Selected package:', price);
 			$("#formPackage").val(price);
 		};
-		
+
 		function changePrice2(price2) {
 			$("#addOns").text("Total Add-Ons: " + price2);
 			console.log('Selected Add-ons:', price2);
