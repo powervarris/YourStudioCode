@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL5\\YourStudioFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocodeapril5\\yourstudiofinal\\views\\packages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|solutionrelative:views\\packages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocodeapril5\\yourstudiofinal\\wwwroot\\css\\package\\packages.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|solutionrelative:wwwroot\\css\\package\\packages.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocodeapril5\\yourstudiofinal\\views\\gallery\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|solutionrelative:views\\gallery\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocodeapril5\\yourstudiofinal\\views\\packages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|solutionrelative:views\\packages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocodeapril5\\yourstudiofinal\\wwwroot\\css\\homegallery\\galleryadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|solutionrelative:wwwroot\\css\\homegallery\\galleryadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocodeapril5\\yourstudiofinal\\views\\gallery\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|solutionrelative:views\\gallery\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocodeapril5\\yourstudiofinal\\wwwroot\\css\\homegallery\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,33 +50,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "packages.css",
               "DocumentMoniker": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL5\\YourStudioFinal\\wwwroot\\css\\package\\packages.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\package\\packages.css",
               "ToolTip": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL5\\YourStudioFinal\\wwwroot\\css\\package\\packages.css",
               "RelativeToolTip": "wwwroot\\css\\package\\packages.css",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAcwCcAAAABAAAA",
+              "ViewState": "AQIAAPwAAAAAAAAAAAAAAAsBAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-04-05T16:07:55.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL5\\YourStudioFinal\\Views\\Packages\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Packages\\Index.cshtml",
               "ToolTip": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL5\\YourStudioFinal\\Views\\Packages\\Index.cshtml",
               "RelativeToolTip": "Views\\Packages\\Index.cshtml",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAuwJIAAAANAAAA",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAuwLYAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-05T16:00:45.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "galleryadmin.css",
               "DocumentMoniker": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL5\\YourStudioFinal\\wwwroot\\css\\homegallery\\galleryadmin.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\homegallery\\galleryadmin.css",
@@ -89,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL5\\YourStudioFinal\\Views\\Gallery\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Gallery\\Index.cshtml",
@@ -97,8 +97,7 @@
               "RelativeToolTip": "Views\\Gallery\\Index.cshtml",
               "ViewState": "AQIAAH4AAAAAAAAAAAAAAJEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-05T09:01:38.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T09:01:38.608Z"
             },
             {
               "$type": "Document",
@@ -110,8 +109,7 @@
               "RelativeToolTip": "wwwroot\\css\\homegallery\\gallerycustomer.css",
               "ViewState": "AQIAAGwAAAAAAAAAAAAAAD8BAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-05T05:58:53.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T05:58:53.837Z"
             },
             {
               "$type": "Document",
@@ -135,8 +133,7 @@
               "RelativeToolTip": "wwwroot\\css\\homegallery\\home.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAABAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-04T18:41:35.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T18:41:35.127Z"
             },
             {
               "$type": "Document",
@@ -148,8 +145,7 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAP4AAAAAAAAAAAAuwCUBAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-05T05:58:57.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-05T05:58:57.468Z"
             }
           ]
         }

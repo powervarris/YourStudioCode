@@ -40,7 +40,9 @@
 }
 
 
-
+.text-center{
+    text-align:center;
+}
 
 footer {
     justify-content: space-between;
@@ -226,7 +228,25 @@ footer {
         margin-top: 35px;
     }
 
+.pckg-price {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 900px;
+    margin-top:-160px;
+}
 
+.pckg-price1 {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 900px;
+    margin-top: -200px;
+}
 
 
 
@@ -243,55 +263,112 @@ footer {
         font-family: 'Palatino Linotype';
         font-style: italic;
         font-weight: bolder;
-        margin-top: -105px;
-        padding-left: 320px;
+        margin-top: -125px;
+        margin-left: -600px;
         font-size: 30px;
+        margin-bottom:10px;
     }
+.pck-headingtxt1 {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: -125px;
+    margin-left: -600px;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
 
     .contain {
         display: flex;
     }
 
-    .hrline {
-        width: 1100px;
-        padding-bottom: 0.9px;
-        text-align: center;
-        margin-left: 11%;
-        height: 2px;
-        margin-bottom:10px;
-    }
+.hrline {
+    margin: auto;
+    width: 1100px;
+    height: 2px;
+    margin-bottom: 40px;
+    padding-bottom: 1px;
+}
 
-    .hrline2 {
-        width: 1100px;
-        padding-bottom: 1px;
-        text-align: center;
-        margin-left: 11%;
-        height: 2px;
-        margin-top: -10px;
-        margin-bottom:40px;
-    }
+.hrline2 {
+    margin: auto;
+    width: 1100px;
+    height: 2px;
+    margin-bottom: 40px;
+    padding-bottom: 1px;
+    margin-top:20px;
+}
+
+.hrlinea1 {
+    margin: auto;
+    width: 1100px;
+    height: 2px;
+    margin-bottom: 40px;
+    padding-bottom: 1px;
+}
+
+.hrline2a {
+    margin: auto;
+    width: 1100px;
+    height: 2px;
+    margin-bottom: 40px;
+    padding-bottom: 1px;
+    margin-top: 70px;
+}
+.hrlinea2 {
+    margin: auto;
+    width: 1100px;
+    height: 2px;
+    margin-bottom: 40px;
+    padding-bottom: 1px;
+}
+
+.hrline2b {
+    margin: auto;
+    width: 1100px;
+    height: 2px;
+    margin-bottom: 40px;
+    padding-bottom: 1px;
+    margin-top: 20px;
+}
 
     .img-adj {
         border-radius: 100px;
         width: 100px;
         margin-top: 20px;
-        margin-left: 180px;
+        margin-left: -1000px;
     }
 
     .sub-text {
         font-family: Calibri;
         font-size: 20px;
         padding-top: 5px;
-        padding-left: 320px;
+        margin-left: -600px;
     }
 
     .sub-text2 {
         font-family: Calibri;
         font-size: 20px;
-        margin-top: -85px;
-        margin-bottom: 17px;
-        padding-left: 520px;
+        margin-top: -83px;
+        margin-bottom: 20px;
+        margin-left: -120px;
     }
+
+.sub-texta {
+    font-family: Calibri;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-left: -600px;
+    margin-top:-20px;
+}
+
+.sub-text2a {
+    font-family: Calibri;
+    font-size: 20px;
+    margin-top: -83px;
+    margin-bottom: 20px;
+    margin-left: -120px;
+}
 
     .squares {
         font-size: 50px;
@@ -328,7 +405,7 @@ footer {
     width: 200px;
     height: 40px;
     font-family: 'Palatino Linotype';
-    margin: -20px 0 0 40px;
+    margin: 23px -900px 0 40px;
 }
 
 .book-now-btn2 {
@@ -343,7 +420,7 @@ footer {
     width: 200px;
     height: 40px;
     font-family: 'Palatino Linotype';
-    margin: 20px;
+    margin: -15px -900px 0 40px;
 }
 
 .book-now-btn3 {
@@ -358,7 +435,7 @@ footer {
     width: 200px;
     height: 40px;
     font-family: 'Palatino Linotype';
-    margin: 20px;
+    margin: 70px -900px 0 40px;
 }
 
 .book-now-btn4 {
@@ -374,4 +451,24 @@ footer {
     height: 40px;
     font-family: 'Palatino Linotype';
     margin: 20px;
+}
+
+.pck-reminders {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-left: -600px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.pck-addons {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: -650px;
+    margin-left: 700px;
+    font-size: 30px;
+    margin-bottom: 200px;
 }
