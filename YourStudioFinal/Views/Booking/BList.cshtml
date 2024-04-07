@@ -113,6 +113,12 @@
 	</section>
 </section>
 
+<section>
+	@{
+		// this code block will display all of the bookings per month
+	}
+</section>
+
 <section id="Srvc">
 @{
 		foreach (var item in Model.Select((value, i) => ( value, i )))
@@ -148,10 +154,10 @@
 				@* <div>@item.value.accountUser.PackagePrice</div> *@
 				<hr/>
 				<form>
-					@Html.ActionLink("Accept", "acceptBooking", "Booking", new { id = item.value.Id }, new { @class = "btn btn-primary inline", @id="btnG" })
+					@Html.ActionLink("Accept", "acceptBooking", "Booking", new { id = item.value.Id, email = item.value.accountUser.Email}, new { @class = "btn btn-primary inline", @id="btnG" })
 					@Html.ActionLink("Decline", "rejectBooking", "Booking", new { id = item.value.Id }, new { @class = "btn btn-primary inline", @id="btnR"})
 					<button type="button" class="btn btn-primary inline" id="btnBL">Edit</button>
-					<button type="button" class="btn btn-primary inline" id="btnGR">Remove</button>
+					@Html.ActionLink("Delete", "deleteBooking", "Booking", new { id = item.value.Id }, new { @class = "btn btn-primary inline", @id="btnGR" })
 				</form>
 			</div>
 		}

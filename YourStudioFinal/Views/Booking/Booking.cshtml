@@ -1,13 +1,7 @@
-@model YourStudioFinal.Models.Booking.FilterBookingModel
+@model List<YourStudioFinal.Models.Booking.BookingModel>
 
 @{
 	ViewBag.Title = "Booking";
-
-    object updateFilter(string filterValue)
-    {
-        Model.filter = filterValue;
-        return null;
-    }
 }
 
 <!DOCTYPE html>
@@ -23,38 +17,31 @@
         </div>
     </section>
 <section class="containers">
-<div class="form-box">
-    <button onclick='@updateFilter("Pending")'>
-        Pending
-    </button>
-    |
-    <button onclick='@updateFilter("Accepted")'>
-        Accepted
-    </button>
-    |
-    <button onclick='@updateFilter("Rejected")'>
-        Declined
-    </button>
-    <br/>
+    <div class="form-box">
+        @Html.ActionLink("Pending", "Booking", "Booking")
+        |
+        @Html.ActionLink("Accepted", "BookingAccept", "Booking")
+        |
+        @Html.ActionLink("Declined", "BookingDecline", "Booking")
+        <br/>
 
-    @{
-        if (Model != null)
-        {
-            foreach (var item in Model.bookings)
+        @{
+            if (Model != null)
             {
-                if (item.status == Model.filter)
-                {
-                    <table class="custom-table">
-                        <tr>
-                            <td>Date</td>
-                            <td>Time</td>
-                            <td>Customer ID</td>
-                            <td>Username</td>
-                            <td>Mobile Number</td>
-                            <td>Email</td>
-                            <td>Package</td>
-                            <td>Price</td>
-                        </tr>
+
+                <table class="custom-table">
+                    <tr>
+                        <td>Date</td>
+                        <td>Time</td>
+                        <td>Customer ID</td>
+                        <td>Username</td>
+                        <td>Mobile Number</td>
+                        <td>Email</td>
+                        <td>Package</td>
+                        <td>Price</td>
+                    </tr>
+                    @foreach (var item in Model)
+                    {
                         <tr>
                             <td>@item.date</td>
                             <td>@item.time</td>
@@ -65,17 +52,17 @@
                             <td>@item.packages</td>
                             <td>price</td>
                         </tr>
-                    </table>
-                }
+                    }
+                </table>
+                
             }
         }
-    }
-    <br/>
+        <br/>
 
-    <div class="BtnCont">
-        <div id="RmvBtn">REMOVE</div>
+        <div class="BtnCont">
+            <div id="RmvBtn">REMOVE</div>
+        </div>
     </div>
-</div>
 </section>
 </body>
 </html>

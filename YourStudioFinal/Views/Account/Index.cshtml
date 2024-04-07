@@ -10,7 +10,10 @@
     <link href="~/https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="~/fonts/icomoon/style.css">
+
     <link href="~/fonts/style.css" rel="stylesheet" />
+
+
 
     <!-- Style -->
     <link href="~/css/first/login.css" rel="stylesheet" />
@@ -27,43 +30,45 @@
         }
     }
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <span>
                         <i class="fas fa-bars menu-icon"></i>
                         <img src="~/css/logo.png" class="logonav" alt="logoimage1" style="width:80px;height:auto">
                         <img src="~/css/logo2.png" class="logonav2" alt="logoimage2" style="width:150px;height:auto">
+
                     </span>
                 </div>
-                <div class="navbar-links">
-                    <ul class="navbar-nav ml-auto navbar-orange">
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="navbar-nav ml-auto navbar-right">
                         <li class="nav-item active">
                             <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" asp-controller="Gallery" asp-action="Index">Gallery</a>
+                            <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item active ">
                             <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
                         </li>
                         <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Booking
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
                                 <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Inquiry
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
                                 <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-                            </div>
+                                </div>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" asp-action="Index" asp-controller="Account">
@@ -78,6 +83,7 @@
 
     <div class="container-fluid ps-md-0">
         <div class="row g-0">
+
             <div class="col-md-8 col-lg-6">
                 <div class="login d-flex align-items-center py-5">
                     <div class="container">
@@ -89,12 +95,13 @@
                                 <form asp-action="loginUser" method="post">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" id="floatingInput" placeholder="username" name="UserName" required>
-                                        <label for="floatingInput">Username</label> 
+                                        <label for="floatingInput">Username</label>
                                     </div>
                                     <div class="form-floating mb-3">
                                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
                                         <label for="floatingPassword">Password</label>
                                     </div>
+
                                     <div class="form-check mb-3">
                                         <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
                                         <label class="form-check-label" for="rememberPasswordCheck">

@@ -1,0 +1,80 @@
+@model List<YourStudioFinal.Models.Booking.BookingModel>
+
+@{
+	ViewBag.Title = "Booking";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/booking/Book.css" rel="stylesheet" />
+</head>
+<body>
+
+    <section class="containers">
+        <div class="Book">
+            <div>YOUR BOOKING LIST</div>
+        </div>
+    </section>
+<section class="containers">
+    <div class="form-box">
+        @Html.ActionLink("Pending", "Booking", "Booking")
+        |
+        @Html.ActionLink("Accepted", "BookingAccept", "Booking")
+        |
+        @Html.ActionLink("Declined", "BookingDecline", "Booking")
+        <br/>
+
+        @{
+            if (Model != null)
+            {
+
+                <table class="custom-table">
+                    <tr>
+                        <td>Date</td>
+                        <td>Time</td>
+                        <td>Customer ID</td>
+                        <td>Username</td>
+                        <td>Mobile Number</td>
+                        <td>Email</td>
+                        <td>Package</td>
+                        <td>Price</td>
+                    </tr>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.date</td>
+                            <td>@item.time</td>
+                            <td>N/A</td>
+                            <td>@item.accountUser.UserName</td>
+                            <td>@item.accountUser.mobileNumber</td>
+                            <td>@item.accountUser.Email</td>
+                            <td>@item.packages</td>
+                            <td>price</td>
+                        </tr>
+                    }
+                </table>
+                
+            }
+        }
+        <br/>
+
+        <div class="BtnCont">
+            <div id="RmvBtn">REMOVE</div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
+<footer>
+    <div class="footer-container">
+        <hr />
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2023 Your Studio</p>
+</footer>

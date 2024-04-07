@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using YourStudioFinal.data;
@@ -7,6 +8,7 @@ using YourStudioFinal.Models.Gallery;
 
 namespace YourStudioFinal.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class GalleryController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -51,7 +53,7 @@ namespace YourStudioFinal.Controllers
             return View(gallery);
         }
 
-        public async Task<IActionResult> Upload([FromForm(Name = "image")] IFormFileCollection files)
+        public async Task<IActionResult> Upload([FromForm(Name = "image")] IFormFileCollection files, [FromForm(Name="category")] string formCategory)
         {
             // TODO link to user data
             var currentGallery = await _context.Gallery.FirstOrDefaultAsync();
@@ -84,6 +86,7 @@ namespace YourStudioFinal.Controllers
                     galleryFile.Id = Guid.NewGuid().ToString();
                     galleryFile.fileName = Path.Combine(currentGallery.Id, file.FileName);
                     galleryFile.Gallery = currentGallery;
+                    galleryFile.category = formCategory;
 
                     // Add the files to the gallery dbset
                     _context.GalleryFiles.Add(galleryFile);
@@ -99,10 +102,29 @@ namespace YourStudioFinal.Controllers
             // Save the gallery
             currentGallery.GalleryFiles = f;
             _context.Gallery.Update(currentGallery);
+            
 
             // Save and reload page
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+        
+        [HttpPost]
+        public async Task<IActionResult> Delete(string ids)
+        {
+            var idList = ids.Split(",");
+            foreach (var id in idList)
+            {
+                var galleryFile = await _context.GalleryFiles.FirstOrDefaultAsync(e => e.Id == id);
+                if (galleryFile != null)
+                {
+                    _context.GalleryFiles.Remove(galleryFile);
+                    await _context.SaveChangesAsync();
+                }
+            }
+
+            return RedirectToAction("Index");
+        }
+        
     }
 }

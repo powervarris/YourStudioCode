@@ -42,142 +42,142 @@
 
 <body style="background-image: url(/assets/Background.png);">
     <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
 
-        <div class="wrapper-nav">
-
-            <nav class="navbar navbar-expand-lg navbar-light">
-
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button>
-
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto ">
-                            <li class="nav-item">
-                                <a class="nav-link">
-                                    <div class="wrapper-navbar-menu">
-                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
 
 
-                                            <ul class="navbar-nav me-3">
-                                                <li>
-                                                    <div id="mySidenav" class="sidenav">
-                                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                                        <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
-                                                        <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
-                                                        <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
-                                                        <a asp-controller="Home" asp-action="Logout">Logout</a>
-                                                    </div>
-                                                    <span onclick="openNav()">
-                                                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
-                                                            <i class="fas fa-bars pe-2 menu"></i>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <script>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <div class="menu-adjust">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                                    <!-- Left links -->
+                                    <ul class="navbar-nav me-3">
+                                        <li>
+                                            <div id="mySidenav" class="sidenav">
+                                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                                <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
+                                                <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
+                                                <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
+                                                <a asp-controller="Home" asp-action="Logout">Logout</a>
+                                            </div>
+                                            <span onclick="openNav()">
+                                                <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                                                <i class="fas fa-bars pe-2 menu"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <script>
                                         function openNav() {
                                             document.getElementById("mySidenav").style.width = "250px";
                                         }
-
+    
                                         function closeNav() {
                                             document.getElementById("mySidenav").style.width = "0";
                                         }
                                     </script>
-                                    <span>
+                            <span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto navbar-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery Visitor UI</a>
+                    </li>
+                    
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-controller="Gallery" asp-action="Index">Gallery Admin Side</a>
+                        </li>
+                    }
+                    
+                    <li class="nav-item active ">
+                        <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+                    </li>
+
+                    @if (User.IsInRole("User"))
+                    {
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Booking
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
+
+
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+                        </li>
+                    }
+                    
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Booking
                                 </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+                            </div>
                             </li>
-                        </ul>
-                        <ul class="navbar-nav ml-auto navbar-right">
-                            <li class="nav-item active">
-                                <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                    
+                    
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                </div>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
                             </li>
-                            <li class="nav-item active ">
-                                <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
-                            </li>
-                            <script>
-                                $(document).ready(function () {
-                                    $('.nav-link.dropdown-toggle').on('click', function (e) {
-                                        e.preventDefault();
-                                        $(this).next('.dropdown-menu').slideToggle();
-                                    });
-                                });
-                            </script>
+                    }
 
-                            @if (User.IsInRole("User"))
-                            {
-                                <li class="nav-item dropdown active">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Booking
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
+                </ul>
 
-
-                                    </div>
-                                </li>
-
-
-                                <li class="nav-item dropdown active">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-                                </li>
-                            }
-
-                            @if (User.IsInRole("Admin"))
-                            {
-                                <li class="nav-item dropdown active">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Booking
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
-                                    </div>
-                                </li>
-
-
-                                <li class="nav-item dropdown active">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-                                </li>
-                            }
-
-                        </ul>
-
-                    </div>
-                </div>
-
-            </nav>
-
-            <div class="wrapper-navbar-logo">
-
-                <img src="~/assets/logo.png" alt="Your Studio Logo">
-                <img class="logonav2" src="~/assets/logo2.png" alt="Your Studio Logo">
             </div>
         </div>
+
+    </nav>
+    
+    <div class="logos">
+
+        <img src="~/assets/logo.png" class="logonav" alt="">
+        <img src="~/assets/logo2.png" class="logonav2" alt="">
+    </div>
+
     </header>
 
     <main>
@@ -204,7 +204,7 @@
                 <label for="s2" id="slide2"><img src="~/assets/car2.JPG" alt=""></label>
                 <label for="s3" id="slide3"><img src="~/assets/car3.JPG" alt=""></label>
                 <label for="s4" id="slide4"><img src="~/assets/car4.JPG" alt=""></label>
-                <label for="s5" id="slide5"><img src="~/assets/car5.JPG" alt=""></label>
+                <label for="s5" id="slide5"><img src="~/assets/car1.JPG" alt=""></label>
             </section>
         </div>
 
@@ -257,10 +257,10 @@
 
 
                     </div>
-                    <img src="~/assets/solo1.JPG" alt="..." class="img-thumbnail1 img-fluid">
-                    <img src="~/assets/solo2.JPG" alt="..." class="img-thumbnail2 img-fluid">
-                    <img src="~/assets/solo3.JPG" alt="..." class="img-thumbnail3 img-fluid">
-                    <img src="~/assets/solo4.JPG" alt="..." class="img-thumbnail4 img-fluid">
+                    <img src="~/assets/car1.JPG" alt="..." class="img-thumbnail1 img-fluid">
+                    <img src="~/assets/car2.JPG" alt="..." class="img-thumbnail2 img-fluid">
+                    <img src="~/assets/car3.JPG" alt="..." class="img-thumbnail3 img-fluid">
+                    <img src="~/assets/car4.JPG" alt="..." class="img-thumbnail4 img-fluid">
                 </div>
             </div>
         </div>
@@ -287,10 +287,9 @@
                         <div class="det1">
                             <p>
                                 1 person only <br /> <br />
-                                30 minutes of shooting <br /> <br />
+                                20 minutes of shooting <br /> <br />
                                 1-2 backdrops of your choice <br />  <br />
-                                1 printed 4R of your choice <br />  <br />                            
-                                Free solo portrait <br />  <br />
+                                1 printed 4R of your choice <br />  <br />
                                 All raw digital copies
                             </p>
                         </div>
@@ -299,10 +298,10 @@
                         </div>
 
                     </div>
-                    <img src="~/assets/duo1.JPG" alt="..." class="img-thumbnail1 img-fluid">
-                    <img src="~/assets/duo2.JPG" alt="..." class="img-thumbnail2 img-fluid">
-                    <img src="~/assets/duo3.JPG" alt="..." class="img-thumbnail3 img-fluid">
-                    <img src="~/assets/duo4.JPG" alt="..." class="img-thumbnail4 img-fluid">
+                    <img src="~/assets/car1.JPG" alt="..." class="img-thumbnail1 img-fluid">
+                    <img src="~/assets/car2.JPG" alt="..." class="img-thumbnail2 img-fluid">
+                    <img src="~/assets/car3.JPG" alt="..." class="img-thumbnail3 img-fluid">
+                    <img src="~/assets/car4.JPG" alt="..." class="img-thumbnail4 img-fluid">
 
 
                 </div>
@@ -347,7 +346,7 @@
                 </div>
 
             </div>
-            </div>
+
     </footer>
 
 
