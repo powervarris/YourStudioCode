@@ -40,12 +40,12 @@
     }
 
     .time-container .time {
-        margin-left: 50px
+        margin-left: 100px
     }
 
     #Srvc {
-        margin-top: -380px;
-        margin-left: 0px;
+        margin-top: 100px;
+        margin-left: 100px;
     }
 }
 
@@ -89,8 +89,8 @@
     }
 
     #Srvc {
-        margin-top: -380px;
-        margin-left: 0px;
+        margin-top: -370px;
+        margin-left: 370px;
     }
 }
 
@@ -117,7 +117,7 @@
     }
 
     #slctDate {
-        left: 72%;
+        left: 74%;
     }
 
     .time-container .time {
@@ -126,7 +126,7 @@
 
     #Srvc {
         margin-top: 80px;
-        margin-right: 200px;
+        margin-right: 270px;
     }
 }
 
@@ -147,11 +147,11 @@
     #Srvc {
         position: relative;
         margin-top: -380px;
-        left: 200px;
+        left: 300px;
     }
 
     #slctDate {
-        left: 58%;
+        left: 61%;
     }
 
     .time-container .time {
@@ -166,7 +166,7 @@
     }
 
     #slctDate {
-        left: 50%;
+        left: 52.5%;
     }
 
     .pack {
@@ -178,7 +178,7 @@
     }
 
     #Srvc {
-        left: unset;
+        left: 450px;
         margin-top: -380px;
         margin-left: 0px;
     }
@@ -202,6 +202,10 @@
         margin-right: 100px;
     }
 
+    #slctDate {
+        left: 50.5%;
+    }
+
     .pack {
         margin: 50px 0 0 640px;
     }
@@ -211,7 +215,7 @@
     }
 
     #Srvc {
-        left: unset;
+        left: 620px;
         margin-top: -380px;
     }
 
@@ -342,10 +346,10 @@ html, body {
 }
 
 #Srvc {
+    width: 250px;
     display: grid;
     text-align: center;
     font-family: 'Palatino Linotype';
-    justify-content: end;
 }
 
     #Srvc #SrvcDtl {
