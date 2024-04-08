@@ -76,6 +76,10 @@
 .nav2list-position{
     padding:20px;
     margin-left:800px;
+    text-align:center;
+    align-content:center;
+    align-self:center;
+    align-items:center;
 }
 
 /* The side navigation menu */

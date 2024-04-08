@@ -44,10 +44,11 @@ input[type=radio] {
     left: 50%;
     width: 18px;
     height: 18px;
-    margin: 0 15px 0 0;
+    margin: auto;
     opacity: 0.4;
     transform: translateX(-83px);
     cursor: pointer;
+    color: black;
 }
 
 
@@ -57,6 +58,7 @@ input[type=radio] {
 
     input[type=radio]:checked {
         opacity: 1;
+        margin: auto;
     }
 
 
@@ -80,7 +82,7 @@ input[type=radio] {
 }
 
 #slide1 img {
-    width: 70%;
+    width: 100%;
 }
 
 /* Slider Functionality */
@@ -134,11 +136,11 @@ input[type=radio] {
 #s5:checked ~ #slide4 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
     transform: translate3d(-20%, 0, -100px);
+
 }
 
 #carousel {
-    margin-top: -130px;
-    margin-bottom: -90px;
+    margin:auto;
 }
 
 .freeze {
@@ -423,7 +425,7 @@ body, html {
 .imgresize {
     width: 300px;
     margin-left: 30px;
-    margin-top: -80px;
+    margin-top: -50px;
     padding-top: -80px;
 }
 
@@ -524,7 +526,11 @@ body, html {
 }
 
 .header-text {
-    width: 1000px;
+   margin-bottom:-150px;
+}
+
+.header-texta {
+    margin-top: -80px;
 }
 
 .learn1 {
@@ -800,9 +806,10 @@ body, html {
 footer {
     justify-content: space-between;
     align-items: center;
-   
+   height:300px;
     padding: 20px;
     background-color: #26272b;
+    margin-bottom:-200px;
 }
 
 .footer-container a {
