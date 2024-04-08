@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "95E2vj65vW48Bqal5Pn+Ce6q504QYnzkAlZV6VPeAuc=",
+  "Hash": "BiQ9sWU6CJKsWb68/BQYyMCHHbpgphc5zKgcfHafGwg=",
   "Source": "YourStudioFinal",
   "BasePath": "_content/YourStudioFinal",
   "Mode": "Default",
@@ -1459,6 +1459,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\family.JPG"
+    },
+    {
+      "Identity": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL8\\YourStudioFinal\\wwwroot\\assets\\fur.jpg",
+      "SourceId": "YourStudioFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL8\\YourStudioFinal\\wwwroot\\",
+      "BasePath": "_content/YourStudioFinal",
+      "RelativePath": "assets/fur.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\fur.jpg"
     },
     {
       "Identity": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL8\\YourStudioFinal\\wwwroot\\assets\\graduation.JPG",

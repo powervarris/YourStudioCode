@@ -236,7 +236,41 @@
                 <label for="s3" id="slide3"><img src="~/assets/car3.JPG" alt=""></label>
                 <label for="s4" id="slide4"><img src="~/assets/car4.JPG" alt=""></label>
                 <label for="s5" id="slide5"><img src="~/assets/car5.JPG" alt=""></label>
+
+                
+                <input type="radio" id="auto-slider" name="slider" style="display: none;">
             </section>
+
+            <script>
+                // Function to switch to the next slide
+                function nextSlide() {
+                    var currentSlide = document.querySelector('input[name="slider"]:checked');
+                    var nextSlide = currentSlide.nextElementSibling || document.querySelector('input[name="slider"]:first-child');
+                    nextSlide.checked = true;
+
+                    // Check if it's the last slide, then loop back to the first one
+                    if (!nextSlide) {
+                        var firstSlide = document.querySelector('input[name="slider"]:first-child');
+                        firstSlide.checked = true;
+                    }
+                }
+
+                // Automatic slide change interval (in milliseconds)
+                var slideInterval = 3000; // Change slides every 3 seconds
+
+                // Start automatic sliding
+                var autoSlider = setInterval(nextSlide, slideInterval);
+
+                // Stop automatic sliding when user interacts with the slider
+                var slider = document.getElementById('slider');
+                slider.addEventListener('mouseover', function () {
+                    clearInterval(autoSlider);
+                });
+
+                slider.addEventListener('mouseleave', function () {
+                    autoSlider = setInterval(nextSlide, slideInterval);
+                });
+            </script>
         </div>
         <div class="header-texta">
         <h1 class="text-center1">
@@ -245,9 +279,7 @@
         </h1>
         </div>
 
-        <div class="learn1">
-            <a style="color:black;" class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1" style="">LEARN MORE! -></p></a>
-        </div>
+       
         <h1 class="text-center">
             <span class="your">YOUR</span>
             <span class="packages">PACKAGES</span>
@@ -270,7 +302,7 @@
                         <span class="price1"> ₱399 </span>
                     </p>
                 </div>
-                <div class="card-body">
+                <div class="card-body" style="margin-bottom:-50px;">
                     <div class="cardbody1">
                         <div class="det1">
                             <p>
@@ -362,10 +394,21 @@
                     </div>
 
                     <div class="col-xs-2 col-md-5">
+                        
+                        <p class="pright"> &nbsp;Indoor & Outdoor Professional Photography |  Bacoor, Cavite PH </p>
+                        <br><br><br>
+                    </p>
+
                         <p class="pright">
-                            Indoor & Outdoor Professional Photography |  Bacoor, Cavite 🇵🇭<br><br>
-                            🏠 Headshots | Portrait | Couple | Group | Maternity | Toddler | Pets<br> <br>
-                            🌳 Prenup | Baptismal | Birthday | Graduation | Corporate <br>
+                            🏠 Headshots | Portrait | Couple | Group | Maternity | Toddler | Pets
+                        </p><br> <br><br>
+
+                        <p class="pright">
+                             🌳 Prenup | Baptismal | Birthday | Graduation | Corporate 
+                        </p>
+                        <br><br><br>
+                        <p class ="pright">
+                            📌 B09 L31 Sorrento Ave. Sorrento Townhomes  Panapaan IV, Bacoor, Philippines
                             </p>
                     </div>
 
