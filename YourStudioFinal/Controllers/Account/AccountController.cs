@@ -44,13 +44,17 @@ public class AccountController : Controller
     {
         return View();
     }
-    
+
     public IActionResult ResetPassword()
     {
         return View();
     }
-    
-    
+    public IActionResult Terms()
+    {
+        return View();
+    }
+
+
     [HttpPost]
     public async Task<IActionResult> AddUser(User usermodel)
     {
@@ -63,6 +67,8 @@ public class AccountController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
+
     public async Task<IActionResult> loginUser(User usermodel)
     {
         var loginResult = await _signInManager.PasswordSignInAsync(usermodel.UserName, usermodel.password, false, false);
@@ -71,7 +77,13 @@ public class AccountController : Controller
             return RedirectToAction("Index", "Home");
 
         }
-        return RedirectToAction("Register");
+        else
+        {
+            ModelState.AddModelError(string.Empty, "Invalid username or password.");
+            TempData["Error"] = "Invalid username or password.";
+
+        }
+        return View("Index", "Account");
     }
 
     // public async Task<IActionResult> Logout()
@@ -85,7 +97,7 @@ public class AccountController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-    
+
     public async Task<IActionResult> validateEmail(string email)
     {
         var user = await _userManager.FindByEmailAsync(email);
@@ -107,7 +119,7 @@ public class AccountController : Controller
 
         return RedirectToAction("Forget");
     }
-    
+
     public async Task<IActionResult> changePassword(string password, string confirmpassword)
     {
         var user = await _userManager.FindByEmailAsync(TempData["email"].ToString());
@@ -125,15 +137,15 @@ public class AccountController : Controller
 
         return RedirectToAction("Forget");
     }
-    
+
     public async Task<IActionResult> verifyOtp(int otp)
     {
-        if (otp == (int) TempData["otp"])
+        if (otp == (int)TempData["otp"])
         {
             return RedirectToAction("ResetPassword");
         }
 
         return RedirectToAction("Forget");
     }
-    
+
 }

@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Terms and Conditions";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="~/css/first/terms.css" rel="stylesheet" />
+
+
+    <title>Terms and Conditions</title>
+    <script>
+        function agreeFunction() {
+            // Code to execute when the Agree button is clicked
+            console.log('User agreed to the terms and conditions.');
+            // Add more functionality here
+        }
+
+        function disagreeFunction() {
+            // Code to execute when the Disagree button is clicked
+            console.log('User disagreed to the terms and conditions.');
+            // Add more functionality here
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var agreeButton = document.querySelector('.yes');
+            var disagreeButton = document.querySelector('.no');
+
+            agreeButton.addEventListener('click', agreeFunction);
+            disagreeButton.addEventListener('click', disagreeFunction);
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5">Terms and Conditions</h1>
+        <h2>1. Reservation and Booking:</h2>
+        <ul>
+            <li>All photo sessions are subject to availability.</li>
+            <li>Bookings must be made in advance through Facebook Messenger, Instagram Direct Messaging, or via the website YourStudio.</li>
+        </ul>
+        <h2>2. Payment:</h2>
+        <ul>
+            <li>A 50% down payment is required at the time of booking to secure the reservation.</li>
+            <li>Down payments are non-refundable, but rescheduling is permitted with prior notice.</li>
+        </ul>
+        <h2>3. Cancellation Policy:</h2>
+        <ul>
+            <li>In the event of cancellation, a refund will not be provided.</li>
+            <li>Cancellations made with at least 48 hours' notice are eligible for rescheduling.</li>
+        </ul>
+        <h2>4. Studio Use:</h2>
+        <ul>
+            <li>The home photo studio is to be used solely for photography purposes.</li>
+            <li>Any damage to equipment or property caused by the client will be the client's responsibility.</li>
+        </ul>
+        <h2>5. Props and Equipment:</h2>
+        <ul>
+            <li>Clients are welcome to bring their own props or use those provided by the studio.</li>
+            <li>Studio equipment must be used responsibly, and any damage will incur additional charges.</li>
+        </ul>
+        <h2>6. Liability:</h2>
+        <ul>
+            <li>The home photo studio owner is not responsible for any injuries or accidents that may occur during the photo session.</li>
+            <li>Clients are responsible for the well-being and supervision of their guests, including minors.</li>
+        </ul>
+        <h2>7. Privacy:</h2>
+        <ul>
+            <li>Clients' privacy is respected, and images will not be shared without explicit consent.</li>
+            <li>The photographer may use select images for promotional purposes with client permission.</li>
+        </ul>
+        <h2>8. Rescheduling:</h2>
+        <ul>
+            <li>Clients may request to reschedule a session with at least 48 hours' notice.</li>
+            <li>The studio owner reserves the right to reschedule due to unforeseen circumstances.</li>
+        </ul>
+        <h2>9. Code of Conduct:</h2>
+        <ul>
+            <li>Clients are expected to conduct themselves in a respectful manner.</li>
+            <li>Inappropriate behavior will result in immediate termination of the photo session.</li>
+        </ul>
+        <h2>10. Agreement Acceptance:</h2>
+        <ul>
+            <li>By booking a session, clients agree to abide by these terms and conditions.</li>
+        </ul>
+    </div>
+    <div class="text-center">
+        <a class="yes" asp-action="Register" asp-controller="Account">Agree</a>
+        <a class="no no-link" asp-action="Register" asp-controller="Account">Disagree</a>
+    </div>
+</body>
+</html>
+

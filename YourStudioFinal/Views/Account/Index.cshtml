@@ -42,7 +42,7 @@
                             <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                            <a class="nav-link" asp-controller="Gallery" asp-action="Index">Gallery</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
@@ -66,8 +66,8 @@
                             </div>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" asp-action="Register" asp-controller="Account">
-                                Sign Up
+                            <a class="nav-link" asp-action="Index" asp-controller="Account">
+                                Login
                             </a>
                         </li>
                     </ul>
@@ -89,7 +89,7 @@
                                 <form asp-action="loginUser" method="post">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" id="floatingInput" placeholder="username" name="UserName" required>
-                                        <label for="floatingInput">Username</label> 
+                                        <label for="floatingInput">Username</label>
                                     </div>
                                     <div class="form-floating mb-3">
                                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
@@ -129,7 +129,7 @@
                         <img src="~/css/img1.jpg" style="margin-left:210px; z-index:3" />
                     </div>
                     <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/css/img3.jpg" style="margin-left:500px; transform:rotate(10deg)" />
+                        <img src="~/css/img3.jpg" style="margin-left:470px; transform:rotate(10deg)" />
                     </div>
                     <div style="position:relative; left:450px; top:580px">
                         <h2 class="tag">YOUR<STRONG>STUDIO</STRONG></h2>
@@ -139,6 +139,7 @@
         </div>
     </div>
     <script>
+
         var currentHour = new Date().getHours();
 
         var greetingElement = document.getElementById("greeting");
