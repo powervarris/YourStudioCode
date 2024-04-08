@@ -39,7 +39,7 @@
 						    </a>
 						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							    <a class="dropdown-item" asp-action="Index">Create Booking</a>
-							    <a class="dropdown-item" asp-action="BList">Booking List</a>
+							    <a class="dropdown-item" asp-action="Booking">Booking List</a>
 						    </div>
 					    </li>
 
@@ -161,38 +161,46 @@
 	<div id="packages"></div>
 	<div id="addOns">Total Add-Ons: </div>
 	<hr/>
-	<button type="button" class="btnB" data-toggle="modal" data-target="#exampleModalCenter">
-      Book Now!
-    </button>
+	<form asp-controller="Booking" asp-action="AddBooking" method="post">
+		<input name="date" id="formDate" style="display: none"/>
+		<input name="time" id="formTime" style="display: none"/>
+		<input name="packages" id="formPackage" style="display: none"/>
+		<input name="addOns" id="formAddOns" style="display: none"/>
+		@* <input name="totalPrice" id="formPrice" style="border: none"/> *@
+		<button type="submit" class="btnB" @*data-toggle="modal" data-target="#exampleModalCenter"*@>
+			Book Now!
+		</button>
+	</form>
+
 </section>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Ops Teka Muna!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-	    <div class="modal-body">
-		    <form asp-action="AddBooking" method="post" enctype="multipart/form-data">
-			    <input name="date" id="formDate" style="display: none"/>
-			    <input name="time" id="formTime" style="display: none"/>
-			    <input name="packages" id="formPackage" style="display: none"/>
-			    <input name="addOns" id="formAddOns" style="display: none"/>
-			    <input type="file" name="image" id="image" class="form-control-file" accept="image/*"/>
-			    <button type="submit" class="btnB" data-original-color="Black">BOOK</button>
-		    </form>
-	    </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+@* <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> *@
+@*   <div class="modal-dialog modal-dialog-centered" role="document"> *@
+@*     <div class="modal-content"> *@
+@*       <div class="modal-header"> *@
+@*         <h5 class="modal-title" id="exampleModalLongTitle">Ops Teka Muna!</h5> *@
+@*         <button type="button" class="close" data-dismiss="modal" aria-label="Close"> *@
+@*           <span aria-hidden="true">&times;</span> *@
+@*         </button> *@
+@*       </div> *@
+@* 	    <div class="modal-body"> *@
+@* 		    <form asp-action="AddBooking" method="post" enctype="multipart/form-data"> *@
+@* 			    <input name="date" id="formDate" style="display: none"/> *@
+@* 			    <input name="time" id="formTime" style="display: none"/> *@
+@* 			    <input name="packages" id="formPackage" style="display: none"/> *@
+@* 			    <input name="addOns" id="formAddOns" style="display: none"/> *@
+@* 			    <input type="file" name="image" id="image" class="form-control-file" accept="image/*"/> *@
+@* 			    <button type="submit" class="btnB" data-original-color="Black">BOOK</button> *@
+@* 		    </form> *@
+@* 	    </div> *@
+@*       <div class="modal-footer"> *@
+@*         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> *@
+@*         <button type="button" class="btn btn-primary">Save changes</button> *@
+@*       </div> *@
+@*     </div> *@
+@*   </div> *@
+@* </div> *@
 
 <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet"/>
 
@@ -206,7 +214,7 @@
 	<script src="~/js/main.js"></script>
 
 }
-	<script>
+<script>
 		$(document).ready(function () {
 			var $prevButton = null;
 

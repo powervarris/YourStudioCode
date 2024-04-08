@@ -26,11 +26,40 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+        <!-- Messenger Chat Plugin Code -->
+            <div id="fb-root"></div>
+        
+            <div id="fb-customer-chat" class="fb-customerchat"></div>
+        
+            <script>
+              var chatbox = document.getElementById('fb-customer-chat');
+              chatbox.setAttribute("page_id", "122107625090002233");
+              chatbox.setAttribute("attribution", "biz_inbox");
+            </script>
+        
+        
+            <script>
+              window.fbAsyncInit = function() {
+                FB.init({
+                  xfbml            : true,
+                  version          : 'v19.0'
+                });
+              };
+        
+              (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));
+            </script>
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

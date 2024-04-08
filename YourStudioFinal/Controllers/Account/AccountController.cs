@@ -2,6 +2,8 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using SendGrid;
+using SendGrid.Helpers.Mail;
 using YourStudioFinal.Models;
 using YourStudioFinal.data;
 
@@ -38,7 +40,12 @@ public class AccountController : Controller
     {
         return View();
     }
-    public IActionResult Otipi()
+    public async Task<IActionResult> Otipi()
+    {
+        return View();
+    }
+    
+    public IActionResult ResetPassword()
     {
         return View();
     }
@@ -77,6 +84,56 @@ public class AccountController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+    
+    public async Task<IActionResult> validateEmail(string email)
+    {
+        var user = await _userManager.FindByEmailAsync(email);
+        if (user != null)
+        {
+            var apiKey = "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";
+            var client = new SendGridClient(apiKey);
+            var from_email = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudio");
+            var subject = "Reset Password Confirmation";
+            var to_email = new EmailAddress(email);
+            var otp = new Random().Next(100000, 999999);
+            var plainTextContent = "Enter the otp given in this email to reset your password " + otp;
+            var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, plainTextContent, "");
+            var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+            TempData["otp"] = otp;
+            TempData["email"] = email;
+            return RedirectToAction("Otipi");
+        }
+
+        return RedirectToAction("Forget");
+    }
+    
+    public async Task<IActionResult> changePassword(string password, string confirmpassword)
+    {
+        var user = await _userManager.FindByEmailAsync(TempData["email"].ToString());
+        if (user != null)
+        {
+            if (password == confirmpassword)
+            {
+                PasswordHasher<User> passwordHasher = new PasswordHasher<User>();
+                user.PasswordHash = passwordHasher.HashPassword(user, password);
+                await _userManager.UpdateAsync(user);
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("ResetPassword");
+        }
+
+        return RedirectToAction("Forget");
+    }
+    
+    public async Task<IActionResult> verifyOtp(int otp)
+    {
+        if (otp == (int) TempData["otp"])
+        {
+            return RedirectToAction("ResetPassword");
+        }
+
+        return RedirectToAction("Forget");
     }
     
 }

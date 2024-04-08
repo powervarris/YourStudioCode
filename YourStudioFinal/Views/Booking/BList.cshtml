@@ -1,4 +1,5 @@
-﻿@model List<YourStudioFinal.Models.Booking.BookingModel>
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model List<YourStudioFinal.Models.Booking.BookingModel>
 
 @{
 	ViewBag.Title = "Booking List";
@@ -26,37 +27,64 @@
 					<li class="nav-item active">
 						<a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
 					</li>
-					<li class="nav-item active">
-						<a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
-					</li>
+					
+					@if (User.IsInRole("Admin"))
+					{
+						<li class="nav-item dropdown active">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Gallery
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" asp-controller="GalleryCustomer" asp-action="Index">User Gallery UI</a>
+								<a class="dropdown-item" asp-controller="Gallery" asp-action="Index">Admin Gallery</a>
+							</div>
+						</li>
+					}
+					
 					<li class="nav-item active ">
 						<a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
 					</li>
-
-
-					<li class="nav-item dropdown active">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Booking
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" asp-action="Index">Create Booking</a>
-							<a class="dropdown-item" asp-action="BList">Booking List</a>
-						</div>
-					</li>
-
-					<li class="nav-item dropdown active">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Inquiry
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
-							<a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-						</div>
-					</li>
-
+					
+					@if (User.IsInRole("Admin"))
+					{
+                    
+						<li class="nav-item dropdown active">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Booking
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+								<a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+							</div>
+						</li>
+                    
+                    
+						<li class="nav-item dropdown active">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+								<a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+							</div>
+						</li>
+					}
+                                                
 					<li class="nav-item">
 						<a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
 					</li>
+                                                
+					@if (ViewBag.isLogged)
+					{
+						<li class="nav-item">
+							<a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
+						</li>
+					}
+					else
+					{
+						<li class="nav-item">
+							<a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
+						</li>
+					}
+					
 				</ul>
 			</div>
 		</div>
@@ -113,6 +141,12 @@
 	</section>
 </section>
 
+<section>
+	@{
+		// this code block will display all of the bookings per month
+	}
+</section>
+
 <section id="Srvc">
 @{
 		foreach (var item in Model.Select((value, i) => ( value, i )))
@@ -148,10 +182,10 @@
 				@* <div>@item.value.accountUser.PackagePrice</div> *@
 				<hr/>
 				<form>
-					@Html.ActionLink("Accept", "acceptBooking", "Booking", new { id = item.value.Id }, new { @class = "btn btn-primary inline", @id="btnG" })
+					@Html.ActionLink("Accept", "acceptBooking", "Booking", new { id = item.value.Id, email = item.value.accountUser.Email}, new { @class = "btn btn-primary inline", @id="btnG" })
 					@Html.ActionLink("Decline", "rejectBooking", "Booking", new { id = item.value.Id }, new { @class = "btn btn-primary inline", @id="btnR"})
 					<button type="button" class="btn btn-primary inline" id="btnBL">Edit</button>
-					<button type="button" class="btn btn-primary inline" id="btnGR">Remove</button>
+					@Html.ActionLink("Delete", "deleteBooking", "Booking", new { id = item.value.Id }, new { @class = "btn btn-primary inline", @id="btnGR" })
 				</form>
 			</div>
 		}

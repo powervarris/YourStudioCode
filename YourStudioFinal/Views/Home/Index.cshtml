@@ -2,7 +2,6 @@
     ViewData["Title"] = "Home Page";
 }
 
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF -8" />
@@ -69,7 +68,14 @@
                                                         <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
                                                         <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
                                                         <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
-                                                        <a asp-controller="Home" asp-action="Logout">Logout</a>
+                                                        @if (ViewBag.isLogged)
+                                                        {
+                                                            <a class="nav-link" asp-controller="Home" asp-action="Logout">Logout</a>
+                                                        }
+                                                        else
+                                                        {
+                                                            <a class="nav-link" asp-controller="Account" asp-action="Index">Login</a>
+                                                        }
                                                     </div>
                                                     <span onclick="openNav()">
                                                         <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
@@ -96,9 +102,27 @@
                             <li class="nav-item active">
                                 <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
-                            </li>
+                            
+                            @if (User.IsInRole("User") || ViewBag.isLogged == false)
+                            {
+                                <li class="nav-item active">
+                                    <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                                </li>
+                            }
+                            
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Gallery
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="GalleryCustomer" asp-action="Index">User Gallery UI</a>
+                                        <a class="dropdown-item" asp-controller="Gallery" asp-action="Index">Admin Gallery</a>
+                                    </div>
+                                </li>
+                            }
+                            
                             <li class="nav-item active ">
                                 <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
                             </li>
@@ -110,37 +134,31 @@
                                     });
                                 });
                             </script>
-
-                            @if (User.IsInRole("User"))
+                            
+                            @if(User.IsInRole("User") || ViewBag.isLogged == false)
                             {
-                                <li class="nav-item dropdown active">
+                            <li class="nav-item dropdown active">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Booking
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
                                         <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
-
-
                                     </div>
                                 </li>
-
 
                                 <li class="nav-item dropdown active">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-                                </li>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                </div>
+                            </li>
                             }
 
                             @if (User.IsInRole("Admin"))
                             {
+
                                 <li class="nav-item dropdown active">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Booking
@@ -155,15 +173,29 @@
                                 <li class="nav-item dropdown active">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
                                         <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
                                     </div>
                                 </li>
-
+                            }
+                            
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+                            </li>
+                            
+                            @if (ViewBag.isLogged)
+                            {
                                 <li class="nav-item">
-                                    <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+                                    <a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
                                 </li>
                             }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
+                                </li>
+                            }
+                            
 
                         </ul>
 
@@ -187,8 +219,7 @@
             <span class="freeze">FREEZING</span>
             <span class="time">TIME</span>
         </h1>
-
-        </div>
+        
         <br />
 
         <div id="carousel">
@@ -214,7 +245,6 @@
         </h1>
         <div class="learn1">
             <a class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1" style="">LEARN MORE! -></p></a>
-        </div>
         </div>
         <h1 class="text-center">
             <span class="your">YOUR</span>
@@ -335,10 +365,6 @@
                             🏠 Headshots | Portrait | Couple | Group | Maternity | Toddler | Pets<br> <br>
                             🌳 Prenup | Baptismal | Birthday | Graduation | Corporate <br>
                             </p>
-                          
-
-                           
-                        </p>
                     </div>
 
                     <div class="col-xs-6 col-md-3">

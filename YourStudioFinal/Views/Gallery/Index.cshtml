@@ -1,7 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
 }
 
 
@@ -71,7 +68,7 @@
                                                     </div>
                                                     <span onclick="openNav()">
                                                         <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
-                                                            <i class="fas fa-bars pe-2 menu"></i>
+                                                        <i class="fas fa-bars pe-2 menu"></i>
                                                     </span>
                                                 </li>
                                             </ul>
@@ -91,46 +88,70 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav ml-auto navbar-right">
+                            @if(User.IsInRole("Admin"))
+                            {
                             <li class="nav-item active">
                                 <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Gallery
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="GalleryCustomer" asp-action="Index">User Gallery UI</a>
+                                    <a class="dropdown-item" asp-controller="Gallery" asp-action="Index">Admin Gallery</a>
+                                </div>
                             </li>
+
                             <li class="nav-item active ">
                                 <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
                             </li>
 
-                            <li class="nav-item active ">
-                                <a class="nav-link" href="#">Booking List</a>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Booking
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+                                </div>
                             </li>
 
-                            <li class="nav-item active ">
-                                <a class="nav-link" asp-controller="Booking" asp-action="Index">Booking</a>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                </div>
                             </li>
-
-                            <li class="nav-item active ">
-                                <a class="nav-link" asp-controller="Inquiry" asp-action="clientInquiry">Inquiry</a>
-                            </li>
-
-                            @* <li class="nav-item active "> *@
-                            @*     <a class="nav-link" href="#">Add Admin</a> *@
-                            @* </li> *@
-
 
                             <li class="nav-item">
                                 <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
                             </li>
-
-
+                                
+                            }
+                            @if (ViewBag.isLogged)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
+                                </li>
+                            }
+                                                        else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
+                                </li>
+                                                            
+                            }
                         </ul>
-                        <script>
+                            <script>
                             $(document).ready(function () {
                                 $('.nav-link.dropdown-toggle').on('click', function (e) {
                                     e.preventDefault();
                                     $(this).next('.dropdown-menu').slideToggle();
                                 });
-                            });
+                                });
                         </script>
                     </div>
                 </div>
@@ -199,9 +220,7 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                     <button type="button" class="btn btn-light btn-block" data-toggle="modal" data-target="#exampleModalCenter">Add</button>
                     <div class="dropdown-divider"></div>
-                    <button type="button" class="btn btn-light btn-block">Edit</button>
-                    <div class="dropdown-divider"></div>
-                    <button type="button" class="btn btn-light btn-block">Delete</button>
+                    <button type="button" class="btn btn-light btn-block" onclick="setDelete()">Delete</button>
                 </div>
             </div>
         </div>
@@ -221,6 +240,15 @@
                     <div class="modal-body">
                         <form id="imageUpload" enctype="multipart/form-data" asp-action="Upload">
                             <input type="file" name="image" id="image" class="form-control-file" accept="image/*" multiple />
+				<label for="category">Category:</label>
+                            <select name="category" id="category" value="None" form="imageUpload">
+                                <option value="None"> - Choose - </option>
+                                <option value="Solo">Solo</option>
+                                <option value="Family">Family</option>
+                                <option value="Fur Families">Fur Families</option>	
+                                <option value="Couples">Couples</option>
+                                <option value="Child">Child</option>
+                            </select>
                             <button type="submit" class="btn btn-primary">Upload</button>
                         </form>
                     </div>
@@ -248,29 +276,56 @@
                     }
                 });
             });
+
+		// JavaScript to handle the upload button click
+                $('#uploadBtn').click(function () {
+                    // Get the file input element
+                    const fileInput = document.getElementById('imageUpload');
+
+                    // Check if a file is selected
+                    if (fileInput.files.length > 0) {
+                        const file = fileInput.files[0];
+                        console.log('Uploading file:', file.name);
+
+                        // Here you can perform your file upload logic
+                        // For demonstration, we'll just alert a message
+                        alert('File uploaded: ' + file.name);
+
+                        // You can also close the modal after upload
+                        $('#addModal').modal('hide');
+                    } else {
+                        // No file selected, you can handle this case as needed
+                        alert('Please select a file.');
+                    }
+            });
         </script>
-    </div>
 
 
 
-
-
-    <div class="container">
+<div class="container">
         @{
-            var itemsCount = 20;
-        }
-        @for (int i = 0; i < itemsCount; i++)
-        {
-            <text>
+            if (Model.GalleryFiles.Count == 0)
+            {
+                <text>
+                    <p class="noitems"> No items found </p>
+                </text>
+            }
+            else
+            {
+                <form id="deleteContent" method="post">
+                @for (int i = 0; i < Model.GalleryFiles.Count; i++)
+                {
                 <div class="responsive">
+                    <input type="checkbox" data-id=@Model.GalleryFiles[i].Id onclick="setDelete"/>
                     <div class="gallery">
-                        <a target="_blank" href="img_forest.jpg">
-                            <img src="https://placehold.jp/300x400.png" alt="Forest" width="600" height="400">
+                        <a target="_blank">
+                            <img src="@System.IO.Path.Combine("uploads", Model.GalleryFiles[i].fileName)" alt="Forest" width="600" height="400">
                         </a>
                     </div>
                 </div>
-            </text>
-
+                }
+            </form>
+            }
         }
     </div>
 
@@ -310,6 +365,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
+	<script>
+        setDelete = function () {
+        var checked = document.querySelectorAll('input[type="checkbox"]:checked');
+        var deleteContent = document.getElementById('deleteContent');
+        deleteContent.action = '/Gallery/Delete?ids=' + Array.from(checked).map(x => x.getAttribute('data-id')).join(',');
+        deleteContent.submit();
+    }
+</script>
 
 
 

@@ -24,7 +24,9 @@ public class BookingModel
     
     public string addOns { get; set; }
     
-    public string paymentID { get; set; }
+    // public string totalPrice { get; set; }
+    
+    public string? paymentID { get; set; }
     public PaymentModel payment { get; set; }
 
 }
