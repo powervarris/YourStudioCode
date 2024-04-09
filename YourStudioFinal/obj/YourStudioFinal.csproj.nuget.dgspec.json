@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL8\\YourStudioFinal\\YourStudioFinal.csproj": {}
+    "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL8\\YourStudioFinal\\YourStudioFinal.csproj": {
+    "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL8\\YourStudioFinal\\YourStudioFinal.csproj",
+        "projectUniqueName": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj",
         "projectName": "YourStudioFinal",
-        "projectPath": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL8\\YourStudioFinal\\YourStudioFinal.csproj",
-        "packagesPath": "C:\\Users\\Kenshin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCodeAPRIL8\\YourStudioFinal\\obj\\",
+        "projectPath": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj",
+        "packagesPath": "C:\\Users\\phone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\phone\\source\\repos\\powervarris\\YourStudioCode\\YourStudioFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kenshin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\phone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
