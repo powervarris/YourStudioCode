@@ -39,6 +39,11 @@
         text-decoration: underline;
     }
 
+
+.navactive {
+    color: #E89C3B;
+    text-decoration: underline;
+}
    
 .nav-item {
     margin-top: 10px;
@@ -192,7 +197,8 @@ div.desc {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background: linear-gradient(130deg, rgb(0, 0, 0), transparent);
+    color: wheat;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
