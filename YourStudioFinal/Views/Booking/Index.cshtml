@@ -6,227 +6,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="~/css/Booking/cbook.css">
+	<link rel="stylesheet" href="~/css/Booking/crtBook.css">
 </head>
 <body>
 
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<span>
-						<span onclick="openNav()">
-							<a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
-								<i class="fas fa-bars pe-2 menu"></i>
-						</span>
-						<img src="~/photos/logo.png" class="logonav" alt="">
-						<img src="~/photos/logo2.png" class="logonav2" alt="">
-					</span>
-				</div>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto ">
-						<li class="nav-item">
-							<a class="nav-link">
-								<div class="wrapper-navbar-menu">
-									<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <header>
+	    <nav class="navbar navbar-expand-lg navbar-light">
+		    <div class="container-fluid">
+			    <div class="navbar-header">
+				    <span>
+					    <img src="~/photos/logo.png" class="logonav" alt="">
+					    <img src="~/photos/logo2.png" class="logonav2" alt="">
+					    <i class="fas fa-bars menu-icon"></i>
+				    </span>
+			    </div>
+			    <div class="collapse navbar-collapse" id="navbar">
+				    <ul class="navbar-nav ml-auto navbar-right">
+					    <li class="nav-item active">
+						    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+					    </li>
+					    <li class="nav-item active">
+						    <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+					    </li>
+					    <li class="nav-item active ">
+						    <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+					    </li>
 
 
-										<ul class="navbar-nav me-3">
-											<li>
-												<div id="mySidenav" class="sidenav">
-													<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-													<a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
-													<a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
-													<a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
-													<a asp-controller="Home" asp-action="Logout">Logout</a>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<script>
-									function openNav() {
-										document.getElementById("mySidenav").style.width = "250px";
-									}
+					    <li class="nav-item dropdown active">
+						    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Booking
+						    </a>
+						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							    <a class="dropdown-item" asp-action="Index">Create Booking</a>
+							    <a class="dropdown-item" asp-action="Booking">Booking List</a>
+						    </div>
+					    </li>
 
-									function closeNav() {
-										document.getElementById("mySidenav").style.width = "0";
-									}
-								</script>
-								<span>
-							</a>
-						</li>
-					</ul>
-					<ul class="navbar-nav ml-auto navbar-right">
-						<li class="nav-item active">
-							<a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
-						</li>
+					    <li class="nav-item dropdown active">
+						    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Inquiry
+						    </a>
+						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+							    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+						    </div>
+					    </li>
 
-						@if (User.IsInRole("User"))
-						{
-							<li class="nav-item active">
-								<a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
-							</li>
-						}
+					    <li class="nav-item">
+						    <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
+					    </li>
 
-						@if (User.IsInRole("Admin"))
-						{
-							<li class="nav-item dropdown active">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Gallery
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" asp-controller="GalleryCustomer" asp-action="Index">User Gallery UI</a>
-									<a class="dropdown-item" asp-controller="Gallery" asp-action="Index">Admin Gallery</a>
-								</div>
-							</li>
-						}
-						<li class="nav-item active ">
-							<a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
-						</li>
 
-						@if (User.IsInRole("User"))
-						{
-							<li class="nav-item dropdown active">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-									<a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Inquiry List</a>
-								</div>
-							</li>
+				    </ul>
+			    </div>
+		    </div>
+	    </nav>
+    </header>
 
-							<li class="nav-item dropdown active">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
-									<a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-								</div>
-							</li>
-						}
+<div class="DAT inline">
+	<div>SELECT DATE AND TIME</div>
+</div>
 
-						@if (User.IsInRole("Admin"))
-						{
+<div class="PST inline">
+	<div>Philippine Standard Time (GMT + 8)</div>
+</div>
 
-							<li class="nav-item dropdown active">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Booking
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-									<a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
-								</div>
-							</li>
+<hr/>
 
-							<li class="nav-item dropdown active">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
-									<a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-								</div>
-							</li>
-						}
-
-						<li class="nav-item">
-							<a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-						</li>
-
-						@if (ViewBag.isLogged)
-						{
-							<li class="nav-item">
-								<a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
-							</li>
-						}
-						else
-						{
-							<li class="nav-item">
-								<a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
-							</li>
-						}
-
-					</ul>
-
-					<script>
-						$(document).ready(function () {
-							$('.nav-link.dropdown-toggle').on('click', function (e) {
-								e.preventDefault();
-								$(this).next('.dropdown-menu').slideToggle();
-							});
-						});
-					</script>
-
-				</div>
-			</div>
-		</nav>
-	</header>
-
-	<section class="container one">
-		<div class="DAT inline">
-			<div>SELECT DATE AND TIME</div>
+<section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center">
 		</div>
-
-		<div class="PST inline">
-			<div>Philippine Standard Time (GMT + 8)</div>
-		</div>
-		<hr />
-	</section>
-
-	<section class="container one">
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row justify-content-center">
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div id="calendar" class="calendar">
-							<div class="header">
-								<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
-								<div class="text" data-render="month-year"></div>
-								<a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
-							</div>
-							<div class="months" data-flow="left">
-								<div class="month month-a">
-									<div class="render render-a"></div>
-								</div>
-								<div class="month month-b">
-									<div class="render render-b"></div>
-								</div>
-							</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="calendar" class="calendar">
+					<div class="header">
+						<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+						<div class="text" data-render="month-year"></div>
+						<a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+					</div>
+					<div class="months" data-flow="left">
+						<div class="month month-a">
+							<div class="render render-a"></div>
+						</div>
+						<div class="month month-b">
+							<div class="render render-b"></div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</div>
+</section>
 
-	<section style="position: relative; margin-top: 100px;">
-		<div id="slctDate" style="position: absolute; transform: translate(-50%, -100%); font-family: 'Palatino Linotype'; font-weight:bold; font-size:30px;"></div>
-	</section>
+<section style="position: relative; margin-top: 100px;">
+	<div id="slctDate" style="position: absolute; top: 50%; left: 53%; transform: translate(-50%, -100%); font-family: 'Palatino Linotype'; font-weight:bold; font-size:30px;"></div>
+</section>
 
-	<section class="time-container">
-		<section class="time" style="display: inline-block;">
-			<div class="btn-row">
-				<div class="btnT" data-original-color="white">09:30 am</div>
-				<div class="btnT" data-original-color="white">10:00 am</div>
-			</div>
-			<div class="btn-row">
-				<div class="btnT" data-original-color="white">10:30 am</div>
-				<div class="btnT" data-original-color="white">11:00 am</div>
-			</div>
-			<div class="btn-row">
-				<div class="btnT" data-original-color="white">01:30 pm</div>
-				<div class="btnT" data-original-color="white">02:00 pm</div>
-			</div>
-			<div class="btn-row">
-				<div class="btnT" data-original-color="white">02:30 pm</div>
-				<div class="btnT" data-original-color="white">03:00 pm</div>
-			</div>
-			<div class="btn-row">
-				<div class="btnT" data-original-color="white">03:30 pm</div>
-				<div class="btnT" data-original-color="white">04:00 pm</div>
-			</div>
-		</section>
-	</section>
-
-	<section class="pack">
+<section class="time-container">
+	<section class="time" style="display: inline-block;">
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">09:30 am</div>
+			<div class="btnT" data-original-color="white">10:00 am</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">10:30 am</div>
+			<div class="btnT" data-original-color="white">11:00 am</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">01:30 pm</div>
+			<div class="btnT" data-original-color="white">02:00 pm</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">02:30 pm</div>
+			<div class="btnT" data-original-color="white">03:00 pm</div>
+		</div>
+		<div class="btn-row">
+			<div class="btnT" data-original-color="white">03:30 pm</div>
+			<div class="btnT" data-original-color="white">04:00 pm</div>
+		</div>
+		
 		<label for="packages">Packages:</label>
 		<select name="packages" id="package" value="0" onchange="changePrice(this.value)">
 			<option value="0"> - Choose - </option>
@@ -240,9 +140,7 @@
 			<option value="899">Your Graduation</option>
 			<option value="1499">Your Home Service</option>
 		</select>
-	</section>
-
-	<section class="Adds">
+		
 		<label for="addOns">Add-Ons:</label>
 		<select name="addOns" id="addOn" value="0" onchange="changePrice2(this.value)">
 			<option value="0"> - Choose - </option>
@@ -252,27 +150,29 @@
 			<option value="199">Additional 15 Minutes</option>>
 		</select>
 	</section>
+</section>
 
-	<section id="Srvc">
-		<div id="SrvcDtl">Service Details</div>
-		<div>@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</div>
-		<div id="slctDate2"></div>
-		<div id="slctTime"></div>
-		<div id="packagelist"></div>
-		<div id="packages"></div>
-		<div id="addOns">Total Add-Ons: </div>
-		<hr/>
-		<form asp-controller="Booking" asp-action="AddBooking" method="post">
-			<input name="date" id="formDate" style="display: none"/>
-			<input name="time" id="formTime" style="display: none"/>
-			<input name="packages" id="formPackage" style="display: none"/>
-			<input name="addOns" id="formAddOns" style="display: none"/>
-			@* <input name="totalPrice" id="formPrice" style="border: none"/> *@
-			<button type="submit" class="btnB" @*data-toggle="modal" data-target="#exampleModalCenter"*@>
-				Book Now!
-			</button>
-		</form>
-	</section>
+<section id="Srvc">
+	<div id="SrvcDtl">Service Details</div>
+	<div>@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</div>
+	<div id="slctDate2"></div>
+	<div id="slctTime"></div>
+	<div id="packagelist"></div>
+	<div id="packages"></div>
+	<div id="addOns">Total Add-Ons: </div>
+	<hr/>
+	<form asp-controller="Booking" asp-action="AddBooking" method="post">
+		<input name="date" id="formDate" style="display: none"/>
+		<input name="time" id="formTime" style="display: none"/>
+		<input name="packages" id="formPackage" style="display: none"/>
+		<input name="addOns" id="formAddOns" style="display: none"/>
+		@* <input name="totalPrice" id="formPrice" style="border: none"/> *@
+		<button type="submit" class="btnB" @*data-toggle="modal" data-target="#exampleModalCenter"*@>
+			Book Now!
+		</button>
+	</form>
+
+</section>
 
 <!-- Modal -->
 @* <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> *@
