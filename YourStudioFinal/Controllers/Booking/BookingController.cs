@@ -41,7 +41,6 @@ public class BookingController : Controller
     }
     
     // GET
-    [Authorize(Roles = "User, Admin")]
     public async Task<ActionResult> Index()
     {
         var UserDetails = await _userManager.GetUserAsync(User);
@@ -58,6 +57,24 @@ public class BookingController : Controller
         }
         return View();
     }
+    
+    // public async Task<ActionResult> Index(string package)
+    // {
+    //     var UserDetails = await _userManager.GetUserAsync(User);
+    //     if (UserDetails != null)
+    //     {
+    //         ViewBag.User = UserDetails;
+    //         ViewBag.isLogged = true;
+    //     }
+    //     else
+    //     {
+    //         ViewBag.isLogged = false;
+    //         TempData["Error"] = "You need to login to access this page";
+    //         return RedirectToAction("Index", "Account");
+    //     }
+    //     ViewBag.selectedPackage = package;
+    //     return View();
+    // }
     
     [Authorize(Roles = "User, Admin")]
     [HttpPost]
@@ -260,8 +277,7 @@ public class BookingController : Controller
         var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         return RedirectToAction("BList");
     }
-
-    [Authorize(Roles = "User, Admin")]
+    
     public async Task<ActionResult> Booking()
     {
         var UserDetails = await _userManager.GetUserAsync(User);
@@ -280,19 +296,160 @@ public class BookingController : Controller
         return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Pending").ToList()); 
 
     }
-    
+
+    [Authorize(Roles = "User, Admin")]
+    public async Task<IActionResult> BookingAll()
+    {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
+        
+        return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).ToList());
+    }
+
     [Authorize(Roles = "User, Admin")]
     public async Task<ActionResult> BookingAccept()
     {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
+        
         return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Accepted").ToList());
     }
     
     [Authorize(Roles = "User, Admin")]
     public async Task<ActionResult> BookingDecline()
     {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
+        
         return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Rejected").ToList());
     }
     
+    [Authorize(Roles = "User, Admin")]
+    public async Task<ActionResult> BookingPaid()
+    {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
+        
+        return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Paid").ToList());
+    }
+
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> BookingListAdmin()
+    {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
+        
+        return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).ToList());
+    }
+    
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> BookingListAdminPending()
+    {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
+        
+        return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Pending").ToList());
+    }
+    
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> BookingListAdminAccepted()
+    {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
+        
+        return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Accepted").ToList());
+    }
+    
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> BookingListAdminDecline()
+    {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
+        
+        return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Rejected").ToList());
+    }
+    
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> BookingListAdminPaid()
+    {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
+        
+        return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Paid").ToList());
+    }
+
     public async Task<ActionResult> DeletedBooking(string ids)
     {
         var idList = ids.Split(",");
@@ -308,5 +465,4 @@ public class BookingController : Controller
 
         return RedirectToAction("Booking", "Booking");
     }
-
 }

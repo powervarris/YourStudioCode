@@ -1,5 +1,10 @@
 .login {
     min-height: 100vh;
+    background-color: #F5F2F0
+}
+
+.form-control {
+    background-color: #F5F2F0
 }
 
 .bg-image {
@@ -38,7 +43,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
     margin-bottom: 20px;
     font-size: 50%
 }
@@ -75,7 +79,7 @@ h2.tag {
 
     h2.tag strong {
         font-weight: normal;
-        color: #ff6600;
+        color: #F3C343;
     }
 
 .navbar-nav {
@@ -113,9 +117,10 @@ h2.tag {
     justify-content: flex-end;
     background-color: #FDF8F2
 }
+
 .navbar {
     background-color: transparent !important;
-    overflow:hidden
+    overflow: hidden
 }
 
 .navbar-toggler {
@@ -126,23 +131,32 @@ h2.tag {
         color: rgba(0, 0, 0, 0.7);
     }
 
-    .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-    }
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
 .navbar-center {
     float: none;
     text-align: center;
 }
+
 .navbar-white {
     background-color: white;
 }
 
 
-.navbar-header{
-    margin-right:710px
+.navbar-header {
+    margin-right: 710px
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }

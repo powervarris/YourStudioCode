@@ -1,5 +1,10 @@
 ﻿.login {
     min-height: 100vh;
+    background-color: #F5F2F0
+}
+
+.form-control {
+    background-color: #F5F2F0
 }
 
 .bg-image {
@@ -38,7 +43,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
     margin-bottom: 20px;
     font-size: 50%
 }
@@ -72,10 +76,9 @@ h2.tag {
     font-weight: bold;
 }
 
-
     h2.tag strong {
         font-weight: normal;
-        color: #ff6600;
+        color: #EFC960;
     }
 
 .signing-in-text,
@@ -101,6 +104,7 @@ h2.tag {
     margin-right: 10%;
     display: flex;
 }
+
 .navbar {
     background-color: transparent !important;
     overflow: hidden
