@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Account/Terms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxUZXJtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Booking/BList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,8 +54,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nQWNjZXB0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Booking/BookingAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nQWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Booking/BookingDecline.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nRGVjbGluZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nTGlzdEFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminAccepted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nTGlzdEFkbWluQWNjZXB0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminDecline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nTGlzdEFkbWluRGVjbGluZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminPaid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nTGlzdEFkbWluUGFpZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminPending.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nTGlzdEFkbWluUGVuZGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Booking/BookingPaid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nUGFpZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Booking/Index.cshtml]
@@ -62,8 +94,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xQYXltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/ChildIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXENoaWxkSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/CoupleIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXENvdXBsZUluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/FamilyIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXEZhbWlseUluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/FurIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXEZ1ckluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/SoloIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXFNvbG9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/phone/source/repos/powervarris/YourStudioCode/YourStudioFinal/Views/Gallery/Index.cshtml]
