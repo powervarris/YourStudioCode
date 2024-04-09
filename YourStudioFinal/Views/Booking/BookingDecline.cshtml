@@ -1,4 +1,5 @@
 @model List<YourStudioFinal.Models.Booking.BookingModel>
+@inject Microsoft.AspNetCore.Identity.UserManager<YourStudioFinal.Models.User> UserManager
 
 @{
 	ViewBag.Title = "Booking";
@@ -18,11 +19,15 @@
     </section>
 <section class="containers">
     <div class="form-box">
+        @Html.ActionLink("All", "BookingAll", "Booking")
+        |
         @Html.ActionLink("Pending", "Booking", "Booking")
         |
         @Html.ActionLink("Accepted", "BookingAccept", "Booking")
         |
         @Html.ActionLink("Declined", "BookingDecline", "Booking")
+        |
+        @Html.ActionLink("Paid", "BookingPaid", "Booking")
         <br/>
 
         @{
@@ -39,24 +44,28 @@
                         <td>Mobile Number</td>
                         <td>Email</td>
                         <td>Package</td>
+                        <td>Add ons</td>
                         <td>Price</td>
                     </tr>
-                    <form id="deleteContent" method="post">
-                    @for (int i = 0; i < Model.Count; i++)
+                    <!--foreach the booking of the user logged in-->
+                    @{
+                        var currentUserId = UserManager.GetUserId(User);
+                    }
+
+                    @foreach (var item in Model.Where(m => m.accountUser.Id == currentUserId))
                     {
                         <tr>
-                            <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete"/></td>
-                            <td>@Model[i].date</td>
-                            <td>@Model[i].time</td>
-                            <td>N/A</td>
-                            <td>@Model[i].accountUser.UserName</td>
-                            <td>@Model[i].accountUser.mobileNumber</td>
-                            <td>@Model[i].accountUser.Email</td>
-                            <td>@Model[i].packages</td>
-                            <td>price</td>
+                            <td><input type="checkbox" data-id="@item.Id"/></td>
+                            <td>@item.date</td>
+                            <td>@item.time</td>
+                            <td>@item.accountUser.Id</td>
+                            <td>@item.accountUser.UserName</td>
+                            <td>@item.accountUser.mobileNumber</td>
+                            <td>@item.accountUser.Email</td>
+                            <td>@item.packages</td>
+                            <td>@item.addOns</td>
                         </tr>
                     }
-                    </form>
                 </table>
             }
         }

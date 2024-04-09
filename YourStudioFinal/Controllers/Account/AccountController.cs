@@ -27,13 +27,35 @@ public class AccountController : Controller
         _signInManager = signInManager;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
+        var UserDetails = await _userManager.GetUserAsync(User);
+            if (UserDetails != null)
+            {
+                ViewBag.User = UserDetails;
+                ViewBag.isLogged = true;
+            }
+            else
+            {
+                ViewBag.isLogged = false;
+            }
+        
         return View();
     }
 
-    public IActionResult Register()
+    public async Task<IActionResult> Register()
     {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
+        
         return View();
     }
     public IActionResult Forget()

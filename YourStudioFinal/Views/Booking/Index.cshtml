@@ -1,3 +1,5 @@
+@using System.Runtime.CompilerServices
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
 @model YourStudioFinal.Models.Booking.BookingModel
 @{
 	ViewBag.Title = "Create Booking";
@@ -56,8 +58,20 @@
 					    <li class="nav-item">
 						    <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
 					    </li>
-
-
+					    
+					    @if (ViewBag.isLogged)
+					    {
+						    <li class="nav-item">
+							    <a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
+						    </li>
+					    }
+					    else
+					    {
+						    <li class="nav-item">
+							    <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
+						    </li>
+					    }
+					    
 				    </ul>
 			    </div>
 		    </div>
