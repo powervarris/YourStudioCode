@@ -1,17 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\phone\\source\\repos\\YourStudioCode\\YourStudioFinal\\",
+  "WorkspaceRootPath": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCode32323\\YourStudioFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\phone\\source\\repos\\yourstudiocode\\yourstudiofinal\\views\\booking\\booking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocode32323\\yourstudiofinal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocode32323\\yourstudiofinal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocode32323\\yourstudiofinal\\views\\booking\\booking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|solutionrelative:views\\booking\\booking.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\phone\\source\\repos\\yourstudiocode\\yourstudiofinal\\wwwroot\\css\\booking\\cbook.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocode32323\\yourstudiofinal\\wwwroot\\css\\booking\\cbook.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|solutionrelative:wwwroot\\css\\booking\\cbook.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\phone\\source\\repos\\yourstudiocode\\yourstudiofinal\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|c:\\users\\kenshin\\source\\repos\\yourstudiocode32323\\yourstudiofinal\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F2063F0-98C2-4CE1-A933-4C5DEF7A78AE}|YourStudioFinal.csproj|solutionrelative:views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -22,11 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -34,15 +46,73 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCode32323\\YourStudioFinal\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCode32323\\YourStudioFinal\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T17:16:42.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCode32323\\YourStudioFinal\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCode32323\\YourStudioFinal\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-09T17:16:34.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Booking.cshtml",
-              "DocumentMoniker": "C:\\Users\\phone\\source\\repos\\YourStudioCode\\YourStudioFinal\\Views\\Booking\\Booking.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCode32323\\YourStudioFinal\\Views\\Booking\\Booking.cshtml",
               "RelativeDocumentMoniker": "Views\\Booking\\Booking.cshtml",
-              "ToolTip": "C:\\Users\\phone\\source\\repos\\YourStudioCode\\YourStudioFinal\\Views\\Booking\\Booking.cshtml",
+              "ToolTip": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCode32323\\YourStudioFinal\\Views\\Booking\\Booking.cshtml",
               "RelativeToolTip": "Views\\Booking\\Booking.cshtml",
               "ViewState": "AQIAAEUAAAAAAAAAAAAAAGAAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -51,29 +121,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\phone\\source\\repos\\YourStudioCode\\YourStudioFinal\\Views\\Booking\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCode32323\\YourStudioFinal\\Views\\Booking\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Booking\\Index.cshtml",
-              "ToolTip": "C:\\Users\\phone\\source\\repos\\YourStudioCode\\YourStudioFinal\\Views\\Booking\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCode32323\\YourStudioFinal\\Views\\Booking\\Index.cshtml",
               "RelativeToolTip": "Views\\Booking\\Index.cshtml",
               "ViewState": "AQIAAH0AAAAAAAAAAAAAAMoAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T12:42:53.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T12:42:53.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "cbook.css",
-              "DocumentMoniker": "C:\\Users\\phone\\source\\repos\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\cbook.css",
+              "DocumentMoniker": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCode32323\\YourStudioFinal\\wwwroot\\css\\Booking\\cbook.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\Booking\\cbook.css",
-              "ToolTip": "C:\\Users\\phone\\source\\repos\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\cbook.css",
+              "ToolTip": "C:\\Users\\Kenshin\\source\\repos\\YourStudioCode32323\\YourStudioFinal\\wwwroot\\css\\Booking\\cbook.css",
               "RelativeToolTip": "wwwroot\\css\\Booking\\cbook.css",
               "ViewState": "AQIAANkAAAAAAAAAAAAAAPMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-09T12:50:55.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T12:50:55.506Z"
             }
           ]
         }

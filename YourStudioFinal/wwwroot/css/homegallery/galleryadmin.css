@@ -423,7 +423,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    margin-bottom:-500px;
+    margin-bottom:-5800px;
+    margin-top:200px;
 }
 
 .footer-container a {
@@ -448,4 +449,5 @@ footer {
     text-align: center;
     color: black;
     margin-top: 10px;
+    margin-bottom:-10px;
 }
