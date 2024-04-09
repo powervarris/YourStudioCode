@@ -30,9 +30,4 @@ public class PackagesController : Controller
         }
         return View();
     }
-    
-    public async Task<IActionResult> goToBooking()
-    {
-        return RedirectToAction("Index", "Booking");
-    }
 }

@@ -103,13 +103,6 @@
                                     </li>
                                 }
                                 
-                                @if (ViewBag.isLogged == false)
-                                {
-                                    <li class="nav-item active">
-                                        <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
-                                    </li>
-                                }
-                                
                                 @if (User.IsInRole("Admin"))
                                 {
                                     <li class="nav-item dropdown active">
@@ -127,25 +120,6 @@
                                 </li>
                                 
                                 @if (User.IsInRole("User"))
-                                {
-                                    <li class="nav-item dropdown active">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-                                            <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Inquiry List</a>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item dropdown active">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
-                                            <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-                                        </div>
-                                    </li>
-                                }
-                                
-                                @if (ViewBag.isLogged == false)
                                 {
                                     <li class="nav-item dropdown active">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
@@ -236,24 +210,24 @@
         <ul class="nav2list">
             <li class="nav2">
 
-                @Html.ActionLink("All", "Index", "GalleryCustomer") &nbsp;         |
+                All &nbsp;         |
             </li>
             <li class="nav2">
-                @Html.ActionLink("Solo", "SoloIndex", "GalleryCustomer") &nbsp;      |
+                Solo &nbsp;      |
             </li>
             <li class="nav2">
-                @Html.ActionLink("Family", "FamilyIndex", "GalleryCustomer") &nbsp;       |
+                Family &nbsp;       |
             </li>
             <li class="nav2">
-                @Html.ActionLink("Fur Families", "FurIndex", "GalleryCustomer") &nbsp;      |
+                Fur Families &nbsp;      |
 
             </li>
             <li class="nav2">
-                @Html.ActionLink("Couples", "CoupleIndex", "GalleryCustomer") &nbsp;      |
+                Couples &nbsp;      |
 
             </li>
             <li class="nav2">
-                @Html.ActionLink("Child", "ChildIndex", "GalleryCustomer")
+                Child
 
             </li>
         </ul>
@@ -319,8 +293,8 @@
         <hr />
         <div class="social-icons">
             <a href="#" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
-            <a href="https://www.facebook.com/YourStudio.bacoor" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
-            <a href="https://www.instagram.com/yourstudio.bacoor/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
         </div>
     </div>
     <p class="copyright">&copy; 2023 Your Studio</p>

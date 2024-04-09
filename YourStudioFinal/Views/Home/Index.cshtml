@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF -8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="~/css/homegallery/home.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -102,14 +103,7 @@
                                 <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                             </li>
                             
-                            @if (User.IsInRole("User"))
-                            {
-                                <li class="nav-item active">
-                                    <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
-                                </li>
-                            }
-                            
-                            @if (ViewBag.isLogged == false)
+                            @if (User.IsInRole("User") || ViewBag.isLogged == false)
                             {
                                 <li class="nav-item active">
                                     <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
@@ -141,9 +135,9 @@
                                 });
                             </script>
                             
-                            @if(User.IsInRole("User"))
+                            @if(User.IsInRole("User") || ViewBag.isLogged == false)
                             {
-                                <li class="nav-item dropdown active">
+                            <li class="nav-item dropdown active">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Booking
                                     </a>
@@ -161,29 +155,8 @@
                                 </div>
                             </li>
                             }
-                            
-                            @if (ViewBag.isLogged == false)
-                            {
-                                <li class="nav-item dropdown active">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Booking
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
-                                    </div>
-                                </li>
-                                
-                                <li class="nav-item dropdown active">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-                                    </div>
-                                </li>
-                            }
 
-                                @if (User.IsInRole("Admin"))
+                            @if (User.IsInRole("Admin"))
                             {
 
                                 <li class="nav-item dropdown active">
@@ -222,6 +195,8 @@
                                     <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
                                 </li>
                             }
+                            
+
                         </ul>
 
                     </div>
@@ -261,41 +236,7 @@
                 <label for="s3" id="slide3"><img src="~/assets/car3.JPG" alt=""></label>
                 <label for="s4" id="slide4"><img src="~/assets/car4.JPG" alt=""></label>
                 <label for="s5" id="slide5"><img src="~/assets/car5.JPG" alt=""></label>
-
-                
-                <input type="radio" id="auto-slider" name="slider" style="display: none;">
             </section>
-
-            <script>
-                // Function to switch to the next slide
-                function nextSlide() {
-                    var currentSlide = document.querySelector('input[name="slider"]:checked');
-                    var nextSlide = currentSlide.nextElementSibling || document.querySelector('input[name="slider"]:first-child');
-                    nextSlide.checked = true;
-
-                    // Check if it's the last slide, then loop back to the first one
-                    if (!nextSlide) {
-                        var firstSlide = document.querySelector('input[name="slider"]:first-child');
-                        firstSlide.checked = true;
-                    }
-                }
-
-                // Automatic slide change interval (in milliseconds)
-                var slideInterval = 3000; // Change slides every 3 seconds
-
-                // Start automatic sliding
-                var autoSlider = setInterval(nextSlide, slideInterval);
-
-                // Stop automatic sliding when user interacts with the slider
-                var slider = document.getElementById('slider');
-                slider.addEventListener('mouseover', function () {
-                    clearInterval(autoSlider);
-                });
-
-                slider.addEventListener('mouseleave', function () {
-                    autoSlider = setInterval(nextSlide, slideInterval);
-                });
-            </script>
         </div>
         <div class="header-texta">
         <h1 class="text-center1">
@@ -304,7 +245,9 @@
         </h1>
         </div>
 
-       
+        <div class="learn1">
+            <a style="color:black;" class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1" style="">LEARN MORE! -></p></a>
+        </div>
         <h1 class="text-center">
             <span class="your">YOUR</span>
             <span class="packages">PACKAGES</span>
@@ -327,7 +270,7 @@
                         <span class="price1"> ₱399 </span>
                     </p>
                 </div>
-                <div class="card-body" style="margin-bottom:-50px;">
+                <div class="card-body">
                     <div class="cardbody1">
                         <div class="det1">
                             <p>
@@ -339,11 +282,9 @@
 
                             </p>
                         </div>
-                        <form asp-controller="Home" asp-action="goToBooking">
                         <div class="wrap">
                             <button class="button">BOOK NOW</button>
                         </div>
-                        </form>
 
 
 
@@ -378,18 +319,16 @@
                         <div class="det1">
                             <p>
                                 2 persons <br /> <br />
-                                Unli 25 minutes of shooting <br /> <br />
+                                 Unli 25 minutes of shooting <br /> <br />
                                 1 backdrop of your choice <br />  <br />
                                 1 printed 4R of your choice <br />  <br />                            
                                 Free solo portrait <br />  <br />
                                 All raw digital copies
                             </p>
                         </div>
-                        <form asp-controller="Home" asp-action="goToBooking">
                         <div class="wrap">
                             <button class="button">BOOK NOW</button>
                         </div>
-                        </form>
 
                     </div>
                     <img src="~/assets/duo1.JPG" alt="..." class="img-thumbnail1 img-fluid">
@@ -403,7 +342,7 @@
             </div>
         </div>
         <div class="learn2">
-            <a type="button"  style="color:black;"class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1">LEARN MORE! -></p></a>
+            <a  style="color:black;"class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1">LEARN MORE! -></p></a>
             
         </div>
 
@@ -423,21 +362,10 @@
                     </div>
 
                     <div class="col-xs-2 col-md-5">
-                        
-                        <p class="pright"> &nbsp;Indoor & Outdoor Professional Photography |  Bacoor, Cavite PH </p>
-                        <br><br><br>
-                    </p>
-
                         <p class="pright">
-                            🏠 Headshots | Portrait | Couple | Group | Maternity | Toddler | Pets
-                        </p><br> <br><br>
-
-                        <p class="pright">
-                             🌳 Prenup | Baptismal | Birthday | Graduation | Corporate 
-                        </p>
-                        <br><br><br>
-                        <p class ="pright">
-                            📌 B09 L31 Sorrento Ave. Sorrento Townhomes  Panapaan IV, Bacoor, Philippines
+                            Indoor & Outdoor Professional Photography |  Bacoor, Cavite 🇵🇭<br><br>
+                            🏠 Headshots | Portrait | Couple | Group | Maternity | Toddler | Pets<br> <br>
+                            🌳 Prenup | Baptismal | Birthday | Graduation | Corporate <br>
                             </p>
                     </div>
 

@@ -1,5 +1,4 @@
 @model List<YourStudioFinal.Models.Booking.BookingModel>
-@inject Microsoft.AspNetCore.Identity.UserManager<YourStudioFinal.Models.User> UserManager
 
 @{
     ViewBag.Title = "Booking";
@@ -167,59 +166,52 @@
             <div>YOUR BOOKING LIST</div>
         </div>
     </section>
-<section class="containers">
-    <div class="form-box">
-        @Html.ActionLink("All", "BookingAll", "Booking")
-        |
-        @Html.ActionLink("Pending", "Booking", "Booking")
-        |
-        @Html.ActionLink("Accepted", "BookingAccept", "Booking")
-        |
-        @Html.ActionLink("Declined", "BookingDecline", "Booking")
-        |
-        @Html.ActionLink("Paid", "BookingPaid", "Booking")
-        <br/>
 
-        @{
-            if (Model != null)
-            {
+    <section class="containers">
+        <div class="form-box">
+            @Html.ActionLink("Pending", "Booking", "Booking")
+            |
+            @Html.ActionLink("Accepted", "BookingAccept", "Booking")
+            |
+            @Html.ActionLink("Declined", "BookingDecline", "Booking")
+            <br />
 
-                <table class="custom-table">
-                    <tr>
-                        <td></td>
-                        <td>Date</td>
-                        <td>Time</td>
-                        <td>Customer ID</td>
-                        <td>Username</td>
-                        <td>Mobile Number</td>
-                        <td>Email</td>
-                        <td>Package</td>
-                        <td>Add ons</td>
-                        <td>Price</td>
-                    </tr>
-                    <!--foreach the booking of the user logged in-->
-                    @{
-                        var currentUserId = UserManager.GetUserId(User);
-                    }
-
-                    @foreach (var item in Model.Where(m => m.accountUser.Id == currentUserId))
-                    {
+            @{
+                if (Model != null)
+                {
+                    <br />
+                    <table class="custom-table">
                         <tr>
-                            <td><input type="checkbox" data-id="@item.Id"/></td>
-                            <td>@item.date</td>
-                            <td>@item.time</td>
-                            <td>@item.accountUser.Id</td>
-                            <td>@item.accountUser.UserName</td>
-                            <td>@item.accountUser.mobileNumber</td>
-                            <td>@item.accountUser.Email</td>
-                            <td>@item.packages</td>
-                            <td>@item.addOns</td>
+                            <td></td>
+                            <td>Date</td>
+                            <td>Time</td>
+                            <td>Customer ID</td>
+                            <td>Username</td>
+                            <td>Mobile Number</td>
+                            <td>Email</td>
+                            <td>Package</td>
+                            <td>Price</td>
                         </tr>
-                    }
-                </table>
+                        <form id="deleteContent" method="post">
+                            @for (int i = 0; i < Model.Count; i++)
+                            {
+                            <tr>
+                                <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete" /></td>
+                                <td>@Model[i].date</td>
+                                <td>@Model[i].time</td>
+                                <td>N/A</td>
+                                <td>@Model[i].accountUser.UserName</td>
+                                <td>@Model[i].accountUser.mobileNumber</td>
+                                <td>@Model[i].accountUser.Email</td>
+                                <td>@Model[i].packages</td>
+                                <td>price</td>
+                            </tr>
+                            }
+                        </form>
+                    </table>
+                }
             }
-        }
-        <br/>
+            <br />
 
             <section class="BtnCont"></section>
             <button type="button" id="RmvBtn" onclick="setDelete()">

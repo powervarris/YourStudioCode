@@ -103,13 +103,6 @@
                                 </li>
                             }
                             
-                            @if (ViewBag.isLogged == false)
-                            {
-                                <li class="nav-item active">
-                                    <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
-                                </li>
-                            }
-                            
                             @if (User.IsInRole("Admin"))
                             {
                                 <li class="nav-item dropdown active">
@@ -135,25 +128,6 @@
                                             <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Inquiry List</a>
                                         </div>
                                     </li>
-
-                                <li class="nav-item dropdown active">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-                                    </div>
-                                </li>
-                            }
-                            
-                            @if (ViewBag.isLogged == false)
-                            {
-                                <li class="nav-item dropdown active">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Inquiry List</a>
-                                    </div>
-                                </li>
 
                                 <li class="nav-item dropdown active">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
@@ -230,7 +204,7 @@
     <h1 class="text-center">
         <span class="pckg">PACKAGES</span>
     </h1>
-    <form asp-action="goToBooking" asp-controller="Packages">
+
     <div class="text-center">
         <hr class="hrline" />
 
@@ -259,8 +233,7 @@
         <br /> <br />
         <hr class="hrline2 text-center" />
     </div>
-    </form>
-    <form asp-action="goToBooking" asp-controller="Packages">
+
     <div class="text-center">
 
         <img class="img-adj" src="~/assets/solo.JPG" alt="Avatar">
@@ -289,8 +262,7 @@
         <br /> <br />
         <hr class="hrline2" />
     </div>
-    </form>
-    <form asp-action="goToBooking" asp-controller="Packages">
+
     <div class="text-center">
 
         <img class="img-adj" src="~/assets/duo.JPG" alt="Avatar">
@@ -319,8 +291,8 @@
         <br /> <br />
         <hr class="hrline2" />
     </div>
-    </form>
-    <form asp-action="goToBooking" asp-controller="Packages">
+    </div>
+
     <div class="text-center">
         <img class="img-adj" src="~/assets/barkada.JPG" alt="Avatar">
         <h1 class="pck-headingtxt"> YOUR BARKADA</h1>
@@ -343,8 +315,7 @@
         <br /> <br />
         <hr class="hrline2" />
     </div>
-    </form>
-    <form asp-action="goToBooking" asp-controller="Packages">
+
     <div class="text-center">
         <img class="img-adj" src="~/assets/squad.JPG" alt="Avatar">
         <h1 class="pck-headingtxt"> YOUR SQUAD</h1>
@@ -367,8 +338,7 @@
         <br /> <br />
         <hr class="hrline2" />
     </div>
-    </form>
-    <form asp-action="goToBooking" asp-controller="Packages">
+
     <div class="text-center">
         <img class="img-adj" src="~/assets/family.JPG" alt="Avatar">
         <h1 class="pck-headingtxt"> YOUR FAMILY</h1>
@@ -387,38 +357,36 @@
         <button class="book-now-btn3">BOOK NOW</button>
         <hr class="hrline2a" />
     </div>
-    </form>
-    <form asp-action="goToBooking" asp-controller="Packages">
-    <div class="text-center">
+
+        <div class="text-center">
 
         <img class="img-adj" src="~/assets/fur.jpg" alt="Avatar">
-        <h1 class="pck-headingtxt"> YOUR FUR BABY</h1>
+            <h1 class="pck-headingtxt"> YOUR FUR BABY</h1>
 
-        <p class="sub-text">1 Pet, 1-2 Fur Parents</p>
-        <p class="sub-text">Unli 40 mins of shoot</p>
-        <p class="sub-text2">1-2 backdrops</p>
-        <p class="sub-text2" style="margin-top:-11px;">1 printed 8R with <br /> All raw digital images</p>
-        <p style="padding-left: 350px;font-family: Calibri;
+            <p class="sub-text">1 Pet, 1-2 Fur Parents</p>
+            <p class="sub-text">Unli 40 mins of shoot</p>
+            <p class="sub-text2">1-2 backdrops</p>
+            <p class="sub-text2" style="margin-top:-11px;">1 printed 8R with <br /> All raw digital images</p>
+            <p style="padding-left: 350px;font-family: Calibri;
             font-size: 20px; margin-top: -108px;"> Professional Photographer</p>
 
 
-        <div class="">
-            <span style="top: -20px; color:#3C353D;margin-left: 350px;/* margin-top: 10px; */" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px; color:#F09499;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px; color:#AAB475;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px; color:#AEADA9;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+            <div class="">
+                <span style="top: -20px; color:#3C353D;margin-left: 350px;/* margin-top: 10px; */" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px; color:#F09499;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px; color:#AAB475;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px; color:#AEADA9;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+            </div>
+            <br /><br />
+            <p class="pckg-price1">₱1429</p>
+            <button class="book-now-btn4">BOOK NOW</button>
+
+            <hr class="hrline2a" />
+
+
+
         </div>
-        <br /><br />
-        <p class="pckg-price1">₱1429</p>
-        <button class="book-now-btn4">BOOK NOW</button>
 
-        <hr class="hrline2a" />
-
-
-
-    </div>
-    </form>
-    <form asp-action="goToBooking" asp-controller="Packages">
     <div class="text-center">
 
         <img class="img-adj" src="~/assets/graduation.JPG" alt="Avatar">
@@ -445,68 +413,73 @@
         <button  class="book-now-btn3">BOOK NOW</button>
 
         <hr class="hrline2a" />
+
+
+
     </div>
-    </form>
-    <form asp-action="goToBooking" asp-controller="Packages">
-    <div class="text-center">
+
+        <div class="text-center">
 
         <img class="img-adj" src="~/assets/bday.JPG" alt="Avatar">
-        <h1 class="pck-headingtxt"> YOUR BIRTHDAY</h1>
+            <h1 class="pck-headingtxt"> YOUR BIRTHDAY</h1>
 
-        <p class="sub-text">1 Birthday Celebrant</p>
-        <p class="sub-text">Unli 45 mins of shoot</p>
-        <p class="sub-text">1-2 backdrops</p>
-        <p class="sub-text2">Themed Backgrounds</p>
-        <p class="sub-text2">Cake Smash</p> <br /> <br /><br /><br />
-        <p class="sub-text2" style="margin-top:-55px; ;">1 printed 8R with <br /> </p>
-        <p style="padding-left: 370px;font-family: Calibri;
+            <p class="sub-text">1 Birthday Celebrant</p>
+            <p class="sub-text">Unli 45 mins of shoot</p>
+            <p class="sub-text">1-2 backdrops</p>
+            <p class="sub-text2">Themed Backgrounds</p>
+            <p class="sub-text2">Cake Smash</p> <br /> <br /><br /><br />
+            <p class="sub-text2" style="margin-top:-55px; ;">1 printed 8R with <br /> </p>
+            <p style="padding-left: 370px;font-family: Calibri;
             font-size: 20px; margin-top: -125px;">1 printed 8R  All raw digital copies <br /> <br />Professional Photographer</p>
 
 
-        <div class="">
-            <span style="top: -20px;color:#3C353D;margin-left: 400px;/* margin-top: 10px; */" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px;color:#FFB059;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px;color:#313557;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px;color:#F1BAA3;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px;color:#F09499;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px;color:#AAB475;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px;color:#AEADA9;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
-        </div>
-        <p class="pckg-price1">₱989</p>
-        <button class="book-now-btn3">BOOK NOW</button>
+            <div class="">
+                <span style="top: -20px;color:#3C353D;margin-left: 400px;/* margin-top: 10px; */" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px;color:#FFB059;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px;color:#313557;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px;color:#F1BAA3;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px;color:#F09499;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px;color:#AAB475;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px;color:#AEADA9;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+            </div>
+            <p class="pckg-price1">₱989</p>
+            <button class="book-now-btn3">BOOK NOW</button>
 
-        <hr class="hrline2a" />
-        
-    </div>
-    </form>
-    <form asp-action="goToBooking" asp-controller="Packages">
-    <div class="text-center">
+            <hr class="hrline2a" />
+
+
+
+        </div>
+
+        <div class="text-center">
 
         <img class="img-adj" src="~/assets/maternity.JPG" alt="Avatar">
-        <h1 class="pck-headingtxt"> YOUR MATERNITY </h1>
+            <h1 class="pck-headingtxt"> YOUR MATERNITY </h1>
 
-        <p class="sub-text">1 Pregnant Mother</p>
-        <p class="sub-text">Unli 60 mins of shoot</p>
-        <p class="sub-text2">1-2 backdrops</p>
-        <p class="sub-text2" style="margin-top:-11px;">1 printed 8R with <br /> All raw digital images</p>
-        <p style="padding-left: 350px;font-family: Calibri;
+            <p class="sub-text">1 Pregnant Mother</p>
+            <p class="sub-text">Unli 60 mins of shoot</p>
+            <p class="sub-text2">1-2 backdrops</p>
+            <p class="sub-text2" style="margin-top:-11px;">1 printed 8R with <br /> All raw digital images</p>
+            <p style="padding-left: 350px;font-family: Calibri;
             font-size: 20px; margin-top: -108px;">Solo Portrait     <br /> <br /> Professional Photographer</p>
 
 
-        <div class="">
-            <span style="top: -20px; color:#3C353D;margin-left: 350px;/* margin-top: 10px; */" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px; color:#F09499;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px; color:#AAB475;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
-            <span style="top: -20px; color:#AEADA9;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+            <div class="">
+                <span style="top: -20px; color:#3C353D;margin-left: 350px;/* margin-top: 10px; */" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px; color:#F09499;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px; color:#AAB475;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+                <span style="top: -20px; color:#AEADA9;margin-left: -10px;margin-top: 10px;" class="glyphicon glyphicon-stop squares"></span>
+            </div>
+            <p class="pckg-price1">₱1899</p>
+            <button class="book-now-btn3">BOOK NOW</button>
+
+            <hr class="hrline2a" />
+
+
+
         </div>
-        <p class="pckg-price1">₱1899</p>
-        <button class="book-now-btn3">BOOK NOW</button>
 
-        <hr class="hrline2a" />
-    </div>
-    </form>
 
-    <form asp-action="goToBooking" asp-controller="Packages">
     <div class="text-center">
 
         <img class="img-adj" src="~/assets/homeservice.JPG" alt="Avatar">
@@ -533,8 +506,10 @@
         <button class="book-now-btn3">BOOK NOW</button>
 
         <hr class="hrline2a" />
+
+
+
     </div>
-    </form>
 
    
     <div class="text-center">
