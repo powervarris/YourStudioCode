@@ -85,6 +85,17 @@
     display: flex;
 }
 
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #E89C3B !important;
+        text-decoration: underline;
+    }
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -147,15 +158,19 @@
     }
 
     .blist {
-        margin-right: 300px;
+         max-width: 170px;
     }
+
+        .blist:first-child {
+            margin-top: -90px;
+        }
 
     .time-container .time {
         margin: 220px 0 0 230px;
     }
 
     #Srvc {
-        margin-top: 20px;
+        margin-top: -70px;
         margin-left: 190px;
     }
 
@@ -171,13 +186,6 @@
         margin: -30px 0 0 170px;
     }
 
-    #btnG {
-        margin-left: 15px;
-    }
-
-    #btnBL {
-        margin-left: 40px;
-    }
 }
 
 /* sm */
@@ -191,7 +199,7 @@
     }
 
     .blist {
-        margin-right: 460px;
+        max-width: 205px;
     }
 
     .time-container .time {
@@ -199,7 +207,7 @@
     }
 
     #Srvc {
-        margin-top: 20px;
+        margin-top: -70px;
         margin-left: 240px;
     }
 
@@ -234,8 +242,26 @@
         margin-left: 310px;
     }
 
+    .userTXT {
+        font-size: 20px;
+    }
+
+    .dateTXT {
+        font-size: 15px;
+    }
+
+    .timeTXT {
+        font-size: 15px;
+    }
+
     .blist {
-        margin-right: 450px;
+        padding: 5px 5px 5px 25px;
+        max-width: 330px;
+    }
+
+    #VL2 {
+        display: unset;
+        top: 10px;
     }
 
     .time-container .time {
@@ -243,11 +269,13 @@
     }
 
     #Srvc {
-        margin-top: 20px;
-        margin-left: 365px;
+        margin-top: -70px;
+        margin-left: 385px;
     }
 
         #Srvc #SrvcDtl {
+            text-align: center;
+            margin-bottom: 50px;
             font-size: 30px;
         }
 
@@ -275,19 +303,36 @@
     }
 
     .blist {
-        margin-right: 690px;
+        padding: 20px 0 0 40px;
+        max-width: 560px;
     }
 
     .time-container .time {
         margin: 300px 0 0 600px;
     }
 
+    .userTXT {
+        margin-right:190px;
+        font-size: 24px;
+    }
+
+    .dateTXT {
+        color: gray;
+        font-size: 16px;
+    }
+
+    .timeTXT {
+        color: gray;
+        font-size: 16px;
+    }
+
     #Srvc {
-        margin-top: 20px;
-        margin-left: 520px;
+        margin-top: -70px;
+        margin-left: 620px;
     }
 
         #Srvc #SrvcDtl {
+            margin-bottom: 50px;
             font-size: 30px;
         }
 
@@ -319,7 +364,12 @@
     }
 
     .blist {
-        margin-right: 960px;
+        padding: 20px 0 0 60px;
+        max-width: 790px;
+    }
+
+    .userTXT {
+        margin-right: 410px;
     }
 
     .time-container .time {
@@ -331,13 +381,14 @@
     }
 
     #Srvc {
-        top: 400px;
+        top: 100px;
         left: 700px;
         margin-top: 20px;
         margin-left: 230px;
     }
 
         #Srvc #SrvcDtl {
+            margin-bottom: 50px;
             font-size: 30px;
         }
 
@@ -369,7 +420,11 @@
     }
 
     .blist {
-        margin-right: 1150px;
+        max-width: 980px;
+    }
+
+    .userTXT {
+        margin-right: 600px;
     }
 
     .time-container .time {
@@ -429,13 +484,12 @@ html, body {
 
 #VL2 {
     position: absolute;
-    top: -110px;
     bottom: 0;
-    right: 400px;
+    right: 370px;
     width: 5px;
     background-color: #ccc;
     margin-left: 150px;
-    height: 500px;
+    height: 1000px;
 }
 
 .blist {
@@ -445,16 +499,11 @@ html, body {
     border-radius: 5px;
     color: black;
     border: 1px solid black;
-    padding: 5px;
     margin-top: 5px;
 }
 
     .blist:hover {
         background-color: #FFA629;
-    }
-
-    .blist:first-child {
-        margin-top: 500px;
     }
 
 .ftco-section {
@@ -522,7 +571,6 @@ html, body {
 }
 
 #Srvc {
-    text-align: center;
     position: absolute;
     font-family: 'Palatino Linotype';
 }
@@ -533,16 +581,28 @@ html, body {
     }
 
 #btnG {
-    background-color: limegreen;
+    padding: 6px 6px 6px 6px;
+    margin-right: 20px;
+    color: black;
+    background-color: #FFA629;
     border: hidden
 }
 
 #btnR {
-    background-color: red;
+    padding: 6px 6px 6px 6px;
+    margin-right: 20px;
+    color: black;
+    background-color: #B22222;
     border: hidden;
 }
 
+#btnBL {
+    padding: 6px 12px 6px 12px;
+    margin-right: 20px;
+}
+
 #btnGR {
+    margin-right: 20px;
     background-color: gray;
     border: hidden;
 }

@@ -86,6 +86,17 @@
     display: flex;
 }
 
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #E89C3B !important;
+        text-decoration: underline;
+    }
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
