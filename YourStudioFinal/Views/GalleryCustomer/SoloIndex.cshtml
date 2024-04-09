@@ -1,4 +1,7 @@
-﻿@{
+﻿﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
 }
 
 
@@ -233,24 +236,24 @@
         <ul class="nav2list">
             <li class="nav2">
 
-                @Html.ActionLink("All", "Index", "GalleryCustomer") &nbsp;         |
+                @Html.ActionLink("All", "Index", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;         |
             </li>
             <li class="nav2">
-                @Html.ActionLink("Solo", "SoloIndex", "GalleryCustomer") &nbsp;      |
+                @Html.ActionLink("Solo", "SoloIndex", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;      |
             </li>
             <li class="nav2">
-                @Html.ActionLink("Family", "FamilyIndex", "GalleryCustomer") &nbsp;       |
+                @Html.ActionLink("Family", "FamilyIndex", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;       |
             </li>
             <li class="nav2">
-                @Html.ActionLink("Fur Families", "FurIndex", "GalleryCustomer") &nbsp;      |
+                @Html.ActionLink("Fur Families", "FurIndex", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;      |
 
             </li>
             <li class="nav2">
-                @Html.ActionLink("Couples", "CoupleIndex", "GalleryCustomer") &nbsp;      |
+                @Html.ActionLink("Couples", "CoupleIndex", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;      |
 
             </li>
             <li class="nav2">
-                @Html.ActionLink("Child", "ChildIndex", "GalleryCustomer")
+                @Html.ActionLink("Child", "ChildIndex", "GalleryCustomer", null, new {@class = "black-text"})
 
             </li>
         </ul>

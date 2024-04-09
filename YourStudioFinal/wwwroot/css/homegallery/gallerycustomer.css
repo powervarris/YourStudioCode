@@ -394,3 +394,11 @@ footer {
     color: black;
     margin-top: 10px;
 }
+
+.black-text {
+    color: black;
+}
+
+.black-text:hover {
+    color: black;
+}
