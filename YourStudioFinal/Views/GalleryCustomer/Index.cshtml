@@ -95,15 +95,15 @@
                                 
                                 @if (User.IsInRole("User"))
                                 {
-                                    <li class="nav-item active">
-                                        <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                                <li class="nav-item active navactive">
+                                    <a class="nav-link navactive" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
                                     </li>
                                 }
                                 
                                 @if (ViewBag.isLogged == false)
                                 {
-                                    <li class="nav-item active">
-                                        <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                                <li class="nav-item active navactive">
+                                    <a class="nav-link navactive" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
                                     </li>
                                 }
                                 

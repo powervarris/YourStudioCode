@@ -67,14 +67,7 @@
                                                         <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
                                                         <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
                                                         <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
-                                                        @if (ViewBag.isLogged)
-                                                        {
-                                                            <a class="nav-link" asp-controller="Home" asp-action="Logout">Logout</a>
-                                                        }
-                                                        else
-                                                        {
-                                                            <a class="nav-link" asp-controller="Account" asp-action="Index">Login</a>
-                                                        }
+                                                        <a asp-controller="Home" asp-action="Logout">Logout</a>
                                                     </div>
                                                     <span onclick="openNav()">
                                                         <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
@@ -98,7 +91,7 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav ml-auto navbar-right">
-                            <li class="nav-item active">
+                            <li class="nav-item active navactive">
                                 <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                             </li>
                             
@@ -403,7 +396,7 @@
             </div>
         </div>
         <div class="learn2">
-            <a type="button"  style="color:black;"class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1">LEARN MORE! -></p></a>
+            <a type="button"  style="color:black; margin-bottom:-120px;"class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1">LEARN MORE! -></p></a>
             
         </div>
 
