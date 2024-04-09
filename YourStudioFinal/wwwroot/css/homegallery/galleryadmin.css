@@ -28,6 +28,18 @@
 }
 
 
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #E89C3B !important;
+        text-decoration: underline;
+    }
+
+   
 .nav-item {
     margin-top: 10px;
     font-family: 'Calibri';
@@ -82,7 +94,7 @@ nav2 {
 
 .nav2list-position {
     padding: 20px;
-    margin-left: 800px;
+    margin-left: 910px;
     text-align:center;
 }
 
@@ -102,9 +114,9 @@ nav2 {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    margin-top: 55px;
+    margin-top: 25px;
     font-weight: bolder;
-    margin-left: 70px;
+    margin-left: 150px;
 }
 
 .wrap {
