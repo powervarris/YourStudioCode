@@ -96,6 +96,12 @@
         text-decoration: underline;
     }
 
+.navactive {
+    color: #E89C3B;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -104,7 +110,8 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background: linear-gradient(130deg, rgb(0, 0, 0), transparent); /* Black*/
+    color: white; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -158,19 +165,15 @@
     }
 
     .blist {
-         max-width: 170px;
+        max-width: 170px;
     }
-
-        .blist:first-child {
-            margin-top: -90px;
-        }
 
     .time-container .time {
         margin: 220px 0 0 230px;
     }
 
     #Srvc {
-        margin-top: -70px;
+        margin-top: -170px;
         margin-left: 190px;
     }
 
@@ -185,7 +188,6 @@
     .ftco-section {
         margin: -30px 0 0 170px;
     }
-
 }
 
 /* sm */
@@ -207,7 +209,7 @@
     }
 
     #Srvc {
-        margin-top: -70px;
+        margin-top: -170px;
         margin-left: 240px;
     }
 
@@ -269,7 +271,7 @@
     }
 
     #Srvc {
-        margin-top: -70px;
+        margin-top: -170px;
         margin-left: 385px;
     }
 
@@ -312,7 +314,7 @@
     }
 
     .userTXT {
-        margin-right:190px;
+        margin-right: 190px;
         font-size: 24px;
     }
 
@@ -327,7 +329,7 @@
     }
 
     #Srvc {
-        margin-top: -70px;
+        margin-top: -200px;
         margin-left: 620px;
     }
 
@@ -365,7 +367,7 @@
 
     .blist {
         padding: 20px 0 0 60px;
-        max-width: 790px;
+        max-width: 850px;
     }
 
     .userTXT {
@@ -381,10 +383,8 @@
     }
 
     #Srvc {
-        top: 100px;
-        left: 700px;
-        margin-top: 20px;
-        margin-left: 230px;
+        margin-top: -200px;
+        margin-left: 900px;
     }
 
         #Srvc #SrvcDtl {
@@ -420,7 +420,7 @@
     }
 
     .blist {
-        max-width: 980px;
+        max-width: 1050px;
     }
 
     .userTXT {
@@ -432,9 +432,9 @@
     }
 
     #Srvc {
-        left: 1000px;
-        margin-top: 20px;
-        margin-left: 230px;
+        margin-top: -200px;
+        ;
+        margin-left: 1100px;
     }
 
         #Srvc #SrvcDtl {
@@ -493,7 +493,6 @@ html, body {
 }
 
 .blist {
-    top: 100px;
     position: relative;
     background-color: white;
     border-radius: 5px;
@@ -584,7 +583,7 @@ html, body {
     padding: 6px 6px 6px 6px;
     margin-right: 20px;
     color: black;
-    background-color: #FFA629;
+    background-color: #ffde65;
     border: hidden
 }
 
@@ -592,7 +591,7 @@ html, body {
     padding: 6px 6px 6px 6px;
     margin-right: 20px;
     color: black;
-    background-color: #B22222;
+    background-color: #e54e4e;
     border: hidden;
 }
 
@@ -612,8 +611,4 @@ html, body {
     top: 300px;
     left: 1400px;
     font-family: 'Palatino Linotype';
-}
-
-body {
-    background-image: url(../../wwwroot/photos/Background.png);
 }

@@ -84,8 +84,8 @@
 
                         @if (User.IsInRole("User"))
                         {
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
+                            <li class="nav-item dropdown active navactive">
+                                <a class="nav-link dropdown-toggle navactive" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
                                     <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Inquiry List</a>
@@ -114,8 +114,8 @@
                                 </div>
                             </li>
 
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                            <li class="nav-item dropdown active navactive">
+                                <a class="nav-link dropdown-toggle navactive" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
                                     <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
@@ -306,8 +306,8 @@
         <hr />
         <div class="social-icons">
             <a href="#" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/YourStudio.bacoor " target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://www.instagram.com/yourstudio.bacoor/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
         </div>
     </div>
     <p class="copyright">&copy; 2023 Your Studio</p>

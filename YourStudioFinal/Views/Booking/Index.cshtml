@@ -89,8 +89,8 @@
 
 						@if (User.IsInRole("User"))
 						{
-							<li class="nav-item dropdown active">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
+							<li class="nav-item dropdown active navactive">
+								<a class="nav-link dropdown-toggle navactive" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 									<a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
 									<a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Inquiry List</a>
@@ -109,8 +109,8 @@
 						@if (User.IsInRole("Admin"))
 						{
 
-							<li class="nav-item dropdown active">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<li class="nav-item dropdown active navactive">
+								<a class="nav-link dropdown-toggle navactive" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									Booking
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

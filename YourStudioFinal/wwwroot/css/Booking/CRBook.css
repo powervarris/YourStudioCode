@@ -224,11 +224,11 @@
     }
 
     .pack {
-        margin: 60px 0 0 700px;
+        margin: 60px 0 0 680px;
     }
 
     .Adds {
-        margin: 0 0 0 700px;
+        margin: 0 0 0 680px;
     }
 
     #Srvc {
@@ -237,7 +237,7 @@
     }
 
     .time-container .time {
-        margin-left: 170px
+        margin-left: 150px
     }
 }
 
@@ -347,6 +347,12 @@ html, body {
     display: flex;
 }
 
+.navactive {
+    color: #E89C3B;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -355,7 +361,8 @@ html, body {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background: linear-gradient(130deg, rgb(0, 0, 0), transparent); /* Black*/
+    color: white;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -715,6 +722,7 @@ select {
 }
 
 select {
+    width: 150px;
     word-wrap: normal;
 }
 
