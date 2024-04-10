@@ -166,15 +166,15 @@
     </section>
 <section class="containers">
     <div class="form-box">
-            @Html.ActionLink("All", "BookingAll", "Booking", null, new { @class = "black-text", @style = "color: black;" })
-            |
-            @Html.ActionLink("Pending", "Booking", "Booking", null, new { @class = "black-text", @style = "color: black;" })
-            |
-            @Html.ActionLink("Accepted", "BookingAccept", "Booking", null, new { @class = "black-text", @style = "color: black;" })
-            |
-            @Html.ActionLink("Declined", "BookingDecline", "Booking", null, new { @class = "black-text", @style = "color: black;" })
-            |
-            @Html.ActionLink("Paid", "BookingPaid", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+        @Html.ActionLink("All", "BookingAll", "Booking", null, new {@class = "black-text", @style = "color: black;"})
+        |
+        @Html.ActionLink("Pending", "Booking", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+        |
+        @Html.ActionLink("Accepted", "BookingAccept", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+        |
+        @Html.ActionLink("Declined", "BookingDecline", "Booking", null, new {@class = "black-text", @style = "color: black;"})
+        |
+        @Html.ActionLink("Paid", "BookingPaid", "Booking", null, new { @class = "black-text", @style = "color: black;" })
         <br/>
 
         @{
@@ -200,33 +200,37 @@
                         var currentUserId = UserManager.GetUserId(User);
                     }
                     <form id="deleteContent" method="post">
-                    @foreach (var item in Model.Where(m => m.accountUser.Id == currentUserId))
-                    {
-                        <tr>
-                            <td><input type="checkbox" data-id="@item.Id"/></td>
-                            <td>@item.date</td>
-                            <td>@item.time</td>
-                            <td>@item.accountUser.Id</td>
-                            <td>@item.accountUser.UserName</td>
-                            <td>@item.accountUser.mobileNumber</td>
-                            <td>@item.accountUser.Email</td>
-                            <td>@item.packages</td>
-                            <td>@item.addOns</td>
-                            <td>@item.payment.</td>
-                        </tr>
-                    }
+                        @for (int i = 0; i < Model.Count; i++)
+                        {
+                            <tr>
+                                <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete"/></td>
+                                <td>@Model[i].date</td>
+                                <td>@Model[i].time</td>
+                                <td>@Model[i].accountUser.Id</td>
+                                <td>@Model[i].accountUser.Id</td>
+                                <td>@Model[i].accountUser.mobileNumber</td>
+                                <td>@Model[i].accountUser.Email</td>
+                                <td>@Model[i].packages</td>
+                                <td>@Model[i].addOns</td>
+                                <td>@Model[i].totalPrice</td>
+                                @if (Model[i].payment != null)
+                                {
+                                    <td><input type="button" onclick="location.href='@System.IO.Path.Combine("../uploads/", @Model[i].payment?.fileName)';" value="See Receipt"/></td>
+                                }
+                                else
+                                {
+                                    <td>Not Paid</td>
+                                }
+                            </tr>
+                        }
                     </form>
                 </table>
             }
         }
         <br/>
+
     </div>
-        <br />
-        <section class="BtnCont">
-            <button type="button" id="RmvBtn" onclick="setDelete()">
-                REMOVE
-            </button>
-        </section>
+    <br/>
 </section>
 
 <script>
@@ -247,8 +251,8 @@
         <hr />
         <div class="social-icons">
             <a href="#" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/YourStudio.bacoor " target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://www.instagram.com/yourstudio.bacoor/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
         </div>
     </div>
     <p class="copyright">&copy; 2023 Your Studio</p>
