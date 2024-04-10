@@ -86,7 +86,7 @@
         setDelete = function () {
         var checked = document.querySelectorAll('input[type="checkbox"]:checked');
         var deleteContent = document.getElementById('deleteContent');
-        deleteContent.action = '/Booking/DeletedBooking?ids=' + Array.from(checked).map(x => x.getAttribute('data-id')).join(',');
+        deleteContent.action = '/Booking/DeletedBookingAdmin?ids=' + Array.from(checked).map(x => x.getAttribute('data-id')).join(',');
         deleteContent.submit();
     }
 </script>

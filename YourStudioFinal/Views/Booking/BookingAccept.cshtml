@@ -19,15 +19,15 @@
     </section>
 <section class="containers">
     <div class="form-box">
-        @Html.ActionLink("All", "BookingAll", "Booking")
+        @Html.ActionLink("All", "BookingAll", "Booking", null, new {@class = "black-text"})
         |
-        @Html.ActionLink("Pending", "Booking", "Booking")
+        @Html.ActionLink("Pending", "Booking", "Booking", null, new {@class = "black-text"})
         |
-        @Html.ActionLink("Accepted", "BookingAccept", "Booking")
+        @Html.ActionLink("Accepted", "BookingAccept", "Booking", null, new {@class = "black-text"})
         |
-        @Html.ActionLink("Declined", "BookingDecline", "Booking")
+        @Html.ActionLink("Declined", "BookingDecline", "Booking", null, new {@class = "black-text"})
         |
-        @Html.ActionLink("Paid", "BookingPaid", "Booking")
+        @Html.ActionLink("Paid", "BookingPaid", "Booking", null, new {@class = "black-text"})
         <br/>
 
         @{
@@ -46,12 +46,13 @@
                         <td>Package</td>
                         <td>Add ons</td>
                         <td>Price</td>
+                        <td>Payment Image</td>
                     </tr>
                     <!--foreach the booking of the user logged in-->
                     @{
                         var currentUserId = UserManager.GetUserId(User);
                     }
-
+                    <form id="deleteContent" method="post">
                     @foreach (var item in Model.Where(m => m.accountUser.Id == currentUserId))
                     {
                         <tr>
@@ -64,8 +65,10 @@
                             <td>@item.accountUser.Email</td>
                             <td>@item.packages</td>
                             <td>@item.addOns</td>
+                            <td>@item.payment.</td>
                         </tr>
                     }
+                    </form>
                 </table>
             }
         }
@@ -85,6 +88,8 @@
         deleteContent.submit();
     }
 </script>
+
+<script></script>
 </body>
 </html>
 

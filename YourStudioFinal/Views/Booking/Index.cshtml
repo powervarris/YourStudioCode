@@ -235,7 +235,7 @@
 
 			<section class="pack">
 				<label for="packages">Packages:</label>
-				<select name="packages" id="package" value="0" onchange="changePrice(this.value)">
+				<select name="packages" id="package" value="0" onchange="changePrice(this.value)" required>
 					<option value="0"> - Choose - </option>
 					<option value="0">None</option>
 					<option value="199">Your Student</option>
@@ -251,12 +251,17 @@
 
 			<section class="Adds">
 				<label for="addOns">Add-Ons:</label>
-				<select name="addOns" id="addOn" value="0" onchange="changePrice2(this.value)">
-					<option value="0"> - Choose - </option>
+				<select name="addOns" id="addOn" value="0" onchange="changePrice2(this.value)" required>
+					<option> - Choose - </option>
 					<option value="0">None</option>
-					<option value="249">Additional Head</option>
-					<option value="299">Additional Fur Baby</option>
-					<option value="199">Additional 15 Minutes</option>>
+					<option value="300">Cake Smash Clean up | 300 PHP</option>
+					<option value="299">Themed Background Setup | 299 PHP</option>
+					<option value="199">15 Minute extension (with backdrop change) | 199 PHP</option>
+					<option value="299">Additional Person | 299 PHP/person</option>
+					<option value="349">Additional Pet | 349 PHP/pet</option>
+					<option value="50">4R - Sized Photo | 50 PHP</option>
+					<option value="150">8R - Sized Photo | 150 PHP</option>
+					<option value="450">8R - Sized Photo with frame | 450 PHP</option>
 				</select>
 			</section>
 
@@ -269,7 +274,7 @@
 		<div id="packages"></div>
 		<div id="addOns">Total Add-Ons: </div>
 		<hr />
-		<form asp-controller="Booking" asp-action="AddBooking" method="post">
+		<form asp-controller="Booking" asp-action="AddBooking" method="post" req>
 			<input name="date" id="formDate" style="display: none" />
 			<input name="time" id="formTime" style="display: none" />
 			<input name="packages" id="formPackage" style="display: none" />

@@ -161,11 +161,11 @@
             <div>YOUR INQUIRY</div>
         </div>
 
-        @using (Html.BeginForm("Submit", "Home", FormMethod.Post))
+        @using (Html.BeginForm("Submit", "Inquiry", FormMethod.Post))
         {
 
             <div class="form-box">
-                <div><strong>Send Inquiry</strong> |<a href="@Url.Action("Inquirylist","Home")"> Inquiry List</a> </div>
+                <div><strong>Send Inquiry</strong> |<a href="@Url.Action("Inquirylist","Inquiry")"> Inquiry List</a> </div>
                 <br />
                 @Html.TextBoxFor(model => model.Name, new { placeholder = "Title", rows = 6, style = "width: 100%; border-radius: 5px;" })
                 <br /> <br />

@@ -104,6 +104,7 @@ public class BookingController : Controller
         
         var UserDetails = await _userManager.GetUserAsync(User);
         
+        //customer side email
         var apiKey = "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";
         var client = new SendGridClient(apiKey);
         var from_email = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudio");
@@ -126,6 +127,31 @@ public class BookingController : Controller
                                + "Thank you for choosing YourStudio!"; ;
         var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, plainTextContent, "");
         var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+        
+        //admin side email
+        var apiKeyAdmin = "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";
+        var clientAdmin = new SendGridClient(apiKeyAdmin);
+        var from_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudioSystem");
+        var to_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com");
+        var subjectAdmin = "Booking Notification";
+        var htmlContent = "<div style='background-color: #f8f9fa; padding: 20px;'><h1 style='color: #343a40;'>New Booking has been made!</h1><p>Booking Details:</p><ul><li>Booking ID: " + bookingID + "</li><li>Customer Email: " + userEmail + "</li><li>Booking Date: " + bookingModel.date + "</li><li>Booking Time: " + bookingModel.time + "</li><li>Booking Package: " + bookingModel.packages + "</li><li>Booking Add-ons: " + bookingModel.addOns + "</li></ul></div>";
+        var plainTextContentAdmin = "New Booking has been made! Please check the admin panel for more details."
+                                    + Environment.NewLine
+                                    + "Booking Details: "
+                                    + Environment.NewLine
+                                    + "Booking ID: " + bookingID
+                                    + Environment.NewLine
+                                    + "Customer Email: " + userEmail
+                                    + Environment.NewLine
+                                    + "Booking Date: " + bookingModel.date
+                                    + Environment.NewLine
+                                    + "Booking Time: " + bookingModel.time
+                                    + Environment.NewLine
+                                    + "Booking Package: " + bookingModel.packages
+                                    + Environment.NewLine
+                                    + "Booking Add-ons: " + bookingModel.addOns;
+                                    var msgAdmin = MailHelper.CreateSingleEmail(from_emailAdmin, to_emailAdmin, subject, "", htmlContent);
+        var responseAdmin = await clientAdmin.SendEmailAsync(msgAdmin).ConfigureAwait(false);
         return RedirectToAction("Index");
     }
     
@@ -464,5 +490,21 @@ public class BookingController : Controller
         }
 
         return RedirectToAction("Booking", "Booking");
+    }
+    
+    public async Task<ActionResult> DeletedBookingAdmin(string ids)
+    {
+        var idList = ids.Split(",");
+        foreach (var id in idList)
+        {
+            var bookingmodel = _context.Booking.FirstOrDefault(x => x.Id == id);
+            if (bookingmodel != null)
+            {
+                _context.Remove(bookingmodel);
+                _context.SaveChanges();
+            }
+        }
+
+        return RedirectToAction("BookingListAdmin", "Booking");
     }
 }
