@@ -18,15 +18,7 @@
     <title>Login #2</title>
 </head>
 <body>
-    @{
-        if (TempData["Error"] != null)
-        {
-            <script>
-                alert("@TempData["Error"]");
-            </script>
-        }
-    }
-    <header>
+<header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container-fluid navbar-bg">
                 <div class="navbar-header">
@@ -53,7 +45,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" style="z-index: 1000;">
                                 <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-                                <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown active">
@@ -138,7 +130,7 @@
             </div>
         </div>
     </div>
-    <script>
+<script>
 
         var currentHour = new Date().getHours();
 
@@ -152,5 +144,17 @@
             greetingElement.innerHTML = "<h1>GOOD EVENING</h1>";
         }
     </script>
+
+    @{
+        if (TempData["Error"] != null)
+        {
+            <script>
+                
+                window.onload = function () {
+                    alert("@TempData["Error"]");
+                };
+            </script>
+        }
+    }
 </body>
 </html>

@@ -1,5 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Login";
+﻿@model ForgetPassword
+
+@{
+    ViewData["Title"] = "Forget Password";
 }
 <!doctype html>
 <html lang="en">
@@ -88,13 +90,12 @@
                                 </div>
                                 <form action="#!">
                                 <div class="form-floating mb-3" style="text-align: center;">
-                                    <input type="email" class="form-control" id="floatingPassword" placeholder="Password" name="Email" required="required">
-                                    <label for="floatingPassword">Email Address</label>
+                                    <input type="email" class="form-control" name="Email" id="Email" placeholder="name@example.com" asp-for="Email" required="required">
+                                    <label for="email" asp-for="Email" class="form-label">Email Address</label>
                                     <p style="margin: 20px 0;">Enter your registered Email Address to reset your password</p>
                                 </div>
                                     <div class="d-grid">
-                                        <button class="btn btn-primary btn-lg" type="submit" asp-action="validateEmail" asp-controller="Account">Reset Password</button>
-                                       
+                                        <button class="btn btn-primary btn-lg" type="submit" asp-action="validateEmail" asp-controller="Account">Get Code</button>
                                     </div>
                                 </form>
                             </div>
@@ -121,7 +122,7 @@
             </div>
         </div>
     </div>
-    <script>
+<script>
 
         var currentHour = new Date().getHours();
 
@@ -135,5 +136,7 @@
             greetingElement.innerHTML = "<h1>GOOD EVENING</h1>";
         }
     </script>
+@{
+}
 </body>
 </html>

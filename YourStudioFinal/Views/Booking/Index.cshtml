@@ -100,7 +100,7 @@
 							<li class="nav-item dropdown active">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
+									<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
 									<a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
 								</div>
 							</li>
@@ -127,10 +127,7 @@
 								</div>
 							</li>
 						}
-
-						<li class="nav-item">
-							<a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-						</li>
+						
 
 						@if (ViewBag.isLogged)
 						{
@@ -232,55 +229,59 @@
 			</div>
 		</section>
 	</section>
-
+	
 			<section class="pack">
 				<label for="packages">Packages:</label>
-				<select name="packages" id="package" value="0" onchange="changePrice(this.value)" required>
-					<option value="0"> - Choose - </option>
-					<option value="0">None</option>
-					<option value="199">Your Student</option>
-					<option value="499">Your Duo</option>
-					<option value="699">Your Squad</option>
-					<option value="899">Your Barkada</option>
-					<option value="1499">Your Family</option>
-					<option value="1299">Your Fur Baby</option>
-					<option value="899">Your Graduation</option>
-					<option value="1499">Your Home Service</option>
+				<select name="packages" id="package" value="0" onchange="changePrice2(this.value)" form="BookingForm" required>
+					<option value="None | 0 PHP">None</option>
+					<option value="Your Student">Your Student</option>
+					<option value="Your Soloito">Your Soloito</option>
+					<option value="Your Duo">Your Duo</option>
+					<option value="Your Barkada">Your Barkada</option>
+					<option value="Your Squad">Your Squad</option>
+					<option value="Your Family">Your Family</option>
+					<option value="Your Fur Baby">Your Fur Baby</option>
+					<option value="Your Graduation">Your Graduation</option>
+					<option value="Your Birthday">Your Birthday</option>
+					<option value="Your Maternity">Your Maternity</option>
+					<option value="Your Home Service">Your Home Service</option>
 				</select>
 			</section>
-
+			
 			<section class="Adds">
 				<label for="addOns">Add-Ons:</label>
-				<select name="addOns" id="addOn" value="0" onchange="changePrice2(this.value)" required>
-					<option> - Choose - </option>
-					<option value="0">None</option>
-					<option value="300">Cake Smash Clean up | 300 PHP</option>
-					<option value="299">Themed Background Setup | 299 PHP</option>
-					<option value="199">15 Minute extension (with backdrop change) | 199 PHP</option>
-					<option value="299">Additional Person | 299 PHP/person</option>
-					<option value="349">Additional Pet | 349 PHP/pet</option>
-					<option value="50">4R - Sized Photo | 50 PHP</option>
-					<option value="150">8R - Sized Photo | 150 PHP</option>
-					<option value="450">8R - Sized Photo with frame | 450 PHP</option>
+				<select name="addOns" id="addOn" value="0" onchange="changePrice(this.value)" form="BookingForm" required>
+					<option value="None | 0 PHP">None</option>
+					<option value="Cake Smash Clean up | 300 PHP">Cake Smash Clean up | 300 PHP</option>
+					<option value="Themed Background Setup | 299 PHP">Themed Background Setup | 299 PHP</option>
+					<option value="15 Minute extension (with backdrop change) | 199 PHP">15 Minute extension (with backdrop change) | 199 PHP</option>
+					<option value="Additional Person | 299 PHP/person">Additional Person | 299 PHP/person</option>
+					<option value="Additional Pet | 349 PHP/pet">Additional Pet | 349 PHP/pet</option>
+					<option value="4R - Sized Photo | 50 PHP">4R - Sized Photo | 50 PHP</option>
+					<option value="8R - Sized Photo | 150 PHP">8R - Sized Photo | 150 PHP</option>
+					<option value="8R - Sized Photo with frame | 450 PHP">8R - Sized Photo with frame | 450 PHP</option>
 				</select>
 			</section>
 
 	<section id="Srvc">
+		
 		<div id="SrvcDtl">Service Details</div>
 		<div>@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</div>
 		<div id="slctDate2"></div>
 		<div id="slctTime"></div>
 		<div id="packagelist"></div>
-		<div id="packages"></div>
-		<div id="addOns">Total Add-Ons: </div>
-		<hr />
-		<form asp-controller="Booking" asp-action="AddBooking" method="post" req>
-			<input name="date" id="formDate" style="display: none" />
-			<input name="time" id="formTime" style="display: none" />
-			<input name="packages" id="formPackage" style="display: none" />
-			<input name="addOns" id="formAddOns" style="display: none" />
-			@* <input name="totalPrice" id="formPrice" style="border: none"/> *@
-			<button type="submit" class="btnB" @*data-toggle="modal" data-target="#exampleModalCenter"*@>
+		<div id="packages">Total Package: 0</div>
+		<div id="addOns">Total Add-Ons: 0</div>
+		<div id="totalPrice">Total Price: 0</div>
+
+		<hr/>
+		<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm" required>
+			<input name="date" id="formDate" hidden required/>
+			<input name="time" id="formTime" hidden required/>
+			<input name="packages" id="formPackage" hidden/>
+			<input name="addOns" id="formAddOns" hidden/>
+			<input name="totalPrice" id="formPrice" hidden/>
+			<button type="submit" class="btnB" onclick="checkDateTime()">
 				Book Now!
 			</button>
 		</form>
@@ -380,17 +381,182 @@
 
 		});
 
-		function changePrice(price) {
-			$("#packages").text("Total Package: " + price);
-			console.log('Selected package:', price);
-			$("#formPackage").val(price);
-		};
-
-		function changePrice2(price2) {
-			$("#addOns").text("Total Add-Ons: " + price2);
-			console.log('Selected Add-ons:', price2);
-			$("#formAddOns").val(price2);
-		};
+	</script>
+	
+	<script>
+			function changePrice(price) {
+    			switch (price){
+    			// $("#packages").text("Total Package: " + price);
+    			// console.log('Selected package:', price);
+    			// $("#formPackage").val(price);
+    			
+    			case "None | 0 PHP":
+					$("#addOns").text("Total Package: " + "0");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+    			
+    			case "Cake Smash Clean up | 300 PHP":
+					$("#addOns").text("Total Package: " + "300");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+				
+				case "Themed Background Setup | 299 PHP":
+					$("#addOns").text("Total Add-Ons: " + "299");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+					
+				case "15 Minute extension (with backdrop change) | 199 PHP":
+					$("#addOns").text("Total Add-Ons: " + "199");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+					
+				case "Additional Person | 299 PHP/person":
+					$("#addOns").text("Total Add-Ons: " + "299");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+					
+				case "Additional Pet | 349 PHP/pet":
+					$("#addOns").text("Total Add-Ons: " + "349");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+					
+				case "4R - Sized Photo | 50 PHP":
+					$("#addOns").text("Total Add-Ons: " + "50");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+					
+				case "8R - Sized Photo | 150 PHP":
+					$("#addOns").text("Total Add-Ons: " + "150");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+				
+				case "8R - Sized Photo with frame | 450 PHP":
+					$("#addOns").text("Total Add-Ons: " + "450");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+    		};
+				
+				var packagePrice = parseInt($("#packages").text().split(" ")[2]);
+                var addOnPrice = parseInt($("#addOns").text().split(" ")[2]);
+                
+                // Check if the parsed values are NaN and replace them with 0 if they are
+                packagePrice = isNaN(packagePrice) ? 0 : packagePrice;
+                addOnPrice = isNaN(addOnPrice) ? 0 : addOnPrice;
+                
+                $("#totalPrice").text("Total Price: " + (packagePrice + addOnPrice));
+				$("#formPrice").val(packagePrice + addOnPrice);
+				
+				};
+    
+    		function changePrice2(price2) {
+    		// 	$("#addOns").text("Total Add-Ons: " + price2);
+    		// 	console.log('Selected Add-ons:', price2);
+    		// 	$("#formAddOns").val(price2);
+    			switch (price2){
+					
+				case "None | 0 PHP":
+					$("#packages").text("Total Package: " + "0");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Student":
+					$("#packages").text("Total Package: " + "399");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Soloito":
+					$("#packages").text("Total Package: " + "549");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Duo":
+					$("#packages").text("Total Package: " + "769");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Barkada":
+					$("#packages").text("Total Package: " + "1209");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+				
+				case "Your Squad":
+					$("#packages").text("Total Package: " + "989");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Family":
+					$("#packages").text("Total Package: " + "1869");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Fur Baby":
+					$("#packages").text("Total Package: " + "1429");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Graduation":
+					$("#packages").text("Total Package: " + "1429");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Birthday":
+					$("#packages").text("Total Package: " + "989");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+				
+				case "Your Maternity":
+					$("#packages").text("Total Package: " + "1899");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Home Service":
+					$("#packages").text("Total Package: " + "5499");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break
+    			};
+				
+				var packagePrice = parseInt($("#packages").text().split(" ")[2]);
+                var addOnPrice = parseInt($("#addOns").text().split(" ")[2]);
+                
+                // Check if the parsed values are NaN and replace them with 0 if they are
+                packagePrice = isNaN(packagePrice) ? 0 : packagePrice;
+                addOnPrice = isNaN(addOnPrice) ? 0 : addOnPrice;
+                
+                $("#totalPrice").text("Total Price: " + (packagePrice + addOnPrice));
+				$("#formPrice").val(packagePrice + addOnPrice);
+			};
+	</script>
+	
+	<script>
+		function checkDateTime() {
+			var date = $("#formDate").val();
+			var time = $("#formTime").val();
+			
+			if (date === "" || time === "") {
+				alert("Please select a date and time.");
+			}
+		}
 	</script>
 
 </body>

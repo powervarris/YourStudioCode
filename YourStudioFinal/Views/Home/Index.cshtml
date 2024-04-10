@@ -186,6 +186,8 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
                                         <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
+                                        
                                     </div>
                                 </li>
 
@@ -198,11 +200,7 @@
                                     </div>
                                 </li>
                             }
-                            
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-                            </li>
-                            
+
                             @if (ViewBag.isLogged)
                             {
                                 <li class="nav-item">

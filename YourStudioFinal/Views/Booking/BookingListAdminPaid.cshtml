@@ -18,15 +18,15 @@
     </section>
 <section class="containers">
     <div class="form-box">
-        @Html.ActionLink("All", "BookingListAdmin", "Booking")
+        @Html.ActionLink("All", "BookingListAdmin", "Booking", null, new {@class = "black-text"})
         |
-        @Html.ActionLink("Pending", "BookingListAdminPending", "Booking")
+        @Html.ActionLink("Pending", "BookingListAdminPending", "Booking", null, new {@class = "black-text"})
         |
-        @Html.ActionLink("Accepted", "BookingListAdminAccepted", "Booking")
+        @Html.ActionLink("Accepted", "BookingListAdminAccepted", "Booking", null, new {@class = "black-text"})
         |
-        @Html.ActionLink("Declined", "BookingListAdminDecline", "Booking")
+        @Html.ActionLink("Declined", "BookingListAdminDecline", "Booking", null, new {@class = "black-text"})
         |
-        @Html.ActionLink("Paid", "BookingListAdminPaid", "Booking")
+        @Html.ActionLink("Paid", "BookingListAdminPaid", "Booking", null, new {@class = "black-text"})
         <br/>
 
         @{
@@ -43,7 +43,9 @@
                         <td>Mobile Number</td>
                         <td>Email</td>
                         <td>Package</td>
+                        <td>Add Ons</td>
                         <td>Price</td>
+                        <td>Payment Receipt</td>
                     </tr>
                     <form id="deleteContent" method="post">
                         @for (int i = 0; i < Model.Count; i++)
@@ -52,13 +54,21 @@
                                 <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete"/></td>
                                 <td>@Model[i].date</td>
                                 <td>@Model[i].time</td>
-                                <td>N/A</td>
-                                <td>@Model[i].accountUser.UserName</td>
+                                <td>@Model[i].accountUser.Id</td>
+                                <td>@Model[i].accountUser.Id</td>
                                 <td>@Model[i].accountUser.mobileNumber</td>
                                 <td>@Model[i].accountUser.Email</td>
                                 <td>@Model[i].packages</td>
-                                <td>price</td>
-                            </tr>
+                                <td>@Model[i].addOns</td>
+                                <td>@Model[i].totalPrice</td>
+                                @if (Model[i].payment != null){
+                                <td><input type="button" onclick="location.href='@System.IO.Path.Combine("../uploads/", @Model[i].payment?.fileName)';" value="See Receipt" /></td>
+                                }
+                                else
+                                {
+                                <td>Not Paid</td>
+                                }
+                                </tr>
                         }
                     </form>
                 </table>
@@ -76,7 +86,7 @@
         setDelete = function () {
         var checked = document.querySelectorAll('input[type="checkbox"]:checked');
         var deleteContent = document.getElementById('deleteContent');
-        deleteContent.action = '/Booking/DeletedBooking?ids=' + Array.from(checked).map(x => x.getAttribute('data-id')).join(',');
+        deleteContent.action = '/Booking/DeletedBookingAdmin?ids=' + Array.from(checked).map(x => x.getAttribute('data-id')).join(',');
         deleteContent.submit();
     }
 </script>

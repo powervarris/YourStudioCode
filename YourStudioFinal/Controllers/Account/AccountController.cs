@@ -103,7 +103,6 @@ public class AccountController : Controller
         {
             ModelState.AddModelError(string.Empty, "Invalid username or password.");
             TempData["Error"] = "Invalid username or password.";
-
         }
         return View("Index", "Account");
     }

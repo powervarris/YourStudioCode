@@ -132,14 +132,14 @@
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                             <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-                                            <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Inquiry List</a>
+                                            <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
                                         </div>
                                     </li>
 
                                 <li class="nav-item dropdown active">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
                                         <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
                                     </div>
                                 </li>
@@ -174,6 +174,7 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
                                         <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
                                     </div>
                                 </li>
 
@@ -186,11 +187,6 @@
                                 </li>
                             }
 
-
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-                            </li>
-                            
                             @if (ViewBag.isLogged)
                             {
                                 <li class="nav-item">

@@ -46,7 +46,7 @@ namespace YourStudioFinal.Controllers
             }
             else
             {
-                var files = _context.GalleryFiles.Where(e => e.GalleryId == gallery.Id);
+                var files = _context.GalleryFiles.Where(e => e.GalleryId == gallery.Id).OrderBy(x => x.DateUploaded);
                 gallery.GalleryFiles = files.ToList();
             }
 
@@ -87,6 +87,7 @@ namespace YourStudioFinal.Controllers
                     galleryFile.fileName = Path.Combine(currentGallery.Id, file.FileName);
                     galleryFile.Gallery = currentGallery;
                     galleryFile.category = formCategory;
+                    galleryFile.DateUploaded = DateTime.Now;
 
                     // Add the files to the gallery dbset
                     _context.GalleryFiles.Add(galleryFile);

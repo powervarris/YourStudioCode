@@ -134,7 +134,7 @@ public class BookingController : Controller
         var from_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudioSystem");
         var to_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com");
         var subjectAdmin = "Booking Notification";
-        var htmlContent = "<div style='background-color: #f8f9fa; padding: 20px;'><h1 style='color: #343a40;'>New Booking has been made!</h1><p>Booking Details:</p><ul><li>Booking ID: " + bookingID + "</li><li>Customer Email: " + userEmail + "</li><li>Booking Date: " + bookingModel.date + "</li><li>Booking Time: " + bookingModel.time + "</li><li>Booking Package: " + bookingModel.packages + "</li><li>Booking Add-ons: " + bookingModel.addOns + "</li></ul></div>";
+        var htmlContent = "<div style='background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none;font-family:\"Libre Franklin\"'><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h1 style=color:#343a40>New Booking has been made!</h1><h1>Booking Details:</h1><h3>Booking ID: " + bookingID + "</h3><h3>Customer Email: " + userEmail + "</h3><h3>Booking Date: " + bookingModel.date + "</h3><h3>Booking Time: " + bookingModel.time + "</h3><h3>Booking Package: " + bookingModel.packages + "</h3><h3>Booking Add-ons: " + bookingModel.addOns + "</h3></div>";
         var plainTextContentAdmin = "New Booking has been made! Please check the admin panel for more details."
                                     + Environment.NewLine
                                     + "Booking Details: "

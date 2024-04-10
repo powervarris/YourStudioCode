@@ -56,7 +56,7 @@
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								<a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-								<a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Inquiry List</a>
+								<a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
 							</div>
 						</li>
                                             
@@ -79,6 +79,7 @@
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 								<a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
 								<a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+								<a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
 							</div>
 						</li>
                                             
@@ -90,12 +91,7 @@
 							</div>
 						</li>
 					}
-                                            
-                                            
-					<li class="nav-item">
-						<a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-					</li>
-                                                                        
+
 					@if (ViewBag.isLogged)
 					{
 						<li class="nav-item">
@@ -140,8 +136,7 @@
 								<div>@inquiry.value.accountUser.Email</div>
 							</div>
 							<div>
-								<div class="date">Date</div>
-								<div class="time">Time</div>
+								<div class="date">@inquiry.value.Date</div>
 							</div>
 						</div>
 						<hr />

@@ -115,21 +115,18 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
                                     <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
                                 </div>
                             </li>
 
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
-                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-                                </div>
-                            </li>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                    </div>
+                                </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-                            </li>
-                                
                             }
                             @if (ViewBag.isLogged)
                             {
@@ -137,7 +134,7 @@
                                     <a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
                                 </li>
                             }
-                                                        else
+                            else
                             {
                                 <li class="nav-item">
                                     <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
