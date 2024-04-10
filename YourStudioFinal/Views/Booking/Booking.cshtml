@@ -166,15 +166,15 @@
     </section>
 <section class="containers">
     <div class="form-box">
-        @Html.ActionLink("All", "BookingAll", "Booking", null, new {@class = "black-text"})
+        @Html.ActionLink("All", "BookingAll", "Booking", null, new {@class = "black-text", @style = "color: black;"})
         |
-        @Html.ActionLink("Pending", "Booking", "Booking", null, new {@class = "black-text"})
+        @Html.ActionLink("Pending", "Booking", "Booking", null, new { @class = "black-text", @style = "color: black;" })
         |
-        @Html.ActionLink("Accepted", "BookingAccept", "Booking", null, new {@class = "black-text"})
+        @Html.ActionLink("Accepted", "BookingAccept", "Booking", null, new { @class = "black-text", @style = "color: black;" })
         |
-        @Html.ActionLink("Declined", "BookingDecline", "Booking", null, new {@class = "black-text"})
+        @Html.ActionLink("Declined", "BookingDecline", "Booking", null, new {@class = "black-text", @style = "color: black;"})
         |
-        @Html.ActionLink("Paid", "BookingPaid", "Booking", null, new {@class = "black-text"})
+        @Html.ActionLink("Paid", "BookingPaid", "Booking", null, new { @class = "black-text", @style = "color: black;" })
         <br/>
 
         @{
@@ -221,12 +221,13 @@
         }
         <br/>
 
-          <section class="BtnCont">
-                <button type="button" id="RmvBtn" onclick="setDelete()">
-                 REMOVE
-                </button>
-           </section>
     </div>
+    <br/>
+        <section class="BtnCont">
+            <button type="button" id="RmvBtn" onclick="setDelete()">
+                REMOVE
+            </button>
+        </section>
 </section>
 
 <script>

@@ -179,7 +179,7 @@ body {
     }
 
 footer {
-    bottom: -200px;
+    bottom: -100px;
     position: relative;
     justify-content: space-between;
     align-items: center;
@@ -226,6 +226,7 @@ footer {
     margin: 0 auto;
     border-radius: 25px;
     background-color: white;
+    overflow-y: scroll;
 }
 
 .BtnCont {
