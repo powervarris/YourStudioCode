@@ -63,7 +63,7 @@
 						<li class="nav-item dropdown active">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
+								<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
 								<a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
 							</div>
 						</li>
@@ -129,22 +129,29 @@
 		}
 	</div>
 	<div class="vertical-line"></div>
-	<div class="right-column">
-		@{
-			foreach (var inquiry in Model.Select((value, i) => (value, i)))
-			{
-				<div id="@("srvc" + inquiry.i)" style="display: none">
-						<div class="UserTitle">@inquiry.value.accountUser.UserName   </div>
-						<div>@inquiry.value.accountUser.Email</div>
-					
-					<hr />
-					<br />
+		<div class="right-column">
+			@{
+				foreach (var inquiry in Model.Select((value, i) => (value, i)))
+				{
+					<div id="@("srvc" + inquiry.i)" style="display: none">
+						<div class="inquiry-details">
+							<div class="user-info">
+								<div class="UserTitle">@inquiry.value.accountUser.UserName</div>
+								<div>@inquiry.value.accountUser.Email</div>
+							</div>
+							<div>
+								<div class="date">Date</div>
+								<div class="time">Time</div>
+							</div>
+						</div>
+						<hr />
+						<br />
 						<div class="inqTitle"> @inquiry.value.Name</div>
-					<div> @inquiry.value.Message</div>
-				</div>
+						<div class="message">@inquiry.value.Message</div>
+					</div>
+				}
 			}
-		}
-	</div>
+		</div>
 </div>
 
 <script>

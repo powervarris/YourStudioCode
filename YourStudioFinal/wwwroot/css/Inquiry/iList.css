@@ -193,12 +193,14 @@ footer {
     font-size: medium;
 }
 
-.social-icons {
-    display: flex;
+.social-icons a {
+    color: black !important;
+    text-decoration: none;
+    margin: 0 5px;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    text-align: center;
 }
-
 .social-icons a {
     margin: 0 5px;
 }
@@ -217,4 +219,26 @@ footer {
     font-weight:bold;
     font-family:Calibri;
     font-size:30px
+}
+
+.message {
+    text-indent: 20px; 
+    word-spacing:5px;
+    font-size:20px;
+    line-height:1.5;
+}
+.inquiry-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    flex: 1; /* Grow to fill available space */
+}
+
+.date,
+.time {
+    text-align: right;
+    font-weight:bold;
 }
