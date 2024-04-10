@@ -64,5 +64,42 @@ public class InquiryController : Controller
         }
         return View(_context.Inquiries.Include(e => e.accountUser).ToList());
     }
-    
+    [Authorize(Roles = "Admin")]
+    public async Task<ActionResult> iListAdmin()
+    {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails == null)
+        {
+            TempData["Error"] = "You need to login to access this page";
+            return RedirectToAction("Index", "Account");
+        }
+
+        ViewBag.User = UserDetails;
+        ViewBag.isLogged = true;
+
+        var inquiries = _context.Inquiries.Include(e => e.accountUser).ToList();
+        return View(inquiries);
     }
+    [HttpPost]
+    public async Task<IActionResult> DeleteInquiry(string id)
+    {
+        var inquiry = await _context.Inquiries.FindAsync(id);
+        if (inquiry == null)
+        {
+            return NotFound();
+        }
+
+        try
+        {
+            _context.Inquiries.Remove(inquiry);
+            await _context.SaveChangesAsync();
+
+            // Redirect back to the inquiry list page after deletion
+            return RedirectToAction("iListAdmin");
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Error deleting inquiry: {ex.Message}");
+        }
+    }
+}

@@ -1,0 +1,15 @@
+﻿body {
+    background-image: url('../first/background.png');
+}
+
+html {
+    background-image: url('../first/background.png');
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-4 {
+    margin-top:50px;
+}
