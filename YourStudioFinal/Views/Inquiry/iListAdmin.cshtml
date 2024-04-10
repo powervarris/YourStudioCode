@@ -151,7 +151,7 @@
 						<div class="inqTitle"> @inquiry.value.Name</div>
 						<div class="message">@inquiry.value.Message</div>
 
-						<div style="position: absolute; bottom: 0; right: 0;">
+						<div style="position: absolute; bottom: 0; right: 20px;">
 								<button class="deletebtn" data-inquiry-id="@inquiry.value.Id">Delete</button>
 						</div>
 					</div>
@@ -179,8 +179,7 @@
 			button.addEventListener('click', function () {
 				var inquiryId = this.getAttribute('data-inquiry-id');
 
-				// Send an AJAX request to delete the inquiry
-				fetch('/Inquiry/DeleteInquiry/' + inquiryId, {
+				fetch(`/Inquiry/DeleteInquiry?id=${inquiryId}`, {
 					method: 'DELETE'
 				})
 					.then(response => {

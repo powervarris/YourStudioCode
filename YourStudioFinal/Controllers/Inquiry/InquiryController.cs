@@ -80,26 +80,27 @@ public class InquiryController : Controller
         var inquiries = _context.Inquiries.Include(e => e.accountUser).ToList();
         return View(inquiries);
     }
-    [HttpPost]
-    public async Task<IActionResult> DeleteInquiry(string id)
-    {
-        var inquiry = await _context.Inquiries.FindAsync(id);
-        if (inquiry == null)
-        {
-            return NotFound();
-        }
+	[HttpPost]
+	public async Task<IActionResult> DeleteInquiry(string ids)
+	{
+		if (ids == null)
+		{
+			
+			return BadRequest("IDs parameter is null");
+		}
 
-        try
-        {
-            _context.Inquiries.Remove(inquiry);
-            await _context.SaveChangesAsync();
+		var idList = ids.Split(",");
+		foreach (var id in idList)
+		{
+			var inquiry = await _context.Inquiries.FindAsync(id);
+			if (inquiry != null)
+			{
+				_context.Inquiries.Remove(inquiry);
+				await _context.SaveChangesAsync();
+			}
+		}
 
-            // Redirect back to the inquiry list page after deletion
-            return RedirectToAction("iListAdmin");
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(500, $"Error deleting inquiry: {ex.Message}");
-        }
-    }
+		return RedirectToAction("iListAdmin");
+	}
+
 }
