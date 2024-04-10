@@ -134,9 +134,13 @@
 			foreach (var inquiry in Model.Select((value, i) => (value, i)))
 			{
 				<div id="@("srvc" + inquiry.i)" style="display: none">
-					<div>Inquiry Details</div>
-					<div>Title: @inquiry.value.Name</div>
-					<div>Message: @inquiry.value.Message</div>
+						<div class="UserTitle">@inquiry.value.accountUser.UserName   </div>
+						<div>@inquiry.value.accountUser.Email</div>
+					
+					<hr />
+					<br />
+						<div class="inqTitle"> @inquiry.value.Name</div>
+					<div> @inquiry.value.Message</div>
 				</div>
 			}
 		}

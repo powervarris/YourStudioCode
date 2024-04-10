@@ -16,7 +16,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container-fluid">
+            <div class="container-fluid navbar-bg">
                 <div class="navbar-header">
                     <span>
                         <i class="fas fa-bars menu-icon"></i>
@@ -63,7 +63,7 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid ps-md-0">
+    <div class="body-bg">
         <div class="row g-0">
             <div class="col-md-8 col-lg-6">
                 <div class="login d-flex align-items-center py-5">
@@ -100,11 +100,12 @@
                                         <input type="tel" class="form-control" id="floatingPassword" placeholder="Enter Philippine phone number" name="mobileNumber" pattern="^(09|\+639)\d{9}$" minlength="11" maxlength="11" required>
                                         <label for="floatingPassword">Phone Number</label>
                                     </div>
-                                    <div class="d-flex mb-5 align-items-center">
-                                        <input class="form-check-input" type="checkbox" style="margin-left:11" value="" id="termsCheck" required>
-                                        <label class="form-check-label" for="termsCheck" style="font-family:Calibri;">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                                        <label class="form-check-label" for="rememberPasswordCheck">
                                             By signing up, you agree to Your Studio's' <a class="link-danger" style="color:blue" asp-action="Terms" asp-controller="Account"> Terms of Conditions and Privacy Policy</a>
                                         </label>
+
                                     </div>
                                     <div class="d-grid">
                                         <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">REGISTER</button>
@@ -133,7 +134,7 @@
                         <img src="~/reg3.JPG" style="margin-left:470px; transform:rotate(10deg)" />
                     </div>
                     <div style="position:relative; left:450px; top:580px">
-                        <h2 class="tag">YOUR<STRONG>STUDIO</STRONG></h2>
+                        <h2 class="tag">YOUR<STRONG>SIGNING!</STRONG></h2>
                     </div>
                 </div>
             </div>

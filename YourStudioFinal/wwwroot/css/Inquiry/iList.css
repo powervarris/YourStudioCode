@@ -208,3 +208,13 @@ footer {
     color: black;
     margin-top: 10px;
 }
+.UserTitle{
+    font-weight:bold;
+    font-family:Calibri;
+    font-size:50px
+}
+.inqTitle{
+    font-weight:bold;
+    font-family:Calibri;
+    font-size:30px
+}

@@ -7,11 +7,7 @@
     background-color: #F5F2F0
 }
 
-.bg-image {
-    background-image: url('background.png');
-    background-size: cover;
-    background-position: center;
-}
+
 
 .login-heading {
     font-weight: 300;
@@ -159,4 +155,11 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-image: url('background.png');
+}
+
+.specific-image {
+    width: 250px;
+    height: auto;
+    position: relative;
 }
