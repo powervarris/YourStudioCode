@@ -9,159 +9,159 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = YourStudioFinal
 build_property.RootNamespace = YourStudioFinal
-build_property.ProjectDir = C:\Users\Varris\YourStudioCode\YourStudioFinal\
+build_property.ProjectDir = C:\Users\LENOVO-15IMH05\Desktop\hamburger\YourStudioCode\YourStudioFinal\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Varris\YourStudioCode\YourStudioFinal
+build_property.MSBuildProjectDirectory = C:\Users\LENOVO-15IMH05\Desktop\hamburger\YourStudioCode\YourStudioFinal
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Account/Forget.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Account/Forget.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3JnZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Account/Index.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Account/Otipi.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Account/Otipi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxPdGlwaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Account/Register.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Account/ResetPassword.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Account/Terms.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Account/Terms.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxUZXJtcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/BList.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/BList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/Booking.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/Booking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/BookingAccept.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/BookingAccept.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nQWNjZXB0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/BookingAll.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/BookingAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nQWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/BookingDecline.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/BookingDecline.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nRGVjbGluZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdmin.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nTGlzdEFkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminAccepted.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminAccepted.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nTGlzdEFkbWluQWNjZXB0ZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminDecline.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminDecline.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nTGlzdEFkbWluRGVjbGluZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminPaid.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminPaid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nTGlzdEFkbWluUGFpZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminPending.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/BookingListAdminPending.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nTGlzdEFkbWluUGVuZGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/BookingPaid.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/BookingPaid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xCb29raW5nUGFpZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/Index.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Booking/Payment.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Booking/Payment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xQYXltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/ChildIndex.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/ChildIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXENoaWxkSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/CoupleIndex.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/CoupleIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXENvdXBsZUluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/FamilyIndex.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/FamilyIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXEZhbWlseUluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/FurIndex.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/FurIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXEZ1ckluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/Index.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/SoloIndex.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/SoloIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXFNvbG9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Gallery/Index.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Gallery/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Home/Index.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Home/Privacy.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Inquiry/clientInquiry.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Inquiry/clientInquiry.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5xdWlyeVxjbGllbnRJbnF1aXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Inquiry/iListAdmin.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Inquiry/iListAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5xdWlyeVxpTGlzdEFkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Inquiry/Inquirylist.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Inquiry/Inquirylist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5xdWlyeVxJbnF1aXJ5bGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Packages/Index.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Packages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFja2FnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Shared/Error.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/_ViewImports.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/_ViewStart.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Shared/_Layout.cshtml]
+[C:/Users/LENOVO-15IMH05/Desktop/hamburger/YourStudioCode/YourStudioFinal/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-m88h9prnuk
