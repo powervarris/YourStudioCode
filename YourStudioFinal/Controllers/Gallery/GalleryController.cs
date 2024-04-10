@@ -46,7 +46,7 @@ namespace YourStudioFinal.Controllers
             }
             else
             {
-                var files = _context.GalleryFiles.Where(e => e.GalleryId == gallery.Id).OrderBy(x => x.DateUploaded);
+                var files = _context.GalleryFiles.Where(e => e.GalleryId == gallery.Id).OrderByDescending(x => x.DateUploaded);
                 gallery.GalleryFiles = files.ToList();
             }
 

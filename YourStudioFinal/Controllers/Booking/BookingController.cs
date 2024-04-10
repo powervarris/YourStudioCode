@@ -125,7 +125,8 @@ public class BookingController : Controller
                                + Environment.NewLine
                                + Environment.NewLine
                                + "Thank you for choosing YourStudio!"; ;
-        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, plainTextContent, "");
+        var htmlContent2 = "<div style='background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none;font-family:\"Libre Franklin\"'><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h1 style=color:#343a40>New Booking has been made!</h1><h1>Booking Details:</h1><h3>Booking ID: " + bookingID + "</h3><h3>Customer Email: " + userEmail + "</h3><h3>Booking Date: " + bookingModel.date + "</h3><h3>Booking Time: " + bookingModel.time + "</h3><h3>Booking Package: " + bookingModel.packages + "</h3><h3>Booking Add-ons: " + bookingModel.addOns + "</h3></div>";
+        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, plainTextContent, htmlContent2);
         var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         
         //admin side email
@@ -186,7 +187,6 @@ public class BookingController : Controller
             booking.payment = payment;
             booking.paymentID = payment.Id;
             booking.status = "Paid";
-            
             _context.Add(payment);
             _context.Update(booking);
             _context.SaveChanges();

@@ -136,7 +136,6 @@
                                 <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
                             </li>
                         }
-
                     </ul>
 
                     <script>
@@ -160,7 +159,6 @@
 
         @using (Html.BeginForm("Submit", "Inquiry", FormMethod.Post))
         {
-
             <div class="form-box">
                 <div><strong>Send Inquiry</strong> |<a href="@Url.Action("Inquirylist","Inquiry")"> Inquiry List</a> </div>
                 <br />
@@ -171,8 +169,7 @@
                 <br /> <br />
 
                 <div class="BtnCont">
-                    <input type="submit" value="DRAFT" id="DrfBtn" />
-                    <input type="submit" value="SEND" id="SbtBtn" />
+                    <input type="submit" value="SEND" id="SbtBtn"/>
                 </div>
             </div>
             <br /> <br /> <br /> <br /> <br />

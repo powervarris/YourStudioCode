@@ -234,17 +234,17 @@
 				<label for="packages">Packages:</label>
 				<select name="packages" id="package" value="0" onchange="changePrice2(this.value)" form="BookingForm" required>
 					<option value="None | 0 PHP">None</option>
-					<option value="Your Student">Your Student</option>
-					<option value="Your Soloito">Your Soloito</option>
-					<option value="Your Duo">Your Duo</option>
-					<option value="Your Barkada">Your Barkada</option>
-					<option value="Your Squad">Your Squad</option>
-					<option value="Your Family">Your Family</option>
-					<option value="Your Fur Baby">Your Fur Baby</option>
-					<option value="Your Graduation">Your Graduation</option>
-					<option value="Your Birthday">Your Birthday</option>
-					<option value="Your Maternity">Your Maternity</option>
-					<option value="Your Home Service">Your Home Service</option>
+					<option value="Your Student | 399">Your Student | 399</option>
+					<option value="Your Soloito | 549">Your Soloito | 549</option>
+					<option value="Your Duo | 769">Your Duo | 769</option>
+					<option value="Your Barkada | 1209">Your Barkada | 1209</option>
+					<option value="Your Squad | 989">Your Squad | 989</option>
+					<option value="Your Family | 1869">Your Family | 1869</option>
+					<option value="Your Fur Baby | 1429">Your Fur Baby | 1429</option>
+					<option value="Your Graduation | 1429">Your Graduation | 1429</option>
+					<option value="Your Birthday | 989">Your Birthday | 989</option>
+					<option value="Your Maternity | 1899">Your Maternity | 1899</option>
+					<option value="Your Home Service | 5499">Your Home Service | 5499</option>
 				</select>
 			</section>
 			
@@ -469,67 +469,67 @@
 					$("#formPackage").val(price2);
 					break;
 					
-				case "Your Student":
+				case "Your Student | 399":
 					$("#packages").text("Total Package: " + "399");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
 					
-				case "Your Soloito":
+				case "Your Soloito | 549":
 					$("#packages").text("Total Package: " + "549");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
 					
-				case "Your Duo":
+				case "Your Duo | 769":
 					$("#packages").text("Total Package: " + "769");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
 					
-				case "Your Barkada":
+				case "Your Barkada | 1209":
 					$("#packages").text("Total Package: " + "1209");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
 				
-				case "Your Squad":
+				case "Your Squad | 989":
 					$("#packages").text("Total Package: " + "989");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
 					
-				case "Your Family":
+				case "Your Family | 1869":
 					$("#packages").text("Total Package: " + "1869");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
 					
-				case "Your Fur Baby":
+				case "Your Fur Baby | 1429":
 					$("#packages").text("Total Package: " + "1429");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
 					
-				case "Your Graduation":
+				case "Your Graduation | 1429":
 					$("#packages").text("Total Package: " + "1429");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
 					
-				case "Your Birthday":
+				case "Your Birthday | 989":
 					$("#packages").text("Total Package: " + "989");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
 				
-				case "Your Maternity":
+				case "Your Maternity | 1899":
 					$("#packages").text("Total Package: " + "1899");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
 					
-				case "Your Home Service":
+				case "Your Home Service | 5499":
 					$("#packages").text("Total Package: " + "5499");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
@@ -556,7 +556,15 @@
 			if (date === "" || time === "") {
 				alert("Please select a date and time.");
 			}
+			
+			else{
+				alert("Booking Successful");
+			}
 		}
+	</script>
+	
+	<script>
+		
 	</script>
 
 </body>
