@@ -173,7 +173,7 @@
     }
 
     #Srvc {
-        margin-top: -170px;
+        margin-top: -70px;
         margin-left: 190px;
     }
 
@@ -209,7 +209,7 @@
     }
 
     #Srvc {
-        margin-top: -170px;
+        margin-top: -70px;
         margin-left: 240px;
     }
 
@@ -271,7 +271,7 @@
     }
 
     #Srvc {
-        margin-top: -170px;
+        margin-top: -70px;
         margin-left: 385px;
     }
 
@@ -329,7 +329,7 @@
     }
 
     #Srvc {
-        margin-top: -200px;
+        margin-top: -100px;
         margin-left: 620px;
     }
 
@@ -383,7 +383,7 @@
     }
 
     #Srvc {
-        margin-top: -200px;
+        margin-top: -100px;
         margin-left: 900px;
     }
 
@@ -432,8 +432,7 @@
     }
 
     #Srvc {
-        margin-top: -200px;
-        ;
+        margin-top: -100px;
         margin-left: 1100px;
     }
 
@@ -485,10 +484,9 @@ html, body {
 #VL2 {
     position: absolute;
     bottom: 0;
-    right: 370px;
     width: 5px;
     background-color: #ccc;
-    margin-left: 150px;
+    margin-left: -30px;
     height: 1000px;
 }
 
