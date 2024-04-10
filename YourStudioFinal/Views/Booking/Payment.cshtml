@@ -39,12 +39,13 @@
                                             
                                     </select>
                                     <br/>
-                                    <select class="form-select" required>
+                                    <select class="form-select" id="selectPayment" required>
                                         <option> - Mode of Payment - </option>
-                                        <option>G-Cash</option>
-                                        <option>BPI</option>
+                                        <option value="G-Cash">G-Cash</option>
+                                        <option value="BPI">BPI</option>
                                     </select>
-                                    <img id="payment-image" src="" alt="Payment Image" style="display: none;" />
+                                    <img id="payment-image" src="/modeofpayment/GCash.jpg" alt="Payment Image" style="height: 100%; width: 100%; text-align: center; display: none"/>
+                                    <img id="payment-image2" src="/modeofpayment/BPI.png" alt="Payment Image" style="height: 100%; width: 100%; text-align: center; display: none"/>
                                 }
                             </div>
                             <p class="text-center mb-4">Provide the Screenshot of your down payment.</p>
@@ -62,12 +63,39 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
+                        <br/>
+                        <div class="d-grid" style="text-align: center">
+                            <form asp-action="Booking" asp-controller="Booking">
+                            <button type="submit" class="btn btn-primary">Go back to Booking List</button>
+                            </form>
+                        </div>
+                            </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    document.getElementById("selectPayment").addEventListener('change', function() {
+        var paymentImage = document.getElementById('payment-image');
+        switch (this.value) {
+            case 'G-Cash':
+                paymentImage.src = '/modeofpayment/GCash.jpg';
+                paymentImage.style.display = 'block';
+                break;
+            case 'BPI':
+                paymentImage.src = '/modeofpayment/BPI.png';
+                paymentImage.style.display = 'block';
+                break;
+            default:
+                paymentImage.src = '';
+                paymentImage.style.display = 'none';
+                break;
+        }
+    });
+
+</script>
 <script>
 document.querySelector('.form-select').addEventListener('change', function() {
     var paymentImage = document.getElementById('payment-image');

@@ -165,15 +165,11 @@
     </section>
 <section class="containers">
     <div class="form-box">
-            @Html.ActionLink("All", "BookingAll", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+            @Html.ActionLink("Upcoming", "BookingListAdminAccepted", "Booking", null, new { @class = "black-text", @style = "color: black;" })
             |
-            @Html.ActionLink("Pending", "Booking", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+            @Html.ActionLink("Declined", "BookingListAdminDecline", "Booking", null, new { @class = "black-text", @style = "color: black;" })
             |
-            @Html.ActionLink("Accepted", "BookingAccept", "Booking", null, new { @class = "black-text", @style = "color: black;" })
-            |
-            @Html.ActionLink("Declined", "BookingDecline", "Booking", null, new { @class = "black-text", @style = "color: black;" })
-            |
-            @Html.ActionLink("Paid", "BookingPaid", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+            @Html.ActionLink("Past", "BookingListAdmin", "Booking", null, new { @class = "black-text", @style = "color: black;" })
         <br/>
 
         @{
@@ -193,6 +189,7 @@
                         <td>Add Ons</td>
                         <td>Price</td>
                         <td>Payment Receipt</td>
+                        <td>Change to Full</td>
                     </tr>
                     <form id="deleteContent" method="post">
                         @for (int i = 0; i < Model.Count; i++)
@@ -215,7 +212,8 @@
                                 {
                                 <td>Not Paid</td>
                                 }
-                                </tr>
+                                <td><button asp-action="changeStatusToPaid" asp-controller="Booking" asp-route-id="@Model[i].Id">Fully Paid</button></td>
+                            </tr>
                         }
                     </form>
                 </table>
@@ -230,6 +228,16 @@
             </button>
         </section>
 </section>
+
+<script>
+    document.getElementById('paymentForm').addEventListener('submit', function(event) {
+        var checked = document.querySelectorAll('input[type="checkbox"]:checked');
+        if (checked.length === 0) {
+            event.preventDefault();
+            alert('Please select at least one item to mark as fully paid');
+        }
+    });
+</script>
 
 <script>
         setDelete = function () {

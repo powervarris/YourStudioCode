@@ -202,26 +202,29 @@
                     <form id="deleteContent" method="post">
                         @for (int i = 0; i < Model.Count; i++)
                         {
-                            <tr>
-                                <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete"/></td>
-                                <td>@Model[i].date</td>
-                                <td>@Model[i].time</td>
-                                <td>@Model[i].accountUser.Id</td>
-                                <td>@Model[i].accountUser.Id</td>
-                                <td>@Model[i].accountUser.mobileNumber</td>
-                                <td>@Model[i].accountUser.Email</td>
-                                <td>@Model[i].packages</td>
-                                <td>@Model[i].addOns</td>
-                                <td>@Model[i].totalPrice</td>
-                                @if (Model[i].payment != null)
-                                {
-                                    <td><input type="button" onclick="location.href='@System.IO.Path.Combine("../uploads/", @Model[i].payment?.fileName)';" value="See Receipt"/></td>
-                                }
-                                else
-                                {
-                                    <td>Not Paid</td>
-                                }
-                            </tr>
+                            if (Model[i].accountUser.Id == currentUserId)
+                            {
+                                <tr>
+                                    <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete"/></td>
+                                    <td>@Model[i].date</td>
+                                    <td>@Model[i].time</td>
+                                    <td>@Model[i].accountUser.Id</td>
+                                    <td>@Model[i].accountUser.UserName</td>
+                                    <td>@Model[i].accountUser.mobileNumber</td>
+                                    <td>@Model[i].accountUser.Email</td>
+                                    <td>@Model[i].packages</td>
+                                    <td>@Model[i].addOns</td>
+                                    <td>@Model[i].totalPrice</td>
+                                    @if (Model[i].payment != null)
+                                    {
+                                        <td><input type="button" onclick="location.href='@System.IO.Path.Combine("../uploads/", @Model[i].payment?.fileName)';" value="See Receipt"/></td>
+                                    }
+                                    else
+                                    {
+                                        <td>Not Paid</td>
+                                    }
+                                </tr>
+                            }
                         }
                     </form>
                 </table>

@@ -80,27 +80,23 @@ public class InquiryController : Controller
         var inquiries = _context.Inquiries.Include(e => e.accountUser).ToList();
         return View(inquiries);
     }
-	[HttpPost]
-	public async Task<IActionResult> DeleteInquiry(string ids)
-	{
-		if (ids == null)
-		{
-			
-			return BadRequest("IDs parameter is null");
-		}
+    
+    public async Task<ActionResult> Delete(string id)
+    {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails == null)
+        {
+            TempData["Error"] = "You need to login to access this page";
+            return RedirectToAction("Index", "Account");
+        }
 
-		var idList = ids.Split(",");
-		foreach (var id in idList)
-		{
-			var inquiry = await _context.Inquiries.FindAsync(id);
-			if (inquiry != null)
-			{
-				_context.Inquiries.Remove(inquiry);
-				await _context.SaveChangesAsync();
-			}
-		}
+        ViewBag.User = UserDetails;
+        ViewBag.isLogged = true;
 
-		return RedirectToAction("iListAdmin");
-	}
+        var inquiry = _context.Inquiries.Find(id);
+        _context.Inquiries.Remove(inquiry);
+        _context.SaveChanges();
+        return RedirectToAction("iListAdmin");
+    }
 
 }

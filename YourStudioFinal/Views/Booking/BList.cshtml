@@ -177,7 +177,7 @@
                 <option value="12">December</option>
           </select>
 
-            @foreach (var item in Model.OrderBy(x => x.dateCreated).Select((value, i) => (value, i)))
+            @foreach (var item in Model.OrderBy(x => x.dateCreated).ThenBy(x => x.date).Select((value, i) => (value, i)))
             {
                 <div id="@("btn" + item.i)" class="blist" data-original-color="white" onclick="clickHandler(this.id)">
                     <span class="userTXT" style="color: black;">@item.value.accountUser.UserName</span>
