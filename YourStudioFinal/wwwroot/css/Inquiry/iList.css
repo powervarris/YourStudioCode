@@ -201,6 +201,11 @@ footer {
     align-content: center;
     text-align: center;
 }
+.social-icons {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
 .social-icons a {
     margin: 0 5px;
 }

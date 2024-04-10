@@ -39,7 +39,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Booking
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" style="z-index: 1000;">
                                 <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
                                 <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
                             </div>
@@ -48,14 +48,14 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Inquiry
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" style="z-index: 1000;">
                                 <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
                                 <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
                             </div>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" asp-action="Index" asp-controller="Account">
-                                Login
+                                Sign Up
                             </a>
                         </li>
                     </ul>

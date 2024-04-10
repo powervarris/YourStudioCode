@@ -111,13 +111,10 @@ h2.tag {
 
 .collapse.navbar-collapse {
     justify-content: flex-end;
-    background-color: #FDF8F2
+    background-color: #FDF8F2;
 }
 
-.navbar {
-    background-color: transparent !important;
-    overflow: hidden
-}
+
 
 .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
@@ -127,28 +124,13 @@ h2.tag {
         color: rgba(0, 0, 0, 0.7);
     }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.navbar-center {
-    float: none;
-    text-align: center;
-}
-
-.navbar-white {
-    background-color: white;
-}
 
 
-.navbar-header {
-    margin-right: 710px
-}
+
+
+
+
+
 
 body {
     width: 100%;
