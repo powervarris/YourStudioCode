@@ -185,7 +185,7 @@ public class BookingController : Controller
             payment.Booking = booking;
             booking.payment = payment;
             booking.paymentID = payment.Id;
-            booking.status = "DP_Paid";
+            booking.status = "RTP";
             _context.Add(payment);
             _context.Update(booking);
             _context.SaveChanges();
@@ -208,6 +208,18 @@ public class BookingController : Controller
             var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         }
         return RedirectToAction("Payment");
+    }
+
+    public async Task<IActionResult> changeToDP_Paid(string Id)
+    {
+        var bookingmodel = _context.Booking.FirstOrDefault(x => x.Id == Id);
+        if (bookingmodel != null)
+        {
+            bookingmodel.status = "DP_Paid";
+            _context.Update(bookingmodel);
+            _context.SaveChanges();
+        }
+        return RedirectToAction("BookingListAdminAccepted", "Booking");
     }
     
     // //Edit Booking Function
@@ -280,7 +292,7 @@ public class BookingController : Controller
         var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         return RedirectToAction("BList");
     }
-
+    
     public async Task<IActionResult> changeStatusToPaid(string Id, string email)
     {
         var bookingmodel = _context.Booking.FirstOrDefault(x => x.Id == Id);
@@ -293,7 +305,19 @@ public class BookingController : Controller
 
         return RedirectToAction("BookingListAdminAccepted", "Booking");
     }
+    
+    public async Task<IActionResult> changeStatusToReject(string Id, string email)
+    {
+        var bookingmodel = _context.Booking.FirstOrDefault(x => x.Id == Id);
+        if (bookingmodel != null)
+        {
+            bookingmodel.status = "Rejected";
+            _context.Update(bookingmodel);
+            _context.SaveChanges();
+        }
 
+        return RedirectToAction("BookingListAdminAccepted", "Booking");
+    }
 
     //Reject Booking Function
     [Authorize(Roles = "Admin")]
@@ -441,7 +465,7 @@ public class BookingController : Controller
             ViewBag.isLogged = false;
         }
         
-        return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Accepted" || x.status == "DP_Paid").ToList());
+        return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Accepted" || x.status == "DP_Paid" || x.status == "RTP").ToList());
     }
     
     [Authorize(Roles = "Admin")]
