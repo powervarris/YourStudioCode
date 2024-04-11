@@ -7,6 +7,26 @@
     padding-right: 0.5rem;
 }
 
+
+.button {
+    padding: 10px 10px 10px 10px;
+    margin-right: 50px;
+    color: black;
+    background-color: #ffde65;
+    border: hidden;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.no-underline {
+    text-decoration: none;
+}
+
+.button.reject {
+    background-color: #e54e4e;
+    margin-left: -20px;
+    text-decoration: none;
+}
 /* xl */
 @media (min-width: 1280px) {
     .containers {
