@@ -64,5 +64,39 @@ public class InquiryController : Controller
         }
         return View(_context.Inquiries.Include(e => e.accountUser).ToList());
     }
-    
+    [Authorize(Roles = "Admin")]
+    public async Task<ActionResult> iListAdmin()
+    {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails == null)
+        {
+            TempData["Error"] = "You need to login to access this page";
+            return RedirectToAction("Index", "Account");
+        }
+
+        ViewBag.User = UserDetails;
+        ViewBag.isLogged = true;
+
+        var inquiries = _context.Inquiries.Include(e => e.accountUser).ToList();
+        return View(inquiries);
     }
+    
+    public async Task<ActionResult> Delete(string id)
+    {
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails == null)
+        {
+            TempData["Error"] = "You need to login to access this page";
+            return RedirectToAction("Index", "Account");
+        }
+
+        ViewBag.User = UserDetails;
+        ViewBag.isLogged = true;
+
+        var inquiry = _context.Inquiries.Find(id);
+        _context.Inquiries.Remove(inquiry);
+        _context.SaveChanges();
+        return RedirectToAction("iListAdmin");
+    }
+
+}

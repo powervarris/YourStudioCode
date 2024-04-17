@@ -2,12 +2,10 @@
     ViewData["Title"] = "Home Page";
 }
 
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF -8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="~/css/homegallery/home.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -43,116 +41,200 @@
 <body style="background-image: url(/assets/Background.png);">
     <header>
 
+        <div class="wrapper-nav">
 
-        <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
 
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div class="wrapper-navbar-menu">
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
-
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link">
-                                <div class="menu-adjust">
-                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                                        <!-- Left links -->
-                                        <ul class="navbar-nav me-3">
-                                            <li>
-                                                <div id="mySidenav" class="sidenav">
-                                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                                    <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
-                                                    <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
-                                                    <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
-                                                    <a asp-action="Logout">Logout</a>
-                                                </div>
-                                                <span onclick="openNav()">
-                                                    <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
-                                                        <i class="fas fa-bars pe-2 menu"></i>
-                                                </span>
-                                            </li>
-                                        </ul>
+                                            <ul class="navbar-nav me-3">
+                                                <li>
+                                                    <div id="mySidenav" class="sidenav">
+                                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                                        <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
+                                                        <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
+                                                        <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
+                                                        <a asp-controller="Home" asp-action="Logout">Logout</a>
+                                                    </div>
+                                                    <span onclick="openNav()">
+                                                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                                                            <i class="fas fa-bars pe-2 menu"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
+                                    <script>
+                                        function openNav() {
+                                            document.getElementById("mySidenav").style.width = "250px";
+                                        }
+
+                                        function closeNav() {
+                                            document.getElementById("mySidenav").style.width = "0";
+                                        }
+                                    </script>
+                                    <span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto navbar-right">
+                            <li class="nav-item active navactive">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            
+                            @if (User.IsInRole("User"))
+                            {
+                                <li class="nav-item active">
+                                    <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                                </li>
+                            }
+                            
+                            @if (ViewBag.isLogged == false)
+                            {
+                                <li class="nav-item active">
+                                    <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                                </li>
+                            }
+                            
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Gallery
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="GalleryCustomer" asp-action="Index">User Gallery UI</a>
+                                        <a class="dropdown-item" asp-controller="Gallery" asp-action="Index">Admin Gallery</a>
+                                    </div>
+                                </li>
+                            }
+                            
+                            <li class="nav-item active ">
+                                <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+                            </li>
+                            <script>
+                                $(document).ready(function () {
+                                    $('.nav-link.dropdown-toggle').on('click', function (e) {
+                                        e.preventDefault();
+                                        $(this).next('.dropdown-menu').slideToggle();
+                                    });
+                                });
+                            </script>
+                            
+                            @if(User.IsInRole("User"))
+                            {
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Booking
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
                                 </div>
-                                <script>
-                                    function openNav() {
-                                        document.getElementById("mySidenav").style.width = "250px";
-                                    }
+                            </li>
+                            }
+                            
+                            @if (ViewBag.isLogged == false)
+                            {
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Booking
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
+                                    </div>
+                                </li>
+                                
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                    </div>
+                                </li>
+                            }
 
-                                    function closeNav() {
-                                        document.getElementById("mySidenav").style.width = "0";
-                                    }
-                                </script>
-                                <span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto navbar-right">
-                        <li class="nav-item active">
-                            <a class="nav-link" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
-                        </li>
-                        <li class="nav-item active ">
-                            <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
-                        </li>
+                                @if (User.IsInRole("Admin"))
+                            {
 
-
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Booking
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-                                <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
-
-
-                            </div>
-                        </li>
-
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
-                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Booking List</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-                        </li>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Booking
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
+                                        
+                                    </div>
+                                </li>
 
 
-                    </ul>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="iListAdmin">Inquiry Admin</a>
+                                    </div>
+                                </li>
+                            }
 
+                            @if (ViewBag.isLogged)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
+                                </li>
+                            }
+                        </ul>
+
+                    </div>
                 </div>
+
+            </nav>
+
+            <div class="wrapper-navbar-logo">
+
+                <img src="~/assets/logo.png" alt="Your Studio Logo">
+                <img class="logonav2" src="~/assets/logo2.png" alt="Your Studio Logo">
             </div>
-
-        </nav>
-
-        <div class="logos">
-
-            <img src="~/assets/logo.png" class="logonav" alt="">
-            <img src="~/assets/logo2.png" class="logonav2" alt="">
         </div>
-
     </header>
 
     <main>
         
-        <div class="header-text"></div>
+        <div class="header-text">
         <h1 class="text-center">
             <span class="freeze">FREEZING</span>
             <span class="time">TIME</span>
         </h1>
-
         </div>
         <br />
 
@@ -169,18 +251,51 @@
                 <label for="s2" id="slide2"><img src="~/assets/car2.JPG" alt=""></label>
                 <label for="s3" id="slide3"><img src="~/assets/car3.JPG" alt=""></label>
                 <label for="s4" id="slide4"><img src="~/assets/car4.JPG" alt=""></label>
-                <label for="s5" id="slide5"><img src="~/assets/car1.JPG" alt=""></label>
-            </section>
-        </div>
+                <label for="s5" id="slide5"><img src="~/assets/car5.JPG" alt=""></label>
 
+                
+                <input type="radio" id="auto-slider" name="slider" style="display: none;">
+            </section>
+
+            <script>
+                // Function to switch to the next slide
+                function nextSlide() {
+                    var currentSlide = document.querySelector('input[name="slider"]:checked');
+                    var nextSlide = currentSlide.nextElementSibling || document.querySelector('input[name="slider"]:first-child');
+                    nextSlide.checked = true;
+
+                    // Check if it's the last slide, then loop back to the first one
+                    if (!nextSlide) {
+                        var firstSlide = document.querySelector('input[name="slider"]:first-child');
+                        firstSlide.checked = true;
+                    }
+                }
+
+                // Automatic slide change interval (in milliseconds)
+                var slideInterval = 3000; // Change slides every 3 seconds
+
+                // Start automatic sliding
+                var autoSlider = setInterval(nextSlide, slideInterval);
+
+                // Stop automatic sliding when user interacts with the slider
+                var slider = document.getElementById('slider');
+                slider.addEventListener('mouseover', function () {
+                    clearInterval(autoSlider);
+                });
+
+                slider.addEventListener('mouseleave', function () {
+                    autoSlider = setInterval(nextSlide, slideInterval);
+                });
+            </script>
+        </div>
+        <div class="header-texta">
         <h1 class="text-center1">
             <span class="freeze">FRAMING</span>
             <span class="time">MEMORIES</span>
         </h1>
-        <div class="learn1">
-            <a class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1" style="">LEARN MORE! -></p></a>
         </div>
-        </div>
+
+       
         <h1 class="text-center">
             <span class="your">YOUR</span>
             <span class="packages">PACKAGES</span>
@@ -200,32 +315,34 @@
                         <span style="color:darkmagenta" class="glyphicon glyphicon-stop squares"></span>
                         <span style="color:darkorange" class="glyphicon glyphicon-stop squares"></span>
                         <span style="color:dimgrey" class="glyphicon glyphicon-stop squares"></span>
-                        <span class="price1"> ₱199 </span>
+                        <span class="price1"> ₱399 </span>
                     </p>
                 </div>
-                <div class="card-body">
+                <div class="card-body" style="margin-bottom:-50px;">
                     <div class="cardbody1">
                         <div class="det1">
                             <p>
-                                1 person only <br /> <br />
-                                20 minutes of shooting <br /> <br />
-                                1-2 backdrops of your choice <br />  <br />
+                                1 student <br /> <br />
+                                Unli 20 minutes of shooting <br /> <br />
+                                1 backdrop of your choice <br />  <br />
                                 1 printed 4R of your choice <br />  <br />
                                 All raw digital copies
 
                             </p>
                         </div>
+                        <form asp-controller="Home" asp-action="goToBooking">
                         <div class="wrap">
                             <button class="button">BOOK NOW</button>
                         </div>
+                        </form>
 
 
 
                     </div>
-                    <img src="~/assets/car1.JPG" alt="..." class="img-thumbnail1 img-fluid">
-                    <img src="~/assets/car2.JPG" alt="..." class="img-thumbnail2 img-fluid">
-                    <img src="~/assets/car3.JPG" alt="..." class="img-thumbnail3 img-fluid">
-                    <img src="~/assets/car4.JPG" alt="..." class="img-thumbnail4 img-fluid">
+                    <img src="~/assets/solo1.JPG" alt="..." class="img-thumbnail1 img-fluid">
+                    <img src="~/assets/solo2.JPG" alt="..." class="img-thumbnail2 img-fluid">
+                    <img src="~/assets/solo3.JPG" alt="..." class="img-thumbnail3 img-fluid">
+                    <img src="~/assets/solo4.JPG" alt="..." class="img-thumbnail4 img-fluid">
                 </div>
             </div>
         </div>
@@ -244,29 +361,32 @@
                         <span style="color:darkmagenta" class="glyphicon glyphicon-stop squares1"></span>
                         <span style="color:darkorange" class="glyphicon glyphicon-stop squares1"></span>
                         <span style="color:dimgrey" class="glyphicon glyphicon-stop squares1"></span>
-                        <span class="price2"> ₱499 </span>
+                        <span class="price2"> ₱769 </span>
                     </p>
                 </div>
                 <div class="card-body">
                     <div class="cardbody1">
                         <div class="det1">
                             <p>
-                                1 person only <br /> <br />
-                                20 minutes of shooting <br /> <br />
-                                1-2 backdrops of your choice <br />  <br />
-                                1 printed 4R of your choice <br />  <br />
+                                2 persons <br /> <br />
+                                Unli 25 minutes of shooting <br /> <br />
+                                1 backdrop of your choice <br />  <br />
+                                1 printed 4R of your choice <br />  <br />                            
+                                Free solo portrait <br />  <br />
                                 All raw digital copies
                             </p>
                         </div>
+                        <form asp-controller="Home" asp-action="goToBooking">
                         <div class="wrap">
                             <button class="button">BOOK NOW</button>
                         </div>
+                        </form>
 
                     </div>
-                    <img src="~/assets/car1.JPG" alt="..." class="img-thumbnail1 img-fluid">
-                    <img src="~/assets/car2.JPG" alt="..." class="img-thumbnail2 img-fluid">
-                    <img src="~/assets/car3.JPG" alt="..." class="img-thumbnail3 img-fluid">
-                    <img src="~/assets/car4.JPG" alt="..." class="img-thumbnail4 img-fluid">
+                    <img src="~/assets/duo1.JPG" alt="..." class="img-thumbnail1 img-fluid">
+                    <img src="~/assets/duo2.JPG" alt="..." class="img-thumbnail2 img-fluid">
+                    <img src="~/assets/duo3.JPG" alt="..." class="img-thumbnail3 img-fluid">
+                    <img src="~/assets/duo4.JPG" alt="..." class="img-thumbnail4 img-fluid">
 
 
                 </div>
@@ -274,7 +394,7 @@
             </div>
         </div>
         <div class="learn2">
-            <a class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1" style="">LEARN MORE! -></p></a>
+            <a type="button"  style="color:black; margin-bottom:-120px;"class="nav-link" asp-controller="Packages" asp-action="Index"><p class="text-center1">LEARN MORE! -></p></a>
             
         </div>
 
@@ -294,15 +414,22 @@
                     </div>
 
                     <div class="col-xs-2 col-md-5">
-                        <p class="pright">
-                            Indoor & Outdoor Professional Photography |  Bacoor, Cavite 🇵🇭<br><br>
-                            🏠 Headshots | Portrait | Couple | Group | Maternity | Toddler | Pets<br> <br>
-                            🌳 Prenup | Baptismal | Birthday | Graduation | Corporate <br>
-                            </p>
-                          
+                        
+                        <p class="pright"> &nbsp;Indoor & Outdoor Professional Photography |  Bacoor, Cavite PH </p>
+                        <br><br><br>
+                    </p>
 
-                           
+                        <p class="pright">
+                            🏠 Headshots | Portrait | Couple | Group | Maternity | Toddler | Pets
+                        </p><br> <br><br>
+
+                        <p class="pright">
+                             🌳 Prenup | Baptismal | Birthday | Graduation | Corporate 
                         </p>
+                        <br><br><br>
+                        <p class ="pright">
+                            📌 B09 L31 Sorrento Ave. Sorrento Townhomes  Panapaan IV, Bacoor, Philippines
+                            </p>
                     </div>
 
                     <div class="col-xs-6 col-md-3">
@@ -311,7 +438,7 @@
                 </div>
 
             </div>
-
+            </div>
     </footer>
 
 

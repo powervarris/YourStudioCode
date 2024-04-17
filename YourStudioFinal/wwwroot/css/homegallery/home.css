@@ -1,35 +1,45 @@
 ﻿﻿
 
-.fa-li {
-    position: relative;
-    left: 0;
+.wrapper-nav {
+    width: 100%;
+    margin-bottom: -20px;
 }
 
-
-
-.fa-bars {
-    margin-top: -15px;
-    margin-left: -1px;
-}
-
-
-
-.logonav {
+.wrapper-navbar-logo {
+    width: fit-content;
     height: 100%;
-    width: 80px;
-    margin-top: -120px;
-    margin-left: 110px;
+}
+
+    .wrapper-navbar-logo img {
+        height: 40px;
+        margin: -120px -120px 0 100px;
+    }
+
+.wrapper-navbar-menu {
+    width: fit-content;
+    margin-top: -65px;
+}
+
+.wrapper-packages {
+    width: 100%
+}
+
+.navbar-nav .nav-item .nav-link {
+    color:black;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #E89C3B !important;
+        text-decoration: underline;
+    }
+
+.navactive {
+    color: #E89C3B;
+    text-decoration: underline;
    
 }
-
-.logonav2 {
-    height: 100%;
-    width: 200px;
-    margin-top: -130px;
-    margin-left: -20px;
-}
-
-
 
 
 #slider {
@@ -45,14 +55,16 @@
 
 input[type=radio] {
     position: relative;
-    top: 108%;
-    left: 50%;
+    top: 60%;
+    left: 53%;
     width: 18px;
     height: 18px;
-    margin: 0 15px 0 0;
+    margin: auto;
     opacity: 0.4;
     transform: translateX(-83px);
     cursor: pointer;
+    color: black;
+    margin-top: -800px;
 }
 
 
@@ -62,6 +74,7 @@ input[type=radio] {
 
     input[type=radio]:checked {
         opacity: 1;
+        margin: auto;
     }
 
 
@@ -85,7 +98,7 @@ input[type=radio] {
 }
 
 #slide1 img {
-    width: 70%;
+    width: 100%;
 }
 
 /* Slider Functionality */
@@ -139,11 +152,11 @@ input[type=radio] {
 #s5:checked ~ #slide4 {
     box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
     transform: translate3d(-20%, 0, -100px);
+
 }
 
 #carousel {
-    margin-top: -130px;
-    margin-bottom: -90px;
+    margin:auto;
 }
 
 .freeze {
@@ -153,9 +166,11 @@ input[type=radio] {
     text-align: center;
     font-size: 50px;
     padding-right: 30px;
-    margin-top:-20px;
+    margin-top: -20px;
+    letter-spacing: 15px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
 }
-
 .time {
     font-family: 'Palatino Linotype';
     font-style: italic;
@@ -163,6 +178,11 @@ input[type=radio] {
     color: #E89C3B;
     text-align: center;
     font-size: 50px;
+    letter-spacing: 15px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+   
+    
 }
 
 .text-center {
@@ -186,6 +206,9 @@ input[type=radio] {
     text-align: center;
     font-size: 50px;
     padding-right: 5px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 7px;
 }
 
 .packages {
@@ -194,6 +217,9 @@ input[type=radio] {
     color: #E89C3B;
     text-align: center;
     font-size: 50px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 7px;
 }
 
 .card {
@@ -259,7 +285,7 @@ pack1 {
 }
 
 .card-body {
-    height: 300px;
+    height: 360px;
     margin-left: 12px;
 }
 
@@ -428,7 +454,7 @@ body, html {
 .imgresize {
     width: 300px;
     margin-left: 30px;
-    margin-top: -80px;
+    margin-top: -50px;
     padding-top: -80px;
 }
 
@@ -439,7 +465,7 @@ body, html {
     font-size: 50px;
     padding-right: 5px;
     color: white;
-    margin-left: 600px;
+    margin-left: 350px;
     margin-bottom: 60px;
     margin-top: -200px;
   
@@ -460,11 +486,11 @@ body, html {
 
 .pright {
     padding-right: -90px;
-    margin-left: 120px;
-    margin-bottom: -60px;
+    margin-left: -40px;
+    margin-bottom: -40px;
     margin-right: -170px;
     color: #FDF8F2;
-    margin-top:50px;
+    margin-top:10px;
 }
 
 
@@ -482,7 +508,8 @@ body, html {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background: linear-gradient(130deg, rgb(0, 0, 0), transparent);
+    color: wheat;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -512,11 +539,7 @@ body, html {
         margin-left: 50px;
     }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -533,7 +556,12 @@ body, html {
 }
 
 .header-text {
-    width: 1000px;
+   margin-bottom:-150px;
+}
+
+.header-texta {
+    margin-top: -80px;
+    margin-bottom:230px;
 }
 
 .learn1 {
@@ -604,18 +632,19 @@ body, html {
     }
 
     .learn1 {
-        font-size: 5px;
-        margin-left: -400px;
+        font-size: 10px;
+        margin-left: -420px;
         font-weight: bold;
         text-decoration: underline;
         font-style: italic;
         margin-bottom: 100px;
+        margin-top:-20px;
     }
 
     .learn2 {
-        font-size: 5px;
+        font-size: 10px;
         margin-left: -620px;
-        padding-top: 30px;
+        margin-top: -40px;
         font-weight: bold;
         text-decoration: underline;
         font-style: italic;
@@ -750,7 +779,7 @@ body, html {
         font-weight: bolder;
         display: flex;
         font-size: 15px;
-        margin-top: -55px;
+        margin-top: -25px;
         margin-left: 300px;
     }
 
@@ -762,6 +791,33 @@ body, html {
         margin-top: -25px;
         margin-left: 300px;
     }
+    .wrapper-nav {
+        width: 100%;
+        margin-bottom: -20px;
+    }
+
+    .wrapper-navbar-logo {
+        width: fit-content;
+        height:20%;
+        margin-right:-50px;
+    }
+
+        .wrapper-navbar-logo img {
+            height: 40px;
+            margin-top:-105px;
+            margin-left:120px;
+          
+            
+        }
+
+    .wrapper-navbar-menu {
+        width: fit-content;
+        margin-top: -65px;
+    }
+
+    .wrapper-packages {
+        width: 100%
+    }
 }
 
 .nav-item {
@@ -771,6 +827,7 @@ body, html {
     margin-right: 30px;
     gap: 2px;
     margin-bottom:-60px;
+
 }
 
 .menu-adjust {
@@ -781,9 +838,10 @@ body, html {
 footer {
     justify-content: space-between;
     align-items: center;
-   
+   height:350px;
     padding: 20px;
     background-color: #26272b;
+    margin-bottom:-200px;
 }
 
 .footer-container a {

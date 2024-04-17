@@ -20,11 +20,13 @@ public class BookingModel
     public string date { get; set; }
     public string time { get; set; }
     
-    public string packages { get; set; }
+    public string? packages { get; set; }
     
-    public string addOns { get; set; }
+    public string? addOns { get; set; }
+
+    public string? totalPrice { get; set; }
     
-    public string paymentID { get; set; }
+    public string? paymentID { get; set; }
     public PaymentModel payment { get; set; }
 
 }

@@ -21,7 +21,6 @@ public class ApplicationDbContext : IdentityDbContext<User>
     // public DbSet<UnverifiedBooking> UnverifiedBookings { get; set; }
     public DbSet<Gallery> Gallery { get; set; }
     public DbSet<GalleryFile> GalleryFiles { get; set; }
-    
     public DbSet<BookingModel> Booking { get; set; }
     public DbSet<PaymentModel> Payment { get; set; }
     public DbSet<Inquiry> Inquiries { get; set; }

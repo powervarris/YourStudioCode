@@ -12,6 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\css\Booking\.DS_Store" />
+    <None Include="wwwroot\css\Booking\bootstrap\.DS_Store" />
+    <None Include="wwwroot\css\Booking\bootstrap\mixins\.DS_Store" />
     <None Include="wwwroot\css\bootstraps\.DS_Store" />
     <None Include="wwwroot\css\bootstraps\mixins\.DS_Store" />
     <None Include="wwwroot\js\.DS_Store" />
@@ -106,7 +109,6 @@
     <None Include="wwwroot\scss\bootstrap\_type.scss" />
     <None Include="wwwroot\scss\bootstrap\_utilities.scss" />
     <None Include="wwwroot\scss\bootstrap\_variables.scss" />
-    <None Include="wwwroot\scss\style.scss" />
   </ItemGroup>
 
   <ItemGroup>
@@ -117,6 +119,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
     <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="SendGrid" Version="9.29.3" />
   </ItemGroup>
 
   <ItemGroup>

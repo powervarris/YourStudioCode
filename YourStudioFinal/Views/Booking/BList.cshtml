@@ -1,221 +1,344 @@
-﻿@model List<YourStudioFinal.Models.Booking.BookingModel>
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model List<YourStudioFinal.Models.Booking.BookingModel>
+
 @{
-	ViewBag.Title = "BList";
+    ViewBag.Title = "Booking List";
 }
 
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="~/css/Booking/blist.css">
-	<link rel="stylesheet" href="~/css/Booking/jquery.css">
+    <link rel="stylesheet" href="~/css/Booking/BList.css">
+    <link rel="stylesheet" href="~/css/Booking/jQuery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-<header>
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<span>
-					<img src="~/photos/logo.png" class="logonav" alt="">
-					<img src="~/photos/logo2.png" class="logonav2" alt="">
-					<i class="fas fa-bars menu-icon"></i>
-				</span>
-			</div>
-			<div class="collapse navbar-collapse" id="navbar">
-				<ul class="navbar-nav ml-auto navbar-right">
-					<li class="nav-item active">
-						<a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
-					</li>
-					<li class="nav-item active ">
-						<a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
-					</li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <span>
+                        <span onclick="openNav()">
+                            <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                                <i class="fas fa-bars pe-2 menu"></i>
+                        </span>
+                        <img src="~/photos/logo.png" class="logonav" alt="">
+                        <img src="~/photos/logo2.png" class="logonav2" alt="">
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <div class="wrapper-navbar-menu">
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
-					<li class="nav-item dropdown active">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Booking
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" asp-action="Index">Create Booking</a>
-							<a class="dropdown-item" asp-action="BList">Booking List</a>
-						</div>
-					</li>
+                                        <ul class="navbar-nav me-3">
+                                            <li>
+                                                <div id="mySidenav" class="sidenav">
+                                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                                    <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
+                                                    <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
+                                                    <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
+                                                    <a asp-controller="Home" asp-action="Logout">Logout</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script>
+                                    function openNav() {
+                                        document.getElementById("mySidenav").style.width = "250px";
+                                    }
 
-					<li class="nav-item dropdown active">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Inquiry
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
-							<a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-						</div>
-					</li>
+                                    function closeNav() {
+                                        document.getElementById("mySidenav").style.width = "0";
+                                    }
+                                </script>
+                                <span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto navbar-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
 
-					<li class="nav-item">
-						<a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-</header>
+                        @if (User.IsInRole("User"))
+                        {
+                            <li class="nav-item active">
+                                <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                            </li>
+                        }
 
-<section class="Book">
-	<div id="YB">YOUR BOOKING</div>
-	<div id="VL"></div>
-	@* <div id="btn1" class="blist" data-original-color="white">August 05, 2023 | Saturday - 1:30 pm</div> *@
-	@* <div id="btn2" class="blist" data-original-color="white">September 06, 2023 | Saturday - 2:30 pm</div> *@
-	@{
-		foreach (var item in Model.Select((value, i) => ( value, i )))
-		{
-			<div id="@("btn" + item.i)" class="blist" data-original-color="white" onclick="clickHandler(this.id)">@item.value.accountUser.UserName @item.value.date @item.value.time</div>
-		}
-	}
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Gallery
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="GalleryCustomer" asp-action="Index">User Gallery UI</a>
+                                    <a class="dropdown-item" asp-controller="Gallery" asp-action="Index">Admin Gallery</a>
+                                </div>
+                            </li>
+                        }
+                        <li class="nav-item active ">
+                            <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+                        </li>
+
+                        @if (User.IsInRole("User"))
+                        {
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                </div>
+                            </li>
+                        }
+
+                        @if (User.IsInRole("Admin"))
+                        {
+
+                            <li class="nav-item dropdown active navactive">
+                                <a class="nav-link dropdown-toggle navactive" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Booking
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                </div>
+                            </li>
+                        }
+                        
+
+                        @if (ViewBag.isLogged)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
+                            </li>
+                        }
+
+                    </ul>
+
+                    <script>
+                        $(document).ready(function () {
+                            $('.nav-link.dropdown-toggle').on('click', function (e) {
+                                e.preventDefault();
+                                $(this).next('.dropdown-menu').slideToggle();
+                            });
+                        });
+                    </script>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+<section class="containers">
+    <section class="Book">
+         <label for="monthsDropdown">Month:</label>
+            <select id="monthsDropdown">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+          </select>
+
+            @foreach (var item in Model.OrderByDescending(x => x.dateCreated).GroupBy(x => x.date).SelectMany(x => x).Select((value, i) => (value, i)))
+            {
+                <div id="@("btn" + item.i)" class="blist" data-original-color="white" onclick="clickHandler(this.id)">
+                    <span class="userTXT" style="color: black;">@item.value.accountUser.UserName</span>
+                    @item.value.dateCreated
+                    <span class="dateTXT">@item.value.date</span>
+                    <span class="timeTXT">@item.value.time</span>
+                </div>
+            }
+    </section>
 </section>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <div id="datepicker"></div>
+                </div>
+            </div>
+        </div>
 
-<section class="ftco-section">
-	<div class="container">
-		<div class="row justify-content-center">
-		</div>
-		<div class="row">
-			<div class="col-md-10">
-				<div id="datepicker"></div>
-			</div>
-		</div>
-	</div>
+    </section>
+    <section class="time-container">
+        <section class="time" style="display: inline-block;">
+            <div class="btn-row">
+                <div class="btnT" data-original-color="white" id="btnT_0930">09:30 am</div>
+                <div class="btnT" data-original-color="white" id="btnT_1000">10:00 am</div>
+            </div>
+            <div class="btn-row">
+                <div class="btnT" data-original-color="white" id="btnT_1030">10:30 am</div>
+                <div class="btnT" data-original-color="white" id="btnT_1100">11:00 am</div>
+            </div>
+            <div class="btn-row">
+                <div class="btnT" data-original-color="white" id="btnT_1300">01:30 pm</div>
+                <div class="btnT" data-original-color="white" id="btnT_1400">02:00 pm</div>
+            </div>
+            <div class="btn-row">
+                <div class="btnT" data-original-color="white" id="btnT_1430">02:30 pm</div>
+                <div class="btnT" data-original-color="white" id="btnT_1500">03:00 pm</div>
+            </div>
+            <div class="btn-row">
+                <div class="btnT" data-original-color="white" id="btnT_1530">03:30 pm</div>
+                <div class="btnT" data-original-color="white" id="btnT_1600">04:00 pm</div>
+            </div>
+        </section>
+    </section>
 
-</section>
-<section class="time-container">
-	<section class="time" style="display: inline-block;">
-		<div class="btn-row">
-			<div class="btnT" data-original-color="white" id="btnT_0930">09:30 am</div>
-			<div class="btnT" data-original-color="white" id="btnT_1000">10:00 am</div>
-		</div>
-		<div class="btn-row">
-			<div class="btnT" data-original-color="white" id="btnT_1030">10:30 am</div>
-			<div class="btnT" data-original-color="white" id="btnT_1100">11:00 am</div>
-		</div>
-		<div class="btn-row">
-			<div class="btnT" data-original-color="white" id="btnT_1300">01:30 pm</div>
-			<div class="btnT" data-original-color="white" id="btnT_1400">02:00 pm</div>
-		</div>
-		<div class="btn-row">
-			<div class="btnT" data-original-color="white" id="btnT_1430">02:30 pm</div>
-			<div class="btnT" data-original-color="white" id="btnT_1500">03:00 pm</div>
-		</div>
-		<div class="btn-row">
-			<div class="btnT" data-original-color="white" id="btnT_1530">03:30 pm</div>
-			<div class="btnT" data-original-color="white" id="btnT_1600">04:00 pm</div>
-		</div>
-	</section>
-</section>
+    <section>
+        @{
+            // this code block will display all of the bookings per month
+        }
+    </section>
 
-<section id="Srvc">
-@{
-		foreach (var item in Model.Select((value, i) => ( value, i )))
-		{
-			<div id="@("srvc" + item.i)" style="display: none">
-				<div id="VL2"></div>
-				<div id="SrvcDtl">Booking Details</div>
-				<div>
-					<h6><b>Date and Time: </b> @item.value.date @item.value.time</h6>
-				</div>
-				<div>
-					<h6><b>Client: </b> @item.value.accountUser.UserName</h6>
-				</div>
-				<div>
-					<h6><b>Contact Details: </b> @item.value.accountUser.Email</h6>
-				</div>
-				<div>
-					<h6><b>Your Package: </b> @item.value.packages</h6>
-				</div>
-				<div>
-					<h6><b>Add-ons: </b>@item.value.addOns</h6>
-				</div>
-				<div>
-					<h6><b>Total: </b> @(Convert.ToInt32(item.value.packages)+Convert.ToInt32(item.value.addOns))</h6>
-				</div>
-				<div>
-					<h6><b>Status: @item.value.status</b></h6>
-				</div>
-				<div>
-					<h6><b>Payment Details: </b></h6>
-				</div>
-				@* <div>@item.value.accountUser.Contact</div> *@
-				@* <div>@item.value.accountUser.PackagePrice</div> *@
-				<hr/>
-				<button class="btn btn-primary inline" id="btnG">Accept</button>
-				<button class="btn btn-primary inline" id="btnR">Decline</button>
-				<button class="btn btn-primary inline" id="btnBL">Edit</button>
-				<button class="btn btn-primary inline" id="btnGR">Remove</button>
-			</div>
-		}
-	}
-</section>
+    <section class="containers">
+    <section id="Srvc">
+        @{
+            foreach (var item in Model.Select((value, i) => (value, i)))
+            {
+                <div id="@("srvc" + item.i)" style="display: none">
+                    <div id="VL2"></div>
+                    <div id="SrvcDtl">Booking Details</div>
+                    <div>
+                        <h6><b>Date and Time: </b> @item.value.date @item.value.time</h6>
+                    </div>
+                    <div>
+                        <h6><b>Client: </b> @item.value.accountUser.UserName</h6>
+                    </div>
+                    <div>
+                        <h6><b>Contact Details: </b> @item.value.accountUser.Email</h6>
+                    </div>
+                    <div>
+                        <h6><b>Your Package: </b> @item.value.packages</h6>
+                    </div>
+                    <div>
+                        <h6><b>Add-ons: </b>@item.value.addOns</h6>
+                    </div>
+                    <div>
+                        @* <h6><b>Total: </b> @(Convert.ToInt32(item.value.packages) + Convert.ToInt32(item.value.addOns))</h6> *@
+                    </div>
+                    <div>
+                        <h6><b>Status: @item.value.status</b></h6>
+                    </div>
+                    <div>
+                        <h6><b>Payment Details: </b></h6>
+                    </div>
+                    @* <div>@item.value.accountUser.Contact</div> *@
+                    @* <div>@item.value.accountUser.PackagePrice</div> *@
+                    <hr>
+                    <form>
+                        @Html.ActionLink("Accept", "acceptBooking", "Booking", new { id = item.value.Id, email = item.value.accountUser.Email }, new { @class = "btn btn-primary inline", @id = "btnG" })
+                        @Html.ActionLink("Decline", "rejectBooking", "Booking", new { id = item.value.Id }, new { @class = "btn btn-primary inline", @id = "btnR" })
+                        @Html.ActionLink("", "deleteBooking", "Booking", new { id = item.value.Id }, new { @class = "bi bi-trash inline", @id = "btnGR", @style = "color: black;background-color: white;border-color: black;" })
 
-@section scripts {
-	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-}
 
-<script>
-		function clickHandler (element){
-			// $("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
+                    </form>
+                </div>
+            }
+        }
+    </section>
+    </section>
+    @section scripts {
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    }
+
+    <script>
+        function clickHandler(element) {
+            // $("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
             // $(".ftco-section").show();
             // $(".time-container").show();
             // console.log("You clicked btn1");
             // $("[id^='btnT_']").css("background-color", "white");
             // $("#btnT_1300").css("background-color", "gray");
             $("[id^=srvc]").hide();
-			$("#srvc" + element.substr(3)).show();
-			
-		};
-	
+            $("#srvc" + element.substr(3)).show();
 
-		$(function () {
+        };
 
-			var $prevElement = null;
-			$(".blist").on("mousedown", function () {
-				if ($prevElement && $prevElement[0] !== this) {
-					$prevElement.addClass("released").removeClass("pressed");
-					$prevElement.css("background-color", $prevElement.data("original-color"));
-				}
-				$prevElement = $(this);
-				$(this).addClass("pressed").removeClass("released");
-				$(this).css("background-color", "#FFA629");
-			});
 
-			$(".blist").on("mouseup mouseleave", function () {
-			});
+        $(function () {
 
-			$(".blist").on("click", function () {
-				$prevButton = $(this);
-			});
+            var $prevElement = null;
+            $(".blist").on("mousedown", function () {
+                if ($prevElement && $prevElement[0] !== this) {
+                    $prevElement.addClass("released").removeClass("pressed");
+                    $prevElement.css("background-color", $prevElement.data("original-color"));
+                }
+                $prevElement = $(this);
+                $(this).addClass("pressed").removeClass("released");
+                $(this).css("background-color", "#FFA629");
+            });
 
-			$("#datepicker").datepicker();
+            $(".blist").on("mouseup mouseleave", function () {
+            });
 
-			// $(".btn").on("click", function () {
-			// 	$("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
-			// 	$(".ftco-section").show();
-			// 	$(".time-container").show();
-			// 	console.log("You clicked btn1");
-			// 	$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
-			// 	$("#btnT_1300").css("background-color", "gray"); // turn the button with id 'btnT_1300' to gray
-			// });
-			//
-			// $("#btn2").on("click", function () {
-			// 	$("#datepicker").datepicker("setDate", new Date(2023, 8, 6));
-			// 	$(".ftco-section").show();
-			// 	$(".time-container").show();
-			// 	console.log("You clicked btn2");
-			// 	$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
-			// 	$("#btnT_1430").css("background-color", "gray"); // turn the button with id 'btnT_1430' to gray
-			// });
+            $(".blist").on("click", function () {
+                $prevButton = $(this);
+            });
 
-		});
-	</script>
+            $("#datepicker").datepicker();
+
+            // $(".btn").on("click", function () {
+            // 	$("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
+            // 	$(".ftco-section").show();
+            // 	$(".time-container").show();
+            // 	console.log("You clicked btn1");
+            // 	$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
+            // 	$("#btnT_1300").css("background-color", "gray"); // turn the button with id 'btnT_1300' to gray
+            // });
+            //
+            // $("#btn2").on("click", function () {
+            // 	$("#datepicker").datepicker("setDate", new Date(2023, 8, 6));
+            // 	$(".ftco-section").show();
+            // 	$(".time-container").show();
+            // 	console.log("You clicked btn2");
+            // 	$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
+            // 	$("#btnT_1430").css("background-color", "gray"); // turn the button with id 'btnT_1430' to gray
+            // });
+
+        });
+    </script>
 
 </body>
 </html>

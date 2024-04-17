@@ -10,10 +10,7 @@
     <link href="~/https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="~/fonts/icomoon/style.css">
-
     <link href="~/fonts/style.css" rel="stylesheet" />
-
-
 
     <!-- Style -->
     <link href="~/css/first/login.css" rel="stylesheet" />
@@ -21,57 +18,47 @@
     <title>Login #2</title>
 </head>
 <body>
-    @{
-        if (TempData["Error"] != null)
-        {
-            <script>
-                alert("@TempData["Error"]");
-            </script>
-        }
-    }
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+<header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid navbar-bg">
                 <div class="navbar-header">
                     <span>
                         <i class="fas fa-bars menu-icon"></i>
                         <img src="~/css/logo.png" class="logonav" alt="logoimage1" style="width:80px;height:auto">
                         <img src="~/css/logo2.png" class="logonav2" alt="logoimage2" style="width:150px;height:auto">
-
                     </span>
                 </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                    <ul class="navbar-nav ml-auto navbar-right">
+                <div class="navbar-links">
+                    <ul class="navbar-nav ml-auto navbar-orange">
                         <li class="nav-item active">
                             <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" asp-controller="Gallery" asp-action="Index">Gallery</a>
+                            <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
                         </li>
-                        <li class="nav-item active ">
+                        <li class="nav-item active">
                             <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
                         </li>
                         <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Booking
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" style="z-index: 1000;">
                                 <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-                                <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown active">
-                            
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Inquiry
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" style="z-index: 1000;">
                                 <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
                                 <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-                                </div>
+                            </div>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" asp-action="Index" asp-controller="Home">
+                            <a class="nav-link" asp-action="Index" asp-controller="Account">
                                 Login
                             </a>
                         </li>
@@ -81,27 +68,28 @@
         </nav>
     </header>
 
-    <div class="container-fluid ps-md-0">
-        <div class="row g-0">
+    <div class="body-bg">
 
+        <div class="row g-0">
             <div class="col-md-8 col-lg-6">
+
                 <div class="login d-flex align-items-center py-5">
                     <div class="container">
                         <div class="row">
+
                             <div class="col-md-9 col-lg-8 mx-auto">
                                 <div class="greeting-container">
                                     <h3 id="greeting"><strong></strong></h3>
                                 </div>
                                 <form asp-action="loginUser" method="post">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingInput" placeholder="username" name="UserName">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="username" name="UserName" required>
                                         <label for="floatingInput">Username</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
                                         <label for="floatingPassword">Password</label>
                                     </div>
-
                                     <div class="form-check mb-3">
                                         <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
                                         <label class="form-check-label" for="rememberPasswordCheck">
@@ -126,26 +114,20 @@
                     </div>
                 </div>
             </div>
-            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image" style="background-image: url('css\first\logon.png');">
                 <div class="d-lg-flex half">
                     <div class="d-lg-flex half"></div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/css/img2.jpg" style="margin-left:-80px;transform:rotate(-10deg)" />
+                    <div class="bg order-1 order-md-2">
+                        <img src="~/css/lagin.jpg"/>
+
                     </div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/css/img1.jpg" style="margin-left:210px; z-index:3" />
-                    </div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/css/img3.jpg" style="margin-left:500px; transform:rotate(10deg)" />
-                    </div>
-                    <div style="position:relative; left:450px; top:580px">
-                        <h2 class="tag">YOUR<STRONG>STUDIO</STRONG></h2>
-                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
-    <script>
+<script>
+
         var currentHour = new Date().getHours();
 
         var greetingElement = document.getElementById("greeting");
@@ -158,5 +140,17 @@
             greetingElement.innerHTML = "<h1>GOOD EVENING</h1>";
         }
     </script>
+
+    @{
+        if (TempData["Error"] != null)
+        {
+            <script>
+                
+                window.onload = function () {
+                    alert("@TempData["Error"]");
+                };
+            </script>
+        }
+    }
 </body>
 </html>

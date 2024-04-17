@@ -1,0 +1,399 @@
+
+.menu {
+    height: 100%;
+    width: 80px;
+    margin-top: -8px;
+    margin-left: -190px
+}
+
+.wrapper-nav {
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.wrapper-navbar-logo {
+    width: fit-content;
+    height: 100%;
+}
+
+    .wrapper-navbar-logo img {
+        height: 40px;
+        margin: -120px -120px 0 100px;
+    }
+
+.navactive {
+    color: #E89C3B;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.nav-item {
+    gap: 5px;
+}
+
+.logonav {
+    margin-left: 90px;
+    height: 100%;
+    width: 80px;
+}
+
+.logonav2 {
+    height: 100%;
+    width: 200px;
+    margin-left: -20px;
+}
+
+.topnav {
+    margin-top: 250px;
+}
+
+.fa-bars {
+    color: black;
+    margin-top: -16px;
+    position: relative;
+    top: 62px;
+    margin-left: 50px;
+}
+
+.button {
+    width: 170px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #E89C3B;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 55px;
+    font-weight: bolder;
+    margin-left: 70px;
+}
+
+.navbar-nav {
+    font-family: 'Calibri';
+    font-size: 19px;
+    gap: 20px;
+    margin-left: -20px;
+}
+
+.menu-adjust {
+    margin-top: 30px;
+}
+
+#navbar {
+    margin-left: -85px;
+    display: flex;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #E89C3B !important;
+        text-decoration: underline;
+    }
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background: linear-gradient(130deg, rgb(0, 0, 0), transparent); /* Black*/
+    color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .container {
+        max-width: 375px;
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .container {
+        max-width: 668px;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 724px;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 980px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1236px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none
+}
+
+    a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+
+body {
+    background-image: url('../../photos/background.png');
+}
+
+.form-box {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+    padding: 5px 30px 60px 30px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.hidden-message {
+    display: none;
+    text-indent: 20px;
+    padding-left: 20px;
+}
+
+.clickable-text {
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    float: right;
+}
+
+.additional-text {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.FAQ {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Palatino Linotype';
+}
+
+.FAQcont {
+}
+
+.Inquiry {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 48px;
+    font-family: 'Palatino Linotype';
+}
+
+.BtnCont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#SbtBtn {
+    background-color: #FFA629;
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px;
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+#DrfBtn {
+    background-color: #B22222;
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px;
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    border: 1px solid black;
+}
+
+.line {
+    width: 1px;
+    background-color: black;
+    height: 300px;
+}
+
+.messenger-container {
+    display: flex;
+    max-width: 1800px;
+    margin: 0;
+    padding: 20px;
+}
+
+.conversations {
+    width: 30%;
+    padding: 10px;
+}
+
+.conversation {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.chat-window {
+    flex-grow: 1;
+    margin-left: 20px;
+    width: 100px;
+}
+
+.chat-header {
+    color: white;
+    padding: 10px;
+}
+
+.messages {
+    padding: 10px;
+}
+
+.message {
+    max-width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+    .message.outgoing {
+        align-self: flex-end;
+        color: black;
+    }
+
+    .message.incoming {
+        align-self: flex-start;
+        background-color: #fff;
+        color: black;
+    }
+
+.close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+p {
+    font-weight: bold;
+    margin: 0;
+}
+
+footer {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FDF8F2;
+    padding: 20px;
+}
+
+.footer-container a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+
+.copyright {
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}

@@ -1,0 +1,119 @@
+@model List<YourStudioFinal.Models.Booking.BookingModel>
+
+<html>
+<head>
+    <link href="~/css/login/forget.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/https://unpkg.com/bs-brain@2.0.3/components/password-resets/password-reset-10/assets/css/password-reset-10.css">
+    <link href="~/css/booking/payment.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+<section class="">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                <div class="mb-5">
+                    <h4 class="text-center mb-4">Payment Section</h4>
+                </div>
+                <div class="card border border-light-subtle rounded-4">
+                    <div class="card-body p-3 p-md-4 p-xl-5">
+                        <form asp-controller="Booking" asp-action="submitPayment" method="post" enctype="multipart/form-data">
+                            <p class="text-center mb-4">Which booking do you want to pay?</p>
+                            <div class="form-floating mb-3">
+                                @{
+                                    <select class="form-select" name="Id" id="Id" required>
+                                        <option value="">Select Booking</option>
+                                        @foreach (var booking in Model)
+                                        {
+                                            <option value="@booking.Id">@booking.date @booking.time</option>
+                                            TempData["bookingId"] = booking.Id;
+                                        }
+                                            
+                                        @* @foreach (var bookings in Model) *@
+                                        @* { *@
+                                        @*     <p>Your total Price will be @bookings.totalPrice</p> *@
+                                        @* } *@
+                                            
+                                    </select>
+                                    <br/>
+                                    <select class="form-select" id="selectPayment" required>
+                                        <option> - Mode of Payment - </option>
+                                        <option value="G-Cash">G-Cash</option>
+                                        <option value="BPI">BPI</option>
+                                    </select>
+                                    <img id="payment-image" src="/modeofpayment/GCash.jpg" alt="Payment Image" style="height: 100%; width: 100%; text-align: center; display: none"/>
+                                    <img id="payment-image2" src="/modeofpayment/BPI.png" alt="Payment Image" style="height: 100%; width: 100%; text-align: center; display: none"/>
+                                }
+                            </div>
+                            <p class="text-center mb-4">Provide the Screenshot of your down payment.</p>
+                            <div class="row gy-3 overflow-hidden">
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="file" name="image" class="form-control-file" accept="image/*" required/>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-grid">
+                                        <input id="Id" style="display: none"/>
+                                        <button type="submit" class="btn btn-primary">Confirm Payment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <br/>
+                        <div class="d-grid" style="text-align: center">
+                            <form asp-action="BookingAll" asp-controller="Booking">
+                            <button type="submit" class="btn btn-primary">Go back to Booking List</button>
+                            </form>
+                        </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById("selectPayment").addEventListener('change', function() {
+        var paymentImage = document.getElementById('payment-image');
+        switch (this.value) {
+            case 'G-Cash':
+                paymentImage.src = '/modeofpayment/GCash.jpg';
+                paymentImage.style.display = 'block';
+                break;
+            case 'BPI':
+                paymentImage.src = '/modeofpayment/BPI.png';
+                paymentImage.style.display = 'block';
+                break;
+            default:
+                paymentImage.src = '';
+                paymentImage.style.display = 'none';
+                break;
+        }
+    });
+
+</script>
+<script>
+document.querySelector('.form-select').addEventListener('change', function() {
+    var paymentImage = document.getElementById('payment-image');
+    switch (this.value) {
+        case 'G-Cash':
+            paymentImage.src = 'wwwroot/modeofpayment/GCash.jpg'; // replace with actual path
+            paymentImage.style.display = 'block';
+            break;
+        case 'BPI':
+            paymentImage.src = 'wwwroot/modeofpayment/BPI.png'; // replace with actual path
+            paymentImage.style.display = 'block';
+            break;
+        default:
+            paymentImage.src = '';
+            paymentImage.style.display = 'none';
+            break;
+    }
+});
+</script>
+</body>
+</html>

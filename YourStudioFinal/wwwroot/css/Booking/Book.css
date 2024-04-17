@@ -1,3 +1,146 @@
+.menu {
+    height: 100%;
+    width: 80px;
+    margin-top: -8px;
+    margin-left: -190px
+}
+
+.wrapper-nav {
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.wrapper-navbar-logo {
+    width: fit-content;
+    height: 100%;
+}
+
+    .wrapper-navbar-logo img {
+        height: 40px;
+        margin: -120px -120px 0 100px;
+    }
+
+.nav-item {
+    gap: 5px;
+}
+
+.logonav {
+    margin-left: 90px;
+    height: 100%;
+    width: 80px;
+}
+
+.logonav2 {
+    height: 100%;
+    width: 200px;
+    margin-left: -20px;
+}
+
+.topnav {
+    margin-top: 250px;
+}
+
+.fa-bars {
+    color: black;
+    margin-top: -16px;
+    position: relative;
+    top: 62px;
+    margin-left: 50px;
+}
+
+.button {
+    width: 170px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #E89C3B;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-top: 55px;
+    font-weight: bolder;
+    margin-left: 70px;
+}
+
+.navbar-nav {
+    font-family: 'Calibri';
+    font-size: 19px;
+    gap: 20px;
+    margin-left: -20px;
+}
+
+.menu-adjust {
+    margin-top: 30px;
+}
+
+#navbar {
+    margin-left: -85px;
+    display: flex;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #E89C3B !important;
+        text-decoration: underline;
+    }
+
+.navactive {
+    color: #E89C3B;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background: linear-gradient(130deg, rgb(0, 0, 0), transparent); /* Black*/
+    color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
 
 .containers {
     width: 100%;
@@ -79,13 +222,13 @@ body {
     color: #333;
 }
 
-    .menu-icon:before {
-        content: "\f0c9";
-    }
+.menu-icon:before {
+    content: "\f0c9";
+}
 
-    .menu-icon:hover:before {
-        content: "\f00d";
-    }
+.menu-icon:hover:before {
+    content: "\f00d";
+}
 
 .navbar-nav {
     float: right;
@@ -132,9 +275,9 @@ footer {
     align-items: center;
 }
 
-    .social-icons a {
-        margin: 0 5px;
-    }
+.social-icons a {
+    margin: 0 5px;
+}
 
 .copyright {
     text-align: center;
@@ -182,19 +325,27 @@ footer {
     background-color: transparent;
 }
 
-    .custom-table td {
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-        padding: 8px;
-        text-align: center;
-    }
+.custom-table td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
 
-    .custom-table tr:first-child td {
-        border-top: 1px solid black;
-        background-color: #f2f2f2;
-        font-weight: bold;
-    }
+.custom-table tr:first-child td {
+    border-top: 1px solid black;
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
 
-    .custom-table tr:last-child td {
-        border-bottom: 1px solid black; /* Add bottom border for last row */
-    }
+.custom-table tr:last-child td {
+    border-bottom: 1px solid black; /* Add bottom border for last row */
+}
+
+.black-text {
+    color: black;
+}
+
+.black-text:hover {
+    color: black;
+}

@@ -15,49 +15,47 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid navbar-bg">
                 <div class="navbar-header">
                     <span>
                         <i class="fas fa-bars menu-icon"></i>
                         <img src="~/css/logo.png" class="logonav" alt="logoimage1" style="width:80px;height:auto">
                         <img src="~/css/logo2.png" class="logonav2" alt="logoimage2" style="width:150px;height:auto">
-
                     </span>
                 </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                    <ul class="navbar-nav ml-auto navbar-right">
+                <div class="navbar-links">
+                    <ul class="navbar-nav ml-auto navbar-orange">
                         <li class="nav-item active">
                             <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" asp-controller="Gallery" asp-action="Index">Gallery</a>
                         </li>
-                        <li class="nav-item active ">
+                        <li class="nav-item active">
                             <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
                         </li>
                         <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Booking
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" style="z-index: 1000;">
                                 <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
                                 <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown active">
-                            
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Inquiry
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" style="z-index: 1000;">
                                 <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
                                 <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-                                </div>
+                            </div>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" asp-action="Index" asp-controller="Home">
-                                Login
+                            <a class="nav-link" asp-action="Index" asp-controller="Account">
+                                Sign Up
                             </a>
                         </li>
                     </ul>
@@ -65,9 +63,8 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid ps-md-0">
+    <div class="body-bg">
         <div class="row g-0">
-
             <div class="col-md-8 col-lg-6">
                 <div class="login d-flex align-items-center py-5">
                     <div class="container">
@@ -84,26 +81,37 @@
                                     <div class="form-floating mb-3">
                                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="required">
                                         <label for="floatingPassword">Password</label>
+                                        <div class="invalid-feedback">
+                                            Password must contain at least 1 uppercase, 1 number, and be more than 8 characters long.
+                                        </div>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="required">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm Password" name="confirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="required">
                                         <label for="floatingPassword">Confirm Password</label>
-                                        <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" id="floatingPassword" placeholder="Password" name="Email" required="required">
-                                            <label for="floatingPassword">Email Address</label>
-                                            <div class="form-floating mb-3">
-                                                <input type="number" class="form-control" id="floatingPassword" placeholder="Password" name="mobileNumber" minlength="11" maxlength="11" required="required">
-                                                <label for="floatingPassword">Phone Number</label>
-                                            </div>
+                                        <div class="invalid-feedback">
+                                            Password and Confirm Password must match.
                                         </div>
-                                        <div class="d-grid">
-                                            <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">REGISTER</button>
-                                            <div class="text-center">
-                                            </div>
-                                        </div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingPassword" placeholder="Password" name="Email" required="required">
+                                        <label for="floatingPassword">Email Address</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="tel" class="form-control" id="floatingPassword" placeholder="Enter Philippine phone number" name="mobileNumber" pattern="^(09|\+639)\d{9}$" minlength="11" maxlength="11" required>
+                                        <label for="floatingPassword">Phone Number</label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck" required>
+                                        <label class="form-check-label" for="rememberPasswordCheck">
+                                            By signing up, you agree to Your Studio's' <a class="link-danger" style="color:blue" asp-action="Terms" asp-controller="Account"> Terms of Conditions and Privacy Policy</a>
+                                        </label>
+
+                                    </div>
+                                    <div class="d-grid">
+                                        <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">REGISTER</button>
                                         <div class="text-center">
                                             <p class="mx-auto" style="color: black; margin-top:20px; font-size:20px">
-                                                Already have an account? <a class="link-danger" style="color: blue;" asp-action="Index" asp-controller="Home">Login</a>
+                                                Already have an account? <a class="link-danger" style="color: blue;" asp-action="Index" asp-controller="Account">Login</a>
                                             </p>
                                         </div>
                                     </div>
@@ -116,18 +124,7 @@
             <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
                 <div class="d-lg-flex half">
                     <div class="d-lg-flex half"></div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/greg2.JPG" style="margin-left:-80px;transform:rotate(-10deg)" />
-                    </div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/css/reg1.JPG" style="margin-left:210px; z-index:3" />
-                    </div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/reg3.JPG" style="margin-left:500px; transform:rotate(10deg)" />
-                    </div>
-                    <div style="position:relative; left:450px; top:580px">
-                        <h2 class="tag">YOUR<STRONG>STUDIO</STRONG></h2>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -144,6 +141,24 @@
         } else {
             greetingElement.innerHTML = "<h1>GOOD EVENING</h1>";
         }
+        var passwordInput = document.querySelector('input[name="password"]');
+        var confirmPasswordInput = document.querySelector('input[name="confirmPassword"]');
+
+        passwordInput.addEventListener('input', function () {
+            if (passwordInput.value.match(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/)) {
+                passwordInput.setCustomValidity('');
+            } else {
+                passwordInput.setCustomValidity('Password must contain at least 1 uppercase, 1 number, and should be more than 8 characters long.');
+            }
+        });
+
+        confirmPasswordInput.addEventListener('input', function () {
+            if (confirmPasswordInput.value === passwordInput.value) {
+                confirmPasswordInput.setCustomValidity('');
+            } else {
+                confirmPasswordInput.setCustomValidity('Password and Confirm Password must match.');
+            }
+        });
     </script>
 </body>
 </html>

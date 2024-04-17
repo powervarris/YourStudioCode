@@ -1,12 +1,13 @@
 ﻿.login {
     min-height: 100vh;
+    background-color: #F5F2F0
 }
 
-.bg-image {
-    background-image: url('background.png');
-    background-size: cover;
-    background-position: center;
+.form-control {
+    background-color: #F5F2F0
 }
+
+
 
 .login-heading {
     font-weight: 300;
@@ -38,7 +39,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
     margin-bottom: 20px;
     font-size: 50%
 }
@@ -72,10 +72,9 @@ h2.tag {
     font-weight: bold;
 }
 
-
     h2.tag strong {
         font-weight: normal;
-        color: #ff6600;
+        color: #EFC960;
     }
 
 .signing-in-text,
@@ -101,3 +100,32 @@ h2.tag {
     margin-right: 10%;
     display: flex;
 }
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('login.jpg');
+}
+.navbar-nav {
+    float: right;
+}
+.topnav {
+    margin-top: 100px;
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end;
+    background-color: #FDF8F2;
+}
+
+
+
+.navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+    .navbar-toggler:hover {
+        color: rgba(0, 0, 0, 0.7);
+    }

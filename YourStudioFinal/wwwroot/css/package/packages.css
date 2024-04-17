@@ -1,9 +1,73 @@
 ﻿body {
 }
+
+.wrapper-nav {
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.wrapper-navbar-logo {
+    width: fit-content;
+    height: 100%;
+}
+
+    .wrapper-navbar-logo img {
+        height: 40px;
+        margin: -120px -120px 0 100px;
+    }
+
+.wrapper-navbar-menu {
+    width: fit-content;
+    margin-top: -65px;
+}
+
+.wrapper-packages {
+    width: 100%
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    color: black; 
+    text-decoration: none; 
+    transition: color 0.3s, background-color 0.3s; 
+}
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #E89C3B !important; 
+        text-decoration: underline; 
+    }
+
+
+
+
+.navactive {
+    color: #E89C3B;
+    text-decoration: underline;
+}
+
+
+.nav-item {
+    margin-top: 10px;
+    font-family: 'Calibri';
+    font-size: 20px;
+    margin-right: 30px;
+    gap: 2px;
+    margin-bottom: -60px;
+}
+
+.menu-adjust {
+    margin-top: -55px;
+}
+
+
+.text-center{
+    text-align:center;
+}
+
 footer {
     justify-content: space-between;
     align-items: center;
-    background-color: #FDF8F2;
+   
     padding: 20px;
 }
 
@@ -28,6 +92,7 @@ footer {
     text-align: center;
     color: black;
     margin-top: 10px;
+    margin-bottom:-20px;
 }
 
 /* The side navigation menu */
@@ -38,7 +103,8 @@ footer {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background: linear-gradient(130deg, rgb(0, 0, 0), transparent);
+    color: wheat;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -88,48 +154,11 @@ footer {
 
 
 
-.fa-li {
-    position: relative;
-    left: 0;
-}
 
 
 
-.fa-bars {
-    margin-top: -15px;
-    margin-left: -1px;
-}
 
 
-
-.logonav {
-    height: 100%;
-    width: 80px;
-    margin-top: -120px;
-    margin-left: 110px;
-}
-
-.logonav2 {
-    height: 100%;
-    width: 200px;
-    margin-top: -130px;
-    margin-left: -20px;
-}
-
-
-
-.nav-item {
-    margin-top: 10px;
-    font-family: 'Calibri';
-    font-size: 20px;
-    margin-right: 30px;
-    gap: 2px;
-    margin-bottom: -60px;
-}
-
-.menu-adjust {
-    margin-top: -55px;
-}
 
 
 
@@ -221,7 +250,25 @@ footer {
         margin-top: 35px;
     }
 
+.pckg-price {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 900px;
+    margin-top:-160px;
+}
 
+.pckg-price1 {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 900px;
+    margin-top: -200px;
+}
 
 
 
@@ -238,53 +285,121 @@ footer {
         font-family: 'Palatino Linotype';
         font-style: italic;
         font-weight: bolder;
-        margin-top: -105px;
-        padding-left: 320px;
+        margin-top: -125px;
+        margin-left: -600px;
         font-size: 30px;
+        margin-bottom:10px;
     }
+.pck-headingtxt1 {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bolder;
+    margin-top:-325px;
+    margin-left: -600px;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.pck-headingtxt2 {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: -125px;
+    margin-left: -550px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
     .contain {
         display: flex;
     }
 
-    .hrline {
-        width: 1100px;
-        padding-bottom: 0.9px;
-        text-align: center;
-        margin-left: 11%;
-        height: 2px;
-    }
+.hrline {
+    margin: auto;
+    width: 1100px;
+    height: 2px;
+    margin-bottom: 40px;
+    padding-bottom: 0.5px;
+}
 
-    .hrline2 {
-        width: 1100px;
-        padding-bottom: 1px;
-        text-align: center;
-        margin-left: 11%;
-        height: 2px;
-        margin-top: -10px;
-    }
+.hrline2 {
+    margin: auto;
+    width: 1100px;
+    height: 1px;
+    margin-bottom: 40px;
+    padding-bottom: 0.5px;
+    margin-top:20px;
+}
+
+.hrlinea1 {
+    margin: auto;
+    width: 1100px;
+    height: 2px;
+    margin-bottom: 40px;
+    padding-bottom: 0.5px;
+}
+
+.hrline2a {
+    margin: auto;
+    width: 1100px;
+    height: 2px;
+    margin-bottom: 20px;
+    padding-bottom: 0.5px;
+    margin-top: 30px;
+}
+.hrlinea2 {
+    margin: auto;
+    width: 1100px;
+    height: 2px;
+    margin-bottom: 40px;
+    padding-bottom: 1px;
+}
+
+.hrline2b {
+    margin: auto;
+    width: 1100px;
+    height: 2px;
+    margin-bottom: 40px;
+    padding-bottom: 1px;
+    margin-top: 20px;
+}
 
     .img-adj {
         border-radius: 100px;
         width: 100px;
-        margin-top: 20px;
-        margin-left: 180px;
+        margin-top: 0px;
+        margin-left: -1000px;
     }
 
     .sub-text {
         font-family: Calibri;
         font-size: 20px;
         padding-top: 5px;
-        padding-left: 320px;
+        margin-left: -600px;
     }
 
     .sub-text2 {
         font-family: Calibri;
         font-size: 20px;
-        margin-top: -76px;
-        margin-bottom: 17px;
-        padding-left: 520px;
+        margin-top: -83px;
+        margin-bottom: 20px;
+        margin-left: -120px;
     }
+
+.sub-texta {
+    font-family: Calibri;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-left: -600px;
+    margin-top:-20px;
+}
+
+.sub-text2a {
+    font-family: Calibri;
+    font-size: 20px;
+    margin-top: -83px;
+    margin-bottom: 20px;
+    margin-left: -120px;
+}
 
     .squares {
         font-size: 50px;
@@ -294,16 +409,99 @@ footer {
     .pos-squares {
     }
 
-    .book-now-btn {
-        background-color: black;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        padding: 0.75rem 2rem;
-        font-size: 2.5rem;
-        text-align: center;
-        cursor: pointer;
-        width: 200px;
-        height: 40px;
-        font-family: 'Palatino Linotype';
-    }
+.book-now-btn {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-family: 'Palatino Linotype';
+    margin: 50px;
+    margin-bottom: -100px;
+}
+
+.book-now-btn1 {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-family: 'Palatino Linotype';
+    margin: 23px -900px 0 40px;
+    margin-bottom: -100px;
+}
+
+.book-now-btn2 {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-family: 'Palatino Linotype';
+    margin: -15px -900px 0 40px;
+    margin-bottom:-100px;
+}
+
+.book-now-btn3 {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-family: 'Palatino Linotype';
+    margin: 65px -900px -80px 40px;
+}
+
+.book-now-btn4 {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-family: 'Palatino Linotype';
+    margin: 20px -900px 0 40px;
+}
+
+.pck-reminders {
+    font-family: 'Palatino Linotype';
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-left: -600px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.pck-addons {
+    font-family: 'Palatino Linotype';
+    font-weight: bolder;
+    margin-top: -650px;
+    margin-left: 700px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    
+}

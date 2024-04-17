@@ -1,0 +1,258 @@
+@model List<YourStudioFinal.Models.Booking.BookingModel>
+
+@{
+	ViewBag.Title = "Booking";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/booking/cstmBook.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <span>
+                        <span onclick="openNav()">
+                            <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+                                <i class="fas fa-bars pe-2 menu"></i>
+                        </span>
+                        <img src="~/photos/logo.png" class="logonav" alt="">
+                        <img src="~/photos/logo2.png" class="logonav2" alt="">
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <div class="wrapper-navbar-menu">
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                                        <ul class="navbar-nav me-3">
+                                            <li>
+                                                <div id="mySidenav" class="sidenav">
+                                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                                    <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
+                                                    <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
+                                                    <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
+                                                    <a asp-controller="Home" asp-action="Logout">Logout</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script>
+                                    function openNav() {
+                                        document.getElementById("mySidenav").style.width = "250px";
+                                    }
+
+                                    function closeNav() {
+                                        document.getElementById("mySidenav").style.width = "0";
+                                    }
+                                </script>
+                                <span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto navbar-right">
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        @if (User.IsInRole("User"))
+                        {
+                            <li class="nav-item active">
+                                <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                            </li>
+                        }
+
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Gallery
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="GalleryCustomer" asp-action="Index">User Gallery UI</a>
+                                    <a class="dropdown-item" asp-controller="Gallery" asp-action="Index">Admin Gallery</a>
+                                </div>
+                            </li>
+                        }
+                        <li class="nav-item active ">
+                            <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+                        </li>
+
+                        @if (User.IsInRole("User"))
+                        {
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                </div>
+                            </li>
+                        }
+
+                        @if (User.IsInRole("Admin"))
+                        {
+
+                            <li class="nav-item dropdown active navactive">
+                                <a class="nav-link dropdown-toggle navactive" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Booking
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                </div>
+                            </li>
+                        }
+
+
+                        @if (ViewBag.isLogged)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
+                            </li>
+                        }
+
+                    </ul>
+
+                    <script>
+                        $(document).ready(function () {
+                            $('.nav-link.dropdown-toggle').on('click', function (e) {
+                                e.preventDefault();
+                                $(this).next('.dropdown-menu').slideToggle();
+                            });
+                        });
+                    </script>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<section class="containers">
+        <div class="Book">
+            <div>YOUR BOOKING LIST</div>
+        </div>
+    </section>
+<section class="containers">
+    <div class="form-box">
+            @Html.ActionLink("Upcoming", "BookingListAdminAccepted", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+            |
+            @Html.ActionLink("Declined", "BookingListAdminDecline", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+            |
+            @Html.ActionLink("Past", "BookingListAdmin", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+        <br/>
+
+        @{
+            if (Model != null)
+            {
+
+                <table class="custom-table">
+                    <tr>
+                        <td></td>
+                        <td>Date</td>
+                        <td>Time</td>
+                        <td>Customer ID</td>
+                        <td>Username</td>
+                        <td>Mobile Number</td>
+                        <td>Email</td>
+                        <td>Package</td>
+                        <td>Add Ons</td>
+                        <td>Price</td>
+                        <td>Payment Receipt</td>
+                    </tr>
+                    <form id="deleteContent" method="post">
+                        @for (int i = 0; i < Model.Count; i++)
+                        {
+                            <tr>
+                                <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete"/></td>
+                                <td>@Model[i].date</td>
+                                <td>@Model[i].time</td>
+                                <td>@Model[i].accountUser.Id</td>
+                                <td>@Model[i].accountUser.Id</td>
+                                <td>@Model[i].accountUser.mobileNumber</td>
+                                <td>@Model[i].accountUser.Email</td>
+                                <td>@Model[i].packages</td>
+                                <td>@Model[i].addOns</td>
+                                <td>@Model[i].totalPrice</td>
+                                @if (Model[i].payment != null){
+                                <td><input type="button" onclick="location.href='@System.IO.Path.Combine("../uploads/", @Model[i].payment?.fileName)';" value="See Receipt" /></td>
+                                }
+                                else
+                                {
+                                <td>Not Paid</td>
+                                }
+                                </tr>
+                        }
+                    </form>
+                </table>
+            }
+        }
+        <br/>
+    </div>
+        <br />
+        <section class="BtnCont">
+            <button type="button" id="RmvBtn" onclick="setDelete()">
+                REMOVE
+            </button>
+        </section>
+</section>
+
+<script>
+        setDelete = function () {
+        
+        var checked = document.querySelectorAll('input[type="checkbox"]:checked');
+        var deleteContent = document.getElementById('deleteContent');
+        if (checked.length === 0) {
+            alert('Please select at least one item to delete');
+            return;
+        }
+        else {
+        deleteContent.action = '/Booking/DeletedBookingAdmin?ids=' + Array.from(checked).map(x => x.getAttribute('data-id')).join(',');
+        deleteContent.submit();
+        }
+        }
+</script>
+</body>
+</html>
+
+<footer>
+    <div class="footer-container">
+        <hr />
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2023 Your Studio</p>
+</footer>

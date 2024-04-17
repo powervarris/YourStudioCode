@@ -6,6 +6,10 @@
 
 /* Layout helpers
 ----------------------------------*/
+body {
+    background-image: url('../../photos/Background.png');
+}
+
 .ui-helper-hidden {
     display: none;
 }

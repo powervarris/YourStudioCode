@@ -1,3 +1,5 @@
+@using System.Runtime.CompilerServices
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
 @model YourStudioFinal.Models.Booking.BookingModel
 @{
 	ViewBag.Title = "Create Booking";
@@ -6,64 +8,156 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="~/css/Booking/crtBook.css">
+	<link rel="stylesheet" href="~/css/Booking/CRBook.css">
 </head>
 <body>
 
-    <header>
-	    <nav class="navbar navbar-expand-lg navbar-light">
-		    <div class="container-fluid">
-			    <div class="navbar-header">
-				    <span>
-					    <img src="~/photos/logo.png" class="logonav" alt="">
-					    <img src="~/photos/logo2.png" class="logonav2" alt="">
-					    <i class="fas fa-bars menu-icon"></i>
-				    </span>
-			    </div>
-			    <div class="collapse navbar-collapse" id="navbar">
-				    <ul class="navbar-nav ml-auto navbar-right">
-					    <li class="nav-item active">
-						    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
-					    </li>
-					    <li class="nav-item active">
-						    <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
-					    </li>
-					    <li class="nav-item active ">
-						    <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
-					    </li>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<span>
+						<span onclick="openNav()">
+							<a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
+								<i class="fas fa-bars pe-2 menu"></i>
+						</span>
+						<img src="~/photos/logo.png" class="logonav" alt="">
+						<img src="~/photos/logo2.png" class="logonav2" alt="">
+					</span>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto ">
+						<li class="nav-item">
+							<a class="nav-link">
+								<div class="wrapper-navbar-menu">
+									<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
-					    <li class="nav-item dropdown active">
-						    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    Booking
-						    </a>
-						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							    <a class="dropdown-item" asp-action="Index">Create Booking</a>
-							    <a class="dropdown-item" asp-action="BList">Booking List</a>
-						    </div>
-					    </li>
+										<ul class="navbar-nav me-3">
+											<li>
+												<div id="mySidenav" class="sidenav">
+													<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+													<a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
+													<a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
+													<a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
+													<a asp-controller="Home" asp-action="Logout">Logout</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<script>
+									function openNav() {
+										document.getElementById("mySidenav").style.width = "250px";
+									}
 
-					    <li class="nav-item dropdown active">
-						    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    Inquiry
-						    </a>
-						    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							    <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
-							    <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-						    </div>
-					    </li>
+									function closeNav() {
+										document.getElementById("mySidenav").style.width = "0";
+									}
+								</script>
+								<span>
+							</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto navbar-right">
+						<li class="nav-item active">
+							<a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+						</li>
 
-					    <li class="nav-item">
-						    <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i></a>
-					    </li>
+						@if (User.IsInRole("User"))
+						{
+							<li class="nav-item active">
+								<a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+							</li>
+						}
 
+						@if (User.IsInRole("Admin"))
+						{
+							<li class="nav-item dropdown active">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Gallery
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" asp-controller="GalleryCustomer" asp-action="Index">User Gallery UI</a>
+									<a class="dropdown-item" asp-controller="Gallery" asp-action="Index">Admin Gallery</a>
+								</div>
+							</li>
+						}
+						<li class="nav-item active ">
+							<a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+						</li>
 
-				    </ul>
-			    </div>
-		    </div>
-	    </nav>
-    </header>
+						@if (User.IsInRole("User"))
+						{
+							<li class="nav-item dropdown active navactive">
+								<a class="nav-link dropdown-toggle navactive" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+									<a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
+								</div>
+							</li>
 
+							<li class="nav-item dropdown active">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+									<a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+								</div>
+							</li>
+						}
+
+						@if (User.IsInRole("Admin"))
+						{
+
+							<li class="nav-item dropdown active navactive">
+								<a class="nav-link dropdown-toggle navactive" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Booking
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+									<a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+									<a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdminAccepted">Review Customer Booking</a>
+								</div>
+							</li>
+
+							<li class="nav-item dropdown active">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                    <a class="dropdown-item" asp-controller="Inquiry" asp-action="iListAdmin">Inquiry Admin</a>
+								</div>
+							</li>
+						}
+						
+
+						@if (ViewBag.isLogged)
+						{
+							<li class="nav-item">
+								<a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
+							</li>
+						}
+						else
+						{
+							<li class="nav-item">
+								<a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
+							</li>
+						}
+
+					</ul>
+
+					<script>
+						$(document).ready(function () {
+							$('.nav-link.dropdown-toggle').on('click', function (e) {
+								e.preventDefault();
+								$(this).next('.dropdown-menu').slideToggle();
+							});
+						});
+					</script>
+
+				</div>
+			</div>
+		</nav>
+	</header>
 
 	<section class="container one">
 		<div class="DAT inline">
@@ -76,141 +170,160 @@
 		<hr />
 	</section>
 
-	<section class="container one">
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row justify-content-center">
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div id="calendar" class="calendar">
-							<div class="header">
-								<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
-								<div class="text" data-render="month-year"></div>
-								<a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
-							</div>
-							<div class="months" data-flow="left">
-								<div class="month month-a">
-									<div class="render render-a"></div>
-								</div>
-								<div class="month month-b">
-									<div class="render render-b"></div>
-								</div>
-							</div>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="calendar calendar-first" id="calendar_first">
+						<div class="calendar_header">
+							<button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
+							<h2></h2>
+							<button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
 						</div>
+						<div class="calendar_weekdays"></div>
+						<div class="calendar_content"></div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section style="position: relative; margin-top: 100px;">
-			<div id="slctDate" style="position: absolute; transform: translate(-50%, -100%); font-family: 'Palatino Linotype'; font-weight:bold; font-size:30px;"></div>
-		</section>
+	<section style="position: relative; margin-top: 100px;">
+		<div id="slctDate" style="position: absolute; top: 50%; transform: translate(-50%, -100%); font-family: 'Palatino Linotype'; font-weight:bold; font-size:30px;"></div>
+	</section>
 
-		<section class="time-container">
-			<section class="time" style="display: inline-block;">
-				<div class="btn-row">
-					<div class="btnT" data-original-color="white">09:30 am</div>
-					<div class="btnT" data-original-color="white">10:00 am</div>
-				</div>
-				<div class="btn-row">
-					<div class="btnT" data-original-color="white">10:30 am</div>
-					<div class="btnT" data-original-color="white">11:00 am</div>
-				</div>
-				<div class="btn-row">
-					<div class="btnT" data-original-color="white">01:30 pm</div>
-					<div class="btnT" data-original-color="white">02:00 pm</div>
-				</div>
-				<div class="btn-row">
-					<div class="btnT" data-original-color="white">02:30 pm</div>
-					<div class="btnT" data-original-color="white">03:00 pm</div>
-				</div>
-				<div class="btn-row">
-					<div class="btnT" data-original-color="white">03:30 pm</div>
-					<div class="btnT" data-original-color="white">04:00 pm</div>
-				</div>
-			</section>
-		</section>
-
-		<section class="pack">
-			<label for="packages">Packages:</label>
-			<select name="packages" id="package" onchange="changePrice(this.value)">
-				<option value="199">Your Student</option>
-				<option value="499">Your Duo</option>
-				<option value="699">Your Squad</option>
-				<option value="899">Your Barkada</option>
-				<option value="1499">Your Family</option>
-				<option value="1299">Your Fur Baby</option>
-				<option value="899">Your Graduation</option>
-				<option value="1499">Your Home Service</option>
-			</select>
-		</section>
-
-		<section class="Adds">
-			<label for="addOns">Add-Ons:</label>
-			<select name="addOns" id="addOn" onchange="changePrice2(this.value)">
-				<option value="249">Additional Head</option>
-				<option value="299">Additional Fur Baby</option>
-				<option value="199">Additional 15 Minutes</option>>
-			</select>
-		</section>
-
-		<section id="Srvc">
-			<div id="SrvcDtl">Service Details</div>
-			<div>@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</div>
-			<div id="slctDate2"></div>
-			<div id="slctTime"></div>
-			<div id="packagelist"></div>
-			<div id="packages"></div>
-			<div id="addOns">Total Add-Ons: </div>
-			<hr />
-			<button type="button" class="btnB" data-toggle="modal" data-target="#exampleModalCenter">
-				Book Now!
-			</button>
+	<section class="time-container">
+		<section class="time" style="display: inline-block;">
+			<div class="btn-row">
+				<div class="btnT" data-original-color="white">09:00 am</div>
+				<div class="btnT" data-original-color="white">09:30 am</div>
+				<div class="btnT" data-original-color="white">10:00 am</div>
+			</div>
+			<div class="btn-row">
+				<div class="btnT" data-original-color="white">10:30 am</div>
+				<div class="btnT" data-original-color="white">11:00 am</div>
+				<div class="btnT" data-original-color="white">01:00 pm</div>
+			</div>
+			<div class="btn-row">
+				<div class="btnT" data-original-color="white">01:30 pm</div>
+				<div class="btnT" data-original-color="white">02:00 pm</div>
+				<div class="btnT" data-original-color="white">02:30 pm</div>
+			</div>
+			<div class="btn-row">
+				<div class="btnT" data-original-color="white">03:00 pm</div>
+				<div class="btnT" data-original-color="white">03:30 pm</div>
+				<div class="btnT" data-original-color="white">04:00 pm</div>
+			</div>
+			<div class="btn-row">
+				<div class="btnT" data-original-color="white">04:30 pm</div>
+				<div class="btnT" data-original-color="white">05:00 pm</div>
+				<div class="btnT" data-original-color="white">05:30 pm</div>
+			</div>
 		</section>
 	</section>
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Ops Teka Muna!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-	    <div class="modal-body">
-		    <form asp-action="AddBooking" method="post" enctype="multipart/form-data">
-			    <input name="date" id="formDate" style="display: none"/>
-			    <input name="time" id="formTime" style="display: none"/>
-			    <input name="packages" id="formPackage" style="display: none"/>
-			    <input name="addOns" id="formAddOns" style="display: none"/>
-			    <input type="file" name="image" id="image" class="form-control-file" accept="image/*"/>
-			    <button type="submit" class="btnB" data-original-color="Black">BOOK</button>
-		    </form>
-	    </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+	
+			<section class="pack">
+				<label for="packages">Packages:</label>
+				<select name="packages" id="package" value="0" onchange="changePrice2(this.value)" form="BookingForm" required>
+					<option value="None | 0 PHP">None</option>
+					<option value="Your Student | 399">Your Student | 399</option>
+					<option value="Your Soloito | 549">Your Soloito | 549</option>
+					<option value="Your Duo | 769">Your Duo | 769</option>
+					<option value="Your Barkada | 1209">Your Barkada | 1209</option>
+					<option value="Your Squad | 989">Your Squad | 989</option>
+					<option value="Your Family | 1869">Your Family | 1869</option>
+					<option value="Your Fur Baby | 1429">Your Fur Baby | 1429</option>
+					<option value="Your Graduation | 1429">Your Graduation | 1429</option>
+					<option value="Your Birthday | 989">Your Birthday | 989</option>
+					<option value="Your Maternity | 1899">Your Maternity | 1899</option>
+					<option value="Your Home Service | 5499">Your Home Service | 5499</option>
+				</select>
+			</section>
+			
+			<section class="Adds">
+				<label for="addOns">Add-Ons:</label>
+				<select name="addOns" id="addOn" value="0" onchange="changePrice(this.value)" form="BookingForm" required>
+					<option value="None | 0 PHP">None</option>
+					<option value="Cake Smash Clean up | 300 PHP">Cake Smash Clean up | 300 PHP</option>
+					<option value="Themed Background Setup | 299 PHP">Themed Background Setup | 299 PHP</option>
+					<option value="15 Minute extension (with backdrop change) | 199 PHP">15 Minute extension (with backdrop change) | 199 PHP</option>
+					<option value="Additional Person | 299 PHP/person">Additional Person | 299 PHP/person</option>
+					<option value="Additional Pet | 349 PHP/pet">Additional Pet | 349 PHP/pet</option>
+					<option value="4R - Sized Photo | 50 PHP">4R - Sized Photo | 50 PHP</option>
+					<option value="8R - Sized Photo | 150 PHP">8R - Sized Photo | 150 PHP</option>
+					<option value="8R - Sized Photo with frame | 450 PHP">8R - Sized Photo with frame | 450 PHP</option>
+				</select>
+			</section>
 
-<link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet"/>
+	<section id="Srvc">
+		
+		<div id="SrvcDtl">Service Details</div>
+		<div>@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</div>
+		<div id="slctDate2"></div>
+		<div id="slctTime"></div>
+		<div id="packagelist"></div>
+		<div id="packages">Total Package: 0</div>
+		<div id="addOns">Total Add-Ons: 0</div>
+		<div id="totalPrice">Total Price: 0</div>
 
-@section scripts {
+		<hr/>
+		<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm" required>
+			<input name="date" id="formDate" hidden required/>
+			<input name="time" id="formTime" hidden required/>
+			<input name="packages" id="formPackage" hidden required/>
+			<input name="addOns" id="formAddOns" hidden/>
+			<input name="totalPrice" id="formPrice" hidden/>
+			<button type="submit" class="btnB" onclick="checkDateTime()">
+				Book Now!
+			</button>
+		</form>
+	</section>
 
-	<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
-	<script src="~/bootstraps.min.js"></script>
+	<!-- Modal -->
+	@* <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> *@
+	@*   <div class="modal-dialog modal-dialog-centered" role="document"> *@
+	@*     <div class="modal-content"> *@
+	@*       <div class="modal-header"> *@
+	@*         <h5 class="modal-title" id="exampleModalLongTitle">Ops Teka Muna!</h5> *@
+	@*         <button type="button" class="close" data-dismiss="modal" aria-label="Close"> *@
+	@*           <span aria-hidden="true">&times;</span> *@
+	@*         </button> *@
+	@*       </div> *@
+	@* 	    <div class="modal-body"> *@
+	@* 		    <form asp-action="AddBooking" method="post" enctype="multipart/form-data"> *@
+	@* 			    <input name="date" id="formDate" style="display: none"/> *@
+	@* 			    <input name="time" id="formTime" style="display: none"/> *@
+	@* 			    <input name="packages" id="formPackage" style="display: none"/> *@
+	@* 			    <input name="addOns" id="formAddOns" style="display: none"/> *@
+	@* 			    <input type="file" name="image" id="image" class="form-control-file" accept="image/*"/> *@
+	@* 			    <button type="submit" class="btnB" data-original-color="Black">BOOK</button> *@
+	@* 		    </form> *@
+	@* 	    </div> *@
+	@*       <div class="modal-footer"> *@
+	@*         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> *@
+	@*         <button type="button" class="btn btn-primary">Save changes</button> *@
+	@*       </div> *@
+	@*     </div> *@
+	@*   </div> *@
+	@* </div> *@
 
-	<script src="~/js/jquery.min.js"></script>
-	<script src="~/js/popper.js"></script>
-	<script src="~/js/main.js"></script>
+	<link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
 
-}
+	@section scripts {
 
-<script>
+		<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+		<script src="~/bootstraps.min.js"></script>
+
+		<script src="~/js/jquery.min.js"></script>
+		<script src="~/js/popper.js"></script>
+		<script src="~/js/main.js"></script>
+
+	}
+		
+	<script>
 		$(document).ready(function () {
 			var $prevButton = null;
 
@@ -234,16 +347,21 @@
 			$(document).on("click", ".table .row .cell span", ".calendar .header .text span", function () {
 				var selectedDate = $(this).text();
 				var selectedMonth = $(".calendar .header .text span").text();
+				var clickedDate = new Date(selectedMonth + " " + selectedDate + ", " + new Date().getFullYear());
+				var currentDate = new Date();
+
+				if (clickedDate < currentDate) {
+					return false;
+				}
+
 				$("#slctDay").text(selectedDate);
 				$("#formDate").val(selectedDate + ' ' + selectedMonth);
 				console.log('Selected date:', selectedDate);
 				$("#slctDate").text(selectedDate + ' ' + selectedMonth);
-				
 				console.log('Selected month:', selectedMonth);
 				$("#slctDate2").text(selectedDate + ' ' + selectedMonth);
 				console.log('Selected month:', selectedMonth);
 			});
-			
 
 			$(".time .btnT").on("click", function () {
 				var selectedTime = $(this).text();
@@ -251,26 +369,207 @@
 				$("#formTime").val(selectedTime);
 				console.log('Selected time:', selectedTime);
 			});
-			
 			// $(".btnB").on("click", function () {
 			// 	var selectedPackage = $(this).val();
 			// 	$("#packagelist").text('Selected Package: ' + selectedPackage);
 			// 	console.log('Selected package:', selectedPackage);
 			// });
+
 		});
-		
-		function changePrice(price) {
-			$("#packages").text("Total Package: " + price);
-			console.log('Selected package:', price);
-			$("#formPackage").val(price);
-		};
-		
-		function changePrice2(price2) {
-			$("#addOns").text("Total Add-Ons: " + price2);
-			console.log('Selected Add-ons:', price2);
-			$("#formAddOns").val(price2);
-		};
+
+
+	</script>
+	
+	<script>
+			function changePrice(price) {
+    			switch (price){
+    			// $("#packages").text("Total Package: " + price);
+    			// console.log('Selected package:', price);
+    			// $("#formPackage").val(price);
+    			
+    			case "None | 0 PHP":
+					$("#addOns").text("Total Package: " + "0");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+    			
+    			case "Cake Smash Clean up | 300 PHP":
+					$("#addOns").text("Total Package: " + "300");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+				
+				case "Themed Background Setup | 299 PHP":
+					$("#addOns").text("Total Add-Ons: " + "299");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+					
+				case "15 Minute extension (with backdrop change) | 199 PHP":
+					$("#addOns").text("Total Add-Ons: " + "199");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+					
+				case "Additional Person | 299 PHP/person":
+					$("#addOns").text("Total Add-Ons: " + "299");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+					
+				case "Additional Pet | 349 PHP/pet":
+					$("#addOns").text("Total Add-Ons: " + "349");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+					
+				case "4R - Sized Photo | 50 PHP":
+					$("#addOns").text("Total Add-Ons: " + "50");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+					
+				case "8R - Sized Photo | 150 PHP":
+					$("#addOns").text("Total Add-Ons: " + "150");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+				
+				case "8R - Sized Photo with frame | 450 PHP":
+					$("#addOns").text("Total Add-Ons: " + "450");
+					console.log('Selected package:', price);
+					$("#formAddOns").val(price);
+					break;
+    		};
+				
+				var packagePrice = parseInt($("#packages").text().split(" ")[2]);
+                var addOnPrice = parseInt($("#addOns").text().split(" ")[2]);
+                
+                // Check if the parsed values are NaN and replace them with 0 if they are
+                packagePrice = isNaN(packagePrice) ? 0 : packagePrice;
+                addOnPrice = isNaN(addOnPrice) ? 0 : addOnPrice;
+                
+                $("#totalPrice").text("Total Price: " + (packagePrice + addOnPrice));
+				$("#formPrice").val(packagePrice + addOnPrice);
+				
+				};
+    
+    		function changePrice2(price2) {
+    		// 	$("#addOns").text("Total Add-Ons: " + price2);
+    		// 	console.log('Selected Add-ons:', price2);
+    		// 	$("#formAddOns").val(price2);
+    			switch (price2){
+					
+				case "None | 0 PHP":
+					$("#packages").text("Total Package: " + "0");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Student | 399":
+					$("#packages").text("Total Package: " + "399");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Soloito | 549":
+					$("#packages").text("Total Package: " + "549");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Duo | 769":
+					$("#packages").text("Total Package: " + "769");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Barkada | 1209":
+					$("#packages").text("Total Package: " + "1209");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+				
+				case "Your Squad | 989":
+					$("#packages").text("Total Package: " + "989");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Family | 1869":
+					$("#packages").text("Total Package: " + "1869");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Fur Baby | 1429":
+					$("#packages").text("Total Package: " + "1429");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Graduation | 1429":
+					$("#packages").text("Total Package: " + "1429");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Birthday | 989":
+					$("#packages").text("Total Package: " + "989");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+				
+				case "Your Maternity | 1899":
+					$("#packages").text("Total Package: " + "1899");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break;
+					
+				case "Your Home Service | 5499":
+					$("#packages").text("Total Package: " + "5499");
+					console.log('Selected package:', price2);
+					$("#formPackage").val(price2);
+					break
+    			};
+				
+				var packagePrice = parseInt($("#packages").text().split(" ")[2]);
+                var addOnPrice = parseInt($("#addOns").text().split(" ")[2]);
+                
+                // Check if the parsed values are NaN and replace them with 0 if they are
+                packagePrice = isNaN(packagePrice) ? 0 : packagePrice;
+                addOnPrice = isNaN(addOnPrice) ? 0 : addOnPrice;
+                
+                $("#totalPrice").text("Total Price: " + (packagePrice + addOnPrice));
+				$("#formPrice").val(packagePrice + addOnPrice);
+			};
+	</script>
+	
+	
+	<script>
+		function checkDateTime() {
+			var date = $("#formDate").val();
+			var time = $("#formTime").val();
+			var package = $("#formPackage").val();
+			
+			if (date === "" || time === "") {
+				alert("Please select a date and time.");
+			}
+			
+			if (package === "") {
+				alert("Please select a package.");
+			}
+			
+			else{
+				alert("Booking Successful");
+			}
+		}
 	</script>
 
+	<script src="~/js/jquery.min.js"></script>
+	<script src="~/js/popper.js"></script>
+	<script src="~/js/bootstrap.min.js"></script>
+	<script src="~/js/main.js"></script>
+	
 </body>
 </html>
