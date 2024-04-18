@@ -1,13 +1,14 @@
+
 .login {
     min-height: 100vh;
-    background-color: #F5F2F0
+    background-color: #F5F2F0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .form-control {
     background-color: #F5F2F0
 }
-
-
 
 .login-heading {
     font-weight: 300;
@@ -18,6 +19,11 @@
     letter-spacing: 0.05rem;
     padding: 0.75rem 1rem;
 }
+
+    .btn-login:hover {
+        color: white;
+        background-color: #E4A03E;
+    }
 
 .btn-primary {
     color: black;
@@ -47,20 +53,18 @@ h1 {
     font-size: 55px
 }
 
-#img1 img {
-    width: 300px;
-    height: 40%;
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 50px;
+.bg {
+    background-size: cover;
+    background-position: center;
 }
 
-.d-lg-flex.half {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30%;
+@media (min-width: 768px) {
+    .bg-image {
+        background-image: url('../../lagin.jpg');
+    }
 }
+
+
 
 .form-floating label {
     font-family: 'Palatino Linotype'
@@ -114,8 +118,6 @@ h2.tag {
     background-color: #FDF8F2;
 }
 
-
-
 .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
 }
@@ -124,20 +126,11 @@ h2.tag {
         color: rgba(0, 0, 0, 0.7);
     }
 
-
-
-
-
-
-
-
-
 body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('background.png');
 }
 
 .specific-image {
