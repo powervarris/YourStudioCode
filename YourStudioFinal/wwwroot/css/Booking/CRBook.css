@@ -12019,8 +12019,10 @@ h1, h2, h3, h4, h5,
 
             .table .row .cell.disable {
                 color: #ccc;
-
+                pointer-events: none; 
+                cursor: not-allowed; 
             }
+            
 
             .table .row .cell span {
                 display: block;
