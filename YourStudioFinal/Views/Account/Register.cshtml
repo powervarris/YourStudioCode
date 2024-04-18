@@ -73,7 +73,7 @@
                                 <div class="greeting-container">
                                     <h3 id="greeting"><strong></strong></h3>
                                 </div>
-                                <form asp-action="AddUser" method="post">
+                                <form asp-action="AddUser" method="post" id="registration-form">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="UserName" required="required">
                                         <label for="floatingInput">Username</label>
@@ -93,12 +93,19 @@
                                         </div>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingPassword" placeholder="Password" name="Email" required="required">
-                                        <label for="floatingPassword">Email Address</label>
+                                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" name="Email" required>
+                                        <label for="floatingEmail">Email Address</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="tel" class="form-control" id="floatingPassword" placeholder="Enter Philippine phone number" name="mobileNumber" pattern="^(09|\+639)\d{9}$" minlength="11" maxlength="11" required>
-                                        <label for="floatingPassword">Phone Number</label>
+                                        <div class="row">
+                                            <div class="col-auto" style="width: 80px;background-color:#F5F2F0;">
+                                                <input class="form-control" value="+63" readonly>
+                                            </div>
+                                            <div class="col">
+                                                <input class="form-control" id="phoneNumber" placeholder="Enter remaining digits" name="phoneNumber" pattern="^\d{10}$" minlength="10" maxlength="10" required>
+                                            </div>
+                                        </div>
+                                        <label for="mobileNumber"></label>
                                     </div>
                                     <div class="form-check mb-3">
                                         <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck" required>
@@ -109,7 +116,8 @@
 
                                     </div>
                                     <div class="d-grid">
-                                        <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">REGISTER</button>
+                                        <button id="registerButton" type="submit" class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" disabled>REGISTER</button>
+
                                         <div class="text-center">
                                             <p class="mx-auto" style="color: black; margin-top:20px; font-size:20px">
                                                 Already have an account? <a class="link-danger" style="color: blue;" asp-action="Index" asp-controller="Account">Login</a>
@@ -125,52 +133,18 @@
             <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
                 <div class="d-lg-flex half">
                     <div class="d-lg-flex half"></div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/greg2.JPG" style="margin-left:-80px;transform:rotate(-10deg)" />
-                    </div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/css/reg1.JPG" style="margin-left:210px; z-index:3" />
-                    </div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/reg3.JPG" style="margin-left:470px; transform:rotate(10deg)" />
-                    </div>
-                    <div style="position:relative; left:450px; top:580px">
-                        <h2 class="tag">YOUR<STRONG>SIGNING!</STRONG></h2>
+                    <div class="bg order-1 order-md-2">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="~/js/register.js"></script>
     <script>
-        var currentHour = new Date().getHours();
 
-        var greetingElement = document.getElementById("greeting");
-
-        if (currentHour >= 0 && currentHour < 12) {
-            greetingElement.innerHTML = "<h1>GOOD MORNING</h1>";
-        } else if (currentHour >= 12 && currentHour < 18) {
-            greetingElement.innerHTML = "<h1>GOOD AFTERNOON</h1>";
-        } else {
-            greetingElement.innerHTML = "<h1>GOOD EVENING</h1>";
-        }
-        var passwordInput = document.querySelector('input[name="password"]');
-        var confirmPasswordInput = document.querySelector('input[name="confirmPassword"]');
-
-        passwordInput.addEventListener('input', function () {
-            if (passwordInput.value.match(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/)) {
-                passwordInput.setCustomValidity('');
-            } else {
-                passwordInput.setCustomValidity('Password must contain at least 1 uppercase, 1 number, and should be more than 8 characters long.');
-            }
-        });
-
-        confirmPasswordInput.addEventListener('input', function () {
-            if (confirmPasswordInput.value === passwordInput.value) {
-                confirmPasswordInput.setCustomValidity('');
-            } else {
-                confirmPasswordInput.setCustomValidity('Password and Confirm Password must match.');
-            }
-        });
     </script>
+
+
+
 </body>
 </html>

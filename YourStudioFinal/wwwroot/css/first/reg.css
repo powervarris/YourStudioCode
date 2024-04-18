@@ -1,5 +1,7 @@
 ﻿
 
+
+
 .login {
     min-height: 100vh;
     background-color: #F5F2F0
@@ -8,6 +10,7 @@
 .form-control {
     background-color: #F5F2F0
 }
+
 .link {
     color: black;
     text-decoration: underline;
@@ -56,18 +59,19 @@ h1 {
     font-size: 55px
 }
 
-#img1 img {
-    width: 300px;
-    position: absolute;
-    margin-top: 100px;
-    margin-left: 50px;
+
+.bg {
+    background-size: cover;
+    background-position: center;
 }
 
-.d-lg-flex.half {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30%;
+@media (min-width: 768px) {
+    .bg-image {
+        background-image: url('../../regi.jpg');
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+    }
 }
 
 .form-floating label {

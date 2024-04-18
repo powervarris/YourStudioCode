@@ -302,7 +302,9 @@ div.gallery {
     border: 1px solid #ccc;
     border-style: solid;
     border-color: burlywood;
+    overflow: hidden;
 }
+
 
     div.gallery:hover {
         border: 1px solid #777;

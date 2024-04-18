@@ -14,7 +14,6 @@
 
     <!-- Style -->
     <link href="~/css/first/login.css" rel="stylesheet" />
-
     <title>Login #2</title>
 </head>
 <body>
@@ -88,17 +87,21 @@
                                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
                                         <label for="floatingPassword">Password</label>
                                     </div>
-                                    <div class="form-check mb-3">
-                                        <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                                        <label class="form-check-label" for="rememberPasswordCheck">
-                                            Remember password
-                                        </label>
-                                        <label class="form-check-label" style="margin-left:250px">
-                                            <p class="" style="color:black">
-                                                No Acccount Yet?
-                                                <a class="link-danger" style="color:blue" asp-action="Register" asp-controller="Account">Sign up</a>
-                                            </p>
-                                        </label>
+                                    <div class="form-check d-flex justify-content-between mb-3">
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                                            <label class="form-check-label" for="rememberPasswordCheck">
+                                                Remember password
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label">
+                                                <p class="" style="color:black">
+                                                    No Account Yet?
+                                                    <a class="link-danger" style="color:blue" asp-action="Register" asp-controller="Account">Sign up</a>
+                                                </p>
+                                            </label>
+                                        </div>
                                     </div>
                                     <div class="d-grid">
                                         <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Sign in</button>
