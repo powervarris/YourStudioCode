@@ -51,43 +51,7 @@
 
                         </div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto ">
-                                <li class="nav-item">
-                                    <a class="nav-link">
-                                        <div class="wrapper-navbar-menu">
-                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
-                                                <ul class="navbar-nav me-3">
-                                                    <li>
-                                                        <div id="mySidenav" class="sidenav">
-                                                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                                            <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
-                                                            <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
-                                                            <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
-                                                            <a asp-controller="Home" asp-action="Logout">Logout</a>
-                                                        </div>
-                                                        <span onclick="openNav()">
-                                                            <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
-                                                                <i class="fas fa-bars pe-2 menu"></i>
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <script>
-                                            function openNav() {
-                                                document.getElementById("mySidenav").style.width = "250px";
-                                            }
-
-                                            function closeNav() {
-                                                document.getElementById("mySidenav").style.width = "0";
-                                            }
-                                        </script>
-                                        <span>
-                                    </a>
-                                </li>
-                            </ul>
+                          
                             <ul class="navbar-nav ml-auto navbar-right">
                                 <li class="nav-item active">
                                     <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
@@ -233,23 +197,20 @@
                 @Html.ActionLink("All", "Index", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;         |
             </li>
             <li class="nav2">
-                @Html.ActionLink("Solo", "SoloIndex", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;      |
+                @Html.ActionLink("SoloIto", "SoloIndex", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;      |
             </li>
             <li class="nav2">
                 @Html.ActionLink("Family", "FamilyIndex", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;       |
             </li>
             <li class="nav2">
-                @Html.ActionLink("Fur Families", "FurIndex", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;      |
+                @Html.ActionLink("Duo", "FurIndex", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;      |
 
             </li>
             <li class="nav2">
-                @Html.ActionLink("Couples", "CoupleIndex", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;      |
+                @Html.ActionLink("Barkada", "CoupleIndex", "GalleryCustomer", null, new {@class = "black-text"}) &nbsp;      
 
             </li>
-            <li class="nav2">
-                @Html.ActionLink("Child", "ChildIndex", "GalleryCustomer", null, new {@class = "black-text"})
-
-            </li>
+          
         </ul>
 
 

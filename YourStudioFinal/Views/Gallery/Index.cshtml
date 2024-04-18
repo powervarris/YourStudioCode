@@ -50,43 +50,7 @@
 
                     </div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto ">
-                            <li class="nav-item">
-                                <a class="nav-link">
-                                    <div class="wrapper-navbar-menu">
-                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
-                                            <ul class="navbar-nav me-3">
-                                                <li>
-                                                    <div id="mySidenav" class="sidenav">
-                                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                                        <a> @(ViewBag.isLogged ? ViewBag.User.UserName : "Username")</a>
-                                                        <a>@(ViewBag.isLogged ? ViewBag.User.Email : "Email")</a>
-                                                        <a>@(ViewBag.isLogged ? ViewBag.User.mobileNumber : "Mobile Number")</a>
-                                                        <a asp-controller="Home" asp-action="Logout">Logout</a>
-                                                    </div>
-                                                    <span onclick="openNav()">
-                                                        <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">
-                                                        <i class="fas fa-bars pe-2 menu"></i>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <script>
-                                        function openNav() {
-                                            document.getElementById("mySidenav").style.width = "250px";
-                                        }
-
-                                        function closeNav() {
-                                            document.getElementById("mySidenav").style.width = "0";
-                                        }
-                                    </script>
-                                    <span>
-                                </a>
-                            </li>
-                        </ul>
+      
                         <ul class="navbar-nav ml-auto navbar-right">
                             @if(User.IsInRole("Admin"))
                             {
@@ -186,23 +150,20 @@
                 All &nbsp;         |
             </li>
             <li class="nav2">
-                &nbsp; Solo &nbsp;      |
+                &nbsp; SoloIto &nbsp;      |
             </li>
             <li class="nav2">
                 &nbsp; Family &nbsp;       |
             </li>
             <li class="nav2">
-                &nbsp; Fur Families &nbsp;      |
+                &nbsp; Duo &nbsp;      |
 
             </li>
             <li class="nav2">
-                &nbsp;  Couples &nbsp;      |
+                &nbsp;  Barkada &nbsp;      
 
             </li>
-            <li class="nav2">
-                &nbsp; Child
-
-            </li>
+            
         </ul>
 
 

@@ -13,7 +13,7 @@
 
     .wrapper-navbar-logo img {
         height: 40px;
-        margin: -120px -120px 0 100px;
+        margin: -60px -120px 0 100px;
     }
 
 .wrapper-navbar-menu {
@@ -490,10 +490,12 @@ footer {
 .pck-reminders {
     font-family: 'Palatino Linotype';
     font-weight: bolder;
-    margin-top: 40px;
-    margin-left: -600px;
     font-size: 30px;
-    margin-bottom: 10px;
+    background: rgba(255, 255, 255, .5);
+    margin-top:40px;
+    margin-bottom:30px;
+    border-color:gray;
+    border-style:ridge;
 }
 
 .pck-addons {
@@ -503,5 +505,60 @@ footer {
     margin-left: 700px;
     font-size: 25px;
     margin-bottom: 30px;
+   
     
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(200,200,200,1);
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    -webkit-box-shadow: inset 0 0 6px rgba(200,200,200,1);
+}
+.reminders {
+    font-family: 'Palatino Linotype';
+    font-weight: bolder;
+    font-size: 25px;
+    font-style:italic;
+    margin-bottom:20px;
+  
+}
+
+.r1 {
+    margin-top:15px;
+    font-family: 'Palatino Linotype';
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.r2 {
+    margin-top:55px;
+    font-family: 'Palatino Linotype';
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.r3 {
+    font-family: 'Palatino Linotype';
+    font-weight: bolder;
+    font-size: 17px;
+    margin-left:350px;
+    margin-top:-200px;
+    margin-bottom:25px;
+}
+
+.r4 {
+    font-family: 'Palatino Linotype';
+    font-weight: bolder;
+    font-size: 17px;
+    margin-left: 350px;
+    margin-top:55px;
 }

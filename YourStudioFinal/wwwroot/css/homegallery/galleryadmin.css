@@ -5,7 +5,7 @@
 
 .wrapper-nav {
     width: 100%;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
 }
 
 .wrapper-navbar-logo {
@@ -15,7 +15,7 @@
 
     .wrapper-navbar-logo img {
         height: 40px;
-        margin: -120px -120px 0 100px;
+        margin: -60px -120px 0 100px;
     }
 
 .wrapper-navbar-menu {
@@ -99,8 +99,9 @@ nav2 {
 
 .nav2list-position {
     padding: 20px;
-    margin-left: 910px;
-    text-align:center;
+    right: 30px;
+    position: absolute;
+
 }
 
 .button {
@@ -119,7 +120,7 @@ nav2 {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    margin-top: 25px;
+    margin-top: 95px;
     font-weight: bolder;
     margin-left: 150px;
 }
