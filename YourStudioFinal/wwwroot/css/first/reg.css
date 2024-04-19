@@ -1,14 +1,17 @@
-﻿
-
-
-
-.login {
-    min-height: 100vh;
-    background-color: #F5F2F0
+﻿.login {
+    min-height: 100%;
+    background-color: #F5F2F0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .form-control {
-    background-color: #F5F2F0
+    background-color: #F5F2F0;
+    font-family: 'Palatino Linotype';
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
 
 .link {
@@ -36,14 +39,7 @@
     background-color: white;
     border-color: black;
     font-family: 'Palatino Linotype';
-    font-size: 20px
-}
-
-.form-control {
-    font-family: 'Palatino Linotype';
-    border-top: none;
-    border-right: none;
-    border-left: none
+    font-size: 20px;
 }
 
 .greeting-container {
@@ -52,11 +48,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    font-size: 50%
+    font-size: 50vw; 
 }
 
 h1 {
-    font-size: 55px
+    font-size: 55px;
 }
 
 
@@ -67,7 +63,7 @@ h1 {
 
 @media (min-width: 768px) {
     .bg-image {
-        background-image: url('../../regi.jpg');
+        background-image: url('background.png');
         margin: 0;
         padding: 0;
         background-repeat: no-repeat;
@@ -119,7 +115,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('background.png');
 }
 
 .navbar-nav {
@@ -144,3 +139,13 @@ body {
     .navbar-toggler:hover {
         color: rgba(0, 0, 0, 0.7);
     }
+
+.kanawan {
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url('../../reghalf.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

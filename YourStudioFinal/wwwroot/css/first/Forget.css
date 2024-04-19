@@ -9,3 +9,23 @@
     align-content: center;
     justify-content: center
 }
+.kanawan {
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url('../../loghalf.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right {
+    width: 100%;
+    padding: 20px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

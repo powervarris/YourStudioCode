@@ -333,14 +333,6 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\stash\\YourStudioCode\\YourStudioFinal\\wwwroot\\lagin.jpg",
-      "PackagePath": "staticwebassets\\lagin.jpg"
-    },
-    {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\stash\\YourStudioCode\\YourStudioFinal\\wwwroot\\legit.jpg",
-      "PackagePath": "staticwebassets\\legit.jpg"
-    },
-    {
       "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\stash\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
@@ -569,6 +561,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\stash\\YourStudioCode\\YourStudioFinal\\wwwroot\\loghalf.png",
+      "PackagePath": "staticwebassets\\loghalf.png"
+    },
+    {
       "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\stash\\YourStudioCode\\YourStudioFinal\\wwwroot\\logo.png",
       "PackagePath": "staticwebassets\\logo.png"
     },
@@ -611,6 +607,10 @@
     {
       "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\stash\\YourStudioCode\\YourStudioFinal\\wwwroot\\reg3.JPG",
       "PackagePath": "staticwebassets\\reg3.JPG"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\stash\\YourStudioCode\\YourStudioFinal\\wwwroot\\reghalf.png",
+      "PackagePath": "staticwebassets\\reghalf.png"
     },
     {
       "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\stash\\YourStudioCode\\YourStudioFinal\\wwwroot\\regi.jpg",
