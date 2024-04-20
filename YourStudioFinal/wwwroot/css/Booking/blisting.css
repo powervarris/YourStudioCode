@@ -335,7 +335,7 @@
     }
 
         #Srvc #SrvcDtl {
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             font-size: 30px;
         }
 
@@ -367,7 +367,7 @@
     }
 
     .blist {
-        padding: 20px 0 0 60px;
+        padding: 0 0 0 5px;
         max-width: 850px;
     }
 
@@ -385,11 +385,12 @@
 
     #Srvc {
         margin-top: -100px;
-        margin-left: 900px;
+        margin-left: 1000px;
+        font-weight: bold;
     }
 
         #Srvc #SrvcDtl {
-            margin-bottom: 50px;
+            margin-bottom: unset;
             font-size: 30px;
         }
 
@@ -413,7 +414,7 @@
 /* 2xl */
 @media (min-width: 1536px) {
     .containers {
-        max-width: 1536px;
+        max-width: 1336px;
     }
 
     #VL {
@@ -421,7 +422,7 @@
     }
 
     .blist {
-        max-width: 1050px;
+        max-width: 890px;
     }
 
     .userTXT {
@@ -434,7 +435,7 @@
 
     #Srvc {
         margin-top: -100px;
-        margin-left: 1100px;
+        margin-left: 940px;
     }
 
         #Srvc #SrvcDtl {
@@ -486,9 +487,9 @@ html, body {
     position: absolute;
     bottom: 0;
     width: 5px;
-    background-color: #ccc;
+    background-color: black;
     margin-left: -30px;
-    height: 1000px;
+    height: 700px;
 }
 
 .blist {
@@ -501,9 +502,31 @@ html, body {
 }
 
     .blist:hover {
-        background-color: #FFA629;
+        background-color: #AEADA9;
     }
 
+    .blist span {
+        margin-right: 10px;
+    }
+
+.userTXT {
+    font-weight: bold;
+}
+
+.Low {
+    font-size: small;
+    color: gray;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+    .right span {
+        margin-bottom: 2px;
+    }
 .ftco-section {
     display: none;
     position: absolute;
@@ -570,27 +593,68 @@ html, body {
 
 #Srvc {
     position: absolute;
-    font-family: 'Palatino Linotype';
 }
 
-    #Srvc #SrvcDtl {
-        font-weight: bold;
-        font-family: 'Palatino Linotype';
-    }
+#SrvcDtl {
+    letter-spacing: 2px;
+}
 
 #btnG {
-    padding: 6px 6px 6px 6px;
+    font-weight: bold;
+    padding: 6px 16px 6px 16px;
     margin-right: 20px;
     color: black;
     background-color: #ffde65;
     border: hidden
 }
 
-#btnR {
-    padding: 6px 6px 6px 6px;
+#btnMG {
+    position: relative;
+    left: 45%;
+    font-weight: bold;
+    padding: 6px 16px 6px 16px;
     margin-right: 20px;
     color: black;
-    background-color: #e54e4e;
+    background-color: #ffde65;
+    border: hidden
+}
+
+.mlTitle {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.mlBody {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.mlPic {
+    width: 88px;
+    position: relative;
+    left: 43%
+}
+
+#btnMR {
+    position: relative;
+    left: 79%;
+    font-weight: bold;
+    padding: 6px 16px 6px 16px;
+    margin-right: 20px;
+    color: white;
+    background-color: red;
+    border: hidden;
+}
+
+#btnR {
+    font-weight: bold;
+    padding: 6px 16px 6px 16px;
+    margin-right: 20px;
+    color: white;
+    background-color: black;
     border: hidden;
 }
 
@@ -611,3 +675,59 @@ html, body {
     left: 1400px;
     font-family: 'Palatino Linotype';
 }
+
+select {
+    letter-spacing: 3px;
+    padding-left: 20px;
+    width: fit-content;
+    height: 27px;
+    background-color: #ffbf51;
+    font-size: 18px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#monthsDropdown {
+    border-radius: 5px;
+    margin-left: 5px;
+    position: relative;
+    margin-right: 355px;
+    top: -3px;
+}
+
+.Book2 {
+    overflow-y: scroll;
+    width: 900px;  
+    height: 695px;
+}
+
+.info-box {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 410px;
+    height: 300px;
+    border: 2px solid black; /* Border style */
+    padding: 20px; /* Padding around content */
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+    .info-box h6 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+        .info-box h6 b {
+            flex-shrink: 0; /* Prevents <b> element from shrinking */
+            margin-right: 10px; /* Adjust as needed */
+        }
+
+        .info-box h6 span {
+            display: inline-block;
+            vertical-align: middle;
+            width: 230px;
+        }

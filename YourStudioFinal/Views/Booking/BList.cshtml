@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="~/css/Booking/BList.css">
+    <link rel="stylesheet" href="~/css/Booking/blisting.css">
     <link rel="stylesheet" href="~/css/Booking/jQuery.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -161,70 +161,49 @@
     </header>
 <section class="containers">
     <section class="Book">
-         <label for="monthsDropdown">Month:</label>
+         <label for="monthsDropdown">M O N T H </label>
             <select id="monthsDropdown">
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
+                <option value="1">JANUARY</option>
+                <option value="2">FEBRUARY</option>
+                <option value="3">MARCH</option>
+                <option value="4">APRIL</option>
+                <option value="5">MAY</option>
+                <option value="6">JUNE</option>
+                <option value="7">JULY</option>
+                <option value="8">AUGUST</option>
+                <option value="9">SEPTEMBER</option>
+                <option value="10">OCTOBER</option>
+                <option value="11">NOVEMBER</option>
+                <option value="12">DECEMBER</option>
           </select>
 
+          <label for="monthsDropdown">Y E A R</label>
+            <select id="monthsDropdown">
+                <option value="1">2023</option>
+                <option value="2">2024</option>
+                <option value="3">2025</option>
+          </select>
+    </section>
+    <section class="Book2">
             @foreach (var item in Model.OrderByDescending(x => x.dateCreated).GroupBy(x => x.date).SelectMany(x => x).Select((value, i) => (value, i)))
-            {
+{
                 <div id="@("btn" + item.i)" class="blist" data-original-color="white" onclick="clickHandler(this.id)">
-                    <span class="userTXT" style="color: black;">@item.value.accountUser.UserName</span>
-                    @item.value.dateCreated
-                    <span class="dateTXT">@item.value.date</span>
-                    <span class="timeTXT">@item.value.time</span>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span class="userTXT" style="color: black; font-weight: bold;">@item.value.accountUser.UserName</span>
+                            <br />
+                            <span class="Low">Date & Time Created: @item.value.dateCreated</span>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: flex-end; color: black;">
+                            <span style="color: black;" class="Low">@item.value.date</span>
+                            <span style="color: black;" class="Low">@item.value.time</span>
+                            <span style="color: black;" class="Low">@item.value.packages</span>
+                        </div>
+                    </div>
                 </div>
-            }
-    </section>
+}
+
 </section>
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center">
-            </div>
-            <div class="row">
-                <div class="col-md-10">
-                    <div id="datepicker"></div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section class="time-container">
-        <section class="time" style="display: inline-block;">
-            <div class="btn-row">
-                <div class="btnT" data-original-color="white" id="btnT_0930">09:30 am</div>
-                <div class="btnT" data-original-color="white" id="btnT_1000">10:00 am</div>
-            </div>
-            <div class="btn-row">
-                <div class="btnT" data-original-color="white" id="btnT_1030">10:30 am</div>
-                <div class="btnT" data-original-color="white" id="btnT_1100">11:00 am</div>
-            </div>
-            <div class="btn-row">
-                <div class="btnT" data-original-color="white" id="btnT_1300">01:30 pm</div>
-                <div class="btnT" data-original-color="white" id="btnT_1400">02:00 pm</div>
-            </div>
-            <div class="btn-row">
-                <div class="btnT" data-original-color="white" id="btnT_1430">02:30 pm</div>
-                <div class="btnT" data-original-color="white" id="btnT_1500">03:00 pm</div>
-            </div>
-            <div class="btn-row">
-                <div class="btnT" data-original-color="white" id="btnT_1530">03:30 pm</div>
-                <div class="btnT" data-original-color="white" id="btnT_1600">04:00 pm</div>
-            </div>
-        </section>
-    </section>
-
     <section>
         @{
             // this code block will display all of the bookings per month
@@ -232,52 +211,75 @@
     </section>
 
     <section class="containers">
-    <section id="Srvc">
-        @{
-            foreach (var item in Model.Select((value, i) => (value, i)))
-            {
-                <div id="@("srvc" + item.i)" style="display: none">
-                    <div id="VL2"></div>
-                    <div id="SrvcDtl">Booking Details</div>
-                    <div>
-                        <h6><b>Date and Time: </b> @item.value.date @item.value.time</h6>
-                    </div>
-                    <div>
-                        <h6><b>Client: </b> @item.value.accountUser.UserName</h6>
-                    </div>
-                    <div>
-                        <h6><b>Contact Details: </b> @item.value.accountUser.Email</h6>
-                    </div>
-                    <div>
-                        <h6><b>Your Package: </b> @item.value.packages</h6>
-                    </div>
-                    <div>
-                        <h6><b>Add-ons: </b>@item.value.addOns</h6>
-                    </div>
-                    <div>
-                        @* <h6><b>Total: </b> @(Convert.ToInt32(item.value.packages) + Convert.ToInt32(item.value.addOns))</h6> *@
-                    </div>
-                    <div>
-                        <h6><b>Status: @item.value.status</b></h6>
-                    </div>
-                    <div>
-                        <h6><b>Payment Details: </b></h6>
-                    </div>
-                    @* <div>@item.value.accountUser.Contact</div> *@
-                    @* <div>@item.value.accountUser.PackagePrice</div> *@
-                    <hr>
-                    <form>
-                        @Html.ActionLink("Accept", "acceptBooking", "Booking", new { id = item.value.Id, email = item.value.accountUser.Email }, new { @class = "btn btn-primary inline", @id = "btnG" })
-                        @Html.ActionLink("Decline", "rejectBooking", "Booking", new { id = item.value.Id }, new { @class = "btn btn-primary inline", @id = "btnR" })
-                        @Html.ActionLink("", "deleteBooking", "Booking", new { id = item.value.Id }, new { @class = "bi bi-trash inline", @id = "btnGR", @style = "color: black;background-color: white;border-color: black;" })
+        <section id="Srvc">
+            @{
+                foreach (var item in Model.Select((value, i) => (value, i)))
+                 {
+                    <div id="@("srvc" + item.i)" style="display: none">
+                        <div id="VL2"></div>
+                            <div id="SrvcDtl">BOOKING DETAILS</div>
+                            <div class="info-box">
+                                <div>
+                                    <h6><b>Date and Time:</b> <span>@item.value.date @item.value.time</span></h6>
+                                </div>
+                                <div>
+                                    <h6><b>Client:</b> <span>@item.value.accountUser.UserName</span></h6>
+                                </div>
+                                <div>
+                                    <h6><b>Contact Details:</b> <span>@item.value.accountUser.Email</span></h6>
+                                </div>
+                                <div>
+                                    <h6><b>Your Package:</b> <span>@item.value.packages</span></h6>
+                                </div>
+                                <div>
+                                    <h6><b>Add-ons:</b> <span>@item.value.addOns</span></h6>
+                                </div>
+                                <div>
+                                    <h6><b>Status:</b> <span>@item.value.status</span></h6>
+                                </div>
+                                <div>
+                                    <h6><b>Payment Details:</b></h6>
+                                </div>
+                            </div>
 
+                            <button type="button" id="btnG" data-toggle="modal" data-target="#exampleModalCenter">ACCEPT</button>
+                            <button type="button" id="btnR" data-toggle="modal" data-target="#exampleModalCenter2">DECLINE</button>
+                    </div>
+                 
+                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="~/photos/check.png" class="mlPic" alt="">
+                                    <div class="mlTitle">Booking Accepted!</div>
+                                    <div class="mlBody">You accepted the booking successfully.</div>
+                                    <form>
+                                        @Html.ActionLink("OKAY!", "acceptBooking", "Booking", new { id = item.value.Id, email = item.value.accountUser.Email }, new { @class = "btn btn-primary inline", @id = "btnMG" })
+                                     </form>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
 
-                    </form>
-                </div>
-            }
-        }
-    </section>
-    </section>
+                        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="~/photos/warn.png" class="mlPic" alt="">
+                                        <div class="mlTitle">Decline Booking?</div>
+                                        <div class="mlBody">Are you sure you want to decline this booking?</div>
+                                        <form>
+                                            @Html.ActionLink("REMOVE", "rejectBooking", "Booking", new { id = item.value.Id }, new { @class = "btn btn-primary inline", @id = "btnMR" })
+                                            <button type="button" class="btnC" data-dismiss="modal" style="border-radius: 5px;bottom: -3px;background-color: black; position: relative; left: 33%; font-weight: bold; padding: 6px 16px 6px 16px; margin-right: 20px; color: white; border: hidden;">CLOSE</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </section>
+        </section>
     @section scripts {
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
