@@ -1,4 +1,7 @@
-﻿body {
+﻿
+
+
+body {
 }
 
 .wrapper-nav {
@@ -27,14 +30,14 @@
 
 
 .navbar-nav .nav-item .nav-link {
-    color: black; 
-    text-decoration: none; 
-    transition: color 0.3s, background-color 0.3s; 
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
 }
 
     .navbar-nav .nav-item .nav-link:hover {
-        color: #E89C3B !important; 
-        text-decoration: underline; 
+        color: #E89C3B !important;
+        text-decoration: underline;
     }
 
 
@@ -60,14 +63,13 @@
 }
 
 
-.text-center{
-    text-align:center;
+.text-center {
+    text-align: center;
 }
 
 footer {
     justify-content: space-between;
     align-items: center;
-   
     padding: 20px;
 }
 
@@ -92,7 +94,7 @@ footer {
     text-align: center;
     color: black;
     margin-top: 10px;
-    margin-bottom:-20px;
+    margin-bottom: -20px;
 }
 
 /* The side navigation menu */
@@ -201,6 +203,7 @@ footer {
         width: 49.99999%;
         margin: 6px 0;
     }
+
     html, body {
         width: 100%;
         height: 100%;
@@ -209,6 +212,7 @@ footer {
         overflow-x: hidden;
     }
 }
+
 @media only screen and (max-width: 768px) {
     html, body {
         width: 100%;
@@ -217,38 +221,38 @@ footer {
         padding: 0;
         overflow-x: hidden;
     }
-
 }
 
 
-    @media only screen and (max-width: 500px) {
-        .responsive {
-            width: 100%;
-        }
-        html, body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-    }
-
-    div.desc {
-        padding: 15px;
-        text-align: center;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
+@media only screen and (max-width: 500px) {
     .responsive {
-        padding: 0 20px;
-        float: left;
-        width: 24.99999%;
-        margin-top: 35px;
+        width: 100%;
     }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 20px;
+    float: left;
+    width: 24.99999%;
+    margin-top: 35px;
+}
 
 .pckg-price {
     font-family: 'Palatino Linotype';
@@ -257,7 +261,7 @@ footer {
     text-align: center;
     font-size: 40px;
     margin-left: 900px;
-    margin-top:-160px;
+    margin-top: -160px;
 }
 
 .pckg-price1 {
@@ -272,33 +276,35 @@ footer {
 
 
 
-    .pckg {
-        font-family: 'Palatino Linotype';
-        font-style: italic;
-        font-weight: bold;
-        text-align: center;
-        font-size: 50px;
-        padding-left: 65px;
-    }
+.pckg {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    padding-left: 65px;
+}
 
-    .pck-headingtxt {
-        font-family: 'Palatino Linotype';
-        font-style: italic;
-        font-weight: bolder;
-        margin-top: -125px;
-        margin-left: -600px;
-        font-size: 30px;
-        margin-bottom:10px;
-    }
+.pck-headingtxt {
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: -125px;
+    margin-left: -600px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
 .pck-headingtxt1 {
     font-family: 'Palatino Linotype';
     font-style: italic;
     font-weight: bolder;
-    margin-top:-325px;
+    margin-top: -325px;
     margin-left: -600px;
     font-size: 30px;
     margin-bottom: 40px;
 }
+
 .pck-headingtxt2 {
     font-family: 'Palatino Linotype';
     font-style: italic;
@@ -309,9 +315,9 @@ footer {
     margin-bottom: 10px;
 }
 
-    .contain {
-        display: flex;
-    }
+.contain {
+    display: flex;
+}
 
 .hrline {
     margin: auto;
@@ -327,7 +333,7 @@ footer {
     height: 1px;
     margin-bottom: 40px;
     padding-bottom: 0.5px;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .hrlinea1 {
@@ -346,6 +352,7 @@ footer {
     padding-bottom: 0.5px;
     margin-top: 30px;
 }
+
 .hrlinea2 {
     margin: auto;
     width: 1100px;
@@ -363,34 +370,34 @@ footer {
     margin-top: 20px;
 }
 
-    .img-adj {
-        border-radius: 100px;
-        width: 100px;
-        margin-top: 0px;
-        margin-left: -1000px;
-    }
+.img-adj {
+    border-radius: 100px;
+    width: 100px;
+    margin-top: 0px;
+    margin-left: -1000px;
+}
 
-    .sub-text {
-        font-family: Calibri;
-        font-size: 20px;
-        padding-top: 5px;
-        margin-left: -600px;
-    }
+.sub-text {
+    font-family: Calibri;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-left: -600px;
+}
 
-    .sub-text2 {
-        font-family: Calibri;
-        font-size: 20px;
-        margin-top: -83px;
-        margin-bottom: 20px;
-        margin-left: -120px;
-    }
+.sub-text2 {
+    font-family: Calibri;
+    font-size: 20px;
+    margin-top: -83px;
+    margin-bottom: 20px;
+    margin-left: -120px;
+}
 
 .sub-texta {
     font-family: Calibri;
     font-size: 20px;
     padding-top: 5px;
     margin-left: -600px;
-    margin-top:-20px;
+    margin-top: -20px;
 }
 
 .sub-text2a {
@@ -401,13 +408,13 @@ footer {
     margin-left: -120px;
 }
 
-    .squares {
-        font-size: 50px;
-        position: absolute;
-    }
+.squares {
+    font-size: 50px;
+    position: absolute;
+}
 
-    .pos-squares {
-    }
+.pos-squares {
+}
 
 .book-now-btn {
     background-color: black;
@@ -454,7 +461,7 @@ footer {
     height: 40px;
     font-family: 'Palatino Linotype';
     margin: -15px -900px 0 40px;
-    margin-bottom:-100px;
+    margin-bottom: -100px;
 }
 
 .book-now-btn3 {
@@ -492,10 +499,10 @@ footer {
     font-weight: bolder;
     font-size: 30px;
     background: rgba(255, 255, 255, .5);
-    margin-top:40px;
-    margin-bottom:30px;
-    border-color:gray;
-    border-style:ridge;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-color: gray;
+    border-style: ridge;
 }
 
 .pck-addons {
@@ -505,8 +512,6 @@ footer {
     margin-left: 700px;
     font-size: 25px;
     margin-bottom: 30px;
-   
-    
 }
 
 
@@ -523,24 +528,24 @@ footer {
     background-color: black;
     -webkit-box-shadow: inset 0 0 6px rgba(200,200,200,1);
 }
+
 .reminders {
     font-family: 'Palatino Linotype';
     font-weight: bolder;
     font-size: 25px;
-    font-style:italic;
-    margin-bottom:20px;
-  
+    font-style: italic;
+    margin-bottom: 20px;
 }
 
 .r1 {
-    margin-top:15px;
+    margin-top: 15px;
     font-family: 'Palatino Linotype';
     font-weight: bolder;
     font-size: 17px;
 }
 
 .r2 {
-    margin-top:55px;
+    margin-top: 55px;
     font-family: 'Palatino Linotype';
     font-weight: bolder;
     font-size: 17px;
@@ -550,9 +555,9 @@ footer {
     font-family: 'Palatino Linotype';
     font-weight: bolder;
     font-size: 17px;
-    margin-left:350px;
-    margin-top:-200px;
-    margin-bottom:25px;
+    margin-left: 350px;
+    margin-top: -200px;
+    margin-bottom: 25px;
 }
 
 .r4 {
@@ -560,5 +565,5 @@ footer {
     font-weight: bolder;
     font-size: 17px;
     margin-left: 350px;
-    margin-top:55px;
+    margin-top: 55px;
 }
