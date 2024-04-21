@@ -2,13 +2,13 @@
 @inject Microsoft.AspNetCore.Identity.UserManager<YourStudioFinal.Models.User> UserManager
 
 @{
-	ViewBag.Title = "Booking";
+    ViewBag.Title = "Booking";
 }
 
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="~/css/booking/cstmBook.css" rel="stylesheet" />
+    <link href="~/css/booking/Booking.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -161,92 +161,118 @@
 
     <section class="containers">
         <div class="Book">
-            <div>YOUR BOOKING LIST</div>
+            <div>YOUR <span style="color: #E9BC42;">BOOKING LIST</span></div>
         </div>
+
     </section>
-<section class="containers">
-    <div class="form-box">
-        @Html.ActionLink("All", "BookingAll", "Booking", null, new {@class = "black-text", @style = "color: black;"})
-        |
-        @Html.ActionLink("Pending", "Booking", "Booking", null, new { @class = "black-text", @style = "color: black;" })
-        |
-        @Html.ActionLink("Accepted", "BookingAccept", "Booking", null, new { @class = "black-text", @style = "color: black;" })
-        |
-        @Html.ActionLink("Declined", "BookingDecline", "Booking", null, new {@class = "black-text", @style = "color: black;"})
-        |
-        @Html.ActionLink("Paid", "BookingPaid", "Booking", null, new { @class = "black-text", @style = "color: black;" })
-        <br/>
+    <section class="containers">
+        <div class="form-box">
+            @Html.ActionLink("All", "BookingAll", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+            |
+            @Html.ActionLink("Pending", "Booking", "Booking", null, new { @class = "black-text", @style = "color: black; background-color: #E9BC42; padding: 0px 10px; border-radius: 5px;" })
+            |
+            @Html.ActionLink("Accepted", "BookingAccept", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+            |
+            @Html.ActionLink("Declined", "BookingDecline", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+            |
+            @Html.ActionLink("Paid", "BookingPaid", "Booking", null, new { @class = "black-text", @style = "color: black;" })
+            <br />
 
-        @{
-            if (Model != null)
-            {
+            @{
+                if (Model != null)
+                {
 
-                <table class="custom-table">
-                    <tr>
-                        <td></td>
-                        <td>Date</td>
-                        <td>Time</td>
-                        <td>Customer ID</td>
-                        <td>Username</td>
-                        <td>Mobile Number</td>
-                        <td>Email</td>
-                        <td>Package</td>
-                        <td>Add ons</td>
-                        <td>Price</td>
-                        <td>Payment Image</td>
-                    </tr>
-                    <!--foreach the booking of the user logged in-->
-                    @{
-                        var currentUserId = UserManager.GetUserId(User);
-                    }
-                    <form id="deleteContent" method="post">
-                        @for (int i = 0; i < Model.Count; i++)
-                        {
-                            if (Model[i].accountUser.Id == currentUserId)
+                    <table class="custom-table">
+                        <tr>
+                            <td>Select</td>
+                            <td>Date</td>
+                            <td>Time</td>
+                            <td>Package</td>
+                            <td>Add ons</td>
+                            <td>Price</td>
+                            <td>Payment Image</td>
+                        </tr>
+                        <!--foreach the booking of the user logged in-->
+                        @{
+                            var currentUserId = UserManager.GetUserId(User);
+                        }
+                        <form id="deleteContent" method="post">
+                            @for (int i = 0; i < Model.Count; i++)
                             {
+                                if (Model[i].accountUser.Id == currentUserId)
+                                {
                                 <tr>
-                                    <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete"/></td>
+                                    <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete" /></td>
                                     <td>@Model[i].date</td>
                                     <td>@Model[i].time</td>
-                                    <td>@Model[i].accountUser.Id</td>
-                                    <td>@Model[i].accountUser.UserName</td>
-                                    <td>@Model[i].accountUser.mobileNumber</td>
-                                    <td>@Model[i].accountUser.Email</td>
                                     <td>@Model[i].packages</td>
                                     <td>@Model[i].addOns</td>
                                     <td>@Model[i].totalPrice</td>
-                                    @if (Model[i].payment != null)
-                                    {
-                                        <td><input type="button" onclick="location.href='@System.IO.Path.Combine("../uploads/", @Model[i].payment?.fileName)';" value="See Receipt"/></td>
-                                    }
-                                    else
-                                    {
+                                        @if (Model[i].payment != null)
+                                        {
+                                        <td><input type="button" onclick="location.href='@System.IO.Path.Combine("../uploads/", @Model[i].payment?.fileName)';" value="See Receipt" /></td>
+                                        }
+                                        else
+                                        {
                                         <td>Not Paid</td>
-                                    }
+                                        }
                                 </tr>
+                                }
                             }
-                        }
-                    </form>
-                </table>
+                        </form>
+                    </table>
+                }
             }
-        }
-        <br/>
+            <br />
 
-    </div>
-    <br/>
-</section>
+        </div>
+        <br />
+        <section class="BtnCont">
+            <button type="button" id="RmvBtn" data-toggle="modal" data-target="#exampleModalCenter">REMOVE</button>
 
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="~/photos/warn.png" class="mlPic" alt="">
+                            <div class="mlTitle">Decline Booking?</div>
+                            <div class="mlBody">Are you sure you want to remove this booking?</div>
+                            <form>
+                                <button type="button" id="btnMR" data-toggle="modal" data-dismiss="modal" data-target="#exampleModalCenter2">REMOVE</button>
+                                <button type="button" class="btnC" data-dismiss="modal" style="border-radius: 5px;background-color: black; position: relative; left: 33%; font-weight: bold; padding: 6px 16px 6px 16px; margin-right: 20px; color: white; border: hidden;">CLOSE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<script>
+            <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="~/photos/check.png" class="mlPic" alt="">
+                            <div class="mlTitle">Booking Removed!</div>
+                            <div class="mlBody">You removed the booking successfully.</div>
+                            <form>
+                                <button type="button" class="btnMG" data-dismiss="modal" onclick="setDelete()">OKAY!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script>
         setDelete = function () {
-        var checked = document.querySelectorAll('input[type="checkbox"]:checked');
-        var deleteContent = document.getElementById('deleteContent');
-        deleteContent.action = '/Booking/DeletedBooking?ids=' + Array.from(checked).map(x => x.getAttribute('data-id')).join(',');
-        deleteContent.submit();
-    }
-</script>
+            var checked = document.querySelectorAll('input[type="checkbox"]:checked');
+            var deleteContent = document.getElementById('deleteContent');
+            deleteContent.action = '/Booking/DeletedBooking?ids=' + Array.from(checked).map(x => x.getAttribute('data-id')).join(',');
+            deleteContent.submit();
+        }
+    </script>
 
-<script></script>
+    <script></script>
 </body>
 </html>
 

@@ -233,9 +233,8 @@ footer {
 .Book {
     text-align: center;
     font-weight: bold;
-    font-style: italic;
     font-size: 48px;
-    font-family: 'Palatino Linotype';
+    letter-spacing: 15px;
 }
 
 .form-box {
@@ -255,19 +254,60 @@ footer {
 }
 
 #RmvBtn {
-    background-color: #B22222;
+    background-color: red;
     border-radius: 5px;
     padding: 0px 20px 0px 20px;
-    font-family: 'Palatino Linotype';
-    font-style: italic;
     font-weight: bold;
     color: white;
-    border: 1px solid black;
+}
+
+.btnMG {
+    border-radius: 5px;
+    position: relative;
+    left: 43%;
+    font-weight: bold;
+    padding: 6px 16px 6px 16px;
+    margin-right: 20px;
+    color: black;
+    background-color: #ffde65;
+    border: hidden
+}
+
+.mlTitle {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.mlBody {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.mlPic {
+    width: 88px;
+    position: relative;
+    left: 43%
+}
+
+#btnMR {
+    border-radius: 5px;
+    position: relative;
+    left: 79%;
+    font-weight: bold;
+    padding: 6px 16px 6px 16px;
+    margin-right: 20px;
+    color: white;
+    background-color: red;
+    border: hidden;
 }
 
 .custom-table {
     border-collapse: collapse;
     background-color: transparent;
+    border-block-end: 1px solid black;
 }
 
     .custom-table td {
