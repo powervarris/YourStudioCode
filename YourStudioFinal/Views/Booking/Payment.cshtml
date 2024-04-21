@@ -6,94 +6,190 @@
     <link rel="stylesheet" href="~/https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/https://unpkg.com/bs-brain@2.0.3/components/password-resets/password-reset-10/assets/css/password-reset-10.css">
     <link href="~/css/booking/payment.css" rel="stylesheet" />
-    <link href="~/https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-    <script src="~/https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    
 
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container-fluid navbar-bg">
-                <div class="navbar-header">
-                    <span>
-                        <i class="fas fa-bars menu-icon"></i>
-                        <img src="~/css/logo.png" class="logonav" alt="logoimage1" style="width:80px;height:auto">
-                        <img src="~/css/logo2.png" class="logonav2" alt="logoimage2" style="width:150px;height:auto">
-                    </span>
+        <div class="wrapper-nav">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav ml-auto navbar-right">
+                            <li class="nav-item active">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+
+                            @if (User.IsInRole("User"))
+                            {
+                                <li class="nav-item active navactive">
+                                    <a class="nav-link navactive" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                                </li>
+                            }
+
+                            @if (ViewBag.isLogged == false)
+                            {
+                                <li class="nav-item active navactive">
+                                    <a class="nav-link navactive" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
+                                </li>
+                            }
+
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Gallery
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="GalleryCustomer" asp-action="Index">User Gallery UI</a>
+                                        <a class="dropdown-item" asp-controller="Gallery" asp-action="Index">Admin Gallery</a>
+                                    </div>
+                                </li>
+                            }
+                            <li class="nav-item active ">
+                                <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+                            </li>
+
+                            @if (User.IsInRole("User"))
+                            {
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Inquiry List</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Booking</a>
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                    </div>
+                                </li>
+                            }
+
+                            @if (ViewBag.isLogged == false)
+                            {
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Booking</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Booking">Booking List</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                    </div>
+                                </li>
+                            }
+
+                            @if (User.IsInRole("Admin"))
+                            {
+
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Booking
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inquiry</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                        <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                                    </div>
+                                </li>
+                            }
+
+                            @if (ViewBag.isLogged)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
+                                </li>
+                            }
+
+                        </ul>
+
+                        <script>
+                            $(document).ready(function () {
+                                $('.nav-link.dropdown-toggle').on('click', function (e) {
+                                    e.preventDefault();
+                                    $(this).next('.dropdown-menu').slideToggle();
+                                });
+                            });
+                        </script>
+
+                    </div>
                 </div>
-                <div class="navbar-links">
-                    <ul class="navbar-nav ml-auto navbar-orange">
-                        <li class="nav-item active">
-                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" asp-controller="Gallery" asp-action="Index">Gallery</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
-                        </li>
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Booking
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" style="z-index: 1000;">
-                                <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-                                <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Inquiry
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" style="z-index: 1000;">
-                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
-                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
-                            </div>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" asp-action="Index" asp-controller="Account">
-                                Sign Up
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
+            </nav>
+
+            <div class="wrapper-navbar-logo">
+
+                <img src="~/assets/logo.png" alt="Your Studio Logo">
+                <img class="logonav2" src="~/assets/logo2.png" alt="Your Studio Logo">
             </div>
-        </nav>
+        </div>
     </header>
     <section class="grid-container">
     <section>
+          <form asp-controller="Booking" asp-action="submitPayment" method="post" enctype="multipart/form-data">
             <div class="row justify-content-center">
                 <!-- Column 1 -->
-                <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0">
-                    <div class="card-body p-3 p-md-4 p-xl-5" style="position: relative;">
-                        <!-- Other card content -->
-                        <form asp-controller="Booking" asp-action="submitPayment" method="post" enctype="multipart/form-data">
+                    <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0">
+                        <div class="card-body p-3 p-md-4 p-xl-5" style="position: relative;">
+
                             <div class="form-floating mb-3">
+                                <p class="bQuest">Select Mode of Payment</p>
                                 <select class="dropitlow" id="selectPayment1" required>
-                                    <option> -Select Mode of Payment - </option>
-                                    <option value="G-Cash">G-Cash</option>
+                                    <option value="G-Cash" selected>G-Cash</option>
                                     <option value="BPI">BPI</option>
                                 </select>
                                 <img id="payment-image1" src="/modeofpayment/GCash.jpg" alt="Payment Image" class="payment-image" />
-                                <img id="payment-image2" src="/modeofpayment/BPI.png" alt="Payment Image" class="payment-image" />
+                                <img id="payment-image2" src="/modeofpayment/BPI.png" alt="Payment Image" class="payment-image" style="display:none;" />
                             </div>
-                        </form>
-                        <br />
-                        <div class="details-wrapper">
-                            <div class="d-grid mb-3" style="text-align: center">
-                                <p>Details:</p>
-                                <div id="detailsContent1">
+
+                            <br />
+                            <div class="details-wrapper">
+                                <div class="d-grid mb-3" style="text-align: center">
+                                    <p>Details:</p>
+                                    <div id="detailsContent1">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
                 <!-- Column 2 -->
                 <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0">
                         <div class="card-body p-3 p-md-4 p-xl-5" style="position: relative;">
-                            <form asp-controller="Booking" asp-action="submitPayment" method="post" enctype="multipart/form-data">
+                            
                                 <p class="bQuest">Which booking do you want to pay?</p>
                                 <div class="form-floating mb-3">
                                     <select class="dropitlow" name="Id" id="Id" required>
@@ -104,7 +200,7 @@
                                         }
                                     </select>
                                 </div>
-                            </form>
+                           
                             <br />
                             <section class="containers" id="bookingDetailsSection" style="display: none;">
                                 <section class="deets">
@@ -132,7 +228,6 @@
                                                     <h6>Add-ons: <span>@booking.addOns</span></h6>
                                                 </div>
                                             <div class="totalPrice">
-                                                <!-- Ensure the total price is wrapped in a span with the class totalPrice -->
                                                 <h6>Price: <span>@booking.totalPrice</span></h6>
                                             </div>
                                             </div>
@@ -146,35 +241,30 @@
                 <!-- Column 3 -->
                 <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0">
                     <div class="card-body p-3 p-md-4 p-xl-5">
-                        <p class="text-center mb-4">Provide the Screenshot of your payment</p>
-                        <p class="text-center mb-4" id="priceLabel">To Pay: <span id="totalPrice"></span></p>
-
-                        <!-- Default file upload option -->
-                        <input type="file" name="paymentScreenshot" class="form-control" id="paymentScreenshot" accept="image/*" required onchange="previewImage(this)" />
-
-                        <!-- Image preview -->
+                        <p class="scrnsht">Provide the Screenshot of your payment</p>
+                            <div class="topay"> <p class="price mb-3" id="priceLabel">To Pay: <span id="totalPrice" class="payto"></span></p></div>
+                        <input type="file" name="image" class="form-control" id="paymentScreenshot" accept="image/*" required  />
                         <div id="imagePreview" class="mt-3"></div>
-
-                        <!-- Loop through bookings -->
                         @foreach (var booking in Model)
                         {
-                            <form id="paymentForm_@booking.Id" asp-controller="Booking" asp-action="submitPayment" method="post" enctype="multipart/form-data">
                                 <div id="bookingDetail_@booking.Id" style="display: none;">
                                     <label for="paymentScreenshot_@booking.Id" class="form-label">@booking.totalPrice</label>
-                                    <button type="submit" class="btn btn-primary mt-3">PAY NOW</button>
+                                   
                                 </div>
-                            </form>
+                            
                         }
+                            <button type="submit" class="btn btn-primary mt-3">PAY NOW</button>
                     </div>
                 </div>
                 </div>
+                </form>
     </section>
     </section>
 
     <script>
-        function previewImage(input) {
+      @*  function previewImage(input) {
+            console.log('previewImage function called');
             const preview = document.getElementById('imagePreview');
-
             // Clear the contents of the imagePreview div before adding a new image
             preview.innerHTML = '';
 
@@ -188,8 +278,32 @@
                     preview.appendChild(img);
                 }
                 reader.readAsDataURL(file);
+
             }
+            
+        }*@
+        function previewImage(input) {
+    const preview = document.getElementById('imagePreview');
+
+    // Remove any existing child nodes (images) from the imagePreview element
+    while (preview.firstChild) {
+        preview.removeChild(preview.firstChild);
+    }
+
+    const file = input.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const img = document.createElement('img');
+            img.src = e.target.result;
+            img.classList.add('img-fluid');
+            preview.appendChild(img);
         }
+        reader.readAsDataURL(file);
+    }
+}
+
+
     </script>
     <script>
         $(document).ready(function () {
@@ -248,7 +362,39 @@
         });
     </script>
 <script>
-        document.getElementById("selectPayment1").addEventListener('change', function () {
+        // Wait for the page to finish loading
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the select element
+            var selectPayment = document.getElementById('selectPayment1');
+
+            // Trigger the 'change' event on the select element
+            selectPayment.dispatchEvent(new Event('change'));
+        });
+
+    // Event listener for select change
+    document.getElementById("selectPayment1").addEventListener('change', function () {
+        var paymentImage = document.getElementById('payment-image1'); // Corrected ID
+        var bpiImage = document.getElementById('payment-image2'); // Get the BPI image element
+        switch (this.value) {
+            case 'G-Cash':
+                paymentImage.src = '/modeofpayment/GCash.jpg';
+                paymentImage.style.display = 'block';
+                bpiImage.style.display = 'none'; // Hide the BPI image
+                break;
+            case 'BPI':
+                paymentImage.src = '/modeofpayment/BPI.png';
+                paymentImage.style.display = 'none'; // Hide the G-Cash image
+                bpiImage.style.display = 'none';
+                break;
+            default:
+                paymentImage.src = '';
+                paymentImage.style.display = 'none';
+                break;
+        }
+    });
+</script>
+<script>
+        document.getElementById('selectPayment1').addEventListener('change', function () {
             var paymentImage = document.getElementById('payment-image1'); // Corrected ID
             var detailsContent = document.getElementById('detailsContent1'); // Corrected ID
             switch (this.value) {
@@ -259,29 +405,6 @@
                     break;
                 case 'BPI':
                     paymentImage.src = '/modeofpayment/BPI.png';
-                    paymentImage.style.display = 'block';
-                    detailsContent.innerHTML = "<p>Account Name: Jerica</p>";
-                    break;
-                default:
-                    paymentImage.src = '';
-                    paymentImage.style.display = 'none';
-                    break;
-            }
-        });
-
-</script>
-<script>
-        document.querySelector('.form-select').addEventListener('change', function () {
-            var paymentImage = document.getElementById('payment-image');
-            var detailsContent = document.getElementById('detailsContent1'); // Select the correct element
-            switch (this.value) {
-                case 'G-Cash':
-                    paymentImage.src = 'wwwroot/modeofpayment/GCash.jpg'; // replace with actual path
-                    paymentImage.style.display = 'block';
-                    detailsContent.innerHTML = "<p>Account Name: JE***A LY*A E.</p>";
-                    break;
-                case 'BPI':
-                    paymentImage.src = 'wwwroot/modeofpayment/BPI.png'; // replace with actual path
                     paymentImage.style.display = 'block';
                     detailsContent.innerHTML = "<p>Account Name: Jerica</p>";
                     break;

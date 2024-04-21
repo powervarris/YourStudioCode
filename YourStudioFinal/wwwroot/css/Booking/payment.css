@@ -2,6 +2,30 @@
     background-image: url('../first/background.png');
 }
 
+.wrapper-nav {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wrapper-navbar-logo {
+    width: fit-content;
+    height: 100%;
+}
+
+    .wrapper-navbar-logo img {
+        height: 40px;
+        margin: -60px -120px 0 100px;
+    }
+
+.wrapper-navbar-menu {
+    width: fit-content;
+    margin-top: -65px;
+}
+
+.wrapper-packages {
+    width: 100%
+}
+
 html {
     background-image: url('../first/background.png');
 }
@@ -11,7 +35,7 @@ html {
 }
 
 .mb-4 {
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 .grid-container {
@@ -23,20 +47,21 @@ html {
 
 
 .col-12 {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .col-12,
 .col-sm-10,
 .col-md-4 {
     margin-bottom: 20px;
-    width:500px;
-    margin-top:100px;
+    width: 500px;
+    margin-top: 100px;
 }
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 /*.info-box {
     display: flex;
@@ -47,21 +72,22 @@ html {
     }
     .info-box h6 {
         margin: 0;*/ /* Remove default margin */
-        /*display: flex;
+/*display: flex;
         align-items: center;
     }*/
 
 
 .card-body {
     position: relative; /* Ensure relative positioning for absolute positioning inside */
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        text-align: center;
-        background-color: white;
-        height: 620px; /* Set a fixed height for all cards */
-        overflow-y: hidden; /* Hide vertical scrollbar */
-        padding: 20px; /* Add padding to create space for absolute positioning */
-    }
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    height: 620px; /* Set a fixed height for all cards */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    padding: 20px; /* Add padding to create space for absolute positioning */
+}
+
 .booking-question {
     text-align: center;
     margin-bottom: 20px; /* Adjust as needed */
@@ -69,7 +95,7 @@ html {
 
 .details-wrapper {
     position: absolute;
-    top: 400px;
+    top: 470px;
     left: 50%;
     transform: translateX(-50%); /* Adjust for center alignment */
     width: 60%; /* Occupy full width of the card */
@@ -87,7 +113,7 @@ html {
     display: block;
     width: 100%;
     height: calc(2.5rem + 2px);
-    max-height:120px;
+    max-height: 120px;
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -103,16 +129,26 @@ html {
     text-align: center;
     border: solid;
 }
-
-#SrvcDtl{
-    font-weight:bold;
-    font-size:25px;
-    font-family:Verdana;
+    .dropitlow option {
+        font-size: 16px; /* Adjust font size */
+        color: #333; /* Adjust font color */
+        border: 1px solid #ccc; /* Border style */
+        padding: 5px; /* Add padding for spacing */
+        display: inline-block; /* Ensure each span element is on its own line */
+        margin-bottom: 5px; /* Add margin between spans */
+        background-color: #ebd57c;
+        border-radius: 3px;
+    }
+#SrvcDtl {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Verdana;
 }
 
 h6 {
     font-size: 15px;
 }
+
 .deets {
     position: absolute;
     top: 270px;
@@ -125,47 +161,86 @@ h6 {
     padding: 10px; /* Add padding for spacing */
     background-color: #fffcf4;
     border-radius: 6px;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    font-family: Verdana
 }
 
 
+.topay {
+    display: inline-block; /* Ensure the div behaves like an inline element */
+    border: 1px solid #ebd57c; /* Add border to the div */
+    padding: 2px 5px; /* Optional: Add padding for better appearance */
+    background-color: #ebd57c;
+    border-radius: 3px;
+    height: 30px;
+    width: 300px;
+}
+
+.btn-primary {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #dd7708;
+    border-radius: 3px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #ebd57c;
+}
+
 .payment-image {
-    height: 150px;
-    width: auto;
+    height: 250px;
+    width: 200px;
     display: none;
     margin: 0 auto;
-   
+    margin-top: 40px
 }
 
     .payment-image.active {
         display: block;
     }
 
-    .bQuest{
-        font-weight:bold;
-        font-size:25px;
-        font-family:Calibri
-    }
-#imagePreview img {
-    width: 200px; /* Set the width */
-    height: 200px; /* Maintain aspect ratio */
+.bQuest {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Calibri
 }
+
+#imagePreview img {
+    width: 250px; /* Set the width */
+    height: 250px; /* Maintain aspect ratio */
+}
+
+.scrnsht {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Calibri;
+    line-height: 1;
+}
+
 .img-fluid {
     max-width: 100%;
     height: auto;
 }
+
 .form-control {
     width: 370px;
     font-family: Montserrat;
     font-size: 18px;
     border: solid;
+    margin-top: 40px;
 }
+
 h6 span {
     border: 1px solid #ccc; /* Border style */
     padding: 5px; /* Add padding for spacing */
     display: inline-block; /* Ensure each span element is on its own line */
     margin-bottom: 5px; /* Add margin between spans */
-    background-color:#ebd57c;
-    border-radius:3px;
+    background-color: #ebd57c;
+    border-radius: 3px;
 }
