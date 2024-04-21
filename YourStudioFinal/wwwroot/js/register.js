@@ -9,7 +9,7 @@ if (currentHour >= 0 && currentHour < 12) {
     greetingElement.innerHTML = "<h1>GOOD EVENING</h1>";
 }
 
-var passwordInput = document.querySelector('input[name="password"]');
+/*var passwordInput = document.querySelector('input[name="password"]');
 var confirmPasswordInput = document.querySelector('input[name="confirmPassword"]');
 var emailInput = document.querySelector('input[name="Email"]');
 var phoneNumberInput = document.querySelector('input[name="phoneNumber"]');
@@ -63,4 +63,4 @@ registrationForm.addEventListener('submit', function (event) {
 });
 
 // Initial form validation
-validateForm();
+validateForm();*/

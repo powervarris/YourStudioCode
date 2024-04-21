@@ -63,7 +63,6 @@ h1 {
 
 @media (min-width: 768px) {
     .bg-image {
-        background-image: url('background.png');
         margin: 0;
         padding: 0;
         background-repeat: no-repeat;
@@ -144,8 +143,8 @@ body {
     min-height: 100vh;
     margin: 0;
     box-sizing: border-box;
-    background-image: url('../../reghalf.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-image: url('../../reghalf.png');
 }

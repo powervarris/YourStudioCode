@@ -6,114 +6,295 @@
     <link rel="stylesheet" href="~/https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/https://unpkg.com/bs-brain@2.0.3/components/password-resets/password-reset-10/assets/css/password-reset-10.css">
     <link href="~/css/booking/payment.css" rel="stylesheet" />
+    <link href="~/https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="~/https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
 </head>
 
 <body>
-
-
-<section class="">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-                <div class="mb-5">
-                    <h4 class="text-center mb-4">Payment Section</h4>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid navbar-bg">
+                <div class="navbar-header">
+                    <span>
+                        <i class="fas fa-bars menu-icon"></i>
+                        <img src="~/css/logo.png" class="logonav" alt="logoimage1" style="width:80px;height:auto">
+                        <img src="~/css/logo2.png" class="logonav2" alt="logoimage2" style="width:150px;height:auto">
+                    </span>
                 </div>
-                <div class="card border border-light-subtle rounded-4">
-                    <div class="card-body p-3 p-md-4 p-xl-5">
+                <div class="navbar-links">
+                    <ul class="navbar-nav ml-auto navbar-orange">
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-controller="Gallery" asp-action="Index">Gallery</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Booking
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1" style="z-index: 1000;">
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Booking List</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Inquiry
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" style="z-index: 1000;">
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="clientInquiry">Create Inquiry</a>
+                                <a class="dropdown-item" asp-controller="Inquiry" asp-action="Inquirylist">Inquiry List</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-action="Index" asp-controller="Account">
+                                Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="grid-container">
+    <section>
+            <div class="row justify-content-center">
+                <!-- Column 1 -->
+                <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0">
+                    <div class="card-body p-3 p-md-4 p-xl-5" style="position: relative;">
+                        <!-- Other card content -->
                         <form asp-controller="Booking" asp-action="submitPayment" method="post" enctype="multipart/form-data">
-                            <p class="text-center mb-4">Which booking do you want to pay?</p>
                             <div class="form-floating mb-3">
-                                @{
-                                    <select class="form-select" name="Id" id="Id" required>
-                                        <option value="">Select Booking</option>
+                                <select class="dropitlow" id="selectPayment1" required>
+                                    <option> -Select Mode of Payment - </option>
+                                    <option value="G-Cash">G-Cash</option>
+                                    <option value="BPI">BPI</option>
+                                </select>
+                                <img id="payment-image1" src="/modeofpayment/GCash.jpg" alt="Payment Image" class="payment-image" />
+                                <img id="payment-image2" src="/modeofpayment/BPI.png" alt="Payment Image" class="payment-image" />
+                            </div>
+                        </form>
+                        <br />
+                        <div class="details-wrapper">
+                            <div class="d-grid mb-3" style="text-align: center">
+                                <p>Details:</p>
+                                <div id="detailsContent1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0">
+                        <div class="card-body p-3 p-md-4 p-xl-5" style="position: relative;">
+                            <form asp-controller="Booking" asp-action="submitPayment" method="post" enctype="multipart/form-data">
+                                <p class="bQuest">Which booking do you want to pay?</p>
+                                <div class="form-floating mb-3">
+                                    <select class="dropitlow" name="Id" id="Id" required>
+                                        <option value="">Select Booking:</option>
                                         @foreach (var booking in Model)
                                         {
                                             <option value="@booking.Id">@booking.date @booking.time</option>
-                                            TempData["bookingId"] = booking.Id;
                                         }
-                                            
-                                        @* @foreach (var bookings in Model) *@
-                                        @* { *@
-                                        @*     <p>Your total Price will be @bookings.totalPrice</p> *@
-                                        @* } *@
-                                            
                                     </select>
-                                    <br/>
-                                    <select class="form-select" id="selectPayment" required>
-                                        <option> - Mode of Payment - </option>
-                                        <option value="G-Cash">G-Cash</option>
-                                        <option value="BPI">BPI</option>
-                                    </select>
-                                    <img id="payment-image" src="/modeofpayment/GCash.jpg" alt="Payment Image" style="height: 100%; width: 100%; text-align: center; display: none"/>
-                                    <img id="payment-image2" src="/modeofpayment/BPI.png" alt="Payment Image" style="height: 100%; width: 100%; text-align: center; display: none"/>
-                                }
-                            </div>
-                            <p class="text-center mb-4">Provide the Screenshot of your down payment.</p>
-                            <div class="row gy-3 overflow-hidden">
-                                <div class="col-12">
-                                    <div class="form-floating mb-3">
-                                        <input type="file" name="image" class="form-control-file" accept="image/*" required/>
-                                    </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="d-grid">
-                                        <input id="Id" style="display: none"/>
-                                        <button type="submit" class="btn btn-primary">Confirm Payment</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <br/>
-                        <div class="d-grid" style="text-align: center">
-                            <form asp-action="BookingAll" asp-controller="Booking">
-                            <button type="submit" class="btn btn-primary">Go back to Booking List</button>
                             </form>
+                            <br />
+                            <section class="containers" id="bookingDetailsSection" style="display: none;">
+                                <section class="deets">
+                                    @foreach (var booking in Model)
+                                    {
+                                        <div id="bookingDetail_@booking.Id" style="display: none;">
+                                            <div id="VL2"></div>
+                                            <div id="SrvcDtl">SERVICE DETAILS</div>
+                                            <div class="info-box">
+                                                
+                                                <div>
+                                                    <h6>Name: <span>@booking.accountUser.UserName</span></h6>
+                                                </div>
+                                                <div>
+                                                    <h6>Date: <span>@booking.date</span></h6>
+                                                </div>
+                                                <div>
+                                                    <h6>Time: <span> @booking.time</span></h6>
+                                                </div>
+                                               
+                                                <div>
+                                                    <h6>Your Package: <span>@booking.packages</span></h6>
+                                                </div>
+                                                <div>
+                                                    <h6>Add-ons: <span>@booking.addOns</span></h6>
+                                                </div>
+                                            <div class="totalPrice">
+                                                <!-- Ensure the total price is wrapped in a span with the class totalPrice -->
+                                                <h6>Price: <span>@booking.totalPrice</span></h6>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </section>
+                            </section>
                         </div>
-                            </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<script>
-    document.getElementById("selectPayment").addEventListener('change', function() {
-        var paymentImage = document.getElementById('payment-image');
-        switch (this.value) {
-            case 'G-Cash':
-                paymentImage.src = '/modeofpayment/GCash.jpg';
-                paymentImage.style.display = 'block';
-                break;
-            case 'BPI':
-                paymentImage.src = '/modeofpayment/BPI.png';
-                paymentImage.style.display = 'block';
-                break;
-            default:
-                paymentImage.src = '';
-                paymentImage.style.display = 'none';
-                break;
+                <!-- Column 3 -->
+                <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0">
+                    <div class="card-body p-3 p-md-4 p-xl-5">
+                        <p class="text-center mb-4">Provide the Screenshot of your payment</p>
+                        <p class="text-center mb-4" id="priceLabel">To Pay: <span id="totalPrice"></span></p>
+
+                        <!-- Default file upload option -->
+                        <input type="file" name="paymentScreenshot" class="form-control" id="paymentScreenshot" accept="image/*" required onchange="previewImage(this)" />
+
+                        <!-- Image preview -->
+                        <div id="imagePreview" class="mt-3"></div>
+
+                        <!-- Loop through bookings -->
+                        @foreach (var booking in Model)
+                        {
+                            <form id="paymentForm_@booking.Id" asp-controller="Booking" asp-action="submitPayment" method="post" enctype="multipart/form-data">
+                                <div id="bookingDetail_@booking.Id" style="display: none;">
+                                    <label for="paymentScreenshot_@booking.Id" class="form-label">@booking.totalPrice</label>
+                                    <button type="submit" class="btn btn-primary mt-3">PAY NOW</button>
+                                </div>
+                            </form>
+                        }
+                    </div>
+                </div>
+                </div>
+    </section>
+    </section>
+
+    <script>
+        function previewImage(input) {
+            const preview = document.getElementById('imagePreview');
+
+            // Clear the contents of the imagePreview div before adding a new image
+            preview.innerHTML = '';
+
+            const file = input.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.classList.add('img-fluid');
+                    preview.appendChild(img);
+                }
+                reader.readAsDataURL(file);
+            }
         }
-    });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Default behavior for file upload option
+            $('#paymentScreenshot').change(function () {
+                previewImage(this);
+            });
+
+            // Update price and show corresponding booking details on dropdown change
+            $('#Id').change(function () {
+                var selectedBookingId = $(this).val();
+                var totalPrice = $('#bookingDetail_' + selectedBookingId + ' h6:contains("Price") span').text();
+                $('#priceLabel').text('To Pay: ' + totalPrice);
+
+                // Show the corresponding booking details and hide others
+                $('[id^="bookingDetail_"]').hide();
+                $('#bookingDetail_' + selectedBookingId).show();
+
+                // Update file input ID for the selected booking
+                var fileInputId = 'paymentScreenshot_' + selectedBookingId;
+                $('#paymentScreenshot').attr('id', fileInputId);
+
+                // Reset file input value to avoid browser caching
+                $('#' + fileInputId).val('');
+            });
+        });
+    </script>
+   
+    <script>
+        document.getElementById("Id").addEventListener('change', function () {
+            var selectedBookingId = this.value;
+            var bookingDetailsSection = document.getElementById('bookingDetailsSection');
+            var bookingDetailSections = document.querySelectorAll('[id^="bookingDetail_"]');
+            bookingDetailSections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+            if (selectedBookingId) {
+                var selectedBookingDetailSection = document.getElementById('bookingDetail_' + selectedBookingId);
+                if (selectedBookingDetailSection) {
+                    bookingDetailsSection.style.display = 'block';
+                    selectedBookingDetailSection.style.display = 'block';
+                }
+            } else {
+                bookingDetailsSection.style.display = 'none';
+            }
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function () {
+            $('.dropitlow').select2({
+                theme: 'classic', // Choose a theme (you can also create custom themes)
+                dropdownCssClass: 'custom-dropdown', // Add a custom class for styling
+                minimumResultsForSearch: Infinity, // Hide the search box
+            });
+        });
+    </script>
+<script>
+        document.getElementById("selectPayment1").addEventListener('change', function () {
+            var paymentImage = document.getElementById('payment-image1'); // Corrected ID
+            var detailsContent = document.getElementById('detailsContent1'); // Corrected ID
+            switch (this.value) {
+                case 'G-Cash':
+                    paymentImage.src = '/modeofpayment/GCash.jpg';
+                    paymentImage.style.display = 'block';
+                    detailsContent.innerHTML = "<p>Account Name: JE***A LY*A E.</p>";
+                    break;
+                case 'BPI':
+                    paymentImage.src = '/modeofpayment/BPI.png';
+                    paymentImage.style.display = 'block';
+                    detailsContent.innerHTML = "<p>Account Name: Jerica</p>";
+                    break;
+                default:
+                    paymentImage.src = '';
+                    paymentImage.style.display = 'none';
+                    break;
+            }
+        });
 
 </script>
 <script>
-document.querySelector('.form-select').addEventListener('change', function() {
-    var paymentImage = document.getElementById('payment-image');
-    switch (this.value) {
-        case 'G-Cash':
-            paymentImage.src = 'wwwroot/modeofpayment/GCash.jpg'; // replace with actual path
-            paymentImage.style.display = 'block';
-            break;
-        case 'BPI':
-            paymentImage.src = 'wwwroot/modeofpayment/BPI.png'; // replace with actual path
-            paymentImage.style.display = 'block';
-            break;
-        default:
-            paymentImage.src = '';
-            paymentImage.style.display = 'none';
-            break;
-    }
-});
+        document.querySelector('.form-select').addEventListener('change', function () {
+            var paymentImage = document.getElementById('payment-image');
+            var detailsContent = document.getElementById('detailsContent1'); // Select the correct element
+            switch (this.value) {
+                case 'G-Cash':
+                    paymentImage.src = 'wwwroot/modeofpayment/GCash.jpg'; // replace with actual path
+                    paymentImage.style.display = 'block';
+                    detailsContent.innerHTML = "<p>Account Name: JE***A LY*A E.</p>";
+                    break;
+                case 'BPI':
+                    paymentImage.src = 'wwwroot/modeofpayment/BPI.png'; // replace with actual path
+                    paymentImage.style.display = 'block';
+                    detailsContent.innerHTML = "<p>Account Name: Jerica</p>";
+                    break;
+                default:
+                    paymentImage.src = '';
+                    paymentImage.style.display = 'none';
+                    break;
+            }
+        });
+
+</script>
+<script>
+
 </script>
 </body>
 </html>

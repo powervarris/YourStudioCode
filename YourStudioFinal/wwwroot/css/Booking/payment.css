@@ -13,3 +13,159 @@ html {
 .mb-4 {
     margin-top:50px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+
+.col-12 {
+    margin-left: 20px; 
+}
+
+.col-12,
+.col-sm-10,
+.col-md-4 {
+    margin-bottom: 20px;
+    width:500px;
+    margin-top:100px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+}
+/*.info-box {
+    display: flex;
+    flex-direction: column;
+}
+    .info-box div {
+        margin-bottom: 10px;
+    }
+    .info-box h6 {
+        margin: 0;*/ /* Remove default margin */
+        /*display: flex;
+        align-items: center;
+    }*/
+
+
+.card-body {
+    position: relative; /* Ensure relative positioning for absolute positioning inside */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        background-color: white;
+        height: 620px; /* Set a fixed height for all cards */
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        padding: 20px; /* Add padding to create space for absolute positioning */
+    }
+.booking-question {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.details-wrapper {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%); /* Adjust for center alignment */
+    width: 60%; /* Occupy full width of the card */
+    text-align: center; /* Center align text */
+    z-index: 1; /* Ensure it's above the image */
+    border: 1px solid #fffcf4; /* Add border */
+    padding: 10px; /* Add padding for spacing */
+    background-color: #fffcf4;
+    border-radius: 6px;
+    font-family: Calibri;
+}
+
+
+.dropitlow {
+    display: block;
+    width: 100%;
+    height: calc(2.5rem + 2px);
+    max-height:120px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fffcf4;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: 'Calibri';
+    font-size: 20px;
+    text-align: center;
+    border: solid;
+}
+
+#SrvcDtl{
+    font-weight:bold;
+    font-size:25px;
+    font-family:Verdana;
+}
+
+h6 {
+    font-size: 15px;
+}
+.deets {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%); /* Adjust for center alignment */
+    width: 60%; /* Occupy full width of the card */
+    text-align: center; /* Center align text */
+    z-index: 1; /* Ensure it's above the image */
+    border: 1px solid #fffcf4; /* Add border */
+    padding: 10px; /* Add padding for spacing */
+    background-color: #fffcf4;
+    border-radius: 6px;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.payment-image {
+    height: 150px;
+    width: auto;
+    display: none;
+    margin: 0 auto;
+   
+}
+
+    .payment-image.active {
+        display: block;
+    }
+
+    .bQuest{
+        font-weight:bold;
+        font-size:25px;
+        font-family:Calibri
+    }
+#imagePreview img {
+    width: 200px; /* Set the width */
+    height: 200px; /* Maintain aspect ratio */
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.form-control {
+    width: 370px;
+    font-family: Montserrat;
+    font-size: 18px;
+    border: solid;
+}
+h6 span {
+    border: 1px solid #ccc; /* Border style */
+    padding: 5px; /* Add padding for spacing */
+    display: inline-block; /* Ensure each span element is on its own line */
+    margin-bottom: 5px; /* Add margin between spans */
+    background-color:#ebd57c;
+    border-radius:3px;
+}
