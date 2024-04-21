@@ -78,31 +78,31 @@ html {
 
 
 .card-body {
-    position: relative; /* Ensure relative positioning for absolute positioning inside */
+    position: relative;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
     background-color: white;
-    height: 620px; /* Set a fixed height for all cards */
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    padding: 20px; /* Add padding to create space for absolute positioning */
+    height: 620px; 
+    overflow-y: hidden; 
+    padding: 20px;
 }
 
 .booking-question {
     text-align: center;
-    margin-bottom: 20px; /* Adjust as needed */
+    margin-bottom: 20px; 
 }
 
 .details-wrapper {
     position: absolute;
     top: 470px;
     left: 50%;
-    transform: translateX(-50%); /* Adjust for center alignment */
-    width: 60%; /* Occupy full width of the card */
-    text-align: center; /* Center align text */
-    z-index: 1; /* Ensure it's above the image */
-    border: 1px solid #fffcf4; /* Add border */
-    padding: 10px; /* Add padding for spacing */
+    transform: translateX(-50%);
+    width: 60%;
+    text-align: center; 
+    z-index: 1; 
+    border: 1px solid #fffcf4; 
+    padding: 10px; 
     background-color: #fffcf4;
     border-radius: 6px;
     font-family: Calibri;
@@ -130,12 +130,12 @@ html {
     border: solid;
 }
     .dropitlow option {
-        font-size: 16px; /* Adjust font size */
-        color: #333; /* Adjust font color */
-        border: 1px solid #ccc; /* Border style */
-        padding: 5px; /* Add padding for spacing */
-        display: inline-block; /* Ensure each span element is on its own line */
-        margin-bottom: 5px; /* Add margin between spans */
+        font-size: 16px; 
+        color: #333; 
+        border: 1px solid #ccc; 
+        padding: 5px; 
+        display: inline-block;
+        margin-bottom: 5px;
         background-color: #ebd57c;
         border-radius: 3px;
     }
@@ -151,18 +151,23 @@ h6 {
 
 .deets {
     position: absolute;
-    top: 270px;
+    top: 200px;
     left: 50%;
-    transform: translateX(-50%); /* Adjust for center alignment */
-    width: 60%; /* Occupy full width of the card */
-    text-align: center; /* Center align text */
-    z-index: 1; /* Ensure it's above the image */
-    border: 1px solid #fffcf4; /* Add border */
-    padding: 10px; /* Add padding for spacing */
+    transform: translateX(-50%);
+    width: 60%;
+    text-align: center;
+    z-index: 1;
+    border: 1px solid #fffcf4;
+    padding: 10px;
     background-color: #fffcf4;
     border-radius: 6px;
     align-items: center;
     justify-content: center;
+    width: 70%;
+    border-collapse: collapse;
+    line-height: 1.5;
+    margin-left: 10px; 
+    margin-right: 10px;
 }
 
 .price {
@@ -171,9 +176,9 @@ h6 {
 
 
 .topay {
-    display: inline-block; /* Ensure the div behaves like an inline element */
-    border: 1px solid #ebd57c; /* Add border to the div */
-    padding: 2px 5px; /* Optional: Add padding for better appearance */
+    display: inline-block; 
+    border: 1px solid #ebd57c; 
+    padding: 2px 5px; 
     background-color: #ebd57c;
     border-radius: 3px;
     height: 30px;
@@ -185,12 +190,13 @@ h6 {
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #dd7708;
+    background-color: black;
     border-radius: 3px;
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: bold;
     border: 1px solid #ebd57c;
+    font-family:Verdana
 }
 
 .payment-image {
@@ -212,8 +218,8 @@ h6 {
 }
 
 #imagePreview img {
-    width: 250px; /* Set the width */
-    height: 250px; /* Maintain aspect ratio */
+    width: 250px; 
+    height: 250px; 
 }
 
 .scrnsht {
@@ -237,10 +243,34 @@ h6 {
 }
 
 h6 span {
-    border: 1px solid #ccc; /* Border style */
-    padding: 5px; /* Add padding for spacing */
-    display: inline-block; /* Ensure each span element is on its own line */
-    margin-bottom: 5px; /* Add margin between spans */
+    border: 1px solid #ccc; 
+    padding: 5px; 
+    display: inline-block; 
+    margin-bottom: 5px; 
     background-color: #ebd57c;
     border-radius: 3px;
 }
+.custom-table {
+    width: 100%;
+    border-collapse:separate;
+    border-spacing:5px;
+    font-family:'Palatino Linotype'
+}
+    /* Style for table header */
+    .custom-table th {
+        height: 50px;
+        width: 200px;
+        text-align: left;
+        padding:0 10px;
+    }
+    /* Style for table data */
+    .custom-table td {
+        width: 250px;
+        background-color: #ebd57c;
+        text-align: left;
+        border-radius: 3px;
+    }
+    .custom-table tr {
+        width: 10%;
+        border: none;
+    }
