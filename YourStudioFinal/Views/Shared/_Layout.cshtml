@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SE</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/fonts/icomoon/style.css">
     
-	<link href="~/fonts/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/homegallery/nav.css" asp-append-version="true" />
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -21,6 +21,88 @@
 </head>
 <body>
 <header>
+        <div class="wrapper-nav">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="logoret.png" alt="Logo" width="150" style="margin-left:70px">
+                    </a>
+                    <div class="navbar-header">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav ml-auto navbar-right">
+                            
+                            
+                                <li class="nav-item active">
+                                    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown active navactive">
+                                    <a class="nav-link dropdown-toggle navactive" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Gallery
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="GalleryCustomer" asp-action="Index">User Gallery UI</a>
+                                        <a class="dropdown-item" asp-controller="Gallery" asp-action="Index">Admin Gallery</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item active ">
+                                    <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+                                </li>
+
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Booking
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
+                                    </div>
+                                </li>
+
+
+                            <li class="nav-item active ">
+                                <a class="nav-link" asp-controller="Inquiry" asp-action="Index">FAQ</a>
+                            </li>
+
+                            
+                            @if (ViewBag.isLogged)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
+                                </li>
+
+                            }
+                        </ul>
+                        <script>
+                            $(document).ready(function () {
+                                $('.nav-link.dropdown-toggle').on('click', function (e) {
+                                    e.preventDefault();
+                                    $(this).next('.dropdown-menu').slideToggle();
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
 </header>
     <div class="">
         <main role="main" class="pb-3">
