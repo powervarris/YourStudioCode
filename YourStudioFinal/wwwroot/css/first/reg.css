@@ -116,13 +116,7 @@ body {
     padding: 0;
 }
 
-.navbar-nav {
-    float: right;
-}
 
-.topnav {
-    margin-top: 100px;
-}
 
 .collapse.navbar-collapse {
     justify-content: flex-end;

@@ -15,6 +15,7 @@
     text-align: center;
     font-size: 40px;
     margin-top: 20px;
+  
 }
 
 .noitems {
@@ -33,11 +34,12 @@ nav2 {
     font-weight: 500;
     font-family: Calibri;
     font-size: 20px;
+    margin-top:40px;
 }
 
 .nav2list-position {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-top: 40px;
     text-align: center;
 }
 

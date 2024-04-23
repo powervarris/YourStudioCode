@@ -251,7 +251,7 @@ pack1 {
 }
 
 .card-body {
-    height: 360px;
+    height: 410px;
     margin-left: 12px;
 }
 
@@ -263,7 +263,7 @@ pack1 {
 
 .img-thumbnail2 {
     width: 130px;
-    margin-top: -350px;
+    margin-top: -360px;
     margin-left: 470px;
     margin-bottom: 60px;
 }
@@ -271,13 +271,13 @@ pack1 {
 .img-thumbnail3 {
     width: 130px;
     margin-bottom: 100px;
-    margin-top: -350px;
+    margin-top: -365px;
     margin-left: 640px;
 }
 
 .img-thumbnail4 {
     width: 130px;
-    margin-top: -490px;
+    margin-top: -510px;
     margin-left: 820px;
 }
 
@@ -420,7 +420,7 @@ body, html {
 .imgresize {
     width: 300px;
     margin-left: 30px;
-    margin-top: -50px;
+    margin-top: -10px;
     padding-top: -80px;
 }
 
@@ -552,14 +552,14 @@ body, html {
 .price1 {
     font-family: calibri;
     font-weight: bolder;
-    padding-left: 60px;
+    padding-left: 350px;
     font-size: 30px;
 }
 
 .price2 {
     font-family: calibri;
     font-weight: bolder;
-    padding-left: 60px;
+    padding-left: 350px;
     font-size: 30px;
 }
 
@@ -796,7 +796,7 @@ body, html {
 footer {
     justify-content: space-between;
     align-items: center;
-   height:350px;
+   height:400px;
     padding: 20px;
     background-color: #26272b;
     margin-bottom:-200px;

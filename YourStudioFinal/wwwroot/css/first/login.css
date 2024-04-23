@@ -89,49 +89,6 @@ h2.tag {
         color: #F3C343;
     }
 
-.navbar-nav {
-    float: right;
-}
-
-.logonav {
-    height: 100%;
-    width: 80px;
-    margin-top: -5px;
-}
-
-#logoimage1 {
-    width: 80px;
-    height: auto
-}
-
-.logonav2 {
-    height: 100%;
-    width: 200px;
-    margin-left: -30px;
-    margin-top: -15px;
-}
-
-#logoimage2 {
-    width: 80px;
-    height: auto
-}
-
-.topnav {
-    margin-top: 100px;
-}
-
-.collapse.navbar-collapse {
-    justify-content: flex-end;
-    background-color: #FDF8F2;
-}
-
-.navbar-toggler {
-    color: rgba(0, 0, 0, 0.5);
-}
-
-    .navbar-toggler:hover {
-        color: rgba(0, 0, 0, 0.7);
-    }
 
 body {
     width: 100%;
