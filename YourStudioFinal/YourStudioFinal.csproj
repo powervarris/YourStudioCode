@@ -12,6 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Web.config">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
     <None Include="wwwroot\css\bootstraps\.DS_Store" />
     <None Include="wwwroot\css\bootstraps\mixins\.DS_Store" />
     <None Include="wwwroot\js\.DS_Store" />
@@ -110,6 +115,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ImageResizer.MvcWebConfig" Version="4.2.8" />
     <PackageReference Include="jQuery.UI" Version="1.12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.2" />

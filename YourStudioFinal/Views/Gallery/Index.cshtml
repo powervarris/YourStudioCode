@@ -1,4 +1,12 @@
 ﻿@{
+    
+    if (ViewBag.Error != null)
+    {
+        <script>
+        alert("@ViewBag.Error");
+        </script>
+    }
+    
 }
 
 
@@ -133,12 +141,7 @@
 
         </h1>
         <br />
-
-
-
-
-
-
+        
     </main>
 
     <div class="text-center">
@@ -206,7 +209,7 @@
                             <option value="Couples">Couples</option>
                             <option value="Child">Child</option>
                         </select>
-                        <p style="text-align:center; font-size:17px; color:grey">Maximum size limit..</p>
+                        <p style="text-align:center; font-size:17px; color:grey">Maximum size limit is 1 Gigabyte..</p>
                         <div class="inlinedisplay">
                             <label for="image" class="imageuploadheader">Choose Files:</label>
 
@@ -284,6 +287,7 @@
                     <div class="gallery">
                         <a target="_blank">
                             <img src="@System.IO.Path.Combine("uploads", Model.GalleryFiles[i].fileName)" alt="Forest" width="600" height="400">
+                            @* <img src="@(System.IO.Path.Combine("uploads", Model.GalleryFiles[i].fileName).TrimEnd() + ".ashx?w=600&h=400")" alt="Forest" width="600" height="400"> *@
                         </a>
                     </div>
                 </div>
@@ -333,8 +337,14 @@
         setDelete = function () {
         var checked = document.querySelectorAll('input[type="checkbox"]:checked');
         var deleteContent = document.getElementById('deleteContent');
+        
+        if (checked.length === 0) {
+            alert('Please select at least one item to delete.');
+        }
+        else {
         deleteContent.action = '/Gallery/Delete?ids=' + Array.from(checked).map(x => x.getAttribute('data-id')).join(',');
         deleteContent.submit();
+        }
     }
 </script>
 

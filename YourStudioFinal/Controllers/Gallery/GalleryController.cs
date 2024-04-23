@@ -73,6 +73,15 @@ namespace YourStudioFinal.Controllers
 
             foreach (var file in files)
             {
+                if (file.Length > int.MaxValue)
+                {
+                    ViewBag.Error = "File is too large";
+                    return RedirectToAction("Index");
+                }
+            }
+
+            foreach (var file in files)
+            {
                 var _path = Path.Combine(filePath, file.FileName);
                 await using (var fileStream = new FileStream(_path, FileMode.Create))
                 {
@@ -114,6 +123,8 @@ namespace YourStudioFinal.Controllers
         public async Task<IActionResult> Delete(string ids)
         {
             var idList = ids.Split(",");
+            
+            
             foreach (var id in idList)
             {
                 var galleryFile = await _context.GalleryFiles.FirstOrDefaultAsync(e => e.Id == id);

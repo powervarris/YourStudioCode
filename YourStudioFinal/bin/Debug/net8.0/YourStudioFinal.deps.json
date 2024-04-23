@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "YourStudioFinal/1.0.0": {
         "dependencies": {
+          "ImageResizer.MvcWebConfig": "4.2.8",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.2",
           "Microsoft.AspNetCore.Identity.UI": "8.0.2",
@@ -69,6 +70,25 @@
             "assemblyVersion": "3.25.1.0",
             "fileVersion": "3.25.1.0"
           }
+        }
+      },
+      "ImageResizer/4.2.8": {
+        "runtime": {
+          "lib/net45/ImageResizer.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.2.8.1168"
+          }
+        }
+      },
+      "ImageResizer.MvcWebConfig/4.2.8": {
+        "dependencies": {
+          "ImageResizer": "4.2.8",
+          "ImageResizer.WebConfig": "4.2.8"
+        }
+      },
+      "ImageResizer.WebConfig/4.2.8": {
+        "dependencies": {
+          "ImageResizer": "4.2.8"
         }
       },
       "jQuery/1.12.4": {},
@@ -960,6 +980,27 @@
       "sha512": "sha512-Sw9bq4hOD+AaS3RrnmP5IT25cyZ/T1qpM0e8+G+23Nojhv7+ScJFPEAQo1m4EFQWhXoI4FRZDrK+wjHCPw9yxg==",
       "path": "google.protobuf/3.25.1",
       "hashPath": "google.protobuf.3.25.1.nupkg.sha512"
+    },
+    "ImageResizer/4.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3OZKxlsyYr9Zxsz0KwXJ5S749azmjcPV4B344ssR/3oneEY6ZdTawDPochD4Z4RHBs4bYBf592lVhmEngxtZ7g==",
+      "path": "imageresizer/4.2.8",
+      "hashPath": "imageresizer.4.2.8.nupkg.sha512"
+    },
+    "ImageResizer.MvcWebConfig/4.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mubh//aNThkctCKikyvegbj1PlHA13h9zwYuCvXjXV42zUwl9x03cn91jBW+oZPE0c4KV8kN4ySiSODLZ5TeAw==",
+      "path": "imageresizer.mvcwebconfig/4.2.8",
+      "hashPath": "imageresizer.mvcwebconfig.4.2.8.nupkg.sha512"
+    },
+    "ImageResizer.WebConfig/4.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EmC3o0xDy9yVjsQmwuA+htDzIY2TpQIdfMYavcAU+hYlYxlyZpqjjoXS3R3nkulKXAnpQ9w/Eh8z2kscC/BpTA==",
+      "path": "imageresizer.webconfig/4.2.8",
+      "hashPath": "imageresizer.webconfig.4.2.8.nupkg.sha512"
     },
     "jQuery/1.12.4": {
       "type": "package",
