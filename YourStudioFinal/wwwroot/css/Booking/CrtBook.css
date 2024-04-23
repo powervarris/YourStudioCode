@@ -215,20 +215,16 @@
         top: -80px;
     }
 
-    .PST {
-        margin-right: 100px;
-    }
-
     #slctDate {
-        left: 54.5%;
+        left: 52.9%;
     }
 
     .pack {
-        margin: 60px 0 0 680px;
+        margin: 0px 0 0 850px;
     }
 
     .Adds {
-        margin: 0 0 0 680px;
+        margin: 0 0 0 850px;
     }
 
     #Srvc {
@@ -237,7 +233,7 @@
     }
 
     .time-container .time {
-        margin-left: 150px
+        margin-left: 240px;
     }
 }
 
@@ -395,34 +391,93 @@ html, body {
 
 .DAT {
     font-style: italic;
-    font-family: 'Palatino Linotype';
     font-size: 30px;
     font-weight: bold;
 }
 
 .PST {
-    font-style: italic;
-    font-family: 'Palatino Linotype';
-    padding-top: 10px;
-    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 18px;
     float: right;
 }
 
 
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+}
+
+.pack,
+.Adds {
+    flex: 1;
+}
+
+    .pack label,
+    .Adds label {
+        letter-spacing: 3px;
+        font-weight: bold;
+        position: relative;
+        left: 29px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .pack select,
+    .Adds select {
+        border-radius: 5px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+.status-box-container {
+    margin-top: 380px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status-box {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.boxlg {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin-right: 5px;
+}
+
+.textlg {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.status-box:not(:last-child) {
+    margin-right: 20px;
+}
 
 #btn-row {
     display: flex;
-    margin-left: 50px;
+    margin-left: 130px;
 }
 
 .btn-row > div {
-    margin: 5px;
+    margin: 5px 5px 5px 10px;
 }
 
 .btnT {
-    height: 41px;
-    width: 90px;
-    display: inline-block;
+    height: 61px;
+    width: 150px;
     padding: 5px 10px;
     margin: 5px;
     border: 1px solid #ccc;
@@ -430,7 +485,7 @@ html, body {
     background-color: white;
     color: #333;
     background-color: white;
-    font-size: 16px;
+    font-size: 26px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -460,15 +515,87 @@ html, body {
     width: 250px;
     display: grid;
     text-align: center;
-    font-family: 'Palatino Linotype';
 }
 
     #Srvc #SrvcDtl {
+        margin-bottom: 10px;
         align-content: center;
         font-weight: bold;
-        font-size: 36px;
-        font-family: 'Palatino Linotype';
     }
+
+.info-box {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 300px;
+    height: 290px;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+    .info-box h6 {
+        margin-bottom: 15px;
+    }
+
+        .info-box h6 b {
+            margin-right: 10px;
+        }
+
+        .info-box h6 span {
+            padding: 0px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 171px;
+        }
+
+
+.mlTitle {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.mlTitle2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.mlBody {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.mlPic {
+    width: 228px;
+    position: relative;
+}
+
+.btnMR {
+    border-radius: 5px;
+    top: -10px;
+    position: relative;
+    left: 49%;
+    font-weight: bold;
+    padding: 6px 16px 6px 16px;
+    margin-right: 20px;
+    color: black;
+    background-color: #ffde65;
+    border: hidden;
+}
+
+.btnMG {
+    position: relative;
+    left: 45%;
+    font-weight: bold;
+    padding: 6px 16px 6px 16px;
+    margin-right: 20px;
+    color: black;
+    background-color: #ffde65;
+    border: hidden
+}
 
 footer {
     justify-content: space-between;
@@ -1053,6 +1180,7 @@ pre {
 }
 
 .row {
+    margin-top: 43px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11952,7 +12080,6 @@ h1, h2, h3, h4, h5,
         .calendar .header.active .text {
             -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg);
-            font-family: 'Palatino Linotype';
             font-style: italic;
             opacity: 1;
             background-color: rgba(255, 255, 255, 0);
@@ -11976,7 +12103,6 @@ h1, h2, h3, h4, h5,
     width: inherit;
     height: inherit;
     background-color: rgba(255, 255, 255, 0);
-    font-family: 'Palatino Linotype';
     position: absolute;
     backface-visibility: hidden;
     -webkit-transition: all .4s ease-in-out 0s;
@@ -12031,7 +12157,6 @@ h1, h2, h3, h4, h5,
                 line-height: 28px;
                 cursor: pointer;
                 font-size: 15px;
-                font-family: 'Palatino Linotype';
                 -webkit-transition: color,background .4s ease-in-out 0s;
                 -o-transition: color,background .4s ease-in-out 0s;
                 transition: color,background .4s ease-in-out 0s;
@@ -12039,14 +12164,9 @@ h1, h2, h3, h4, h5,
 
             .table .row .cell.active span {
                 color: #fff;
-                background-color: darkseagreen;
+                color: #E9BC42;
                 border-radius: 4px;
             }
-
-            .table .row .cell span:hover {
-                background-color: lightslategrey;
-            }
-
 
 .months .month[data-active="true"] {
     -webkit-transform: rotateY(0);

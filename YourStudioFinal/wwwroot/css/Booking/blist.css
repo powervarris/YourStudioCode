@@ -515,7 +515,7 @@ html, body {
 
 .Low {
     font-size: small;
-    color: gray;
+    color: #1c1c1c;
 }
 
 .right {
@@ -649,6 +649,18 @@ html, body {
     border: hidden;
 }
 
+#btnAG {
+    position: relative;
+    left: 79%;
+    font-weight: bold;
+    padding: 6px 16px 6px 16px;
+    margin-right: 20px;
+    color: black;
+    background-color: #ffde65;
+    border: hidden;
+    border-radius: 5px;
+}
+
 #btnR {
     font-weight: bold;
     padding: 6px 16px 6px 16px;
@@ -699,6 +711,7 @@ label {
 }
 
 .Book2 {
+    padding-right: 5px;
     overflow-y: scroll;
     width: 900px;  
     height: 695px;

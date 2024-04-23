@@ -172,27 +172,29 @@
             @Html.ActionLink("Past", "BookingListAdmin", "Booking", null, new { @class = "black-text", @style = "color: black; background-color: #E9BC42; padding: 0px 10px; border-radius: 5px;" })
         <br/>
 
-        @{
-            if (Model != null)
-            {
+            @{
+                if (Model != null)
+                {
 
-                <table class="custom-table">
-                    <tr>
-                        <td>Select</td>
-                        <td>Date</td>
-                        <td>Time</td>
-                        <td>Package</td>
-                        <td>Add Ons</td>
-                        <td>Price</td>
-                        <td>Payment Receipt</td>
-                    </tr>
-                    <form id="deleteContent" method="post">
-                        @for (int i = 0; i < Model.Count; i++)
-                        {
-                            <tr>
-                                <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete"/></td>
+                    <table class="custom-table">
+                        <tr>
+                            <td>Select</td>
+                            <td>Date</td>
+                            <td>Time</td>
+                            <td>Mobile Number</td>
+                            <td>Package</td>
+                            <td>Add Ons</td>
+                            <td>Price</td>
+                            <td>Payment Receipt</td>
+                        </tr>
+                        <form id="deleteContent" method="post">
+                            @for (int i = 0; i < Model.Count; i++)
+                            {
+                                <tr>
+                                    <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete"/></td>
                                 <td>@Model[i].date</td>
                                 <td>@Model[i].time</td>
+                                <td>@Model[i].accountUser.mobileNumber</td>
                                 <td>@Model[i].packages</td>
                                 <td>@Model[i].addOns</td>
                                 <td>@Model[i].totalPrice</td>
