@@ -1,5 +1,13 @@
 
 
+.wrapper-nav {
+    width: 100%;
+    position: fixed; /* or position: absolute; */
+    top: 0; /* or adjust as needed */
+    left: 0; /* or adjust as needed */
+    z-index: 9999; /* Ensure it's above other content */
+}
+
 .login {
     min-height: 100%;
     background-color: #F5F2F0;
@@ -7,7 +15,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .form-control {
     background-color: #F5F2F0;
     font-family: 'Palatino Linotype';
@@ -20,6 +27,7 @@
     color: black;
     text-decoration: underline;
 }
+
 
 .login-heading {
     font-weight: 300;

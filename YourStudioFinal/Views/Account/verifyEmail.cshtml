@@ -1,0 +1,82 @@
+﻿@model ForgetPassword
+
+@{
+    ViewData["Title"] = "Verify email";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="~/https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/fonts/icomoon/style.css">
+    <link href="~/fonts/style.css" rel="stylesheet" />
+
+    <!-- Style -->
+    <link href="~/css/first/login.css" rel="stylesheet" />
+
+    <title>Login #2</title>
+</head>
+<body>
+    @{
+        if (TempData["Error"] != null)
+        {
+            <script>
+                alert("@TempData["Error"]");
+            </script>
+        }
+    }
+    <header>
+    </header>
+
+    <div class="body-bg">
+        <div class="row g-0">
+            <div class="col-md-8 col-lg-6">
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-8 mx-auto">
+                                <div class="greeting-container">
+                                    <h3 id="greeting"><strong></strong></h3>
+                                </div>
+                                <form action="#!">
+                                    <div class="form-floating mb-3" style="text-align: center;">
+                                        <input type="email" class="form-control" name="Email" id="Email" placeholder="name@example.com" asp-for="Email" required="required">
+                                        <label for="email" asp-for="Email" class="form-label">Email Address</label>
+                                        <p style="margin: 20px 0;">Enter the One Time Password (OTP) sent to your email</p>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary btn-lg" type="submit" asp-action="validateEmail" asp-controller="Account">Send Code</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanawan col-md-8 col-lg-6">
+                <div class="right d-flex align-items-center py-5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var currentHour = new Date().getHours();
+
+        var greetingElement = document.getElementById("greeting");
+
+        if (currentHour >= 0 && currentHour < 12) {
+            greetingElement.innerHTML = "<h1>GOOD MORNING</h1>";
+        } else if (currentHour >= 12 && currentHour < 18) {
+            greetingElement.innerHTML = "<h1>GOOD AFTERNOON</h1>";
+        } else {
+            greetingElement.innerHTML = "<h1>GOOD EVENING</h1>";
+        }
+    </script>
+    @{
+    }
+</body>
+</html>

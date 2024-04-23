@@ -9,58 +9,60 @@ if (currentHour >= 0 && currentHour < 12) {
     greetingElement.innerHTML = "<h1>GOOD EVENING</h1>";
 }
 
-/*var passwordInput = document.querySelector('input[name="password"]');
-var confirmPasswordInput = document.querySelector('input[name="confirmPassword"]');
-var emailInput = document.querySelector('input[name="Email"]');
-var phoneNumberInput = document.querySelector('input[name="phoneNumber"]');
-var rememberPasswordCheck = document.getElementById('rememberPasswordCheck');
-var registerButton = document.getElementById('registerButton');
-var registrationForm = document.getElementById('registration-form');
+var passwordInput = document.getElementById('floatingPassword');
+var passwordFormat = document.getElementById('passwordFormat');
 
-function doPasswordsMatch() {
-    return passwordInput.value === confirmPasswordInput.value;
-}
-
-function isEmailValid() {
-    var email = emailInput.value.trim();
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-// Function to check if all required fields are filled
-function areFieldsFilled() {
-    return (
-        passwordInput.value.trim().length > 0 &&
-        confirmPasswordInput.value.trim().length > 0 &&
-        emailInput.value.trim().length > 0 &&
-        phoneNumberInput.value.trim().length === 10 && // Check if mobile number is filled
-        rememberPasswordCheck.checked // Check if checkbox is checked
-    );
-}
-
-function validateForm() {
-    var passwordsMatch = doPasswordsMatch();
-    var emailValid = isEmailValid();
-    var fieldsFilled = areFieldsFilled();
-
-    if (passwordsMatch && emailValid && fieldsFilled) {
-        registerButton.removeAttribute('disabled');
+passwordInput.addEventListener('input', function () {
+    if (passwordInput.validity.valid) {
+        passwordFormat.style.display = 'none';
     } else {
-        registerButton.setAttribute('disabled', 'disabled');
+        passwordFormat.style.display = 'inline';
     }
-}
-
-// Add event listeners
-var inputFields = [passwordInput, confirmPasswordInput, emailInput, phoneNumberInput];
-inputFields.forEach(field => {
-    field.addEventListener('input', validateForm);
 });
 
-rememberPasswordCheck.addEventListener('change', validateForm);
+var confirmPasswordInput = document.getElementById('floatingConfirmPassword');
 
-registrationForm.addEventListener('submit', function (event) {
-    event.preventDefault();
+confirmPasswordInput.addEventListener('input', function () {
+    var passwordValue = passwordInput.value;
+    var confirmPasswordValue = confirmPasswordInput.value;
+
+    if (passwordValue === confirmPasswordValue) {
+        confirmPasswordInput.setCustomValidity('');
+    } else {
+        confirmPasswordInput.setCustomValidity('Passwords must match');
+    }
 });
 
-// Initial form validation
-validateForm();*/
+var registrationForm = document.getElementById('registration-form');
+registrationForm.addEventListener('input', function () {
+    registrationForm.reportValidity();
+});
+passwordInput.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+    }
+});
+
+confirmPasswordInput.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+    }
+});
+
+emailInput.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+    }
+});
+
+mobileNumberInput.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+    }
+});
+
+rememberPasswordCheck.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+    }
+});

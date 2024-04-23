@@ -66,7 +66,10 @@ public class AccountController : Controller
     {
         return View();
     }
-
+    public async Task<IActionResult> verifyEmail()
+    {
+        return View();
+    }
     public IActionResult ResetPassword()
     {
         return View();
