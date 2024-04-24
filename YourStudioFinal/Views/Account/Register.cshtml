@@ -10,6 +10,30 @@
     <link href="~/css/first/reg.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <title>Register</title>
+    <style>
+
+        #registerButton {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        #registration-form:valid #registerButton {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .form-floating {
+            position: relative; 
+        }
+
+        .field-icon {
+            position: absolute;
+            top: 50%; /* Position the icon vertically centered */
+            right: 10px; /* Adjust the distance from the right */
+            transform: translateY(-50%); /* Center the icon vertically */
+            cursor: pointer; /* Add cursor pointer */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -88,6 +112,7 @@
         </div>
     </div>
     <script src="~/js/register.js"></script>
+    
     <script>
         const passwordField = document.getElementById("floatingPassword");
         const togglePassword = document.querySelector(".toggle-password");
@@ -121,6 +146,38 @@
                 toggleConfirmPassword.classList.add("fa-eye");
             }
         });
+    </script>
+    <script>
+        document.getElementById('floatingPassword').addEventListener('focus', function () {
+            toggleVisibility('passwordFormat', true);
+        });
+
+        document.getElementById('floatingPassword').addEventListener('blur', function () {
+            toggleVisibility('passwordFormat', false);
+        });
+
+        function toggleVisibility(elementId, show) {
+            var element = document.getElementById(elementId);
+            if (show) {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+
+        function togglePasswordVisibility(inputId) {
+            var passwordInput = document.getElementById(inputId);
+            var icon = passwordInput.nextElementSibling;
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                passwordInput.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
     </script>
 
 </body>

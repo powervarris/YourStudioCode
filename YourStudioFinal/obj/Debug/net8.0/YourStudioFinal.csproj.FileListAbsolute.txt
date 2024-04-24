@@ -2543,3 +2543,5 @@ C:\Users\Kenshin\Source\Repos\YourStudioCode2425\YourStudioFinal\obj\Debug\net8.
 C:\Users\Kenshin\Source\Repos\YourStudioCode2425\YourStudioFinal\obj\Debug\net8.0\YourStudioFinal.pdb
 C:\Users\Kenshin\Source\Repos\YourStudioCode2425\YourStudioFinal\obj\Debug\net8.0\YourStudioFinal.genruntimeconfig.cache
 C:\Users\Kenshin\Source\Repos\YourStudioCode2425\YourStudioFinal\obj\Debug\net8.0\ref\YourStudioFinal.dll
+C:\Users\LENOVO-15IMH05\Desktop\embiid\YourStudioCode\YourStudioFinal\bin\Debug\net8.0\Web.config
+C:\Users\LENOVO-15IMH05\Desktop\embiid\YourStudioCode\YourStudioFinal\bin\Debug\net8.0\ImageResizer.dll
