@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HsRPKNkrQnj5DjIsRwavNdXMDbVKYXpxzEKurZCZqwOj3PKGcOCQ/BxzzUhBZfsxmtnxYx9hNvUQCjbRxbRpaA==",
+  "dgSpecHash": "fkZjVu8zuWOCin4iLki3R2nWZ5+/AjWCy3dlhUYSe72Y1RqCzLrIi5WZhp8jbjt7NuW6jE2eMF2vyLF6KjXaVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kenshin\\Source\\Repos\\YourStudioCodewe2\\YourStudioFinal\\YourStudioFinal.csproj",
+  "projectFilePath": "C:\\Users\\Kenshin\\Source\\Repos\\YourStudioCode2425\\YourStudioFinal\\YourStudioFinal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kenshin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Kenshin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -267,6 +267,14 @@ li.nav2 {
     clear: both;
 }
 
+div.gallery img {
+    width: 100%;
+    height:350px;
+    border-style: solid;
+    border-color: burlywood;
+    object-fit: cover;
+}
+
 div.gallery {
     border: 1px solid #ccc;
     border-style: solid;
@@ -275,16 +283,12 @@ div.gallery {
 }
 
 
+
     div.gallery:hover {
         border: 1px solid #777;
     }
 
-    div.gallery img {
-        width: 100%;
-        height: auto;
-        border-style: solid;
-        border-color: burlywood;
-    }
+   
 
 div.desc {
     padding: 15px;
