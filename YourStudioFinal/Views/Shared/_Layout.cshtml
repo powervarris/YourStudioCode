@@ -40,10 +40,21 @@
                         <ul class="navbar-nav ml-auto navbar-right">
                             
                             
+                            <li class="nav-item active">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            
+                            @if (User.IsInRole("User") || ViewBag.isLogged == false)
+                            {
+                                
                                 <li class="nav-item active">
-                                    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                                    <a class="nav-link" asp-controller="GalleryCustomer" asp-action="Index">Gallery</a>
                                 </li>
-
+                                
+                            }
+                                
+                            @if (User.IsInRole("Admin"))
+                            {
                                 <li class="nav-item dropdown active navactive">
                                     <a class="nav-link dropdown-toggle navactive" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Gallery
@@ -53,23 +64,40 @@
                                         <a class="dropdown-item" asp-controller="Gallery" asp-action="Index">Admin Gallery</a>
                                     </div>
                                 </li>
+                            }
 
-                                <li class="nav-item active ">
-                                    <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
-                                </li>
-
+                            <li class="nav-item active ">
+                                <a class="nav-link" asp-controller="Packages" asp-action="Index">Packages</a>
+                            </li>
+                            
+                            @if (User.IsInRole("User") || ViewBag.isLogged == false)
+                            {
                                 <li class="nav-item dropdown active">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Booking
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
-                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
-                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BookingAll">Booking List</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="Payment">Pay your Booking</a>
                                     </div>
                                 </li>
+                            }
+                            
+                            @if(User.IsInRole("Admin")){
 
-
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Booking
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
+                                    <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
+                                </div>
+                            </li>
+                            }
+                            
                             <li class="nav-item active ">
                                 <a class="nav-link" asp-controller="Inquiry" asp-action="clientInquiry">FAQ</a>
                             </li>

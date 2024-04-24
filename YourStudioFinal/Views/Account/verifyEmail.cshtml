@@ -43,12 +43,19 @@
                                 </div>
                                 <form action="#!">
                                     <div class="form-floating mb-3" style="text-align: center;">
-                                        <input type="email" class="form-control" name="Email" id="Email" placeholder="name@example.com" asp-for="Email" required="required">
-                                        <label for="email" asp-for="Email" class="form-label">Email Address</label>
+                                        @* <input type="email" class="form-control" name="Email" id="Email" placeholder="name@example.com" asp-for="Email" required="required"> *@
+                                        @* <label for="email" asp-for="Email" class="form-label">OTP</label> *@
+                                        <input type="text" class="form-control" name="otp" id="otp" placeholder="102941" required>
+                                        <label for="text" class="form-label">OTP</label>
+                                        <input type="text" name="UserName" value="@TempData["UserName"]" hidden>
+                                        <input type="text" name="password" value="@TempData["password"]" hidden>
+                                        <input type="text" name="mobileNumber" value="@TempData["mobileNumber"]" hidden>
+                                        <input type="text" name="Email" value="@TempData["Email"]" hidden>
+
                                         <p style="margin: 20px 0;">Enter the One Time Password (OTP) sent to your email</p>
                                     </div>
                                     <div class="d-grid">
-                                        <button class="btn btn-primary btn-lg" type="submit" asp-action="validateEmail" asp-controller="Account">Send Code</button>
+                                        <button class="btn btn-primary btn-lg" type="submit" asp-action="verifyAccountOtp" asp-controller="Account">Register</button>
                                     </div>
                                 </form>
                             </div>

@@ -68,6 +68,7 @@ public class AccountController : Controller
     }
     public async Task<IActionResult> verifyEmail()
     {
+        ViewBag.isLogged = false;
         return View();
     }
     public IActionResult ResetPassword()
@@ -142,6 +143,42 @@ public class AccountController : Controller
         }
 
         return RedirectToAction("Forget");
+    }
+
+    public async Task<IActionResult> validateAccount(string Email, string UserName, string password, string mobileNumber)
+    {
+        var user = await _userManager.FindByEmailAsync(Email);
+        
+        if (Email != null)
+        {
+            var apiKey = "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";
+            var client = new SendGridClient(apiKey);
+            var from_email = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudio");
+            var subject = "Register Account Verification Confirmation";
+            var to_email = new EmailAddress(Email);
+            var otp = new Random().Next(100000, 999999);
+            var plainTextContent = "Enter the otp given in this email to confirm your account " + otp;
+            var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, plainTextContent, "");
+            var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+            TempData["Email"] = Email;
+            TempData["UserName"] = UserName;
+            TempData["password"] = password;
+            TempData["mobileNumber"] = mobileNumber;
+            TempData["otp"] = otp;
+            return RedirectToAction("verifyEmail");
+        }
+
+        return RedirectToAction("Register");
+    }
+    
+    public async Task<IActionResult> verifyAccountOtp(int otp, User usermodel)
+    {
+        if (otp == (int)TempData["otp"])
+        {
+            await AddUser(usermodel);
+        }
+
+        return RedirectToAction("Index");
     }
 
     public async Task<IActionResult> changePassword(string password, string confirmpassword)
