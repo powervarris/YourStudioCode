@@ -14,11 +14,11 @@
 </head>
 <body>
     <header>
-      
+       
     </header>
-<section class="containers">
-    <section class="Book">
-         <label for="monthsDropdown">M O N T H </label>
+    <section class="containers">
+        <section class="Book">
+            <label for="monthsDropdown">M O N T H </label>
             <select id="monthsDropdown">
                 <option value="1">JANUARY</option>
                 <option value="2">FEBRUARY</option>
@@ -32,19 +32,19 @@
                 <option value="10">OCTOBER</option>
                 <option value="11">NOVEMBER</option>
                 <option value="12">DECEMBER</option>
-          </select>
+            </select>
 
-          <label for="monthsDropdown">Y E A R</label>
+            <label for="monthsDropdown">Y E A R</label>
             <select id="monthsDropdown">
                 <option value="1">2023</option>
                 <option value="2">2024</option>
                 <option value="3">2025</option>
-          </select>
-    </section>
-    <section class="Book2">
+            </select>
+        </section>
+        <section class="Book2">
             @foreach (var item in Model.OrderByDescending(x => x.dateCreated).GroupBy(x => x.date).SelectMany(x => x).Select((value, i) => (value, i)))
-{
-                <div id="@("btn" + item.i)" class="blist" data-original-color="white" onclick="clickHandler(this.id)">
+            {
+                <div id="@("btn" + item.i)" class="blist" data-original-color="black" onclick="clickHandler(this.id)">
                     <div style="display: flex; align-items: center; justify-content: space-between;">
                         <div style="display: flex; flex-direction: column;">
                             <span class="userTXT" style="color: black; font-weight: bold;">@item.value.accountUser.UserName</span>
@@ -58,22 +58,22 @@
                         </div>
                     </div>
                 </div>
-}
+            }
 
-</section>
-    <section>
-        @{
-            // this code block will display all of the bookings per month
-        }
-    </section>
-
-    <section class="containers">
-        <section id="Srvc">
+        </section>
+        <section>
             @{
-                foreach (var item in Model.Select((value, i) => (value, i)))
-                 {
-                    <div id="@("srvc" + item.i)" style="display: none">
-                        <div id="VL2"></div>
+                // this code block will display all of the bookings per month
+            }
+        </section>
+
+        <section class="containers">
+            <section id="Srvc">
+                @{
+                    foreach (var item in Model.Select((value, i) => (value, i)))
+                    {
+                        <div id="@("srvc" + item.i)" style="display: none">
+                            <div id="VL2"></div>
                             <div id="SrvcDtl">BOOKING DETAILS</div>
                             <div class="info-box">
                                 <div>
@@ -101,7 +101,7 @@
 
                             <button type="button" id="btnG" data-toggle="modal" data-target="#exampleModalCenter">ACCEPT</button>
                             <button type="button" id="btnR" data-toggle="modal" data-target="#exampleModalCenter2">DECLINE</button>
-                    </div>
+                        </div>
 
                         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -118,21 +118,21 @@
                                 </div>
                             </div>
                         </div>
-                 
-                     <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img src="~/photos/check.png" class="mlPic" alt="">
-                                    <div class="mlTitle">Booking Accepted!</div>
-                                    <div class="mlBody">You accepted the booking successfully.</div>
-                                    <form>
-                                        @Html.ActionLink("OKAY!", "acceptBooking", "Booking", new { id = item.value.Id, email = item.value.accountUser.Email }, new { @class = "btn btn-primary inline", @id = "btnMG" })
-                                     </form>
+
+                        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="~/photos/check.png" class="mlPic" alt="">
+                                        <div class="mlTitle">Booking Accepted!</div>
+                                        <div class="mlBody">You accepted the booking successfully.</div>
+                                        <form>
+                                            @Html.ActionLink("OKAY!", "acceptBooking", "Booking", new { id = item.value.Id, email = item.value.accountUser.Email }, new { @class = "btn btn-primary inline", @id = "btnMG" })
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                         </div>
-                     </div>
+                        </div>
 
                         <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -153,67 +153,68 @@
                 }
             </section>
         </section>
-    @section scripts {
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    }
+        @section scripts {
+            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+            <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        }
 
-    <script>
-        function clickHandler(element) {
-            // $("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
-            // $(".ftco-section").show();
-            // $(".time-container").show();
-            // console.log("You clicked btn1");
-            // $("[id^='btnT_']").css("background-color", "white");
-            // $("#btnT_1300").css("background-color", "gray");
-            $("[id^=srvc]").hide();
-            $("#srvc" + element.substr(3)).show();
+        <script>
+            function clickHandler(element) {
+                // $("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
+                // $(".ftco-section").show();
+                // $(".time-container").show();
+                // console.log("You clicked btn1");
+                // $("[id^='btnT_']").css("background-color", "white");
+                // $("#btnT_1300").css("background-color", "gray");
+                $("[id^=srvc]").hide();
+                $("#srvc" + element.substr(3)).show();
 
-        };
+            };
 
 
-        $(function () {
+            $(function () {
 
-            var $prevElement = null;
-            $(".blist").on("mousedown", function () {
-                if ($prevElement && $prevElement[0] !== this) {
-                    $prevElement.addClass("released").removeClass("pressed");
-                    $prevElement.css("background-color", $prevElement.data("original-color"));
-                }
-                $prevElement = $(this);
-                $(this).addClass("pressed").removeClass("released");
-                $(this).css("background-color", "#FFA629");
+                var $prevElement = null;
+                $(".blist").on("mousedown", function () {
+                    if ($prevElement && $prevElement[0] !== this) {
+                        $prevElement.addClass("released").removeClass("pressed");
+                        $prevElement.css("border-color", $prevElement.data("original-color"));
+                    }
+                    $prevElement = $(this);
+                    $(this).addClass("pressed").removeClass("released");
+                    $(this).css({ "border-color": "#FFA629", "border-style": "solid" });
+
+                });
+
+                $(".blist").on("mouseup mouseleave", function () {
+                });
+
+                $(".blist").on("click", function () {
+                    $prevButton = $(this);
+                });
+
+                $("#datepicker").datepicker();
+
+                // $(".btn").on("click", function () {
+                // 	$("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
+                // 	$(".ftco-section").show();
+                // 	$(".time-container").show();
+                // 	console.log("You clicked btn1");
+                // 	$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
+                // 	$("#btnT_1300").css("background-color", "gray"); // turn the button with id 'btnT_1300' to gray
+                // });
+                //
+                // $("#btn2").on("click", function () {
+                // 	$("#datepicker").datepicker("setDate", new Date(2023, 8, 6));
+                // 	$(".ftco-section").show();
+                // 	$(".time-container").show();
+                // 	console.log("You clicked btn2");
+                // 	$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
+                // 	$("#btnT_1430").css("background-color", "gray"); // turn the button with id 'btnT_1430' to gray
+                // });
+
             });
-
-            $(".blist").on("mouseup mouseleave", function () {
-            });
-
-            $(".blist").on("click", function () {
-                $prevButton = $(this);
-            });
-
-            $("#datepicker").datepicker();
-
-            // $(".btn").on("click", function () {
-            // 	$("#datepicker").datepicker("setDate", new Date(2023, 7, 5));
-            // 	$(".ftco-section").show();
-            // 	$(".time-container").show();
-            // 	console.log("You clicked btn1");
-            // 	$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
-            // 	$("#btnT_1300").css("background-color", "gray"); // turn the button with id 'btnT_1300' to gray
-            // });
-            //
-            // $("#btn2").on("click", function () {
-            // 	$("#datepicker").datepicker("setDate", new Date(2023, 8, 6));
-            // 	$(".ftco-section").show();
-            // 	$(".time-container").show();
-            // 	console.log("You clicked btn2");
-            // 	$("[id^='btnT_']").css("background-color", "white"); // turn all buttons with id starting with 'btnT_' to white
-            // 	$("#btnT_1430").css("background-color", "gray"); // turn the button with id 'btnT_1430' to gray
-            // });
-
-        });
-    </script>
+        </script>
 
 </body>
 </html>

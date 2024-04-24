@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="~/css/Booking/CrtBook.css">
+	<link rel="stylesheet" href="~/css/Booking/CRBook.css">
 </head>
 <body>
 
@@ -64,6 +64,9 @@
 				<div class="boxlg" style="background-color:#cfcfcf;"></div>
 				<span class="textlg">NOT AVAILABLE</span>
 			</div>
+		</div>
+
+		<div class="status-box-container" style="margin-top: 420px;">
 			<div class="status-box">
 				<div class="boxlg" style="background-color:#E9BC42;;"></div>
 				<span class="textlg">CURRENT DATE</span>
@@ -72,7 +75,7 @@
 	</section>
 
 	<section style="position: relative; margin-top: 90px;">
-		<div id="slctDate" style="position: absolute; transform: translate(-50%, -100%); font-weight:bold; font-size:30px; font-family: Palatino Linotype;"></div>
+		<div id="slctDate" style="position: absolute; transform: translate(-50%, -100%); font-weight:bold; font-size:30px;"></div>
 	</section>
 
 	<section class="time-container">
@@ -122,8 +125,8 @@
 	</section>
 
 	<section id="Srvc">
-		
-		
+
+
 		<div class="info-box">
 			<div id="SrvcDtl">SERVICE DETAILS</div>
 			<div>
@@ -148,16 +151,16 @@
 			</div>
 		</div>
 
-		<hr/>
+		<hr />
 		<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm" required>
 			<input name="date" id="formDate" hidden required />
 			<input name="time" id="formTime" hidden required />
 			<input name="packages" id="formPackage" hidden required />
 			<input name="addOns" id="formAddOns" hidden />
 			<input name="totalPrice" id="formPrice" hidden />
-		<button type="button" id="btnB" data-toggle="modal" data-target="#exampleModalCenter" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;">
-			BOOK NOW!
-		</button>
+			<button type="button" id="btnB" data-toggle="modal" data-target="#exampleModalCenter" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;">
+				BOOK NOW!
+			</button>
 		</form>
 
 		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -167,7 +170,7 @@
 						<img src="~/photos/logofull.png" class="mlPic" alt="">
 						<div class="mlTitle" style="font-size: 24px;">You booked an appointment with the following service details. Please verify the information below and click "Confirm" to complete the booking process.</div>
 
-						<div >
+						<div>
 							<h6>
 								<b>Name:</b> <span style="left: -5px; margin-left: 3px; position: relative;">@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</span>
 							</h6>
@@ -179,7 +182,7 @@
 							<h6><b>Time:</b> <span id="slctTime"></span></h6>
 						</div>
 						<div>
-							<div id="packages">Package: <span>0</span></div> 
+							<div id="packages">Package: <span>0</span></div>
 						</div>
 						<div>
 							<div id="addOns">Add-Ons: <span>0</span></div>
@@ -189,22 +192,22 @@
 						</div>
 
 					</div>
-						<form>
-							<button type="button" class="btnMR" data-toggle="modal" data-dismiss="modal" data-target="#exampleModalCenter2">
-								CONFIRM
-							</button>
-							<button type="button" class="btnC" data-dismiss="modal" style="border-radius: 5px;background-color: black; position: relative; top: -10px; font-weight: bold; padding: 6px 16px 6px 16px; margin-right: 20px; color: white; border: hidden;">CLOSE</button>
-						</form>
-					</div>
+					<form>
+						<button type="button" class="btnMR" data-toggle="modal" data-dismiss="modal" data-target="#exampleModalCenter2">
+							CONFIRM
+						</button>
+						<button type="button" class="btnC" data-dismiss="modal" style="border-radius: 5px;background-color: black; position: relative; top: -10px; font-weight: bold; padding: 6px 16px 6px 16px; margin-right: 20px; color: white; border: hidden;">CLOSE</button>
+					</form>
 				</div>
 			</div>
+		</div>
 		</div>
 
 		<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-body">
-						<img src="~/photos/logofull.png" class="mlPic" style="left: 25%"alt="">
+						<img src="~/photos/logofull.png" class="mlPic" style="left: 25%" alt="">
 						<div class="mlTitle2">Booking Successful!</div>
 						<div class="mlBody">Please check your email for your updated booking status.</div>
 						<div class="mlBody"><b>Reminder:</b> if your booking has been accepted, a payment link will be sent to your email. You may now proceed to the down-payment process.</div>
@@ -215,7 +218,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 	</section>
 
 	<!-- Modal -->
@@ -313,204 +316,204 @@
 		});
 
 	</script>
-	
+
 	<script>
-			function changePrice(price) {
-    			switch (price){
-    			// $("#packages").text("Total Package: " + price);
-    			// console.log('Selected package:', price);
-    			// $("#formPackage").val(price);
-    			
-    			case "None | 0 PHP":
+		function changePrice(price) {
+			switch (price) {
+				// $("#packages").text("Total Package: " + price);
+				// console.log('Selected package:', price);
+				// $("#formPackage").val(price);
+
+				case "None | 0 PHP":
 					$("#addOns").text("Total Package: " + "0");
 					console.log('Selected package:', price);
 					$("#formAddOns").val(price);
 					break;
-    			
-    			case "Cake Smash Clean up | 300 PHP":
+
+				case "Cake Smash Clean up | 300 PHP":
 					$("#addOns").text("Total Package: " + "300");
 					console.log('Selected package:', price);
 					$("#formAddOns").val(price);
 					break;
-				
+
 				case "Themed Background Setup | 299 PHP":
 					$("#addOns").text("Total Add-Ons: " + "299");
 					console.log('Selected package:', price);
 					$("#formAddOns").val(price);
 					break;
-					
+
 				case "15 Minute extension (with backdrop change) | 199 PHP":
 					$("#addOns").text("Total Add-Ons: " + "199");
 					console.log('Selected package:', price);
 					$("#formAddOns").val(price);
 					break;
-					
+
 				case "Additional Person | 299 PHP/person":
 					$("#addOns").text("Total Add-Ons: " + "299");
 					console.log('Selected package:', price);
 					$("#formAddOns").val(price);
 					break;
-					
+
 				case "Additional Pet | 349 PHP/pet":
 					$("#addOns").text("Total Add-Ons: " + "349");
 					console.log('Selected package:', price);
 					$("#formAddOns").val(price);
 					break;
-					
+
 				case "4R - Sized Photo | 50 PHP":
 					$("#addOns").text("Total Add-Ons: " + "50");
 					console.log('Selected package:', price);
 					$("#formAddOns").val(price);
 					break;
-					
+
 				case "8R - Sized Photo | 150 PHP":
 					$("#addOns").text("Total Add-Ons: " + "150");
 					console.log('Selected package:', price);
 					$("#formAddOns").val(price);
 					break;
-				
+
 				case "8R - Sized Photo with frame | 450 PHP":
 					$("#addOns").text("Total Add-Ons: " + "450");
 					console.log('Selected package:', price);
 					$("#formAddOns").val(price);
 					break;
-    		};
-				
-				var packagePrice = parseInt($("#packages").text().split(" ")[2]);
-                var addOnPrice = parseInt($("#addOns").text().split(" ")[2]);
-                
-                // Check if the parsed values are NaN and replace them with 0 if they are
-                packagePrice = isNaN(packagePrice) ? 0 : packagePrice;
-                addOnPrice = isNaN(addOnPrice) ? 0 : addOnPrice;
-                
-                $("#totalPrice").text("Total Price: " + (packagePrice + addOnPrice));
-				$("#formPrice").val(packagePrice + addOnPrice);
-				
-				};
-    
-    		function changePrice2(price2) {
-    		// 	$("#addOns").text("Total Add-Ons: " + price2);
-    		// 	console.log('Selected Add-ons:', price2);
-    		// 	$("#formAddOns").val(price2);
-    			switch (price2){
-					
+			};
+
+			var packagePrice = parseInt($("#packages").text().split(" ")[2]);
+			var addOnPrice = parseInt($("#addOns").text().split(" ")[2]);
+
+			// Check if the parsed values are NaN and replace them with 0 if they are
+			packagePrice = isNaN(packagePrice) ? 0 : packagePrice;
+			addOnPrice = isNaN(addOnPrice) ? 0 : addOnPrice;
+
+			$("#totalPrice").text("Total Price: " + (packagePrice + addOnPrice));
+			$("#formPrice").val(packagePrice + addOnPrice);
+
+		};
+
+		function changePrice2(price2) {
+			// 	$("#addOns").text("Total Add-Ons: " + price2);
+			// 	console.log('Selected Add-ons:', price2);
+			// 	$("#formAddOns").val(price2);
+			switch (price2) {
+
 				case "None | 0 PHP":
 					$("#packages").text("Total Package: " + "0");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
-					
+
 				case "Your Student | 399":
 					$("#packages").text("Total Package: " + "399");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
-					
+
 				case "Your Soloito | 549":
 					$("#packages").text("Total Package: " + "549");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
-					
+
 				case "Your Duo | 769":
 					$("#packages").text("Total Package: " + "769");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
-					
+
 				case "Your Barkada | 1209":
 					$("#packages").text("Total Package: " + "1209");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
-				
+
 				case "Your Squad | 989":
 					$("#packages").text("Total Package: " + "989");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
-					
+
 				case "Your Family | 1869":
 					$("#packages").text("Total Package: " + "1869");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
-					
+
 				case "Your Fur Baby | 1429":
 					$("#packages").text("Total Package: " + "1429");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
-					
+
 				case "Your Graduation | 1429":
 					$("#packages").text("Total Package: " + "1429");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
-					
+
 				case "Your Birthday | 989":
 					$("#packages").text("Total Package: " + "989");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
-				
+
 				case "Your Maternity | 1899":
 					$("#packages").text("Total Package: " + "1899");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break;
-					
+
 				case "Your Home Service | 5499":
 					$("#packages").text("Total Package: " + "5499");
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break
-    			};
-				
-				var packagePrice = parseInt($("#packages").text().split(" ")[2]);
-                var addOnPrice = parseInt($("#addOns").text().split(" ")[2]);
-                
-                // Check if the parsed values are NaN and replace them with 0 if they are
-                packagePrice = isNaN(packagePrice) ? 0 : packagePrice;
-                addOnPrice = isNaN(addOnPrice) ? 0 : addOnPrice;
-                
-                $("#totalPrice").text("Total Price: " + (packagePrice + addOnPrice));
-				$("#formPrice").val(packagePrice + addOnPrice);
 			};
+
+			var packagePrice = parseInt($("#packages").text().split(" ")[2]);
+			var addOnPrice = parseInt($("#addOns").text().split(" ")[2]);
+
+			// Check if the parsed values are NaN and replace them with 0 if they are
+			packagePrice = isNaN(packagePrice) ? 0 : packagePrice;
+			addOnPrice = isNaN(addOnPrice) ? 0 : addOnPrice;
+
+			$("#totalPrice").text("Total Price: " + (packagePrice + addOnPrice));
+			$("#formPrice").val(packagePrice + addOnPrice);
+		};
 	</script>
 
-		<script>
-			function updateTime() {
-				const now = new Date();
-				const date = now.toLocaleDateString();
-				const time = now.toLocaleTimeString();
-				document.getElementById("currentDateTime").innerHTML = `${date} ${time}`;
-			}
-			setInterval(updateTime, 1000);
-		</script>
-	
+	<script>
+		function updateTime() {
+			const now = new Date();
+			const date = now.toLocaleDateString();
+			const time = now.toLocaleTimeString();
+			document.getElementById("currentDateTime").innerHTML = `${date} ${time}`;
+		}
+		setInterval(updateTime, 1000);
+	</script>
+
 	<script>
 		function checkDateTime() {
 			var date = $("#formDate").val();
 			var time = $("#formTime").val();
 			var package = $("#formPackage").val();
-			
+
 			if (date === "" || time === "") {
 				alert("Please select a date and time.");
 			}
-			
+
 			if (package === "") {
 				alert("Please select a package.");
 			}
-			
-			else{
+
+			else {
 				alert("Booking Successful");
 			}
 		}
 	</script>
-	
+
 	<script>
-		
+
 	</script>
 
 </body>
