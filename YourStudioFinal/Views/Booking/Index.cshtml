@@ -13,10 +13,9 @@
 <body>
 
 	<header>
-		
 	</header>
 
-	<section class="container one">
+	<section class="container one" style="margin-top: 35px;">
 		<div class="DAT inline">
 			<div>SELECT DATE AND TIME</div>
 		</div>
@@ -124,124 +123,124 @@
 		</select>
 	</section>
 
-<section id="Srvc">
+	<section id="Srvc">
 
 
-	<div class="info-box">
-		<div id="SrvcDtl">SERVICE DETAILS</div>
-		<div>
-			<h6>
-				<b>Name:</b> <span style="left: -5px; margin-left: 3px; position: relative;">@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</span>
-			</h6>
-		</div>
-		<div>
-			<h6><b>Date:</b> <span id="slctDate2"></span></h6>
-		</div>
-		<div>
-			<h6><b>Time:</b> <span id="slctTime"></span></h6>
-		</div>
-		<div>
-			<div id="packages">Package: <span>0</span></div> @*KUNG POSSIBLE GANTO SANA PAGKAKAHIWA-HIWALAY NILA :))*@
-		</div>
-		<div>
-			<div id="addOns">Add-Ons: <span>0</span></div>
-		</div>
-		<div>
-			<div id="totalPrice">Price: <span>0</span></div>
-		</div>
-	</div>
-
-	<hr />
-	<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm" required>
-		<input name="date" id="formDate" hidden required />
-		<input name="time" id="formTime" hidden required />
-		<input name="packages" id="formPackage" hidden required />
-		<input name="addOns" id="formAddOns" hidden />
-		<input name="totalPrice" id="formPrice" hidden />
-		<button type="button" id="btnB" data-toggle="modal" data-target="#exampleModalCenter" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;">
-			BOOK NOW!
-		</button>
-	</form>
-
-	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content" style="height: 700px">
-				<div class="modal-body">
-					<img src="~/photos/logofull.png" class="mlPic" alt="">
-					<div class="mlTitle" style="font-size: 24px;">You booked an appointment with the following service details. Please verify the information below and click "Confirm" to complete the booking process.</div>
-
-					<div>
-						<h6>
-							<b>Name:</b> <span style="left: -5px; margin-left: 3px; position: relative;">@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</span>
-						</h6>
-					</div>
-					<div>
-						<h6><b>Date:</b> <span id="slctDate2"></span></h6>
-					</div>
-					<div>
-						<h6><b>Time:</b> <span id="slctTime"></span></h6>
-					</div>
-					<div>
-						<div id="packages">Package: <span>0</span></div>
-					</div>
-					<div>
-						<div id="addOns">Add-Ons: <span>0</span></div>
-					</div>
-					<div>
-						<div id="totalPrice">Price: <span>0</span></div>
-					</div>
-
-				</div>
-				<form>
-					<button type="button" class="btnMR" data-toggle="modal" data-dismiss="modal" data-target="#exampleModalCenter2">
-						CONFIRM
-					</button>
-					<button type="button" class="btnC" data-dismiss="modal" style="border-radius: 5px;background-color: black; position: relative; top: -10px; font-weight: bold; padding: 6px 16px 6px 16px; margin-right: 20px; color: white; border: hidden;">CLOSE</button>
-				</form>
+		<div class="info-box">
+			<div id="SrvcDtl">SERVICE DETAILS</div>
+			<div>
+				<h6>
+					<b>Name:</b> <span style="left: -5px; margin-left: 3px; position: relative;">@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</span>
+				</h6>
+			</div>
+			<div>
+				<h6><b>Date:</b> <span id="slctDate2"></span></h6>
+			</div>
+			<div>
+				<h6><b>Time:</b> <span id="slctTime"></span></h6>
+			</div>
+			<div>
+				<div id="packages">Package: <span>0</span></div> @*KUNG POSSIBLE GANTO SANA PAGKAKAHIWA-HIWALAY NILA :))*@
+			</div>
+			<div>
+				<div id="addOns">Add-Ons: <span>0</span></div>
+			</div>
+			<div>
+				<div id="totalPrice">Price: <span>0</span></div>
 			</div>
 		</div>
-	</div>
 
-	<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<img src="~/photos/logofull.png" class="mlPic" style="left: 25%" alt="">
-					<div class="mlTitle2">Booking Successful!</div>
-					<div class="mlBody">Please check your email for your updated booking status.</div>
-					<div class="mlBody"><b>Reminder:</b> if your booking has been accepted, a payment link will be sent to your email. You may now proceed to the down-payment process.</div>
+		<hr />
+		<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm" required>
+			<input name="date" id="formDate" hidden required />
+			<input name="time" id="formTime" hidden required />
+			<input name="packages" id="formPackage" hidden required />
+			<input name="addOns" id="formAddOns" hidden />
+			<input name="totalPrice" id="formPrice" hidden />
+			<button type="button" id="btnB" data-toggle="modal" data-target="#exampleModalCenter" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;">
+				BOOK NOW!
+			</button>
+		</form>
+
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content" style="height: 700px">
+					<div class="modal-body">
+						<img src="~/photos/logofull.png" class="mlPic" alt="">
+						<div class="mlTitle" style="font-size: 24px;">You booked an appointment with the following service details. Please verify the information below and click "Confirm" to complete the booking process.</div>
+
+						<div>
+							<h6>
+								<b>Name:</b> <span style="left: -5px; margin-left: 3px; position: relative;">@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</span>
+							</h6>
+						</div>
+						<div>
+							<h6><b>Date:</b> <span id="slctDate2"></span></h6>
+						</div>
+						<div>
+							<h6><b>Time:</b> <span id="slctTime"></span></h6>
+						</div>
+						<div>
+							<div id="packages">Package: <span>0</span></div>
+						</div>
+						<div>
+							<div id="addOns">Add-Ons: <span>0</span></div>
+						</div>
+						<div>
+							<div id="totalPrice">Price: <span>0</span></div>
+						</div>
+
+					</div>
 					<form>
-						<button type="button" class="btnMG" data-dismiss="modal">OKAY!</button>
+						<button type="button" class="btnMR" data-toggle="modal" data-dismiss="modal" data-target="#exampleModalCenter2">
+							CONFIRM
+						</button>
+						<button type="button" class="btnC" data-dismiss="modal" style="border-radius: 5px;background-color: black; position: relative; top: -10px; font-weight: bold; padding: 6px 16px 6px 16px; margin-right: 20px; color: white; border: hidden;">CLOSE</button>
 					</form>
 				</div>
 			</div>
 		</div>
-	</div>
 
-</section>
+		<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<img src="~/photos/logofull.png" class="mlPic" style="left: 25%" alt="">
+						<div class="mlTitle2">Booking Successful!</div>
+						<div class="mlBody">Please check your email for your updated booking status.</div>
+						<div class="mlBody"><b>Reminder:</b> if your booking has been accepted, a payment link will be sent to your email. You may now proceed to the down-payment process.</div>
+						<form>
+							<button type="button" class="btnMG" data-dismiss="modal">OKAY!</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
-@* <script> *@
-@* *@
-@* $(document).ready(function() { *@
-@*     $('#btnB').on('click', function() { *@
-@*         var name = $('#Srvc .info-box h6 span').text(); *@
-@*         var date = $('#Srvc #slctDate2').text(); *@
-@*         var time = $('#Srvc #slctTime').text(); *@
-@*         var package = $('#Srvc #packages span').text(); *@
-@*         var addOns = $('#Srvc #addOns span').text(); *@
-@*         var price = $('#Srvc #totalPrice span').text(); *@
-@* *@
-@*         $('#exampleModalCenter .modal-body h6 span').text(name); *@
-@*         $('#exampleModalCenter #slctDate2').text(date); *@
-@*         $('#exampleModalCenter #slctTime').text(time); *@
-@*         $('#exampleModalCenter #packages span').text(package); *@
-@*         $('#exampleModalCenter #addOns span').text(addOns); *@
-@*         $('#exampleModalCenter #totalPrice span').text(price); *@
-@*     }); *@
-@* }); *@
-@* </script> *@
+	</section>
 
-<!-- Modal -->
+	@* <script> *@
+	@* *@
+	@* $(document).ready(function() { *@
+	@*     $('#btnB').on('click', function() { *@
+	@*         var name = $('#Srvc .info-box h6 span').text(); *@
+	@*         var date = $('#Srvc #slctDate2').text(); *@
+	@*         var time = $('#Srvc #slctTime').text(); *@
+	@*         var package = $('#Srvc #packages span').text(); *@
+	@*         var addOns = $('#Srvc #addOns span').text(); *@
+	@*         var price = $('#Srvc #totalPrice span').text(); *@
+	@* *@
+	@*         $('#exampleModalCenter .modal-body h6 span').text(name); *@
+	@*         $('#exampleModalCenter #slctDate2').text(date); *@
+	@*         $('#exampleModalCenter #slctTime').text(time); *@
+	@*         $('#exampleModalCenter #packages span').text(package); *@
+	@*         $('#exampleModalCenter #addOns span').text(addOns); *@
+	@*         $('#exampleModalCenter #totalPrice span').text(price); *@
+	@*     }); *@
+	@* }); *@
+	@* </script> *@
+
+	<!-- Modal -->
 	@* <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"> *@
 	@*   <div class="modal-dialog modal-dialog-centered" role="document"> *@
 	@*     <div class="modal-content"> *@
