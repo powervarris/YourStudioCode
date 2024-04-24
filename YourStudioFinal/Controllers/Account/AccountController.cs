@@ -60,10 +60,12 @@ public class AccountController : Controller
     }
     public IActionResult Forget()
     {
+        ViewBag.isLogged = false;
         return View();
     }
     public async Task<IActionResult> Otipi()
     {
+        ViewBag.isLogged = false;
         return View();
     }
     public async Task<IActionResult> verifyEmail()
@@ -73,6 +75,7 @@ public class AccountController : Controller
     }
     public IActionResult ResetPassword()
     {
+        ViewBag.isLogged = false;
         return View();
     }
     public IActionResult Terms()

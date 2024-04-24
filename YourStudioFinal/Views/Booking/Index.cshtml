@@ -157,9 +157,12 @@
 			<input name="packages" id="formPackage" hidden required />
 			<input name="addOns" id="formAddOns" hidden />
 			<input name="totalPrice" id="formPrice" hidden />
-			<button type="button" id="btnB" data-toggle="modal" data-target="#exampleModalCenter" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;">
-				BOOK NOW!
-			</button>
+			<button type="button" id="btnB" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;">
+            				BOOK NOW!
+            			</button>
+			@* <button type="button" id="btnB" data-toggle="modal" data-target="#exampleModalCenter" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;"> *@
+			@* 	BOOK NOW! *@
+			@* </button> *@
 		</form>
 
 		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -280,6 +283,38 @@
 		<script src="~/js/main.js"></script>
 
 	}
+	
+	<script>
+    
+    $(document).ready(function() {
+        $('#btnB').on('click', function() {
+            // Get the values
+            var date = $('#Srvc #slctDate2').text();
+            var time = $('.time .btnT.pressed').text();
+            var packages = $('#package option:selected').text();
+            var addOns = $('#addOn option:selected').text();
+    		var totalPrice = $('#totalPrice span').text();
+    
+            // Set the values in the modal
+            $('#exampleModalCenter #slctDate2').text(date);
+            $('#exampleModalCenter #slctTime').text(time);
+            $('#exampleModalCenter #packages span').text(packages);
+            $('#exampleModalCenter #addOns span').text(addOns);
+    		$('#exampleModalCenter #totalPrice span').text(totalPrice);
+    		
+    		// Set the values in the form fields
+            $('#formDate').val(date);
+            $('#formTime').val(time);
+            $('#formPackage').val(packages);
+            $('#formAddOns').val(addOns);
+            $('#formPrice').val(totalPrice);
+        });
+    });
+    
+    
+    
+    </script>
+	
 	<script>
 		$(document).ready(function () {
 			var $prevButton = null;
