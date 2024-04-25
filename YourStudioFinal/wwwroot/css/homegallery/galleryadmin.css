@@ -546,3 +546,11 @@ footer {
     margin-top: 10px;
     margin-bottom: -10px;
 }
+
+.black-text {
+    color: black;
+}
+
+.black-text:hover {
+    color: black;
+}

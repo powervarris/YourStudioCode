@@ -59,20 +59,20 @@
             <ul class="nav2list">
                 <li class="nav2">
 
-                    All &nbsp;         |
+                    @Html.ActionLink("All", "Index", "Gallery", null, new { @class = "black-text" }) &nbsp;         |
                 </li>
                 <li class="nav2">
-                    &nbsp; SoloIto  &nbsp;    |
+                    &nbsp; @Html.ActionLink("SoloIto", "SoloAdminIndex", "Gallery", null, new { @class = "black-text" })  &nbsp;    |
                 </li>
                 <li class="nav2">
-                    &nbsp; Family   &nbsp;     |
+                    &nbsp; @Html.ActionLink("Family", "FamilyAdminIndex", "Gallery", null, new { @class = "black-text" })   &nbsp;     |
                 </li>
                 <li class="nav2">
-                    &nbsp; Duo  &nbsp;       |
+                    &nbsp; @Html.ActionLink("Duo", "FurAdminIndex", "Gallery", null, new { @class = "black-text" })  &nbsp;       |
 
                 </li>
                 <li class="nav2">
-                    &nbsp;  Barkada &nbsp;
+                    &nbsp;  @Html.ActionLink("SoloIto", "CoupleAdminIndex", "Gallery", null, new { @class = "black-text" }) &nbsp;
 
                 </li>
 

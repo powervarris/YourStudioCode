@@ -108,6 +108,7 @@ public class AccountController : Controller
         }
         else
         {
+            ViewBag.isLogged = false;
             ModelState.AddModelError(string.Empty, "Invalid username or password.");
             TempData["Error"] = "Invalid username or password.";
         }

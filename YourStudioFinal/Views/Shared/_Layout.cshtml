@@ -103,18 +103,17 @@
                             </li>
 
                             
-                            @if (ViewBag.isLogged)
+                            @if (ViewBag.isLogged == false)
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
+                                    <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
                                 </li>
                             }
                             else
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-door-closed"></i></a>
+                                    <a class="nav-link" asp-controller="Home" asp-action="Logout"><i class="fa-solid fa-door-open"></i></a>
                                 </li>
-
                             }
                         </ul>
                         <script>
