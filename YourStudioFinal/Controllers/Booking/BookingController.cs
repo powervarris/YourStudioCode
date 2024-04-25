@@ -112,6 +112,7 @@ public class BookingController : Controller
         var userEmail = UserDetails.Email;
         var to_email = new EmailAddress(userEmail);
         var bookingID = bookingModel.Id;
+        var htmlContent2 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h1 style=color:#343a40>New Booking has been made!</h1><h4>We hope this message find you well.</h4><br><h4>We wish to inform you that your recent booking with us is currently pending confirmation. Please be assured that our team is diligently working to finalize your booking.</h4><br><h4>We kindly ask for your patience during the process. Rest assured, we will notify you promptly once your booking is confirmed.</h4><br><h1>Booking Details:</h1><h3>Booking ID: " + bookingID + "</h3><h3>Customer Email: " + userEmail + "</h3><h3>Booking Date: " + bookingModel.date + "</h3><h3>Booking Time: " + bookingModel.time + "</h3><h3>Booking Package: " + bookingModel.packages + "</h3><h3>Booking Add-ons: " + bookingModel.addOns + "</h3><h3>Best Regards!</h3><h3>Your Studio</h3></div>";
         // var totalPrice = bookingModel.totalPrice;
         var plainTextContent = "Booking Success! please wait if your booking was accepted through the same email!" 
                                + Environment.NewLine 
@@ -125,33 +126,33 @@ public class BookingController : Controller
                                + Environment.NewLine
                                + Environment.NewLine
                                + "Thank you for choosing YourStudio!"; ;
-        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, plainTextContent, "");
+        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent2);
         var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         
-        //admin side email
-        // var apiKeyAdmin = "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";
-        // var clientAdmin = new SendGridClient(apiKeyAdmin);
-        // var from_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudioSystem");
-        // var to_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com");
-        // var subjectAdmin = "Booking Notification";
-        // var htmlContent = "<div style='background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none;font-family:\"Libre Franklin\"'><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h1 style=color:#343a40>New Booking has been made!</h1><h1>Booking Details:</h1><h3>Booking ID: " + bookingID + "</h3><h3>Customer Email: " + userEmail + "</h3><h3>Booking Date: " + bookingModel.date + "</h3><h3>Booking Time: " + bookingModel.time + "</h3><h3>Booking Package: " + bookingModel.packages + "</h3><h3>Booking Add-ons: " + bookingModel.addOns + "</h3></div>";
-        // var plainTextContentAdmin = "New Booking has been made! Please check the admin panel for more details."
-        //                             + Environment.NewLine
-        //                             + "Booking Details: "
-        //                             + Environment.NewLine
-        //                             + "Booking ID: " + bookingID
-        //                             + Environment.NewLine
-        //                             + "Customer Email: " + userEmail
-        //                             + Environment.NewLine
-        //                             + "Booking Date: " + bookingModel.date
-        //                             + Environment.NewLine
-        //                             + "Booking Time: " + bookingModel.time
-        //                             + Environment.NewLine
-        //                             + "Booking Package: " + bookingModel.packages
-        //                             + Environment.NewLine
-        //                             + "Booking Add-ons: " + bookingModel.addOns;
-        //                             var msgAdmin = MailHelper.CreateSingleEmail(from_emailAdmin, to_emailAdmin, subject, "", htmlContent);
-        // var responseAdmin = await clientAdmin.SendEmailAsync(msgAdmin).ConfigureAwait(false);
+        // admin side email
+         var apiKeyAdmin = "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";
+         var clientAdmin = new SendGridClient(apiKeyAdmin);
+         var from_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudioSystem");
+         var to_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com");
+         var subjectAdmin = "Booking Notification";
+         var htmlContent = "<div style='background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none;font-family:\"Libre Franklin\"'><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h1 style=color:#343a40>New Booking has been made!</h1><h1>Booking Details:</h1><h3>Booking ID: " + bookingID + "</h3><h3>Customer Email: " + userEmail + "</h3><h3>Booking Date: " + bookingModel.date + "</h3><h3>Booking Time: " + bookingModel.time + "</h3><h3>Booking Package: " + bookingModel.packages + "</h3><h3>Booking Add-ons: " + bookingModel.addOns + "</h3></div>";
+         var plainTextContentAdmin = "New Booking has been made! Please check the admin panel for more details."
+                                     + Environment.NewLine
+                                     + "Booking Details: "
+                                     + Environment.NewLine
+                                     + "Booking ID: " + bookingID
+                                     + Environment.NewLine
+                                     + "Customer Email: " + userEmail
+                                     + Environment.NewLine
+                                     + "Booking Date: " + bookingModel.date
+                                     + Environment.NewLine
+                                     + "Booking Time: " + bookingModel.time
+                                     + Environment.NewLine
+                                     + "Booking Package: " + bookingModel.packages
+                                     + Environment.NewLine
+                                     + "Booking Add-ons: " + bookingModel.addOns;
+                                     var msgAdmin = MailHelper.CreateSingleEmail(from_emailAdmin, to_emailAdmin, subject, "", htmlContent);
+         var responseAdmin = await clientAdmin.SendEmailAsync(msgAdmin).ConfigureAwait(false);
         return RedirectToAction("Index");
     }
     
@@ -193,9 +194,10 @@ public class BookingController : Controller
             var apiKey = "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";
             var client = new SendGridClient(apiKey);
             var from_email = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudio");
-            var subject = "Booking Confirmation";
+            var subject = "Booking Confirmation Update";
             var email = UserDetails.Email;
             var to_email = new EmailAddress(email);
+            var htmlContent4 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Dear</h3><h3>We hope this message finds you well,</h3><h3>We are delighted to inform you that your booking with YourStudio has been successfully accepted! We look forward to welcome you on " + booking.date + " at " + booking.time + " for you scheduled services.</h3><h3>We kindly request that you proceed with the payment at your earliest convention. You are given time to pay minimum 500 down payment to ensure the settled booking. Note that if you have avail the YourStudent Package Deal you are required to pay a downpayment of 50%</h3><h3>Should you have any special request or require further assistance, please do not hesitate to reach out to our team.</h3><h3>Your satisfaction is our top priority, and we are committed to ensuring that your experience with us exceed your expectionations! Thank you for choosing YourStudio. We are honored to have the opportunity to serve you and look forward to prroviding you with an exceptional experience.</h3><br><br><h4>Thank you for you understanding and continued support.</h4><h4>Best Regards,</h4><h4>Your Studio</h4></div>";
             var plainTextContent = "You have successfully paid your booking!"
                                    + Environment.NewLine
                                    + Environment.NewLine
@@ -204,7 +206,7 @@ public class BookingController : Controller
                                    + "Hope to see you there! "
                                    + Environment.NewLine
                                    + "Thank you for choosing YourStudio!";
-            var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, plainTextContent, "");
+            var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent4);
             var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         }
         return RedirectToAction("Payment");
@@ -212,12 +214,24 @@ public class BookingController : Controller
 
     public async Task<IActionResult> changeToDP_Paid(string Id)
     {
+        var UserDetails = await _userManager.GetUserAsync(User);
         var bookingmodel = _context.Booking.FirstOrDefault(x => x.Id == Id);
         if (bookingmodel != null)
         {
             bookingmodel.status = "DP_Paid";
             _context.Update(bookingmodel);
             _context.SaveChanges();
+
+            var apiKey = "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";
+            var client = new SendGridClient(apiKey);
+            var from_email = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudio");
+            var subject = "Down Payment Received";
+            var email = UserDetails.Email;
+            var to_email = new EmailAddress(email);
+            var htmlContent5 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Dear</h3><h3>We hope this message finds you well,</h3><h3>Your recent down payment have been successfully submitted. Your prompt action is greatly appreciated and serves as a testament to your commitment.</h3><h3>Your payment has been successfully processed, and we are pleased to confirm that your reservation is secured.</h3><h3>Once again, thank you for choosing YourStudio. We are honored to ahve the opportunity to serve you, and we are committed to making your expeirence with us memorable and enjoyable.</h3><br><br><h4>Thank you for you understanding and continued support.</h4><h4>Best Regards,</h4><h4>Your Studio</h4></div>";
+            var plainTextContent = "";
+            var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent5);
+            var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         }
         return RedirectToAction("BookingListAdminAccepted", "Booking");
     }
@@ -331,18 +345,22 @@ public class BookingController : Controller
             _context.SaveChanges();
         }
         
+        var UserDetails = await _userManager.GetUserAsync(User);
+        var email2 = UserDetails.Email;
+        
         var apiKey = "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";
         var client = new SendGridClient(apiKey);
         var from_email = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudio");
-        var subject = "Booking Confirmation";
-        var to_email = new EmailAddress(email);
+        var subject = "Booking Update Status";
+        var to_email = new EmailAddress(email2);
+        var htmlContent3 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Dear</h3><h3>We hope this message finds you well,</h3><h3>We regret to inform you that your recent booking with us has unfortunately been declined. We sincerely apologize for any inconvenience it may have caused.</h3><h3>YourStudio has carefully reviewed your booking request, and unfortunately, we are unable to accommodate it.</h3><h3>If you have any questions or require further assistance, please do not hesitate to contact us. We are here to assist you in any way we can.</h3><br><br><h4>Thank you for you understanding and continued support.</h4><h4>Best Regards,</h4><h4>Your Studio</h4></div>";
         var plainTextContent = "Your Booking has been Declined..."
                                + Environment.NewLine
                                + Environment.NewLine
                                + "Womp womp"
                                + Environment.NewLine
                                + "Thank you for choosing YourStudio!";
-        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, plainTextContent, "");
+        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent3);
         var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         return RedirectToAction("BList");
     }

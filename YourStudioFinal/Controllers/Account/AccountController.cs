@@ -135,11 +135,12 @@ public class AccountController : Controller
             var apiKey = "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";
             var client = new SendGridClient(apiKey);
             var from_email = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudio");
-            var subject = "Reset Password Confirmation";
+            var subject = "YourStudio Forgot Password Verification OTP";
             var to_email = new EmailAddress(email);
             var otp = new Random().Next(100000, 999999);
+            var htmlcontent = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>We noticed that you’re having trouble logging in. No worries, with the help of YourStudio you can regain access to your account. Please use the following One-Time Password (OTP) to verify your identity and reset your forgotten password.</h3><br><br><br><h3>" + otp + "is your YourStudio Forgot Password Verification Code.</h3><br><h4>Enter this OTP on the password reset page to proceed.</h4><br><br><br><br><h4>Thank you!</h4><h4>Best Regards,</h4><h4>Your Studio</h4>";
             var plainTextContent = "Enter the otp given in this email to reset your password " + otp;
-            var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, plainTextContent, "");
+            var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlcontent);
             var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
             TempData["otp"] = otp;
             TempData["email"] = email;
@@ -179,7 +180,8 @@ public class AccountController : Controller
     {
         if (otp != (int)TempData["otp"])
         {
-            TempData["Error"] = "The OTP entered does not match. Please try again.";
+            TempData["OtpError"] = "The OTP entered does not match. Please try again.";
+            TempData.Keep();
             return RedirectToAction("verifyEmail");
         }
 
@@ -208,12 +210,13 @@ public class AccountController : Controller
 
     public async Task<IActionResult> verifyOtp(int otp)
     {
-        if (otp == (int)TempData["otp"])
+        if (otp != (int)TempData["otp"])
         {
-            return RedirectToAction("ResetPassword");
+            TempData["verifyOtpError"] = "The OTP entered does not match. Please try again.";
+            return RedirectToAction("Otipi");
         }
 
-        return RedirectToAction("Forget");
+        return RedirectToAction("ResetPassword");
     }
 
 }
