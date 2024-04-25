@@ -26,6 +26,8 @@ public class BookingModel
 
     public string? totalPrice { get; set; }
     
+    public string? downPayment { get; set; }
+    
     public string? paymentID { get; set; }
     public PaymentModel payment { get; set; }
 

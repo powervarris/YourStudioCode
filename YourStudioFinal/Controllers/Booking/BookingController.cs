@@ -129,29 +129,29 @@ public class BookingController : Controller
         var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         
         //admin side email
-        var apiKeyAdmin = "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";
-        var clientAdmin = new SendGridClient(apiKeyAdmin);
-        var from_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudioSystem");
-        var to_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com");
-        var subjectAdmin = "Booking Notification";
-        var htmlContent = "<div style='background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none;font-family:\"Libre Franklin\"'><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h1 style=color:#343a40>New Booking has been made!</h1><h1>Booking Details:</h1><h3>Booking ID: " + bookingID + "</h3><h3>Customer Email: " + userEmail + "</h3><h3>Booking Date: " + bookingModel.date + "</h3><h3>Booking Time: " + bookingModel.time + "</h3><h3>Booking Package: " + bookingModel.packages + "</h3><h3>Booking Add-ons: " + bookingModel.addOns + "</h3></div>";
-        var plainTextContentAdmin = "New Booking has been made! Please check the admin panel for more details."
-                                    + Environment.NewLine
-                                    + "Booking Details: "
-                                    + Environment.NewLine
-                                    + "Booking ID: " + bookingID
-                                    + Environment.NewLine
-                                    + "Customer Email: " + userEmail
-                                    + Environment.NewLine
-                                    + "Booking Date: " + bookingModel.date
-                                    + Environment.NewLine
-                                    + "Booking Time: " + bookingModel.time
-                                    + Environment.NewLine
-                                    + "Booking Package: " + bookingModel.packages
-                                    + Environment.NewLine
-                                    + "Booking Add-ons: " + bookingModel.addOns;
-                                    var msgAdmin = MailHelper.CreateSingleEmail(from_emailAdmin, to_emailAdmin, subject, "", htmlContent);
-        var responseAdmin = await clientAdmin.SendEmailAsync(msgAdmin).ConfigureAwait(false);
+        // var apiKeyAdmin = "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";
+        // var clientAdmin = new SendGridClient(apiKeyAdmin);
+        // var from_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudioSystem");
+        // var to_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com");
+        // var subjectAdmin = "Booking Notification";
+        // var htmlContent = "<div style='background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none;font-family:\"Libre Franklin\"'><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h1 style=color:#343a40>New Booking has been made!</h1><h1>Booking Details:</h1><h3>Booking ID: " + bookingID + "</h3><h3>Customer Email: " + userEmail + "</h3><h3>Booking Date: " + bookingModel.date + "</h3><h3>Booking Time: " + bookingModel.time + "</h3><h3>Booking Package: " + bookingModel.packages + "</h3><h3>Booking Add-ons: " + bookingModel.addOns + "</h3></div>";
+        // var plainTextContentAdmin = "New Booking has been made! Please check the admin panel for more details."
+        //                             + Environment.NewLine
+        //                             + "Booking Details: "
+        //                             + Environment.NewLine
+        //                             + "Booking ID: " + bookingID
+        //                             + Environment.NewLine
+        //                             + "Customer Email: " + userEmail
+        //                             + Environment.NewLine
+        //                             + "Booking Date: " + bookingModel.date
+        //                             + Environment.NewLine
+        //                             + "Booking Time: " + bookingModel.time
+        //                             + Environment.NewLine
+        //                             + "Booking Package: " + bookingModel.packages
+        //                             + Environment.NewLine
+        //                             + "Booking Add-ons: " + bookingModel.addOns;
+        //                             var msgAdmin = MailHelper.CreateSingleEmail(from_emailAdmin, to_emailAdmin, subject, "", htmlContent);
+        // var responseAdmin = await clientAdmin.SendEmailAsync(msgAdmin).ConfigureAwait(false);
         return RedirectToAction("Index");
     }
     

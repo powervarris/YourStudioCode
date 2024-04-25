@@ -123,7 +123,7 @@
                         <div class="inlinedisplay">
                             <label for="image" class="imageuploadheader">Choose Files:</label>
 
-                            <input type="file" name="image" id="image" class="form-control-file" accept="image/*" multiple />
+                            <input type="file" name="image" id="image" class="form-control-file" accept="image/*" multiple required/>
                         </div>
                         <div class="modal-footer">
                             <button type="submit" class="buttonupload">Upload</button>
@@ -164,9 +164,18 @@
             });
         </script>
 
+        <script>
+        document.getElementById('imageUpload').addEventListener('submit', function(event) {
+            var category = document.getElementById('category').value;
+            if(category === "None") {
+                event.preventDefault();
+                alert('Please select a category.');
+            }
+        });
+        </script>
 
 
-<div class="container">
+        <div class="container">
         @{
             if (Model.GalleryFiles.Count == 0)
             {

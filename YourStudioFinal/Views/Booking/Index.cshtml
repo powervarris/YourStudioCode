@@ -148,16 +148,20 @@
 			<div>
 				<div id="totalPrice">Price: <span>0</span></div>
 			</div>
+			<div>
+				<div id="downPayment">Downpayment: <span>500 PHP</span></div>
+			</div>
 		</div>
 
 		<hr />
 		<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm" required>
-			<input name="date" id="formDate" hidden required />
-			<input name="time" id="formTime" hidden required />
-			<input name="packages" id="formPackage" hidden required />
+			<input name="date" id="formDate" hidden required/>
+			<input name="time" id="formTime" hidden required/>
+			<input name="packages" id="formPackage" hidden required/>
 			<input name="addOns" id="formAddOns" hidden />
 			<input name="totalPrice" id="formPrice" hidden />
-			<button type="submit" id="btnB" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;">
+			<input name="downPayment" id="formDownPayment" hidden />
+			<button type="submit" id="btnB" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;" onclick="checkDateTime()">
             				BOOK NOW!
             			</button>
 			@* <button type="button" id="btnB" data-toggle="modal" data-target="#exampleModalCenter" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;"> *@
@@ -522,6 +526,7 @@
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break
+				
 			};
 
 			var packagePrice = parseInt($("#packages").text().split(" ")[2]);
@@ -533,6 +538,22 @@
 
 			$("#totalPrice").text("Total Price: " + (packagePrice + addOnPrice));
 			$("#formPrice").val(packagePrice + addOnPrice);
+			
+			document.getElementById('BookingForm').addEventListener('submit', function(event) {
+                var totalPrice = parseInt($("#totalPrice").text().split(" ")[2]);
+                document.getElementById('formPrice').value = totalPrice;
+            });
+			
+			
+			if(price2 === "Your Student | 399") {
+            $("#downPayment").text("Downpayment: " + (packagePrice + addOnPrice) * 0.50);
+			$("#formDownPayment").val((packagePrice + addOnPrice) * 0.50);
+			
+            }
+			else {
+			document.getElementById('downPayment').innerText = 'Downpayment: 500PHP';
+			$("#formDownPayment").val(500);
+			}
 		};
 	</script>
 
@@ -556,18 +577,19 @@
 				alert("Please select a date and time.");
 			}
 
-			if (package === "") {
+			if (package === "" || package === "None | 0 PHP") {
 				alert("Please select a package.");
 			}
 
-			else {
+			if(date !== "" && time !== "" && package !== "" && package !== "None | 0 PHP") {
 				alert("Booking Successful");
 			}
+			
+			// document.getElementById('BookingForm').addEventListener('submit', function(event) {
+            //     event.preventDefault();
+            //     checkDateTime();
+            // });
 		}
-	</script>
-
-	<script>
-
 	</script>
 
 </body>
