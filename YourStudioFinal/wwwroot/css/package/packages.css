@@ -17,7 +17,8 @@ main{
 
 
 .add-ons-container {
-    max-width: 700px;
+    max-width:600px;
+    width:400px;
     max-height: 200px;
     margin-left:100px;
     overflow: auto;
@@ -27,7 +28,7 @@ main{
 .reminders-container {
     max-width: 600px;
     max-height: 200px;
-    margin-right: 100px;
+    
     overflow: auto;
 }
 .text-center {
@@ -523,7 +524,7 @@ div.desc {
     font-weight: bolder;
     font-size: 17px;
     margin-left: 350px;
-    margin-top: -200px;
+    margin-top: -230px;
     margin-bottom: 25px;
 }
 

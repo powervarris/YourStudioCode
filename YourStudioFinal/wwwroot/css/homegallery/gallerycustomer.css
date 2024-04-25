@@ -316,7 +316,8 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #FDF8F2;/* Set your desired background color */
-    padding: 20px; /* Adjust padding as needed */
+    padding: 5px; /* Adjust padding as needed */
+    margin-bottom:10px;
 }
 
 .footer-container a {
