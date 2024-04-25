@@ -181,16 +181,16 @@
     }
 
     .pack {
-        margin: 60px 0 0 600px;
+        margin: 60px 0 0 650px;
     }
 
     .Adds {
-        margin: 0 0 0 600px;
+        margin: 0 0 0 650px;
     }
 
     #Srvc {
         left: 480px;
-        margin-top: -445px;
+        margin-top: -385px;
         margin-left: 0px;
     }
 
@@ -216,24 +216,24 @@
     }
 
     #slctDate {
-        left: 52.9%;
+        left: 54.9%;
     }
 
     .pack {
-        margin: 0px 0 0 850px;
+        margin: 0px 0 0 680px;
     }
 
     .Adds {
-        margin: 0 0 0 850px;
+        margin: 0 0 0 680px;
     }
 
     #Srvc {
         left: 620px;
-        margin-top: -445px;
+        margin-top: -315px;
     }
 
     .time-container .time {
-        margin-left: 240px;
+        margin-left: 170px;
     }
 }
 
@@ -335,6 +335,7 @@ label {
 .btnT {
     height: 61px;
     width: 150px;
+    display: inline-block;
     padding: 5px 10px;
     margin: 5px;
     border: 1px solid #ccc;

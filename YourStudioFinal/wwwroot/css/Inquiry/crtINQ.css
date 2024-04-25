@@ -189,10 +189,12 @@ p {
 }
 
 footer {
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FDF8F2;
-    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FDF8F2; /* Set your desired background color */
+    padding: 5px; /* Adjust padding as needed */
+    margin-bottom: 10px;
 }
 
 .footer-container a {
@@ -216,4 +218,5 @@ footer {
     text-align: center;
     color: black;
     margin-top: 10px;
+    margin-bottom: -10px;
 }
