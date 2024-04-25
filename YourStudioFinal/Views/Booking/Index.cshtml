@@ -154,7 +154,8 @@
 		</div>
 
 		<hr />
-		<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm" required>
+		<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm" onsubmit="return checkBooking()">
+
 			<input name="date" id="formDate" hidden required/>
 			<input name="time" id="formTime" hidden required/>
 			<input name="packages" id="formPackage" hidden required/>
@@ -556,7 +557,17 @@
 			}
 		};
 	</script>
+	<script>
+		function checkBooking() {
+			var selectedPackage = document.getElementById("package").value;
 
+			if (selectedPackage === "None | 0 PHP") {
+				alert("Please select a package.");
+				return false;
+			}
+			return true;
+		}
+	</script>
 	<script>
 		function updateTime() {
 			const now = new Date();
