@@ -5,7 +5,9 @@
     width: 100%
 }
 
-
+main{
+    margin-top:75px;
+}
 
 
 #slider {
@@ -757,29 +759,8 @@ body, html {
         margin-top: -25px;
         margin-left: 300px;
     }
-    .wrapper-nav {
-        width: 100%;
-        margin-bottom: -20px;
-    }
+   
 
-    .wrapper-navbar-logo {
-        width: fit-content;
-        height:20%;
-        margin-right:-50px;
-    }
-
-        .wrapper-navbar-logo img {
-            height: 40px;
-            margin-top:-105px;
-            margin-left:120px;
-          
-            
-        }
-
-    .wrapper-navbar-menu {
-        width: fit-content;
-        margin-top: -65px;
-    }
 
     .wrapper-packages {
         width: 100%
