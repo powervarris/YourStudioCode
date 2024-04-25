@@ -101,7 +101,6 @@ body {
     margin: 0;
     background-image: url('background.png');
     padding: 0;
-    background-image: url('../../verification.png');
 }
 
 
@@ -110,6 +109,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-size: 100% auto;
+    background-image: url('../../verification.png');
     background-position: center;
     background-repeat: no-repeat;
 }
