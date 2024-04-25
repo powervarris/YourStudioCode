@@ -288,7 +288,11 @@ div.gallery {
         border: 1px solid #777;
     }
 
-   
+.container {
+    min-height: 100vh;
+    margin-top: auto;
+    margin-bottom:600px;
+}
 
 div.desc {
     padding: 15px;
@@ -308,11 +312,11 @@ div.desc {
 
 
 footer {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: -500px;
-    padding: 20px;
-    margin-top: 200px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FDF8F2;/* Set your desired background color */
+    padding: 20px; /* Adjust padding as needed */
 }
 
 .footer-container a {
