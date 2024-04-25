@@ -1,11 +1,14 @@
 ﻿
 
 
+
+
+
 body {
 }
 
-main{
-    margin-top:50px;
+main {
+    margin-top: 50px;
 }
 
 .container {
@@ -17,20 +20,19 @@ main{
 
 
 .add-ons-container {
-    max-width:600px;
-    width:400px;
+    max-width: 600px;
+    width: 400px;
     max-height: 200px;
-    margin-left:100px;
+    margin-left: 100px;
     overflow: auto;
-   
 }
 
 .reminders-container {
     max-width: 600px;
     max-height: 200px;
-    
     overflow: auto;
 }
+
 .text-center {
     text-align: center;
 }

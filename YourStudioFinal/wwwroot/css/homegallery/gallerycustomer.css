@@ -7,6 +7,8 @@
 
 
 
+
+
 .gall {
     font-family: 'Montserrat Thin';
     font-weight: bold;
@@ -15,7 +17,6 @@
     text-align: center;
     font-size: 40px;
     margin-top: 20px;
-  
 }
 
 .noitems {
@@ -34,7 +35,7 @@ nav2 {
     font-weight: 500;
     font-family: Calibri;
     font-size: 20px;
-    margin-top:40px;
+    margin-top: 40px;
 }
 
 .nav2list-position {
@@ -269,7 +270,7 @@ li.nav2 {
 
 div.gallery img {
     width: 100%;
-    height:350px;
+    height: 350px;
     border-style: solid;
     border-color: burlywood;
     object-fit: cover;
@@ -280,6 +281,7 @@ div.gallery {
     border-style: solid;
     border-color: burlywood;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
 
@@ -291,7 +293,7 @@ div.gallery {
 .container {
     min-height: 100vh;
     margin-top: auto;
-    margin-bottom:600px;
+    margin-bottom: 800px;
 }
 
 div.desc {
@@ -315,9 +317,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #FDF8F2;/* Set your desired background color */
-    padding: 5px; /* Adjust padding as needed */
-    margin-bottom:10px;
+    background-color: #FDF8F2; /* Set your desired background color */
+    padding: 20px; /* Adjust padding as needed */
 }
 
 .footer-container a {
