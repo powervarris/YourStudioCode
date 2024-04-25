@@ -11,7 +11,7 @@ namespace YourStudioFinal.Controllers;
 public class InquiryController : Controller
 {
     private readonly ILogger<InquiryController> _logger;
-    
+
     private readonly ApplicationDbContext _context;
 
     private readonly UserManager<User> _userManager;
@@ -22,20 +22,9 @@ public class InquiryController : Controller
         _context = context;
         _logger = logger;
     }
-    public async Task<ActionResult> clientInquiry()
+    public ActionResult clientInquiry()
     {
-        var UserDetails = await _userManager.GetUserAsync(User);
-        if (UserDetails != null)
-        {
-            ViewBag.User = UserDetails;
-            ViewBag.isLogged = true;
-        }
-        else
-        {
-            ViewBag.isLogged = false;
-            TempData["Error"] = "You need to login to access this page";
-            return RedirectToAction("Index", "Account");
-        }
+        ViewBag.isLogged = false;
         return View();
     }
 
@@ -47,22 +36,11 @@ public class InquiryController : Controller
         _context.SaveChanges();
         return RedirectToAction("clientInquiry");
     }
-    
-    public async Task<ActionResult> Inquirylist()
+
+    public ActionResult Inquirylist()
     {
-        var UserDetails = await _userManager.GetUserAsync(User);
-        if (UserDetails != null)
-        {
-            ViewBag.User = UserDetails;
-            ViewBag.isLogged = true;
-        }
-        else
-        {
-            ViewBag.isLogged = false;
-            TempData["Error"] = "You need to login to access this page";
-            return RedirectToAction("Index", "Account");
-        }
-        return View(_context.Inquiries.Include(e => e.accountUser).ToList());
+        ViewBag.isLogged = false;
+        return View();
     }
     [Authorize(Roles = "Admin")]
     public async Task<ActionResult> iListAdmin()
@@ -80,7 +58,7 @@ public class InquiryController : Controller
         var inquiries = _context.Inquiries.Include(e => e.accountUser).ToList();
         return View(inquiries);
     }
-    
+
     public async Task<ActionResult> Delete(string id)
     {
         var UserDetails = await _userManager.GetUserAsync(User);

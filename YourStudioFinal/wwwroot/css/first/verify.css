@@ -1,12 +1,11 @@
 ﻿
 
-
-.wrapper-nav {
+.navbar {
     width: 100%;
-    position: fixed; /* or position: absolute; */
-    top: 0; /* or adjust as needed */
-    left: 0; /* or adjust as needed */
-    z-index: 9999; /* Ensure it's above other content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 .login {
@@ -72,15 +71,11 @@ h1 {
     background-position: center;
 }
 
-@media (min-width: 768px) {
-    .bg-image {
-        background-image: url('background.png');
-        margin: 0;
-        padding: 0;
-        background-repeat: no-repeat;
+@media (max-width: 768px) {
+    .col-md-8, .col-lg-6 {
+        max-width: 50%;
     }
 }
-
 
 
 .form-floating label {
@@ -104,7 +99,9 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
+    background-image: url('background.png');
     padding: 0;
+    background-image: url('../../verification.png');
 }
 
 
@@ -112,10 +109,9 @@ body {
     min-height: 100vh;
     margin: 0;
     box-sizing: border-box;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('../../verification.png');
 }
 
 .right {

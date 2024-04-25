@@ -10,12 +10,11 @@
     <link href="~/https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
     <link href="~/fonts/style.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
-    <link href="~/css/first/reg.css" rel="stylesheet" />
+    <link href="~/css/first/login.css" rel="stylesheet" />
     <title>Register</title>
 </head>
 <body>
     <header>
-       
     </header>
     <div class="body-bg">
         <div class="row g-0">
@@ -48,25 +47,25 @@
                     </div>
                 </div>
             </div>
-            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
-                <div class="d-lg-flex half">
-                    <div class="d-lg-flex half"></div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/greg2.JPG" style="margin-left:-80px;transform:rotate(-10deg)" />
-                    </div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/css/reg1.JPG" style="margin-left:210px; z-index:3" />
-                    </div>
-                    <div class="bg order-1 order-md-2" id="img1">
-                        <img src="~/reg3.JPG" style="margin-left:470px; transform:rotate(10deg)" />
-                    </div>
-                    <div style="position:relative; left:450px; top:580px">
-                        <h2 class="tag">YOUR<STRONG>SIGNING!</STRONG></h2>
-                    </div>
+            <div class="kanawan col-md-8 col-lg-6">
+                <div class="right d-flex align-items-center py-5">
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        window.onload = function () {
+            const kanawan = document.querySelector('.kanawan');
+            const resizeBackground = () => {
+                const zoomLevel = window.devicePixelRatio;
+                const width = kanawan.offsetWidth * zoomLevel;
+                const height = kanawan.offsetHeight * zoomLevel;
+                kanawan.style.backgroundSize = `${width}px ${height}px`;
+            };
+            window.addEventListener('resize', resizeBackground);
+            resizeBackground();
+        };
+    </script>
     <script>
         var currentHour = new Date().getHours();
 

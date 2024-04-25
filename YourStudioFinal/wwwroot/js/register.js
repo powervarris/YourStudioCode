@@ -11,6 +11,19 @@ if (currentHour >= 0 && currentHour < 12) {
 
 var passwordInput = document.getElementById('floatingPassword');
 var passwordFormat = document.getElementById('passwordFormat');
+var usernameInput = document.getElementById('floatingInput');
+var emailInput = document.getElementById('floatingEmail');
+
+usernameInput.addEventListener('input', function () {
+    var usernameValue = usernameInput.value.trim();
+    var isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(usernameValue);
+    if (isEmail) {
+        usernameInput.setCustomValidity('Username cannot be an email address');
+    } else {
+        usernameInput.setCustomValidity('');
+    }
+});
+
 
 passwordInput.addEventListener('input', function () {
     if (passwordInput.validity.valid) {
@@ -36,6 +49,17 @@ confirmPasswordInput.addEventListener('input', function () {
 var registrationForm = document.getElementById('registration-form');
 registrationForm.addEventListener('input', function () {
     registrationForm.reportValidity();
+});
+fnameInput.addEventListener('input', function () {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+    }
+});
+
+lnameInput.addEventListener('input', function () {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+    }
 });
 passwordInput.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {

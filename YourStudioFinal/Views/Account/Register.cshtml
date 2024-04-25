@@ -23,23 +23,23 @@
         }
 
         .form-floating {
-            position: relative; 
+            position: relative;
         }
 
         .field-icon {
             position: absolute;
-            top: 50%; /* Position the icon vertically centered */
-            right: 10px; /* Adjust the distance from the right */
-            transform: translateY(-50%); /* Center the icon vertically */
-            cursor: pointer; /* Add cursor pointer */
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
         }
 
         .navbar {
             width: 100%;
-            position: fixed; /* or position: absolute; */
-            top: 0; /* or adjust as needed */
-            left: 0; /* or adjust as needed */
-            z-index: 9999; /* Ensure it's above other content */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
         }
     </style>
 </head>
@@ -57,6 +57,14 @@
                                     <h3 id="greeting"><strong></strong></h3>
                                 </div>
                                 <form asp-action="AddUser" method="post" id="registration-form">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingFname" placeholder="John" name="Fname" required onchange="this.nextElementSibling.focus()">
+                                        <label for="floatingFname">First Name</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingLname" placeholder="Doe" name="Lname" required onchange="this.nextElementSibling.focus()">
+                                        <label for="floatingLname">Last Name</label>
+                                    </div>
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="UserName" required onchange="this.nextElementSibling.focus()">
                                         <label for="floatingInput">Username</label>
@@ -120,7 +128,19 @@
         </div>
     </div>
     <script src="~/js/register.js"></script>
-    
+    <script>
+        window.onload = function () {
+            const kanawan = document.querySelector('.kanawan');
+            const resizeBackground = () => {
+                const zoomLevel = window.devicePixelRatio;
+                const width = kanawan.offsetWidth * zoomLevel;
+                const height = kanawan.offsetHeight * zoomLevel;
+                kanawan.style.backgroundSize = `${width}px ${height}px`;
+            };
+            window.addEventListener('resize', resizeBackground);
+            resizeBackground();
+        };
+    </script>
     <script>
         const passwordField = document.getElementById("floatingPassword");
         const togglePassword = document.querySelector(".toggle-password");

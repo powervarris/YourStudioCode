@@ -14,10 +14,22 @@
     <style>
         .navbar {
             width: 100%;
-            position: fixed; /* or position: absolute; */
-            top: 0; /* or adjust as needed */
-            left: 0; /* or adjust as needed */
-            z-index: 9999; /* Ensure it's above other content */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+        }
+
+        .form-floating {
+            position: relative;
+        }
+
+        .field-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
         }
     </style>
 </head>
@@ -42,6 +54,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
                                         <label for="floatingPassword">Password</label>
+                                        <span class="fa fa-fw fa-eye field-icon toggle-password"></span>
                                     </div>
                                     <div class="form-check d-flex justify-content-between mb-3">
                                         <div>
@@ -77,6 +90,53 @@
             </div>
         </div>
     </div>
+    <script>
+        window.onload = function () {
+            const kanawan = document.querySelector('.kanawan');
+            const resizeBackground = () => {
+                const zoomLevel = window.devicePixelRatio;
+                const width = kanawan.offsetWidth * zoomLevel;
+                const height = kanawan.offsetHeight * zoomLevel;
+                kanawan.style.backgroundSize = `${width}px ${height}px`;
+            };
+            window.addEventListener('resize', resizeBackground);
+            resizeBackground();
+        };
+    </script>
+    <script>
+        const passwordField = document.getElementById("floatingPassword");
+        const togglePassword = document.querySelector(".toggle-password");
+
+        togglePassword.addEventListener("click", function () {
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                togglePassword.classList.remove("fa-eye");
+                togglePassword.classList.add("fa-eye-slash");
+            } else {
+                passwordField.type = "password";
+                togglePassword.classList.remove("fa-eye-slash");
+                togglePassword.classList.add("fa-eye");
+            }
+        });
+
+    </script>
+
+    <script>
+        const confirmPasswordField = document.getElementById("floatingConfirmPassword");
+        const toggleConfirmPassword = document.querySelector(".toggle-confirm-password");
+
+        toggleConfirmPassword.addEventListener("click", function () {
+            if (confirmPasswordField.type === "password") {
+                confirmPasswordField.type = "text";
+                toggleConfirmPassword.classList.remove("fa-eye");
+                toggleConfirmPassword.classList.add("fa-eye-slash");
+            } else {
+                confirmPasswordField.type = "password";
+                toggleConfirmPassword.classList.remove("fa-eye-slash");
+                toggleConfirmPassword.classList.add("fa-eye");
+            }
+        });
+    </script>
     <script>
         var currentHour = new Date().getHours();
         var greetingElement = document.getElementById("greeting");

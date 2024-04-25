@@ -30,16 +30,16 @@ public class AccountController : Controller
     public async Task<IActionResult> Index()
     {
         var UserDetails = await _userManager.GetUserAsync(User);
-            if (UserDetails != null)
-            {
-                ViewBag.User = UserDetails;
-                ViewBag.isLogged = true;
-            }
-            else
-            {
-                ViewBag.isLogged = false;
-            }
-        
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
+
         return View();
     }
 
@@ -55,7 +55,7 @@ public class AccountController : Controller
         {
             ViewBag.isLogged = false;
         }
-        
+
         return View();
     }
     public IActionResult Forget()
@@ -152,7 +152,7 @@ public class AccountController : Controller
     public async Task<IActionResult> validateAccount(string Email, string UserName, string password, string mobileNumber)
     {
         var user = await _userManager.FindByEmailAsync(Email);
-        
+
         if (Email != null)
         {
             var apiKey = "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";
@@ -174,13 +174,16 @@ public class AccountController : Controller
 
         return RedirectToAction("Register");
     }
-    
+
     public async Task<IActionResult> verifyAccountOtp(int otp, User usermodel)
     {
-        if (otp == (int)TempData["otp"])
+        if (otp != (int)TempData["otp"])
         {
-            await AddUser(usermodel);
+            TempData["Error"] = "The OTP entered does not match. Please try again.";
+            return RedirectToAction("verifyEmail");
         }
+
+        await AddUser(usermodel);
 
         return RedirectToAction("Index");
     }
