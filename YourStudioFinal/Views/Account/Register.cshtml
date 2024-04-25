@@ -57,13 +57,19 @@
                                     <h3 id="greeting"><strong></strong></h3>
                                 </div>
                                 <form asp-action="AddUser" method="post" id="registration-form">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingFname" placeholder="John" name="Fname" required onchange="this.nextElementSibling.focus()">
-                                        <label for="floatingFname">First Name</label>
-                                    </div>
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingLname" placeholder="Doe" name="Lname" required onchange="this.nextElementSibling.focus()">
-                                        <label for="floatingLname">Last Name</label>
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="floatingFname" placeholder="John" name="Fname" required onchange="this.nextElementSibling.focus()">
+                                                <label for="floatingFname">First Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="floatingLname" placeholder="Doe" name="Lname" required onchange="this.nextElementSibling.focus()">
+                                                <label for="floatingLname">Last Name</label>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="UserName" required onchange="this.nextElementSibling.focus()">

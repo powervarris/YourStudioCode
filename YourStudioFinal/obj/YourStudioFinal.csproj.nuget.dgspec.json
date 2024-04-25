@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO-15IMH05\\Desktop\\last na\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj": {}
+    "C:\\Users\\LENOVO-15IMH05\\Desktop\\kala ko last na\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO-15IMH05\\Desktop\\last na\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj": {
+    "C:\\Users\\LENOVO-15IMH05\\Desktop\\kala ko last na\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO-15IMH05\\Desktop\\last na\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO-15IMH05\\Desktop\\kala ko last na\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj",
         "projectName": "YourStudioFinal",
-        "projectPath": "C:\\Users\\LENOVO-15IMH05\\Desktop\\last na\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj",
+        "projectPath": "C:\\Users\\LENOVO-15IMH05\\Desktop\\kala ko last na\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj",
         "packagesPath": "C:\\Users\\LENOVO-15IMH05\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO-15IMH05\\Desktop\\last na\\YourStudioCode\\YourStudioFinal\\obj\\",
+        "outputPath": "C:\\Users\\LENOVO-15IMH05\\Desktop\\kala ko last na\\YourStudioCode\\YourStudioFinal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

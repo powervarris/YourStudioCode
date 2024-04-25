@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lYM5LThFRv409LF7iJafP+zHQre0KRTsbEXguto43+5Jspz3fZWkbL4KogmRTIbqTPJe4nu8qIdJ/9XDKes2kA==",
+  "dgSpecHash": "ql1rGk8qnLZJmynF8UuUVARPTIwvCjemReRq0S/e5tT1mSrIDQFKISiLGGK6UTd6bbmMxSQyzjlgDme+ISQyXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO-15IMH05\\Desktop\\last na\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO-15IMH05\\Desktop\\kala ko last na\\YourStudioCode\\YourStudioFinal\\YourStudioFinal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO-15IMH05\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\LENOVO-15IMH05\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
