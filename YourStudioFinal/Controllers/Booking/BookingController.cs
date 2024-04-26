@@ -449,7 +449,7 @@ public class BookingController : Controller
             ViewBag.isLogged = false;
         }
         
-        return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Paid").ToList());
+        return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Paid" || x.status == "DP_Paid").ToList());
     }
 
     [Authorize(Roles = "Admin")]
