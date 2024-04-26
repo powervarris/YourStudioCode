@@ -42,6 +42,7 @@
                     <table class="custom-table">
                         <tr>
                             <td>Select</td>
+                            <td>Name</td>
                             <td>Date</td>
                             <td>Time</td>
                             <td>Package</td>
@@ -60,6 +61,7 @@
                                 {
                                 <tr>
                                     <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete" /></td>
+                                    <td>@Model[i].accountUser.Lname</td>
                                     <td>@Model[i].date</td>
                                     <td>@Model[i].time</td>
                                     <td>@Model[i].packages</td>

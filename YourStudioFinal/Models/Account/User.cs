@@ -19,5 +19,9 @@ namespace YourStudioFinal.Models;
         [StringLength(11, ErrorMessage = "The Required Length is 11")]
         public string mobileNumber { get; set; }
         
+        public string? Fname { get; set; }
+        
+        public string? Lname { get; set; }
+        
         public DateTime dateCreated { get; set; }
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m9TZ4FOr1j3gl60W0XHhcP+6/qoys9pYLq/b79N8+jU=",
+  "Hash": "pOBTdrz3DpmW1aZH3zjVOuc5gfhIPU5nvzw0URIsWBM=",
   "Source": "YourStudioFinal",
   "BasePath": "_content/YourStudioFinal",
   "Mode": "Default",
@@ -10465,6 +10465,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\SDD1 3 - 3ITF-Copy of Page-9.drawio.png"
+    },
+    {
+      "Identity": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\Your Squad 1.JPG",
+      "SourceId": "YourStudioFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\",
+      "BasePath": "_content/YourStudioFinal",
+      "RelativePath": "uploads/Your Squad 1.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Your Squad 1.JPG"
     },
     {
       "Identity": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\urstud.jpg",

@@ -21,8 +21,7 @@ public class BookingController : Controller
         _signInManager = signInManager;
         _context = context;
     }
-    
-    [Authorize(Roles = "User, Admin")] 
+
     public async Task<IActionResult> Payment()
     {
         var UserDetails = await _userManager.GetUserAsync(User);
@@ -193,11 +192,10 @@ public class BookingController : Controller
             
             var apiKey = "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";
             var client = new SendGridClient(apiKey);
-            var from_email = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudio");
-            var subject = "Booking Confirmation Update";
-            var email = UserDetails.Email;
-            var to_email = new EmailAddress(email);
-            var htmlContent4 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Dear</h3><h3>We hope this message finds you well,</h3><h3>We are delighted to inform you that your booking with YourStudio has been successfully accepted! We look forward to welcome you on " + booking.date + " at " + booking.time + " for you scheduled services.</h3><h3>We kindly request that you proceed with the payment at your earliest convention. You are given time to pay minimum 500 down payment to ensure the settled booking. Note that if you have avail the YourStudent Package Deal you are required to pay a downpayment of 50%</h3><h3>Should you have any special request or require further assistance, please do not hesitate to reach out to our team.</h3><h3>Your satisfaction is our top priority, and we are committed to ensuring that your experience with us exceed your expectionations! Thank you for choosing YourStudio. We are honored to have the opportunity to serve you and look forward to prroviding you with an exceptional experience.</h3><br><br><h4>Thank you for you understanding and continued support.</h4><h4>Best Regards,</h4><h4>Your Studio</h4></div>";
+            var from_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudioSystem");
+            var to_emailAdmin = new EmailAddress("yourstudio.bacoor@gmail.com");
+            var subjectAdmin = "Booking Notification";
+            var htmlContent4 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Hello,</h3><h3>A customer with the following service details has completed a payment transaction to their appointed booking.</h3><h3>Full name: " + UserDetails.Fname + UserDetails.Lname + " </h3><h3>Date: " + booking.date + " </h3><h3>Time: " + booking.time + " </h3><h3>Package: " + booking.packages + " </h3><h3>Add-Ons: " + booking.addOns + " </h3><h3>Total Price: " + booking.totalPrice + " </h3><h3>Down Payment: " + booking.downPayment + " </h3><br><h3>Please verify the reference code and validity of the receipt in the Booking List.</h3></div>";
             var plainTextContent = "You have successfully paid your booking!"
                                    + Environment.NewLine
                                    + Environment.NewLine
@@ -206,7 +204,7 @@ public class BookingController : Controller
                                    + "Hope to see you there! "
                                    + Environment.NewLine
                                    + "Thank you for choosing YourStudio!";
-            var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent4);
+            var msg = MailHelper.CreateSingleEmail(from_emailAdmin, to_emailAdmin, subjectAdmin, "", htmlContent4);
             var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         }
         return RedirectToAction("Payment");
@@ -294,6 +292,7 @@ public class BookingController : Controller
         var subject = "Booking Confirmation";
         var to_email = new EmailAddress(email);
         var hostURL = new Uri($"{Request.Scheme}://{Request.Host}/Booking/Payment");
+        var htmlContent44 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Dear</h3><h3>We hope this message finds you well,</h3><h3>We are delighted to inform you that your booking with YourStudio has been successfully accepted! We look forward to welcome you on " + bookingmodel.date + " at " + bookingmodel.time + " for you scheduled services.</h3><h3>We kindly request that you proceed with the payment at your earliest convention. You are given time to pay minimum 500 down payment to ensure the settled booking. Note that if you have avail the YourStudent Package Deal you are required to pay a downpayment of 50%</h3><h3>Should you have any special request or require further assistance, please do not hesitate to reach out to our team.</h3><h3>Your satisfaction is our top priority, and we are committed to ensuring that your experience with us exceed your expectionations! Thank you for choosing YourStudio. We are honored to have the opportunity to serve you and look forward to prroviding you with an exceptional experience.</h3><h3>Here is the link of the payment " + hostURL + "</h3><br><br><h4>Thank you for you understanding and continued support.</h4><h4>Best Regards,</h4><h4>Your Studio</h4></div>";
         var plainTextContent = "Your Booking has been Accepted! Please upload your payment receipt to confirm your booking." 
                                + Environment.NewLine
                                + Environment.NewLine
@@ -302,7 +301,7 @@ public class BookingController : Controller
                                + Environment.NewLine
                                + Environment.NewLine
                                + "Thank you for choosing YourStudio!";
-        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, plainTextContent, "");
+        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent44);
         var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         return RedirectToAction("BList");
     }
@@ -353,7 +352,7 @@ public class BookingController : Controller
         var from_email = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudio");
         var subject = "Booking Update Status";
         var to_email = new EmailAddress(email2);
-        var htmlContent3 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Dear</h3><h3>We hope this message finds you well,</h3><h3>We regret to inform you that your recent booking with us has unfortunately been declined. We sincerely apologize for any inconvenience it may have caused.</h3><h3>YourStudio has carefully reviewed your booking request, and unfortunately, we are unable to accommodate it.</h3><h3>If you have any questions or require further assistance, please do not hesitate to contact us. We are here to assist you in any way we can.</h3><br><br><h4>Thank you for you understanding and continued support.</h4><h4>Best Regards,</h4><h4>Your Studio</h4></div>";
+        var htmlContent3 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Dear, " + UserDetails.Fname + "</h3><h3>We hope this message finds you well,</h3><h3>We regret to inform you that your recent booking with us has unfortunately been declined. We sincerely apologize for any inconvenience it may have caused.</h3><h3>YourStudio has carefully reviewed your booking request, and unfortunately, we are unable to accommodate it.</h3><h3>If you have any questions or require further assistance, please do not hesitate to contact us. We are here to assist you in any way we can.</h3><br><br><h4>Thank you for you understanding and continued support.</h4><h4>Best Regards,</h4><h4>Your Studio</h4></div>";
         var plainTextContent = "Your Booking has been Declined..."
                                + Environment.NewLine
                                + Environment.NewLine
@@ -383,8 +382,7 @@ public class BookingController : Controller
         return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).Where(x => x.status == "Pending").ToList()); 
 
     }
-
-    [Authorize(Roles = "User, Admin")]
+    
     public async Task<IActionResult> BookingAll()
     {
         var UserDetails = await _userManager.GetUserAsync(User);
@@ -396,6 +394,8 @@ public class BookingController : Controller
         else
         {
             ViewBag.isLogged = false;
+            TempData["Error"] = "You need to login to access this page";
+            return RedirectToAction("Index", "Account");
         }
         
         return View(_context.Booking.Include(x => x.accountUser).Include(x => x.payment).ToList());

@@ -43,12 +43,15 @@
                             <td>Add Ons</td>
                             <td>Price</td>
                             <td>Payment Receipt</td>
+                            <td>Status</td>
+                            <td>Mark as Full</td>
                         </tr>
                         <form id="deleteContent" method="post">
                             @for (int i = 0; i < Model.Count; i++)
                             {
                             <tr>
                                 <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete" /></td>
+                                <td>@Model[i].accountUser.Lname</td>
                                 <td>@Model[i].date</td>
                                 <td>@Model[i].time</td>
                                 <td>@Model[i].accountUser.mobileNumber</td>
@@ -57,12 +60,14 @@
                                 <td>@Model[i].totalPrice</td>
                                     @if (Model[i].payment != null)
                                     {
-                                    <td><input type="button" onclick="location.href='@System.IO.Path.Combine("../uploads/", @Model[i].payment?.fileName)';" value="See Receipt" /></td>
+                                    @* <td><input type="button" onclick="location.href='@System.IO.Path.Combine("../uploads/", @Model[i].payment?.fileName)';" value="See Receipt" /></td> *@
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2" onclick='changeModelImage("@Model[i].payment.fileName", "@Model[i].Id")'>Confirmation</button></td>
                                     }
                                     else
                                     {
                                     <td>Not Paid</td>
                                     }
+                                    <td><button asp-action="changeStatusToPaid" asp-controller="Booking" asp-route-id="@Model[i].Id">Fully Paid</button></td>
                             </tr>
                             }
                         </form>
@@ -72,6 +77,32 @@
             <br />
         </div>
         <br />
+        
+        <!-- Modal -->
+        	<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        	  <div class="modal-dialog modal-dialog-centered" role="document">
+        	    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Payment Confirmation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="text-align: -webkit-center">
+                        <img id="viewReceipt" style="width: 60%; height: 60%;">
+                        <br/>
+                        <br/>
+                        <div style="text-align: center">
+                                <a asp-action="changeToDP_Paid" asp-route-Id="abcdefg" asp-controller="Booking" id="acceptPayment" class="button no-underline">Accept</a>
+                                <a asp-action="changeStatusToReject" asp-route-Id="abcdefg" asp-controller="Booking" id="rejectPayment" class="button reject">Reject</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                  </div>
+        	    </div>
+        	  </div>
+        	</div>
+        
         <section class="BtnCont">
             <button type="button" id="RmvBtn" data-toggle="modal" data-target="#exampleModalCenter">REMOVE</button>
 
@@ -108,7 +139,17 @@
         </section>
     </section>
 
-    <script>
+<script>
+function changeModelImage(image, Id) {
+  document.getElementById("viewReceipt").src = "../uploads/" + image;
+var acceptPayment = document.getElementById("acceptPayment")
+var rejectPayment = document.getElementById("rejectPayment")
+acceptPayment.setAttribute('href', acceptPayment.getAttribute("href").replace('abcdefg', Id));
+rejectPayment.setAttribute('href', rejectPayment.getAttribute("href").replace('abcdefg', Id));
+}
+</script>
+
+<script>
         setDelete = function () {
 
             var checked = document.querySelectorAll('input[type="checkbox"]:checked');

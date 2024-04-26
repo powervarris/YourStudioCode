@@ -138,7 +138,7 @@ public class AccountController : Controller
             var subject = "YourStudio Forgot Password Verification OTP";
             var to_email = new EmailAddress(email);
             var otp = new Random().Next(100000, 999999);
-            var htmlcontent = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>We noticed that you’re having trouble logging in. No worries, with the help of YourStudio you can regain access to your account. Please use the following One-Time Password (OTP) to verify your identity and reset your forgotten password.</h3><br><br><br><h3>" + otp + "is your YourStudio Forgot Password Verification Code.</h3><br><h4>Enter this OTP on the password reset page to proceed.</h4><br><br><br><br><h4>Thank you!</h4><h4>Best Regards,</h4><h4>Your Studio</h4>";
+            var htmlcontent = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Dear, " + user.Fname + "</h3><h3>We noticed that you’re having trouble logging in. No worries, with the help of YourStudio you can regain access to your account. Please use the following One-Time Password (OTP) to verify your identity and reset your forgotten password.</h3><br><br><br><h3>" + otp + "is your YourStudio Forgot Password Verification Code.</h3><br><h4>Enter this OTP on the password reset page to proceed.</h4><br><br><br><br><h4>Thank you!</h4><h4>Best Regards,</h4><h4>Your Studio</h4>";
             var plainTextContent = "Enter the otp given in this email to reset your password " + otp;
             var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlcontent);
             var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
@@ -150,7 +150,7 @@ public class AccountController : Controller
         return RedirectToAction("Forget");
     }
 
-    public async Task<IActionResult> validateAccount(string Email, string UserName, string password, string mobileNumber)
+    public async Task<IActionResult> validateAccount(string Email, string UserName, string password, string mobileNumber, string Fname, string Lname)
     {
         var user = await _userManager.FindByEmailAsync(Email);
 
@@ -162,9 +162,12 @@ public class AccountController : Controller
             var subject = "Register Account Verification Confirmation";
             var to_email = new EmailAddress(Email);
             var otp = new Random().Next(100000, 999999);
+            var htmlContent10 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Hello,</h3><h3>"+ otp +" is your YourStudio Registration verification code</h3><h3>Enter the code above into the system to finish the registration process.</h3><h3>IMPORTANT: Don’t share your security codes with anyone. YourStudio will never ask for your codes. This can include things like texting your code, screen sharing, etc. By sharing your security codes with someone else, you are putting your account and its content at high risk.</h3><br><h4>Best Regards,</h4><h4>Your Studio</h4></div>";
             var plainTextContent = "Enter the otp given in this email to confirm your account " + otp;
-            var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, plainTextContent, "");
+            var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent10);
             var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+            TempData["Fname"] = Fname;
+            TempData["Lname"] = Lname;
             TempData["Email"] = Email;
             TempData["UserName"] = UserName;
             TempData["password"] = password;
