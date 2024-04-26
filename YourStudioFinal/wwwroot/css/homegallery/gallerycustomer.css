@@ -4,11 +4,6 @@
 
 
 
-
-
-
-
-
 .gall {
     font-family: 'Montserrat Thin';
     font-weight: bold;
@@ -270,7 +265,7 @@ li.nav2 {
 
 div.gallery img {
     width: 100%;
-    height: 350px;
+    height: 390px;
     border-style: solid;
     border-color: burlywood;
     object-fit: cover;
@@ -281,7 +276,7 @@ div.gallery {
     border-style: solid;
     border-color: burlywood;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 
@@ -293,7 +288,6 @@ div.gallery {
 .container {
     min-height: 100vh;
     margin-top: auto;
-    margin-bottom: 800px;
 }
 
 div.desc {
@@ -315,10 +309,11 @@ div.desc {
 
 footer {
     position: fixed;
+    height: 90px;
     bottom: 0;
     width: 100%;
-    background-color: #FDF8F2; /* Set your desired background color */
-    padding: 20px; /* Adjust padding as needed */
+    background-color: #FDF8F2;
+    padding: -20px;
 }
 
 .footer-container a {
@@ -336,13 +331,14 @@ footer {
 
     .social-icons a {
         margin: 0 5px;
+        margin-top: -5px;
     }
 
 .copyright {
     text-align: center;
     color: black;
-    margin-top: 10px;
-    margin-bottom: -10px;
+    margin-top: -1px;
+    margin-bottom: 5px;
 }
 
 .black-text {
@@ -352,6 +348,7 @@ footer {
     .black-text:hover {
         color: black;
     }
+
 a.black-text:active,
 a.black-text:hover {
     color: #E89C3B !important;
