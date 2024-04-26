@@ -129,7 +129,17 @@
         }
     </script>
 
-    <script></script>
+    <script>
+    document.getElementById("RmvBtn").addEventListener("click", function() {
+        var checked = document.querySelectorAll('input[type="checkbox"]:checked');
+                    if (checked.length === 0) {
+                        alert('Please select at least one item to delete');
+                        event.preventDefault();
+                        event.stopPropagation();
+                        return;
+                    }
+    });
+    </script>
 </body>
 </html>
 
