@@ -153,6 +153,20 @@ public class AccountController : Controller
     public async Task<IActionResult> validateAccount(string Email, string UserName, string password, string mobileNumber, string Fname, string Lname)
     {
         var user = await _userManager.FindByEmailAsync(Email);
+        var userWithSameUserName = await _userManager.FindByNameAsync(UserName);
+        var userWithSameEmail = await _userManager.FindByEmailAsync(Email);
+        
+        if (userWithSameUserName != null)
+        {
+            TempData["UserNameError"] = "Username already exists. Please choose a different username.";
+            return RedirectToAction("Register");
+        }
+        
+        if (userWithSameEmail != null)
+        {
+            TempData["EmailError"] = "Email already exists. Please choose a different email address.";
+            return RedirectToAction("Register");
+        }
 
         if (Email != null)
         {

@@ -1,1987 +1,2003 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\YourStudioFinal.bundle.scp.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\YourStudioFinal.bundle.scp.css",
       "PackagePath": "staticwebassets\\YourStudioFinal.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\Background.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\Background.png",
       "PackagePath": "staticwebassets\\assets\\Background.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\barkada.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\barkada.JPG",
       "PackagePath": "staticwebassets\\assets\\barkada.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\bday.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\bday.JPG",
       "PackagePath": "staticwebassets\\assets\\bday.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\car1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\car1.JPG",
       "PackagePath": "staticwebassets\\assets\\car1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\car2.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\car2.JPG",
       "PackagePath": "staticwebassets\\assets\\car2.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\car3.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\car3.JPG",
       "PackagePath": "staticwebassets\\assets\\car3.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\car4.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\car4.JPG",
       "PackagePath": "staticwebassets\\assets\\car4.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\car5.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\car5.JPG",
       "PackagePath": "staticwebassets\\assets\\car5.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo.JPG",
       "PackagePath": "staticwebassets\\assets\\duo.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo1.JPG",
       "PackagePath": "staticwebassets\\assets\\duo1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo2.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo2.JPG",
       "PackagePath": "staticwebassets\\assets\\duo2.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo3.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo3.JPG",
       "PackagePath": "staticwebassets\\assets\\duo3.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo4.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo4.JPG",
       "PackagePath": "staticwebassets\\assets\\duo4.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo5.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\duo5.JPG",
       "PackagePath": "staticwebassets\\assets\\duo5.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\family.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\family.JPG",
       "PackagePath": "staticwebassets\\assets\\family.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\fur.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\fur.jpg",
       "PackagePath": "staticwebassets\\assets\\fur.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\graduation.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\graduation.JPG",
       "PackagePath": "staticwebassets\\assets\\graduation.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\homeservice.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\homeservice.JPG",
       "PackagePath": "staticwebassets\\assets\\homeservice.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\logo.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\logo.png",
       "PackagePath": "staticwebassets\\assets\\logo.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\logo2.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\logo2.png",
       "PackagePath": "staticwebassets\\assets\\logo2.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\logofull.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\logofull.png",
       "PackagePath": "staticwebassets\\assets\\logofull.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\logoret.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\logoret.png",
       "PackagePath": "staticwebassets\\assets\\logoret.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\maternity.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\maternity.JPG",
       "PackagePath": "staticwebassets\\assets\\maternity.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo.JPG",
       "PackagePath": "staticwebassets\\assets\\solo.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo1.JPG",
       "PackagePath": "staticwebassets\\assets\\solo1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo2.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo2.JPG",
       "PackagePath": "staticwebassets\\assets\\solo2.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo3.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo3.JPG",
       "PackagePath": "staticwebassets\\assets\\solo3.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo4.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo4.JPG",
       "PackagePath": "staticwebassets\\assets\\solo4.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo5.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\solo5.JPG",
       "PackagePath": "staticwebassets\\assets\\solo5.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\squad.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\squad.JPG",
       "PackagePath": "staticwebassets\\assets\\squad.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\student.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\assets\\student.JPG",
       "PackagePath": "staticwebassets\\assets\\student.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\Book.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\Book.css",
       "PackagePath": "staticwebassets\\css\\Booking\\Book.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\BookL.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\BookL.css",
       "PackagePath": "staticwebassets\\css\\Booking\\BookL.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\CBook.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\CBook.css",
       "PackagePath": "staticwebassets\\css\\Booking\\CBook.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\blist.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\blist.css",
       "PackagePath": "staticwebassets\\css\\Booking\\blist.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\jQuery.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\jQuery.css",
       "PackagePath": "staticwebassets\\css\\Booking\\jQuery.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\payment.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Booking\\payment.css",
       "PackagePath": "staticwebassets\\css\\Booking\\payment.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Gallery\\galleryadmin.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Gallery\\galleryadmin.css",
       "PackagePath": "staticwebassets\\css\\Gallery\\galleryadmin.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Home\\home.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Home\\home.css",
       "PackagePath": "staticwebassets\\css\\Home\\home.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Inquiry\\Inquiry.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Inquiry\\Inquiry.css",
       "PackagePath": "staticwebassets\\css\\Inquiry\\Inquiry.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Inquiry\\crtINQ.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Inquiry\\crtINQ.css",
       "PackagePath": "staticwebassets\\css\\Inquiry\\crtINQ.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Inquiry\\iList.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\Inquiry\\iList.css",
       "PackagePath": "staticwebassets\\css\\Inquiry\\iList.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bg_1.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bg_1.jpg",
       "PackagePath": "staticwebassets\\css\\bg_1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\_media.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\_media.css",
       "PackagePath": "staticwebassets\\css\\bootstraps\\_media.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\mixins\\_background-variant.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\mixins\\_background-variant.css",
       "PackagePath": "staticwebassets\\css\\bootstraps\\mixins\\_background-variant.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\mixins\\_border-radius.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\mixins\\_border-radius.css",
       "PackagePath": "staticwebassets\\css\\bootstraps\\mixins\\_border-radius.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\mixins\\_grid-framework.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\mixins\\_grid-framework.css",
       "PackagePath": "staticwebassets\\css\\bootstraps\\mixins\\_grid-framework.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\mixins\\_screen-reader.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\mixins\\_screen-reader.css",
       "PackagePath": "staticwebassets\\css\\bootstraps\\mixins\\_screen-reader.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\mixins\\_visibility.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\mixins\\_visibility.css",
       "PackagePath": "staticwebassets\\css\\bootstraps\\mixins\\_visibility.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\utilities\\_stretched-link.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\bootstraps\\utilities\\_stretched-link.css",
       "PackagePath": "staticwebassets\\css\\bootstraps\\utilities\\_stretched-link.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\Background.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\Background.png",
       "PackagePath": "staticwebassets\\css\\first\\Background.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\Forget.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\Forget.css",
       "PackagePath": "staticwebassets\\css\\first\\Forget.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\Terms.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\Terms.css",
       "PackagePath": "staticwebassets\\css\\first\\Terms.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\login.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\login.css",
       "PackagePath": "staticwebassets\\css\\first\\login.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\logon.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\logon.png",
       "PackagePath": "staticwebassets\\css\\first\\logon.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\reg.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\reg.css",
       "PackagePath": "staticwebassets\\css\\first\\reg.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\verify.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\first\\verify.css",
       "PackagePath": "staticwebassets\\css\\first\\verify.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\homegallery\\StyleSheet.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\homegallery\\StyleSheet.css",
       "PackagePath": "staticwebassets\\css\\homegallery\\StyleSheet.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\homegallery\\galleryadmin.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\homegallery\\galleryadmin.css",
       "PackagePath": "staticwebassets\\css\\homegallery\\galleryadmin.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\homegallery\\gallerycustomer.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\homegallery\\gallerycustomer.css",
       "PackagePath": "staticwebassets\\css\\homegallery\\gallerycustomer.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\homegallery\\home.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\homegallery\\home.css",
       "PackagePath": "staticwebassets\\css\\homegallery\\home.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\homegallery\\nav.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\homegallery\\nav.css",
       "PackagePath": "staticwebassets\\css\\homegallery\\nav.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\img1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\img1.JPG",
       "PackagePath": "staticwebassets\\css\\img1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\img2.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\img2.JPG",
       "PackagePath": "staticwebassets\\css\\img2.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\img3.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\img3.JPG",
       "PackagePath": "staticwebassets\\css\\img3.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\logo.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\logo.png",
       "PackagePath": "staticwebassets\\css\\logo.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\logo2.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\logo2.png",
       "PackagePath": "staticwebassets\\css\\logo2.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\owl.carousel.min.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\package\\packages.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\package\\packages.css",
       "PackagePath": "staticwebassets\\css\\package\\packages.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\reg1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\reg1.JPG",
       "PackagePath": "staticwebassets\\css\\reg1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\urstud.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\urstud.jpg",
       "PackagePath": "staticwebassets\\css\\urstud.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\yourstudio.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\css\\yourstudio.jpg",
       "PackagePath": "staticwebassets\\css\\yourstudio.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\fullbg.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\fullbg.jpg",
       "PackagePath": "staticwebassets\\fullbg.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\greg2.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\greg2.JPG",
       "PackagePath": "staticwebassets\\greg2.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\img1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\img1.JPG",
       "PackagePath": "staticwebassets\\img1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\img2.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\img2.JPG",
       "PackagePath": "staticwebassets\\img2.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\img3.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\img3.JPG",
       "PackagePath": "staticwebassets\\img3.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\Home\\homeJS.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\Home\\homeJS.js",
       "PackagePath": "staticwebassets\\js\\Home\\homeJS.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\homeJS.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\homeJS.js",
       "PackagePath": "staticwebassets\\js\\homeJS.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\jquery.min.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\jquery.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\main.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\popper.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\popper.js",
       "PackagePath": "staticwebassets\\js\\popper.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\register.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\register.js",
       "PackagePath": "staticwebassets\\js\\register.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\loghalf.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\loghalf.png",
       "PackagePath": "staticwebassets\\loghalf.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\logo.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\logo.png",
       "PackagePath": "staticwebassets\\logo.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\logo2.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\logo2.png",
       "PackagePath": "staticwebassets\\logo2.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\logon.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\logon.png",
       "PackagePath": "staticwebassets\\logon.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\logoret.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\logoret.png",
       "PackagePath": "staticwebassets\\logoret.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\modeofpayment\\BPI.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\modeofpayment\\BPI.png",
       "PackagePath": "staticwebassets\\modeofpayment\\BPI.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\modeofpayment\\GCash.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\modeofpayment\\GCash.jpg",
       "PackagePath": "staticwebassets\\modeofpayment\\GCash.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\nobg.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\nobg.png",
       "PackagePath": "staticwebassets\\nobg.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\Background.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\Background.png",
       "PackagePath": "staticwebassets\\photos\\Background.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\check.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\check.png",
       "PackagePath": "staticwebassets\\photos\\check.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\logo.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\logo.png",
       "PackagePath": "staticwebassets\\photos\\logo.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\logo2.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\logo2.png",
       "PackagePath": "staticwebassets\\photos\\logo2.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\logofull.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\logofull.png",
       "PackagePath": "staticwebassets\\photos\\logofull.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\warn.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\photos\\warn.png",
       "PackagePath": "staticwebassets\\photos\\warn.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\reg1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\reg1.JPG",
       "PackagePath": "staticwebassets\\reg1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\reg3.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\reg3.JPG",
       "PackagePath": "staticwebassets\\reg3.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\reghalf.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\reghalf.png",
       "PackagePath": "staticwebassets\\reghalf.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\regi.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\regi.jpg",
       "PackagePath": "staticwebassets\\regi.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_alert.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_alert.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_alert.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_badge.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_badge.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_badge.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_breadcrumb.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_breadcrumb.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_breadcrumb.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_button-group.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_button-group.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_button-group.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_buttons.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_buttons.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_buttons.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_card.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_card.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_card.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_carousel.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_carousel.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_carousel.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_close.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_close.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_close.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_code.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_code.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_code.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_custom-forms.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_custom-forms.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_custom-forms.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_dropdown.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_dropdown.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_dropdown.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_forms.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_forms.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_forms.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_functions.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_functions.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_functions.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_grid.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_grid.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_grid.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_images.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_images.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_images.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_input-group.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_input-group.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_input-group.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_jumbotron.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_jumbotron.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_jumbotron.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_list-group.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_list-group.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_list-group.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_media.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_media.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_media.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_mixins.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_mixins.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_mixins.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_modal.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_modal.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_modal.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_nav.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_nav.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_nav.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_navbar.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_navbar.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_navbar.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_pagination.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_pagination.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_pagination.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_popover.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_popover.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_popover.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_print.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_print.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_print.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_progress.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_progress.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_progress.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_reboot.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_reboot.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_reboot.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_root.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_root.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_root.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_spinners.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_spinners.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_spinners.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_tables.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_tables.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_tables.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_toasts.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_toasts.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_toasts.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_tooltip.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_tooltip.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_tooltip.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_transitions.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_transitions.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_transitions.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_type.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_type.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_type.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_utilities.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_utilities.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_utilities.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_variables.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\_variables.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\_variables.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\bootstrap-grid.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\bootstrap-grid.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\bootstrap-grid.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\bootstrap-reboot.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\bootstrap-reboot.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\bootstrap-reboot.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\bootstrap.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\bootstrap.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\bootstrap.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_alert.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_alert.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_alert.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_background-variant.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_background-variant.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_background-variant.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_badge.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_badge.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_badge.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_border-radius.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_border-radius.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_border-radius.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_box-shadow.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_box-shadow.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_box-shadow.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_breakpoints.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_breakpoints.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_breakpoints.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_buttons.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_buttons.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_buttons.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_caret.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_caret.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_caret.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_clearfix.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_clearfix.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_clearfix.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_deprecate.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_deprecate.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_deprecate.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_float.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_float.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_float.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_forms.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_forms.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_forms.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_gradients.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_gradients.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_gradients.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_grid-framework.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_grid-framework.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_grid-framework.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_grid.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_grid.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_grid.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_hover.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_hover.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_hover.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_image.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_image.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_image.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_list-group.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_list-group.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_list-group.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_lists.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_lists.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_lists.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_nav-divider.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_nav-divider.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_nav-divider.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_pagination.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_pagination.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_pagination.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_reset-text.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_reset-text.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_reset-text.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_resize.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_resize.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_resize.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_screen-reader.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_screen-reader.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_screen-reader.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_size.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_size.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_size.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_table-row.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_table-row.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_table-row.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_text-emphasis.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_text-emphasis.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_text-emphasis.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_text-hide.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_text-hide.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_text-hide.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_text-truncate.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_text-truncate.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_text-truncate.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_transition.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_transition.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_transition.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_visibility.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\mixins\\_visibility.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\mixins\\_visibility.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_align.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_align.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_align.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_background.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_background.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_background.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_borders.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_borders.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_borders.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_clearfix.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_clearfix.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_clearfix.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_display.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_display.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_display.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_embed.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_embed.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_embed.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_flex.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_flex.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_flex.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_float.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_float.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_float.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_overflow.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_overflow.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_overflow.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_position.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_position.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_position.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_screenreaders.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_screenreaders.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_screenreaders.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_shadows.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_shadows.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_shadows.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_sizing.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_sizing.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_sizing.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_spacing.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_spacing.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_spacing.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_stretched-link.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_stretched-link.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_stretched-link.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_text.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_text.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_text.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_visibility.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\utilities\\_visibility.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\utilities\\_visibility.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\vendor\\_rfs.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\bootstrap\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\vendor\\_rfs.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\style.scss",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\scss\\style.scss",
       "PackagePath": "staticwebassets\\scss\\style.scss"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\00b395a3-1f63-4962-a93d-455c711f1a83\\IMG_2987.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\00b395a3-1f63-4962-a93d-455c711f1a83\\IMG_2987.JPG",
       "PackagePath": "staticwebassets\\uploads\\00b395a3-1f63-4962-a93d-455c711f1a83\\IMG_2987.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\04dbaa13-5e70-4cd5-9e8d-0f9159b8d114\\daga.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\04dbaa13-5e70-4cd5-9e8d-0f9159b8d114\\daga.png",
       "PackagePath": "staticwebassets\\uploads\\04dbaa13-5e70-4cd5-9e8d-0f9159b8d114\\daga.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4756.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4756.JPG",
       "PackagePath": "staticwebassets\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4756.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4757.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4757.JPG",
       "PackagePath": "staticwebassets\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4757.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4758.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4758.JPG",
       "PackagePath": "staticwebassets\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4758.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4760.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4760.JPG",
       "PackagePath": "staticwebassets\\uploads\\07519093-8593-4ee8-8a5b-3e344d2ac64d\\DSC_4760.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4756.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4756.JPG",
       "PackagePath": "staticwebassets\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4756.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4757.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4757.JPG",
       "PackagePath": "staticwebassets\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4757.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4758.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4758.JPG",
       "PackagePath": "staticwebassets\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4758.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4760.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4760.JPG",
       "PackagePath": "staticwebassets\\uploads\\078019da-2a7c-4c55-9cfa-366d41e71a3c\\DSC_4760.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\08adf095-ffd5-4a35-b6d5-a40246bcd264.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\08adf095-ffd5-4a35-b6d5-a40246bcd264.jpg",
       "PackagePath": "staticwebassets\\uploads\\08adf095-ffd5-4a35-b6d5-a40246bcd264.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\0b366bf5-28d5-486f-a422-7370dda2c6ec\\daga.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\0b366bf5-28d5-486f-a422-7370dda2c6ec\\daga.png",
       "PackagePath": "staticwebassets\\uploads\\0b366bf5-28d5-486f-a422-7370dda2c6ec\\daga.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\0ce6fdb2-ea18-472f-8989-293fc2b3d74d\\duo3.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\0ce6fdb2-ea18-472f-8989-293fc2b3d74d\\duo3.JPG",
       "PackagePath": "staticwebassets\\uploads\\0ce6fdb2-ea18-472f-8989-293fc2b3d74d\\duo3.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\1.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\1.jpg",
       "PackagePath": "staticwebassets\\uploads\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\434716123_7044038495701140_7270656446042814328_n.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\434716123_7044038495701140_7270656446042814328_n.png",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\434716123_7044038495701140_7270656446042814328_n.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\ACTIVITY 6_Hernandez_3ITF.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\ACTIVITY 6_Hernandez_3ITF.jpg",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\ACTIVITY 6_Hernandez_3ITF.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\ACTIVITY 7_ The Mannikin Frame_Hernandez_3ITF.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\ACTIVITY 7_ The Mannikin Frame_Hernandez_3ITF.png",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\ACTIVITY 7_ The Mannikin Frame_Hernandez_3ITF.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Host-based IDPS.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Host-based IDPS.png",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Host-based IDPS.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Intrusion Detection and Preven (1).png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Intrusion Detection and Preven (1).png",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Intrusion Detection and Preven (1).png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Intrusion Detection and Preven.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Intrusion Detection and Preven.png",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Intrusion Detection and Preven.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Intrusion Lifecycle.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Intrusion Lifecycle.png",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Intrusion Lifecycle.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Network Behavior Analysis.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Network Behavior Analysis.png",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Network Behavior Analysis.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Network-based IDPS.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Network-based IDPS.png",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Network-based IDPS.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Types of IDPS.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Types of IDPS.png",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Types of IDPS.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Why Use an IDPS_.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Why Use an IDPS_.png",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Why Use an IDPS_.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Wireless IDPS.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Wireless IDPS.png",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\Wireless IDPS.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo1.JPG",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo2.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo2.JPG",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo2.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo3.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo3.JPG",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo3.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo5.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo5.JPG",
       "PackagePath": "staticwebassets\\uploads\\14e964e9-79b5-4c8d-b6e3-cf9fcd8fcd41\\duo5.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\1e878693-99dd-463d-8614-7278662e38ec\\429847036_380278821419536_5068961888312646852_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\1e878693-99dd-463d-8614-7278662e38ec\\429847036_380278821419536_5068961888312646852_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\1e878693-99dd-463d-8614-7278662e38ec\\429847036_380278821419536_5068961888312646852_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2abbedd8-a31e-443d-abab-8f45d650ad79\\385985_3484476369896_1075949877_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2abbedd8-a31e-443d-abab-8f45d650ad79\\385985_3484476369896_1075949877_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\2abbedd8-a31e-443d-abab-8f45d650ad79\\385985_3484476369896_1075949877_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\1-UST-Zoom-Background_Main_Bldg_with_name1.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\1-UST-Zoom-Background_Main_Bldg_with_name1.jpg",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\1-UST-Zoom-Background_Main_Bldg_with_name1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\17a3e618-d192-4870-82e5-b55082289a2e-profile_image-300x300.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\17a3e618-d192-4870-82e5-b55082289a2e-profile_image-300x300.png",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\17a3e618-d192-4870-82e5-b55082289a2e-profile_image-300x300.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\285820888_513416063909334_734072841489639799_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\285820888_513416063909334_734072841489639799_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\285820888_513416063909334_734072841489639799_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\289269139_5741939182506665_1688237925700675225_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\289269139_5741939182506665_1688237925700675225_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\289269139_5741939182506665_1688237925700675225_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\290139227_494935002433457_3082700773914275566_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\290139227_494935002433457_3082700773914275566_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\290139227_494935002433457_3082700773914275566_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\291430187_431244305561933_7123386495799444420_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\291430187_431244305561933_7123386495799444420_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\291430187_431244305561933_7123386495799444420_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\291648202_533927201858220_8794929118791425761_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\291648202_533927201858220_8794929118791425761_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\291648202_533927201858220_8794929118791425761_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\291926473_530066198910987_921314866044946595_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\291926473_530066198910987_921314866044946595_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\291926473_530066198910987_921314866044946595_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\292337374_565428364981395_3565575066035911110_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\292337374_565428364981395_3565575066035911110_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\292337374_565428364981395_3565575066035911110_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\422.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\422.png",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\422.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\7179ad88d7e9762570fca07f8dcac5b6.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\7179ad88d7e9762570fca07f8dcac5b6.jpg",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\7179ad88d7e9762570fca07f8dcac5b6.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\channels4_profile.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\channels4_profile.jpg",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\channels4_profile.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\daga.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\daga.png",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\daga.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\rus.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\rus.png",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\rus.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\warde.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\warde.png",
       "PackagePath": "staticwebassets\\uploads\\2e76016e-4e46-45a3-b3ba-03a005705d6b\\warde.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_4758.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_4758.JPG",
       "PackagePath": "staticwebassets\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_4758.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_8116.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_8116.JPG",
       "PackagePath": "staticwebassets\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_8116.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_8117.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_8117.JPG",
       "PackagePath": "staticwebassets\\uploads\\2fb92763-6955-46d3-82f1-90609ad530a2\\DSC_8117.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\302b5941-5f3e-4916-8039-2c8fc028c8d2\\1.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\302b5941-5f3e-4916-8039-2c8fc028c8d2\\1.jpg",
       "PackagePath": "staticwebassets\\uploads\\302b5941-5f3e-4916-8039-2c8fc028c8d2\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Lab Activity2_Monteclaro.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Lab Activity2_Monteclaro.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Lab Activity2_Monteclaro.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 154351.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 154351.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 154351.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 165406.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 165406.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 165406.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 181615.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 181615.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 181615.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 182236.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 182236.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-04 182236.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 003850.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 003850.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 003850.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 005013.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 005013.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 005013.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 005029.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 005029.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 005029.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 232933.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 232933.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-02-05 232933.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-04-16 210157.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-04-16 210157.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-04-16 210157.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-04-16 211029.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-04-16 211029.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-04-16 211029.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-04-16 211100.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-04-16 211100.png",
       "PackagePath": "staticwebassets\\uploads\\372d3cac-fbb0-4ae5-b540-9d41ab6aa08f\\Screenshot 2024-04-16 211100.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\378261028_958791291892162_6737080702818115568_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\378261028_958791291892162_6737080702818115568_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\378261028_958791291892162_6737080702818115568_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\3e3608a1-508a-470b-8da6-31fe20c45f76\\6b11b134-6e61-46d3-9af3-9d84be6c6970.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\3e3608a1-508a-470b-8da6-31fe20c45f76\\6b11b134-6e61-46d3-9af3-9d84be6c6970.jpg",
       "PackagePath": "staticwebassets\\uploads\\3e3608a1-508a-470b-8da6-31fe20c45f76\\6b11b134-6e61-46d3-9af3-9d84be6c6970.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\429847036_380278821419536_5068961888312646852_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\429847036_380278821419536_5068961888312646852_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\429847036_380278821419536_5068961888312646852_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\1.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\1.jpg",
       "PackagePath": "staticwebassets\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\2.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\2.jpg",
       "PackagePath": "staticwebassets\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\3.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\3.jpg",
       "PackagePath": "staticwebassets\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\4.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\4.jpg",
       "PackagePath": "staticwebassets\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\403597823_1733840600377661_5411941340494882620_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\403597823_1733840600377661_5411941340494882620_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\403597823_1733840600377661_5411941340494882620_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\403618841_6422744034497428_5553258383607755873_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\403618841_6422744034497428_5553258383607755873_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\403618841_6422744034497428_5553258383607755873_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\5.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\5.jpg",
       "PackagePath": "staticwebassets\\uploads\\42b9ce2b-27f4-40b0-a5fd-b3d269fcd7aa\\5.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\431172644_847611553838820_2079989786200731601_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\431172644_847611553838820_2079989786200731601_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\431172644_847611553838820_2079989786200731601_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\434978415_311899545031145_1472048622893834599_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\434978415_311899545031145_1472048622893834599_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\434978415_311899545031145_1472048622893834599_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\45f8dfcf-1b11-4fc2-989f-6a1b6907de92\\08adf095-ffd5-4a35-b6d5-a40246bcd264.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\438237613_409895815296518_9021774703689421207_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\438237613_409895815296518_9021774703689421207_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\45f8dfcf-1b11-4fc2-989f-6a1b6907de92\\08adf095-ffd5-4a35-b6d5-a40246bcd264.jpg",
       "PackagePath": "staticwebassets\\uploads\\45f8dfcf-1b11-4fc2-989f-6a1b6907de92\\08adf095-ffd5-4a35-b6d5-a40246bcd264.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\45f8dfcf-1b11-4fc2-989f-6a1b6907de92\\429847036_380278821419536_5068961888312646852_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\45f8dfcf-1b11-4fc2-989f-6a1b6907de92\\429847036_380278821419536_5068961888312646852_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\45f8dfcf-1b11-4fc2-989f-6a1b6907de92\\429847036_380278821419536_5068961888312646852_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\45f8dfcf-1b11-4fc2-989f-6a1b6907de92\\431059899_390138813737205_5851306620631434833_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\45f8dfcf-1b11-4fc2-989f-6a1b6907de92\\431059899_390138813737205_5851306620631434833_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\45f8dfcf-1b11-4fc2-989f-6a1b6907de92\\431059899_390138813737205_5851306620631434833_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4756.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4756.JPG",
       "PackagePath": "staticwebassets\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4756.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4757.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4757.JPG",
       "PackagePath": "staticwebassets\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4757.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4758.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4758.JPG",
       "PackagePath": "staticwebassets\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4758.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4760.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4760.JPG",
       "PackagePath": "staticwebassets\\uploads\\49535415-ca3a-4565-9915-f3bd50ed4974\\DSC_4760.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\4e784a9a-d610-4832-9d55-8905c75e20ef\\DSC_8116.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\4e784a9a-d610-4832-9d55-8905c75e20ef\\DSC_8116.JPG",
       "PackagePath": "staticwebassets\\uploads\\4e784a9a-d610-4832-9d55-8905c75e20ef\\DSC_8116.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\4e784a9a-d610-4832-9d55-8905c75e20ef\\DSC_8117.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\4e784a9a-d610-4832-9d55-8905c75e20ef\\DSC_8117.JPG",
       "PackagePath": "staticwebassets\\uploads\\4e784a9a-d610-4832-9d55-8905c75e20ef\\DSC_8117.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\4e784a9a-d610-4832-9d55-8905c75e20ef\\IMG_2982.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\4e784a9a-d610-4832-9d55-8905c75e20ef\\IMG_2982.JPG",
       "PackagePath": "staticwebassets\\uploads\\4e784a9a-d610-4832-9d55-8905c75e20ef\\IMG_2982.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\1.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\1.jpg",
       "PackagePath": "staticwebassets\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\2.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\2.jpg",
       "PackagePath": "staticwebassets\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\3.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\3.jpg",
       "PackagePath": "staticwebassets\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\4.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\4.jpg",
       "PackagePath": "staticwebassets\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\403607004_1694847664353617_2709460207731042539_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\403607004_1694847664353617_2709460207731042539_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\403607004_1694847664353617_2709460207731042539_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\403618841_6422744034497428_5553258383607755873_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\403618841_6422744034497428_5553258383607755873_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\403618841_6422744034497428_5553258383607755873_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\5.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\5.jpg",
       "PackagePath": "staticwebassets\\uploads\\507ef8e7-ce38-4413-8fe6-2156d5ac7675\\5.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\5c4fdb7f-0094-4bce-b087-d935bdaa7d7a\\UST.gif",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\5c4fdb7f-0094-4bce-b087-d935bdaa7d7a\\UST.gif",
       "PackagePath": "staticwebassets\\uploads\\5c4fdb7f-0094-4bce-b087-d935bdaa7d7a\\UST.gif"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\635c77e1-c338-4178-a73f-9770a76011e1\\rus.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\635c77e1-c338-4178-a73f-9770a76011e1\\rus.png",
       "PackagePath": "staticwebassets\\uploads\\635c77e1-c338-4178-a73f-9770a76011e1\\rus.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\bday.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\bday.JPG",
       "PackagePath": "staticwebassets\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\bday.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\solo.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\solo.JPG",
       "PackagePath": "staticwebassets\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\solo.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\squad.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\squad.JPG",
       "PackagePath": "staticwebassets\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\squad.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\student.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\student.JPG",
       "PackagePath": "staticwebassets\\uploads\\6461b3a9-18fc-40bf-a284-9d09fef2f55e\\student.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\6eccfd70-aac4-4180-9e04-16c2dbb7bdd0\\429847036_380278821419536_5068961888312646852_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\6eccfd70-aac4-4180-9e04-16c2dbb7bdd0\\429847036_380278821419536_5068961888312646852_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\6eccfd70-aac4-4180-9e04-16c2dbb7bdd0\\429847036_380278821419536_5068961888312646852_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4756.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4756.JPG",
       "PackagePath": "staticwebassets\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4756.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4757.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4757.JPG",
       "PackagePath": "staticwebassets\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4757.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4758.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4758.JPG",
       "PackagePath": "staticwebassets\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4758.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4760.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4760.JPG",
       "PackagePath": "staticwebassets\\uploads\\7184b5b6-4ee6-42d9-abf3-763f2005413e\\DSC_4760.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4756.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4756.JPG",
       "PackagePath": "staticwebassets\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4756.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4757.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4757.JPG",
       "PackagePath": "staticwebassets\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4757.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4758.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4758.JPG",
       "PackagePath": "staticwebassets\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4758.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4760.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4760.JPG",
       "PackagePath": "staticwebassets\\uploads\\731b52d0-bbf9-4f15-99f2-12f8a6065a3f\\DSC_4760.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\78f4d342-2b28-4fa3-9690-b275822c8d14\\DSC_3931.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\78f4d342-2b28-4fa3-9690-b275822c8d14\\DSC_3931.JPG",
       "PackagePath": "staticwebassets\\uploads\\78f4d342-2b28-4fa3-9690-b275822c8d14\\DSC_3931.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\78f4d342-2b28-4fa3-9690-b275822c8d14\\DSC_3935.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\78f4d342-2b28-4fa3-9690-b275822c8d14\\DSC_3935.JPG",
       "PackagePath": "staticwebassets\\uploads\\78f4d342-2b28-4fa3-9690-b275822c8d14\\DSC_3935.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\78f4d342-2b28-4fa3-9690-b275822c8d14\\DSC_3937.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\78f4d342-2b28-4fa3-9690-b275822c8d14\\DSC_3937.JPG",
       "PackagePath": "staticwebassets\\uploads\\78f4d342-2b28-4fa3-9690-b275822c8d14\\DSC_3937.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7d5bca19-7a94-4a9d-b9e3-cfa3297e7c25\\378261028_958791291892162_6737080702818115568_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7b764475-2bd3-4115-930c-a5fabb305587\\438237613_409895815296518_9021774703689421207_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\7b764475-2bd3-4115-930c-a5fabb305587\\438237613_409895815296518_9021774703689421207_n.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7b764475-2bd3-4115-930c-a5fabb305587\\Screenshot 2024-04-18 151315.png",
+      "PackagePath": "staticwebassets\\uploads\\7b764475-2bd3-4115-930c-a5fabb305587\\Screenshot 2024-04-18 151315.png"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7b764475-2bd3-4115-930c-a5fabb305587\\Screenshot 2024-04-21 032527.png",
+      "PackagePath": "staticwebassets\\uploads\\7b764475-2bd3-4115-930c-a5fabb305587\\Screenshot 2024-04-21 032527.png"
+    },
+    {
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\7d5bca19-7a94-4a9d-b9e3-cfa3297e7c25\\378261028_958791291892162_6737080702818115568_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\7d5bca19-7a94-4a9d-b9e3-cfa3297e7c25\\378261028_958791291892162_6737080702818115568_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Lab Activity2_Monteclaro.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Lab Activity2_Monteclaro.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Lab Activity2_Monteclaro.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2023-12-09 224043.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2023-12-09 224043.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2023-12-09 224043.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-01-29 193528.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-01-29 193528.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-01-29 193528.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-01-30 222016.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-01-30 222016.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-01-30 222016.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 030026.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 030026.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 030026.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 030033.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 030033.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 030033.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 033220.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 033220.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 033220.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 033256.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 033256.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-02-03 033256.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151251.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151251.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151251.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151309.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151309.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151309.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151315.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151315.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151315.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151331.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151331.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 151331.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 161108.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 161108.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 161108.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 174224.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 174224.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 174224.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 175219.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 175219.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 175219.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 175655.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 175655.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 175655.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 183343.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 183343.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 183343.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 192921.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 192921.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 192921.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 220305.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 220305.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 220305.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 220319.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 220319.png",
       "PackagePath": "staticwebassets\\uploads\\8120b1c2-e0ea-4c9b-b45e-3249a59159f1\\Screenshot 2024-04-18 220319.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\844b9509-0379-47b0-9103-b020f88b7b96\\Your Squad 1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\844b9509-0379-47b0-9103-b020f88b7b96\\Your Squad 1.JPG",
       "PackagePath": "staticwebassets\\uploads\\844b9509-0379-47b0-9103-b020f88b7b96\\Your Squad 1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\85cfcdf2-2c64-4691-822a-ce1361bed6ee\\385985_3484476369896_1075949877_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\85cfcdf2-2c64-4691-822a-ce1361bed6ee\\385985_3484476369896_1075949877_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\85cfcdf2-2c64-4691-822a-ce1361bed6ee\\385985_3484476369896_1075949877_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\87a92ae8-b932-4dcc-8501-62cd7cee9b9a\\Your Squad 1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\87a92ae8-b932-4dcc-8501-62cd7cee9b9a\\Your Squad 1.JPG",
       "PackagePath": "staticwebassets\\uploads\\87a92ae8-b932-4dcc-8501-62cd7cee9b9a\\Your Squad 1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4756.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4756.JPG",
       "PackagePath": "staticwebassets\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4756.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4757.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4757.JPG",
       "PackagePath": "staticwebassets\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4757.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4758.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4758.JPG",
       "PackagePath": "staticwebassets\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4758.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4760.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4760.JPG",
       "PackagePath": "staticwebassets\\uploads\\901ffe5e-67b7-4dbf-b371-82a2874e4301\\DSC_4760.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\9099e455-763b-41dd-831b-60398f46a293\\daga.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\9099e455-763b-41dd-831b-60398f46a293\\daga.png",
       "PackagePath": "staticwebassets\\uploads\\9099e455-763b-41dd-831b-60398f46a293\\daga.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\IMG20210429002258.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\IMG20210429002258.png",
       "PackagePath": "staticwebassets\\uploads\\IMG20210429002258.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\SDD1 3 - 3ITF-Copy of Page-9.drawio.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\SDD1 3 - 3ITF-Copy of Page-9.drawio.png",
       "PackagePath": "staticwebassets\\uploads\\SDD1 3 - 3ITF-Copy of Page-9.drawio.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\Screenshot 2024-04-19 213934.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\Screenshot 2024-04-19 213934.png",
       "PackagePath": "staticwebassets\\uploads\\Screenshot 2024-04-19 213934.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\Screenshot 2024-04-20 175127.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\Screenshot 2024-04-20 175127.png",
       "PackagePath": "staticwebassets\\uploads\\Screenshot 2024-04-20 175127.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\Screenshot 2024-04-21 032527.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\Screenshot 2024-04-21 032527.png",
       "PackagePath": "staticwebassets\\uploads\\Screenshot 2024-04-21 032527.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\Your Squad 1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\Your Squad 1.JPG",
       "PackagePath": "staticwebassets\\uploads\\Your Squad 1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a0385b9c-2abd-48d6-bfde-660561e37017\\378261028_958791291892162_6737080702818115568_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a0385b9c-2abd-48d6-bfde-660561e37017\\378261028_958791291892162_6737080702818115568_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\a0385b9c-2abd-48d6-bfde-660561e37017\\378261028_958791291892162_6737080702818115568_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a48f6104-95cc-45fc-b9d0-774d7e961cc5\\431172644_847611553838820_2079989786200731601_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a48f6104-95cc-45fc-b9d0-774d7e961cc5\\431172644_847611553838820_2079989786200731601_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\a48f6104-95cc-45fc-b9d0-774d7e961cc5\\431172644_847611553838820_2079989786200731601_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a497612f-b69f-4080-99c1-71db655953eb\\duo1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a497612f-b69f-4080-99c1-71db655953eb\\duo1.JPG",
       "PackagePath": "staticwebassets\\uploads\\a497612f-b69f-4080-99c1-71db655953eb\\duo1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a497612f-b69f-4080-99c1-71db655953eb\\duo2.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a497612f-b69f-4080-99c1-71db655953eb\\duo2.JPG",
       "PackagePath": "staticwebassets\\uploads\\a497612f-b69f-4080-99c1-71db655953eb\\duo2.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a58bc4a7-6abe-4c6e-bd7d-04954a72a21b\\DSC_8116.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a58bc4a7-6abe-4c6e-bd7d-04954a72a21b\\DSC_8116.JPG",
       "PackagePath": "staticwebassets\\uploads\\a58bc4a7-6abe-4c6e-bd7d-04954a72a21b\\DSC_8116.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a58bc4a7-6abe-4c6e-bd7d-04954a72a21b\\DSC_8117.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a58bc4a7-6abe-4c6e-bd7d-04954a72a21b\\DSC_8117.JPG",
       "PackagePath": "staticwebassets\\uploads\\a58bc4a7-6abe-4c6e-bd7d-04954a72a21b\\DSC_8117.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a58bc4a7-6abe-4c6e-bd7d-04954a72a21b\\IMG_2982.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\a58bc4a7-6abe-4c6e-bd7d-04954a72a21b\\IMG_2982.JPG",
       "PackagePath": "staticwebassets\\uploads\\a58bc4a7-6abe-4c6e-bd7d-04954a72a21b\\IMG_2982.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\ac6daa80-bf63-4847-9144-a6bc4e34258b\\DSC_3937.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\ac6daa80-bf63-4847-9144-a6bc4e34258b\\DSC_3937.JPG",
       "PackagePath": "staticwebassets\\uploads\\ac6daa80-bf63-4847-9144-a6bc4e34258b\\DSC_3937.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\ac6daa80-bf63-4847-9144-a6bc4e34258b\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\ac6daa80-bf63-4847-9144-a6bc4e34258b\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\ac6daa80-bf63-4847-9144-a6bc4e34258b\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\aca9f2d1-2c0b-44af-b0c1-3a28e3e6817c\\daga.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\aca9f2d1-2c0b-44af-b0c1-3a28e3e6817c\\daga.png",
       "PackagePath": "staticwebassets\\uploads\\aca9f2d1-2c0b-44af-b0c1-3a28e3e6817c\\daga.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\adf76947-0806-479c-9bd8-387f5b1c27f5\\297436087_1079913589382646_8150420916069402772_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\adf76947-0806-479c-9bd8-387f5b1c27f5\\297436087_1079913589382646_8150420916069402772_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\adf76947-0806-479c-9bd8-387f5b1c27f5\\297436087_1079913589382646_8150420916069402772_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\ae815624-5d5a-4b58-a69b-b5a02bb63c2e\\FB_IMG_1666287650740.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\ae815624-5d5a-4b58-a69b-b5a02bb63c2e\\FB_IMG_1666287650740.jpg",
       "PackagePath": "staticwebassets\\uploads\\ae815624-5d5a-4b58-a69b-b5a02bb63c2e\\FB_IMG_1666287650740.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\434716123_7044038495701140_7270656446042814328_n.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\434716123_7044038495701140_7270656446042814328_n.png",
       "PackagePath": "staticwebassets\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\434716123_7044038495701140_7270656446042814328_n.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Host-based IDPS.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Host-based IDPS.png",
       "PackagePath": "staticwebassets\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Host-based IDPS.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Intrusion Detection and Preven (1).png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Intrusion Detection and Preven (1).png",
       "PackagePath": "staticwebassets\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Intrusion Detection and Preven (1).png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Intrusion Detection and Preven.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Intrusion Detection and Preven.png",
       "PackagePath": "staticwebassets\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Intrusion Detection and Preven.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Intrusion Lifecycle.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Intrusion Lifecycle.png",
       "PackagePath": "staticwebassets\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Intrusion Lifecycle.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Network Behavior Analysis.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Network Behavior Analysis.png",
       "PackagePath": "staticwebassets\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Network Behavior Analysis.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Network-based IDPS.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Network-based IDPS.png",
       "PackagePath": "staticwebassets\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Network-based IDPS.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Types of IDPS.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Types of IDPS.png",
       "PackagePath": "staticwebassets\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Types of IDPS.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Why Use an IDPS_.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Why Use an IDPS_.png",
       "PackagePath": "staticwebassets\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Why Use an IDPS_.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Wireless IDPS.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Wireless IDPS.png",
       "PackagePath": "staticwebassets\\uploads\\affda4dc-0432-4612-b853-59031928dd36\\Wireless IDPS.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b2bd315b-549b-474f-a46d-ed9a2b194085\\7k5sv7.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b2bd315b-549b-474f-a46d-ed9a2b194085\\7k5sv7.png",
       "PackagePath": "staticwebassets\\uploads\\b2bd315b-549b-474f-a46d-ed9a2b194085\\7k5sv7.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\DSC_4777.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\DSC_4777.JPG",
       "PackagePath": "staticwebassets\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\DSC_4777.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\IMG_2982.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\IMG_2982.JPG",
       "PackagePath": "staticwebassets\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\IMG_2982.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\duo1.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\duo1.JPG",
       "PackagePath": "staticwebassets\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\duo1.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\duo3.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\duo3.JPG",
       "PackagePath": "staticwebassets\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\duo3.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\duo4.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\duo4.JPG",
       "PackagePath": "staticwebassets\\uploads\\b717da2c-ae84-452f-bf78-43b57e880638\\duo4.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\434716123_7044038495701140_7270656446042814328_n.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\434716123_7044038495701140_7270656446042814328_n.png",
       "PackagePath": "staticwebassets\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\434716123_7044038495701140_7270656446042814328_n.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Host-based IDPS.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Host-based IDPS.png",
       "PackagePath": "staticwebassets\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Host-based IDPS.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Intrusion Lifecycle.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Intrusion Lifecycle.png",
       "PackagePath": "staticwebassets\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Intrusion Lifecycle.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Network Behavior Analysis.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Network Behavior Analysis.png",
       "PackagePath": "staticwebassets\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Network Behavior Analysis.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Why Use an IDPS_.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Why Use an IDPS_.png",
       "PackagePath": "staticwebassets\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Why Use an IDPS_.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Wireless IDPS.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Wireless IDPS.png",
       "PackagePath": "staticwebassets\\uploads\\b736b20c-e460-4533-96e2-36fbc04d5224\\Wireless IDPS.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b7e9fadc-17c6-42e4-82a4-dab4322a57e9\\DSC_3931.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b7e9fadc-17c6-42e4-82a4-dab4322a57e9\\DSC_3931.JPG",
       "PackagePath": "staticwebassets\\uploads\\b7e9fadc-17c6-42e4-82a4-dab4322a57e9\\DSC_3931.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b7e9fadc-17c6-42e4-82a4-dab4322a57e9\\DSC_3935.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b7e9fadc-17c6-42e4-82a4-dab4322a57e9\\DSC_3935.JPG",
       "PackagePath": "staticwebassets\\uploads\\b7e9fadc-17c6-42e4-82a4-dab4322a57e9\\DSC_3935.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b7e9fadc-17c6-42e4-82a4-dab4322a57e9\\DSC_3937.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\b7e9fadc-17c6-42e4-82a4-dab4322a57e9\\DSC_3937.JPG",
       "PackagePath": "staticwebassets\\uploads\\b7e9fadc-17c6-42e4-82a4-dab4322a57e9\\DSC_3937.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4756.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4756.JPG",
       "PackagePath": "staticwebassets\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4756.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4757.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4757.JPG",
       "PackagePath": "staticwebassets\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4757.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4758.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4758.JPG",
       "PackagePath": "staticwebassets\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4758.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4760.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4760.JPG",
       "PackagePath": "staticwebassets\\uploads\\c11f9e6a-de08-47d1-ad3c-337ed9b096a6\\DSC_4760.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4756.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4756.JPG",
       "PackagePath": "staticwebassets\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4756.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4757.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4757.JPG",
       "PackagePath": "staticwebassets\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4757.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4758.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4758.JPG",
       "PackagePath": "staticwebassets\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4758.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4760.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4760.JPG",
       "PackagePath": "staticwebassets\\uploads\\c3a42d6b-1732-4f3c-bd4d-0c250e5bc5e4\\DSC_4760.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c4dae785-f095-43e6-9e77-80d06a1f2e8a\\378261028_958791291892162_6737080702818115568_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c4dae785-f095-43e6-9e77-80d06a1f2e8a\\378261028_958791291892162_6737080702818115568_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\c4dae785-f095-43e6-9e77-80d06a1f2e8a\\378261028_958791291892162_6737080702818115568_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c9eff135-0c10-4379-81c6-67356fc51cc5\\378261028_958791291892162_6737080702818115568_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c9eff135-0c10-4379-81c6-67356fc51cc5\\378261028_958791291892162_6737080702818115568_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\c9eff135-0c10-4379-81c6-67356fc51cc5\\378261028_958791291892162_6737080702818115568_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c9eff135-0c10-4379-81c6-67356fc51cc5\\429847036_380278821419536_5068961888312646852_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c9eff135-0c10-4379-81c6-67356fc51cc5\\429847036_380278821419536_5068961888312646852_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\c9eff135-0c10-4379-81c6-67356fc51cc5\\429847036_380278821419536_5068961888312646852_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c9eff135-0c10-4379-81c6-67356fc51cc5\\Indulge Your Taste Bud with Our.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\c9eff135-0c10-4379-81c6-67356fc51cc5\\Indulge Your Taste Bud with Our.png",
       "PackagePath": "staticwebassets\\uploads\\c9eff135-0c10-4379-81c6-67356fc51cc5\\Indulge Your Taste Bud with Our.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cbd5d57a-3411-4a95-9ea4-ced02854ee2e\\parad.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cbd5d57a-3411-4a95-9ea4-ced02854ee2e\\parad.png",
       "PackagePath": "staticwebassets\\uploads\\cbd5d57a-3411-4a95-9ea4-ced02854ee2e\\parad.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\434716123_7044038495701140_7270656446042814328_n.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\434716123_7044038495701140_7270656446042814328_n.png",
       "PackagePath": "staticwebassets\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\434716123_7044038495701140_7270656446042814328_n.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\ACTIVITY 7_ The Mannikin Frame_Hernandez_3ITF.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\ACTIVITY 7_ The Mannikin Frame_Hernandez_3ITF.png",
       "PackagePath": "staticwebassets\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\ACTIVITY 7_ The Mannikin Frame_Hernandez_3ITF.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\Intrusion Lifecycle.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\Intrusion Lifecycle.png",
       "PackagePath": "staticwebassets\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\Intrusion Lifecycle.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\duo4.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\duo4.JPG",
       "PackagePath": "staticwebassets\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\duo4.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\logoret.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\logoret.png",
       "PackagePath": "staticwebassets\\uploads\\cd65ab6f-b268-41f5-ad82-1d0826e11ef0\\logoret.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cf81f3f2-3192-4de4-a1ed-ad34dcf6bf97\\DSC_8115.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cf81f3f2-3192-4de4-a1ed-ad34dcf6bf97\\DSC_8115.JPG",
       "PackagePath": "staticwebassets\\uploads\\cf81f3f2-3192-4de4-a1ed-ad34dcf6bf97\\DSC_8115.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cf81f3f2-3192-4de4-a1ed-ad34dcf6bf97\\DSC_8116.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cf81f3f2-3192-4de4-a1ed-ad34dcf6bf97\\DSC_8116.JPG",
       "PackagePath": "staticwebassets\\uploads\\cf81f3f2-3192-4de4-a1ed-ad34dcf6bf97\\DSC_8116.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cf81f3f2-3192-4de4-a1ed-ad34dcf6bf97\\DSC_8117.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\cf81f3f2-3192-4de4-a1ed-ad34dcf6bf97\\DSC_8117.JPG",
       "PackagePath": "staticwebassets\\uploads\\cf81f3f2-3192-4de4-a1ed-ad34dcf6bf97\\DSC_8117.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d2cb0f30-0a80-4050-88af-cff7e35bd6a2\\1.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d2cb0f30-0a80-4050-88af-cff7e35bd6a2\\1.jpg",
       "PackagePath": "staticwebassets\\uploads\\d2cb0f30-0a80-4050-88af-cff7e35bd6a2\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4756.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4756.JPG",
       "PackagePath": "staticwebassets\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4756.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4757.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4757.JPG",
       "PackagePath": "staticwebassets\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4757.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4758.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4758.JPG",
       "PackagePath": "staticwebassets\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4758.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4760.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4760.JPG",
       "PackagePath": "staticwebassets\\uploads\\d4f97ba8-831c-44d4-9228-c48f41096d5b\\DSC_4760.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\dc593dd2-feaa-4f65-bf13-34b8a33ea0de\\Intrusion Lifecycle.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\dc593dd2-feaa-4f65-bf13-34b8a33ea0de\\Intrusion Lifecycle.png",
       "PackagePath": "staticwebassets\\uploads\\dc593dd2-feaa-4f65-bf13-34b8a33ea0de\\Intrusion Lifecycle.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\1.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\1.jpg",
       "PackagePath": "staticwebassets\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\2.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\2.jpg",
       "PackagePath": "staticwebassets\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\3.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\3.jpg",
       "PackagePath": "staticwebassets\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\403618841_6422744034497428_5553258383607755873_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\403618841_6422744034497428_5553258383607755873_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\403618841_6422744034497428_5553258383607755873_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\429905284_430138206046030_1230377216337742932_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\429905284_430138206046030_1230377216337742932_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\429905284_430138206046030_1230377216337742932_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\432565978_753625136728067_757762163617351217_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\432565978_753625136728067_757762163617351217_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\432565978_753625136728067_757762163617351217_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\432639995_299559742914043_3577649669179507265_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\432639995_299559742914043_3577649669179507265_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\432639995_299559742914043_3577649669179507265_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\receipt.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\receipt.png",
       "PackagePath": "staticwebassets\\uploads\\e88a639c-8b23-407c-add8-9dcbedc06962\\receipt.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e921b1e7-9399-4601-97e3-2ceabb9cc8fc\\American-Quarter-Horse-stallion.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\e921b1e7-9399-4601-97e3-2ceabb9cc8fc\\American-Quarter-Horse-stallion.jpg",
       "PackagePath": "staticwebassets\\uploads\\e921b1e7-9399-4601-97e3-2ceabb9cc8fc\\American-Quarter-Horse-stallion.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\edc5fee0-966b-48b5-8028-059d37ab4caf\\431172644_847611553838820_2079989786200731601_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\edc5fee0-966b-48b5-8028-059d37ab4caf\\431172644_847611553838820_2079989786200731601_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\edc5fee0-966b-48b5-8028-059d37ab4caf\\431172644_847611553838820_2079989786200731601_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\f3edc8a0-9fde-4abf-8bd9-ec9ae13dd41f\\431148369_3319947231634597_145761398553959938_n.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\f3edc8a0-9fde-4abf-8bd9-ec9ae13dd41f\\431148369_3319947231634597_145761398553959938_n.jpg",
       "PackagePath": "staticwebassets\\uploads\\f3edc8a0-9fde-4abf-8bd9-ec9ae13dd41f\\431148369_3319947231634597_145761398553959938_n.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\f9e98e07-11fa-4683-bc3d-c82bed6dfa70\\posr.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\f9e98e07-11fa-4683-bc3d-c82bed6dfa70\\posr.png",
       "PackagePath": "staticwebassets\\uploads\\f9e98e07-11fa-4683-bc3d-c82bed6dfa70\\posr.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4756.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4756.JPG",
       "PackagePath": "staticwebassets\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4756.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4757.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4757.JPG",
       "PackagePath": "staticwebassets\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4757.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4758.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4758.JPG",
       "PackagePath": "staticwebassets\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4758.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4759.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4759.JPG",
       "PackagePath": "staticwebassets\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4759.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4760.JPG",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4760.JPG",
       "PackagePath": "staticwebassets\\uploads\\fc31ccdf-49d4-4e4c-b189-b94150f3f57b\\DSC_4760.JPG"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fur.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\fur.jpg",
       "PackagePath": "staticwebassets\\uploads\\fur.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\logoret.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\logoret.png",
       "PackagePath": "staticwebassets\\uploads\\logoret.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\receipt.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\receipt.png",
       "PackagePath": "staticwebassets\\uploads\\receipt.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\rus.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\rus.png",
       "PackagePath": "staticwebassets\\uploads\\rus.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\urstud.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\urstud.jpg",
       "PackagePath": "staticwebassets\\urstud.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\verification.png",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\verification.png",
       "PackagePath": "staticwebassets\\verification.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO-15IMH05\\Desktop\\chair\\YourStudioCode\\YourStudioFinal\\wwwroot\\yourstudio.jpg",
+      "Id": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\yourstudio.jpg",
       "PackagePath": "staticwebassets\\yourstudio.jpg"
     },
     {

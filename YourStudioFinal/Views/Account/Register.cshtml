@@ -56,6 +56,21 @@
                                 <div class="greeting-container">
                                     <h3 id="greeting"><strong></strong></h3>
                                 </div>
+                                <div>
+                                    @if (TempData["UserNameError"] != null)
+                                    {
+                                        <div class="alert alert-danger">
+                                            @TempData["UserNameError"]
+                                        </div>   
+                                    }
+                                    
+                                    @if (TempData["EmailError"] != null)
+                                    {
+                                        <div class="alert alert-danger">
+                                            @TempData["EmailError"]
+                                        </div>
+                                    }
+                                </div>
                                 <form asp-action="AddUser" method="post" id="registration-form">
                                     <div class="row g-3">
                                         <div class="col">
