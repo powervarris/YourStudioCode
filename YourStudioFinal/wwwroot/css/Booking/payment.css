@@ -1,7 +1,6 @@
 ﻿body {
     background-image: url('../first/background.png');
-    overflow-x: hidden;
-    overflow-y: hidden;
+   
 }
 
 .wrapper-nav {
@@ -191,18 +190,25 @@ h6 {
     width: 300px;
 }
 
-.btn-primary {
+.butun {
     position: absolute;
-    bottom: 60px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     background-color: black;
     border-radius: 3px;
     color: white;
     font-size: 20px;
-    font-weight: bold;
     border: 1px solid #ebd57c;
-    font-family: Verdana
+    margin: 5px;
+    text-align: center;
+
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
 
 .payment-image {
@@ -224,8 +230,9 @@ h6 {
 }
 
 #imagePreview img {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
 }
 
 .scrnsht {
@@ -244,7 +251,7 @@ h6 {
     font-family: Montserrat;
     font-size: 18px;
     border: solid;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 h6 span {
