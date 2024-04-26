@@ -172,6 +172,21 @@
                 alert('Please select a category.');
             }
         });
+        
+        document.getElementById('imageUpload').addEventListener('submit', function(event) {
+            var files = document.getElementById('image').files;
+            var maxFileSize = 1024 * 1024 * 1024; // 1 GB in bytes
+            var totalSize = 0;
+        
+            for (var i = 0; i < files.length; i++) {
+                totalSize += files[i].size;
+            }
+        
+            if (totalSize > maxFileSize) {
+                event.preventDefault();
+                alert('The total size of the files exceeds the limit of 1 GB.');
+            }
+        });
         </script>
 
 
