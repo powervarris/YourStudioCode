@@ -273,53 +273,53 @@ public class BookingController : Controller
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> acceptBooking(string Id, string email, BookingModel bookingModel, string date, string time)
     {
-        // var bookingmodel = _context.Booking.FirstOrDefault(x => x.Id == Id);
-        // if (bookingmodel != null)
-        // {
-        //     bookingmodel.status = "Accepted";
-        //     _context.Update(bookingmodel);
-        //     _context.SaveChanges();
-        //
-        //     var sameDateTimeBookings = _context.Booking
-        //         .Where(x => x.status == "Pending")
-        //         .Where(x => x.date == bookingmodel.date)
-        //         .Where(x => x.time == bookingmodel.time)
-        //         .Include(x => x.accountUser)
-        //         .ToList();
-        //
-        //     foreach (var booking in sameDateTimeBookings)
-        //     {
-        //         await rejectBooking(booking.Id, booking.accountUser.Email);
-        //     }
-        // }
+        var bookingmodel = _context.Booking.FirstOrDefault(x => x.Id == Id);
+        if (bookingmodel != null)
+        {
+            bookingmodel.status = "Accepted";
+            _context.Update(bookingmodel);
+            _context.SaveChanges();
+        
+            var sameDateTimeBookings = _context.Booking
+                .Where(x => x.status == "Pending")
+                .Where(x => x.date == bookingmodel.date)
+                .Where(x => x.time == bookingmodel.time)
+                .Include(x => x.accountUser)
+                .ToList();
+        
+            foreach (var booking in sameDateTimeBookings)
+            {
+                await rejectBooking(booking.Id, booking.accountUser.Email);
+            }
+        }
 
         // var getAccept = _context.Booking.Where(x => x.date == bookingModel.date)
         // .Where(x => x.time == bookingModel.time).
         // Where(x => x.Id).FirstOrDefault();
             
-        var getAccept = _context.Booking
-            .FirstOrDefault(x => x.Id == Id && x.date == date && x.time == time);
-
-        if (getAccept != null)
-        {
-            getAccept.status = "Accepted";
-            _context.Update(getAccept);
-            _context.SaveChanges();
-        }
-        
-        var latestBookings = _context.Booking.Where(x => x.status == "Pending")
-            .Where(x => x.date == bookingModel.date)
-            .Where(x => x.time == bookingModel.time)
-            .Include(x => x.accountUser)
-            .ToList();
-
-        if(latestBookings != null)
-        {
-            foreach (var booking in latestBookings)
-            {
-                await rejectBooking(booking.Id, booking.accountUser.Email);
-            }
-        }
+        // var getAccept = _context.Booking
+        //     .FirstOrDefault(x => x.Id == Id && x.date == date && x.time == time);
+        //
+        // if (getAccept != null)
+        // {
+        //     getAccept.status = "Accepted";
+        //     _context.Update(getAccept);
+        //     _context.SaveChanges();
+        // }
+        //
+        // var latestBookings = _context.Booking.Where(x => x.status == "Pending")
+        //     .Where(x => x.date == bookingModel.date)
+        //     .Where(x => x.time == bookingModel.time)
+        //     .Include(x => x.accountUser)
+        //     .ToList();
+        //
+        // if(latestBookings != null)
+        // {
+        //     foreach (var booking in latestBookings)
+        //     {
+        //         await rejectBooking(booking.Id, booking.accountUser.Email);
+        //     }
+        // }
         
         // var apiKey = "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";
         // var client = new SendGridClient(apiKey);

@@ -36,9 +36,9 @@
                     <table class="custom-table">
                         <tr>
                             <td>Select</td>
-                            <td>Name</td>
                             <td>Date</td>
                             <td>Time</td>
+                            <td>Name</td>
                             <td>Mobile Number</td>
                             <td>Package</td>
                             <td>Add Ons</td>
@@ -51,17 +51,17 @@
                             {
                             <tr>
                                 <td><input type="checkbox" data-id="@Model[i].Id" onclick="setDelete" /></td>
-                                <td>@Model[i].accountUser.Lname</td>
                                 <td>@Model[i].date</td>
                                 <td>@Model[i].time</td>
-                                <td>0 @Model[i].accountUser.mobileNumber</td>
+                                <td>@Model[i].accountUser.Lname</td>
+                                <td>@("0" + Model[i].accountUser.mobileNumber)</td>
                                 <td>@Model[i].packages</td>
                                 <td>@Model[i].addOns</td>
                                 <td>@Model[i].totalPrice</td>
                                     @if (Model[i].payment != null)
                                     {
                                     @* <td><input type="button" onclick="location.href='@System.IO.Path.Combine("../uploads/", @Model[i].payment?.fileName)';" value="See Receipt" /></td> *@
-                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2" onclick='changeModelImage("@Model[i].payment.fileName", "@Model[i].Id")'>Confirmation</button></td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter3" onclick='changeModelImage("@Model[i].payment.fileName", "@Model[i].Id")'>Confirmation</button></td>
                                     }
                                     else
                                     {
@@ -79,7 +79,7 @@
         <br />
         
         <!-- Modal -->
-        	<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        	<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         	  <div class="modal-dialog modal-dialog-centered" role="document">
         	    <div class="modal-content">
                     <div class="modal-header">
@@ -111,7 +111,7 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <img src="~/photos/warn.png" class="mlPic" alt="">
-                            <div class="mlTitle">Decline Booking?</div>
+                                <div class="mlTitle">Remove Booking?</div>
                             <div class="mlBody">Are you sure you want to remove this booking?</div>
                             <form>
                                 <button type="button" id="btnMR" data-toggle="modal" data-dismiss="modal" data-target="#exampleModalCenter2">REMOVE</button>
@@ -147,6 +147,24 @@ var rejectPayment = document.getElementById("rejectPayment")
 acceptPayment.setAttribute('href', acceptPayment.getAttribute("href").replace('abcdefg', Id));
 rejectPayment.setAttribute('href', rejectPayment.getAttribute("href").replace('abcdefg', Id));
 }
+</script>
+
+<script>
+document.querySelector(".close").addEventListener("click", function() {
+    $('#exampleModalCenter3').modal('hide');
+});
+</script>
+
+<script>
+document.getElementById("RmvBtn").addEventListener("click", function() {
+    var checked = document.querySelectorAll('input[type="checkbox"]:checked');
+                if (checked.length === 0) {
+                    alert('Please select at least one item to delete');
+                    event.preventDefault();
+                    event.stopPropagation();
+                    return;
+                }
+});
 </script>
 
 <script>

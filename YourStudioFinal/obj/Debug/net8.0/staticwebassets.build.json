@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "n52Y6KW+mW9WVBANZokwBdlyOH657s4B/r7M9stYpOc=",
+  "Hash": "NYW/sX+F0UIFGW0mzgQq1ghY4W9fFg9NsGy2uKK6oHg=",
   "Source": "YourStudioFinal",
   "BasePath": "_content/YourStudioFinal",
   "Mode": "Default",
@@ -6608,6 +6608,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\1e878693-99dd-463d-8614-7278662e38ec\\429847036_380278821419536_5068961888312646852_n.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\1LCR9618.JPG",
+      "SourceId": "YourStudioFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\",
+      "BasePath": "_content/YourStudioFinal",
+      "RelativePath": "uploads/1LCR9618.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\1LCR9618.JPG"
     },
     {
       "Identity": "C:\\Users\\Varris\\YourStudioCode\\YourStudioFinal\\wwwroot\\uploads\\2abbedd8-a31e-443d-abab-8f45d650ad79\\385985_3484476369896_1075949877_n.jpg",

@@ -94,7 +94,7 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" asp-controller="Booking" asp-action="Index">Create Booking</a>
                                         <a class="dropdown-item" asp-controller="Booking" asp-action="BList">Review Customer Booking</a>
-                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdmin">Admin Booking List</a>
+                                        <a class="dropdown-item" asp-controller="Booking" asp-action="BookingListAdminAccepted">Admin Booking List</a>
                                     </div>
                                 </li>
                             }
@@ -102,7 +102,6 @@
                             <li class="nav-item active ">
                                 <a class="nav-link" asp-controller="Inquiry" asp-action="clientInquiry">FAQ</a>
                             </li>
-
 
                             @if (ViewBag.isLogged == false)
                             {

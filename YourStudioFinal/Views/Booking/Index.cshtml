@@ -608,6 +608,7 @@
             } else {
                 var confirmation = confirm("Are you sure you want to book?");
                 if (!confirmation) {
+					event.preventDefault()
                     return false;
                 }
             }
