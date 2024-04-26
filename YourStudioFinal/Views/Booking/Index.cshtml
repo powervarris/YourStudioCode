@@ -154,7 +154,7 @@
 		</div>
 
 		<hr />
-		<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm" onsubmit="return checkBooking()">
+		<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm" onsubmit="return checkDateTime()">
 
 			<input name="date" id="formDate" hidden required/>
 			<input name="time" id="formTime" hidden required/>
@@ -375,7 +375,17 @@
 		});
 
 	</script>
+	@* <script>
+		function checkBooking() {
+			var selectedPackage = document.getElementById("package").value;
 
+			if (selectedPackage === "None | 0 PHP") {
+				alert("Please select a package.");
+				return false;
+			}
+			return true;
+		}
+	</script> *@
 	<script>
 		function changePrice(price) {
 			switch (price) {
@@ -558,17 +568,6 @@
 		};
 	</script>
 	<script>
-		function checkBooking() {
-			var selectedPackage = document.getElementById("package").value;
-
-			if (selectedPackage === "None | 0 PHP") {
-				alert("Please select a package.");
-				return false;
-			}
-			return true;
-		}
-	</script>
-	<script>
 		function updateTime() {
 			const now = new Date();
 			const date = now.toLocaleDateString();
@@ -580,22 +579,21 @@
 
 	<script>
 		function checkDateTime() {
+			console.log("Checking date, time, and package...");
 			var date = $("#formDate").val();
 			var time = $("#formTime").val();
-			var package = $("#formPackage").val();
-
+			var package = $('#formPackage').val();
+			var selectedPackage = document.getElementById("package").value;
 			if (date === "" || time === "") {
 				alert("Please select a date and time.");
-			}
-
-			if (package === "" || package === "None | 0 PHP") {
-				alert("Please select a package.");
-			}
-
-			if(date !== "" && time !== "" && package !== "" && package !== "None | 0 PHP") {
+			} else if (selectedPackage === "None | 0 PHP") {
+				alert("Please select a package");
+				return false;
+			} else {
 				alert("Booking Successful");
 			}
-			
+			return true
+		
 			// document.getElementById('BookingForm').addEventListener('submit', function(event) {
             //     event.preventDefault();
             //     checkDateTime();

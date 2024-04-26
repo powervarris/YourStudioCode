@@ -83,14 +83,14 @@ html {
     border-radius: 5px;
     text-align: center;
     background-color: white;
-    height: 620px; 
-    overflow-y: hidden; 
+    height: 640px;
+    overflow-y: hidden;
     padding: 20px;
 }
 
 .booking-question {
     text-align: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .details-wrapper {
@@ -99,10 +99,10 @@ html {
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
-    text-align: center; 
-    z-index: 1; 
-    border: 1px solid #fffcf4; 
-    padding: 10px; 
+    text-align: center;
+    z-index: 1;
+    border: 1px solid #fffcf4;
+    padding: 10px;
     background-color: #fffcf4;
     border-radius: 6px;
     font-family: Calibri;
@@ -129,16 +129,18 @@ html {
     text-align: center;
     border: solid;
 }
+
     .dropitlow option {
-        font-size: 16px; 
-        color: #333; 
-        border: 1px solid #ccc; 
-        padding: 5px; 
+        font-size: 16px;
+        color: #333;
+        border: 1px solid #ccc;
+        padding: 5px;
         display: inline-block;
         margin-bottom: 5px;
         background-color: #ebd57c;
         border-radius: 3px;
     }
+
 #SrvcDtl {
     font-weight: bold;
     font-size: 25px;
@@ -166,7 +168,7 @@ h6 {
     width: 70%;
     border-collapse: collapse;
     line-height: 1.5;
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-right: 10px;
 }
 
@@ -176,9 +178,9 @@ h6 {
 
 
 .topay {
-    display: inline-block; 
-    border: 1px solid #ebd57c; 
-    padding: 2px 5px; 
+    display: inline-block;
+    border: 1px solid #ebd57c;
+    padding: 2px 5px;
     background-color: #ebd57c;
     border-radius: 3px;
     height: 30px;
@@ -196,7 +198,7 @@ h6 {
     font-size: 20px;
     font-weight: bold;
     border: 1px solid #ebd57c;
-    font-family:Verdana
+    font-family: Verdana
 }
 
 .payment-image {
@@ -218,8 +220,8 @@ h6 {
 }
 
 #imagePreview img {
-    width: 250px; 
-    height: 250px; 
+    width: 250px;
+    height: 250px;
 }
 
 .scrnsht {
@@ -243,25 +245,26 @@ h6 {
 }
 
 h6 span {
-    border: 1px solid #ccc; 
-    padding: 5px; 
-    display: inline-block; 
-    margin-bottom: 5px; 
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
     background-color: #ebd57c;
     border-radius: 3px;
 }
+
 .custom-table {
     width: 100%;
-    border-collapse:separate;
-    border-spacing:5px;
-    font-family:'Palatino Linotype'
+    border-collapse: separate;
+    border-spacing: 5px;
+    font-family: 'Palatino Linotype'
 }
     /* Style for table header */
     .custom-table th {
         height: 50px;
         width: 200px;
         text-align: left;
-        padding:0 10px;
+        padding: 0 10px;
     }
     /* Style for table data */
     .custom-table td {
@@ -269,6 +272,7 @@ h6 span {
         background-color: #ebd57c;
         border-radius: 3px;
     }
+
     .custom-table tr {
         width: 10%;
         border: none;
