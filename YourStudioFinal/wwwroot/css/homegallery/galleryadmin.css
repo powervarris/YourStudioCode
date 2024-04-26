@@ -281,6 +281,10 @@ div.desc {
     margin-top: 35px;
 }
 
+.responsive:last-of-type{
+    margin-bottom: 100px;
+}
+
 
 #uploadModal {
     display: none;

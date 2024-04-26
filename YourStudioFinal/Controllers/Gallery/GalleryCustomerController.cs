@@ -49,7 +49,7 @@ public class GalleryCustomerController : Controller
         }
         else
         {
-            var files = _context.GalleryFiles.Where(e => e.GalleryId == gallery.Id);
+            var files = _context.GalleryFiles.Where(e => e.GalleryId == gallery.Id).OrderByDescending(e => e.DateUploaded);
             gallery.GalleryFiles = files.ToList();
         }
 

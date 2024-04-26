@@ -261,6 +261,9 @@ public class BookingController : Controller
             TempData["Error"] = "You need to login to access this page";
             return RedirectToAction("Index", "Account");
         }
+        
+        int pendingBookingCount = _context.Booking.Count(x => x.status == "Pending");
+        ViewBag.BookingCount = pendingBookingCount;
 
         return View(_context.Booking.Include(x => x.accountUser)
             .Include(x => x.payment)
@@ -279,18 +282,18 @@ public class BookingController : Controller
             bookingmodel.status = "Accepted";
             _context.Update(bookingmodel);
             _context.SaveChanges();
+        }
         
-            var sameDateTimeBookings = _context.Booking
-                .Where(x => x.status == "Pending")
-                .Where(x => x.date == bookingmodel.date)
-                .Where(x => x.time == bookingmodel.time)
-                .Include(x => x.accountUser)
-                .ToList();
-        
-            foreach (var booking in sameDateTimeBookings)
-            {
-                await rejectBooking(booking.Id, booking.accountUser.Email);
-            }
+        var sameDateTimeBookings = _context.Booking
+            .Where(x => x.status == "Pending")
+            .Where(x => x.date == bookingmodel.date)
+            .Where(x => x.time == bookingmodel.time)
+            .Include(x => x.accountUser)
+            .ToList();
+
+        foreach (var booking in sameDateTimeBookings)
+        {
+            await rejectBooking(booking.Id);
         }
 
         // var getAccept = _context.Booking.Where(x => x.date == bookingModel.date)
@@ -298,7 +301,7 @@ public class BookingController : Controller
         // Where(x => x.Id).FirstOrDefault();
             
         // var getAccept = _context.Booking
-        //     .FirstOrDefault(x => x.Id == Id && x.date == date && x.time == time);
+        //     .FirstOrDefault(x => x.Id == Id);
         //
         // if (getAccept != null)
         // {
@@ -369,7 +372,7 @@ public class BookingController : Controller
 
     //Reject Booking Function
     [Authorize(Roles = "Admin")]
-    public async Task<IActionResult> rejectBooking(string Id, string email)
+    public async Task<IActionResult> rejectBooking(string Id)
     {
         var bookingmodel = _context.Booking.FirstOrDefault(x => x.Id == Id);
         if (bookingmodel != null)

@@ -306,6 +306,9 @@ div.desc {
     margin-top: 35px;
 }
 
+.responsive:last-of-type{
+    margin-bottom: 80px;
+}
 
 footer {
     position: fixed;
@@ -353,3 +356,5 @@ a.black-text:active,
 a.black-text:hover {
     color: #E89C3B !important;
 }
+
+

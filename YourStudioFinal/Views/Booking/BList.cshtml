@@ -18,7 +18,7 @@
     <section class="containers">
         <section class="Book">
             <div class="LabelL"><span class="yellowText">REVIEW</span> CUSTOMER BOOKING</div>
-            <div class="Counter">X Bookings</div>
+            <div class="Counter">@ViewBag.BookingCount Bookings</div>
         </section>
         <section class="Book2">
             @foreach (var item in Model.OrderByDescending(x => x.dateCreated).GroupBy(x => x.date).SelectMany(x => x).Select((value, i) => (value, i)))
