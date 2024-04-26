@@ -16,29 +16,9 @@
     <header>
     </header>
     <section class="containers">
-        <section class="Book" style="margin-top: 85px;">
-            <label for="monthsDropdown">M O N T H </label>
-            <select id="monthsDropdown">
-                <option value="1">JANUARY</option>
-                <option value="2">FEBRUARY</option>
-                <option value="3">MARCH</option>
-                <option value="4">APRIL</option>
-                <option value="5">MAY</option>
-                <option value="6">JUNE</option>
-                <option value="7">JULY</option>
-                <option value="8">AUGUST</option>
-                <option value="9">SEPTEMBER</option>
-                <option value="10">OCTOBER</option>
-                <option value="11">NOVEMBER</option>
-                <option value="12">DECEMBER</option>
-            </select>
-
-            <label for="monthsDropdown">Y E A R</label>
-            <select id="monthsDropdown">
-                <option value="1">2023</option>
-                <option value="2">2024</option>
-                <option value="3">2025</option>
-            </select>
+        <section class="Book">
+            <div class="LabelL"><span class="yellowText">REVIEW</span> CUSTOMER BOOKING</div>
+            <div class="Counter">X Bookings</div>
         </section>
         <section class="Book2">
             @foreach (var item in Model.OrderByDescending(x => x.dateCreated).GroupBy(x => x.date).SelectMany(x => x).Select((value, i) => (value, i)))

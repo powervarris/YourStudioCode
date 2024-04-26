@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="~/css/Booking/CrtBook.css">
+	<link rel="stylesheet" href="~/css/Booking/CBook.css">
 </head>
 <body>
 
@@ -90,37 +90,41 @@
 		</section>
 	</section>
 
-	<section class="pack">
-		<label for="packages">PACKAGES:</label>
-		<select name="packages" id="package" value="0" onchange="changePrice2(this.value)" form="BookingForm" required>
-			<option value="None | 0 PHP">None</option>
-			<option value="Your Student | 399">Your Student | 399</option>
-			<option value="Your Soloito | 549">Your Soloito | 549</option>
-			<option value="Your Duo | 769">Your Duo | 769</option>
-			<option value="Your Barkada | 1209">Your Barkada | 1209</option>
-			<option value="Your Squad | 989">Your Squad | 989</option>
-			<option value="Your Family | 1869">Your Family | 1869</option>
-			<option value="Your Fur Baby | 1429">Your Fur Baby | 1429</option>
-			<option value="Your Graduation | 1429">Your Graduation | 1429</option>
-			<option value="Your Birthday | 989">Your Birthday | 989</option>
-			<option value="Your Maternity | 1899">Your Maternity | 1899</option>
-			<option value="Your Home Service | 5499">Your Home Service | 5499</option>
-		</select>
+	<section class="container one">
+		<section class="pack">
+			<label for="packages">PACKAGES:</label>
+			<select name="packages" id="package" value="0" onchange="changePrice2(this.value)" form="BookingForm" required>
+				<option value="None | 0 PHP">None</option>
+				<option value="Your Student | 399">Your Student | 399</option>
+				<option value="Your Soloito | 549">Your Soloito | 549</option>
+				<option value="Your Duo | 769">Your Duo | 769</option>
+				<option value="Your Barkada | 1209">Your Barkada | 1209</option>
+				<option value="Your Squad | 989">Your Squad | 989</option>
+				<option value="Your Family | 1869">Your Family | 1869</option>
+				<option value="Your Fur Baby | 1429">Your Fur Baby | 1429</option>
+				<option value="Your Graduation | 1429">Your Graduation | 1429</option>
+				<option value="Your Birthday | 989">Your Birthday | 989</option>
+				<option value="Your Maternity | 1899">Your Maternity | 1899</option>
+				<option value="Your Home Service | 5499">Your Home Service | 5499</option>
+			</select>
+		</section>
 	</section>
 
-	<section class="Adds" style=" top: -62px; left: 170px; position: relative;">
-		<label for="addOns">ADD-ONS:</label>
-		<select name="addOns" id="addOn" value="0" onchange="changePrice(this.value)" form="BookingForm" required>
-			<option value="None | 0 PHP">None</option>
-			<option value="Cake Smash Clean up | 300 PHP">Cake Smash Clean up | 300 PHP</option>
-			<option value="Themed Background Setup | 299 PHP">Themed Background Setup | 299 PHP</option>
-			<option value="15 Minute extension (with backdrop change) | 199 PHP">15 Minute extension (with backdrop change) | 199 PHP</option>
-			<option value="Additional Person | 299 PHP/person">Additional Person | 299 PHP/person</option>
-			<option value="Additional Pet | 349 PHP/pet">Additional Pet | 349 PHP/pet</option>
-			<option value="4R - Sized Photo | 50 PHP">4R - Sized Photo | 50 PHP</option>
-			<option value="8R - Sized Photo | 150 PHP">8R - Sized Photo | 150 PHP</option>
-			<option value="8R - Sized Photo with frame | 450 PHP">8R - Sized Photo with frame | 450 PHP</option>
-		</select>
+	<section class="container one">
+		<section class="Adds" style=" top: -62px; left: 170px; position: relative;">
+			<label for="addOns">ADD-ONS:</label>
+			<select name="addOns" id="addOn" value="0" onchange="changePrice(this.value)" form="BookingForm" required>
+				<option value="None | 0 PHP">None</option>
+				<option value="Cake Smash Clean up | 300 PHP">Cake Smash Clean up | 300 PHP</option>
+				<option value="Themed Background Setup | 299 PHP">Themed Background Setup | 299 PHP</option>
+				<option value="15 Minute extension (with backdrop change) | 199 PHP">15 Minute extension (with backdrop change) | 199 PHP</option>
+				<option value="Additional Person | 299 PHP/person">Additional Person | 299 PHP/person</option>
+				<option value="Additional Pet | 349 PHP/pet">Additional Pet | 349 PHP/pet</option>
+				<option value="4R - Sized Photo | 50 PHP">4R - Sized Photo | 50 PHP</option>
+				<option value="8R - Sized Photo | 150 PHP">8R - Sized Photo | 150 PHP</option>
+				<option value="8R - Sized Photo with frame | 450 PHP">8R - Sized Photo with frame | 450 PHP</option>
+			</select>
+		</section>
 	</section>
 
 <section id="Srvc">

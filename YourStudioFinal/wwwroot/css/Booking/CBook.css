@@ -120,6 +120,10 @@
         left: 74%;
     }
 
+    .time-container {
+        margin-left: unset;
+    }
+
     .time-container .time {
         margin-left: 35px
     }
@@ -162,6 +166,10 @@
     .time-container .time {
         margin-left: 100px
     }
+
+    .time-container {
+        margin-left: unset;
+    }
 }
 
 /* xl */
@@ -181,11 +189,11 @@
     }
 
     .pack {
-        margin: 60px 0 0 650px;
+        margin: 60px 0 0 565px;
     }
 
     .Adds {
-        margin: 0 0 0 650px;
+        margin: 0 0 0 565px;
     }
 
     #Srvc {
@@ -197,10 +205,15 @@
     .time-container .time {
         margin-left: 60px
     }
+
+    .time-container {
+        margin-left: unset;
+    }
 }
 
 /* 2xl */
 @media (min-width: 1536px) {
+
     .container.one {
         max-width: 1536px;
     }
@@ -216,24 +229,28 @@
     }
 
     #slctDate {
-        left: 54.9%;
+        left: 53.5%;
     }
 
     .pack {
-        margin: 0px 0 0 680px;
+        margin: 60px 0 0 675px;
     }
 
     .Adds {
-        margin: 0 0 0 680px;
+
+        margin: 0 0 0 675px;
     }
 
     #Srvc {
         left: 620px;
-        margin-top: -315px;
     }
 
     .time-container .time {
         margin-left: 170px;
+    }
+
+    .time-container {
+        margin-left: unset;
     }
 }
 
