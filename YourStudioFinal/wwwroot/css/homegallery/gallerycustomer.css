@@ -352,3 +352,7 @@ footer {
     .black-text:hover {
         color: black;
     }
+a.black-text:active,
+a.black-text:hover {
+    color: #E89C3B !important;
+}

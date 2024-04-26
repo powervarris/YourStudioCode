@@ -93,19 +93,13 @@
     <script>
         window.onload = function () {
             const kanawan = document.querySelector('.kanawan');
-
-
             const resizeBackground = () => {
                 const zoomLevel = window.devicePixelRatio;
                 const width = kanawan.offsetWidth * zoomLevel;
                 const height = kanawan.offsetHeight * zoomLevel;
                 kanawan.style.backgroundSize = ${ width }px ${ height } px;
             };
-
-
             resizeBackground();
-
-
             window.addEventListener('resize', resizeBackground);
         };
     </script>

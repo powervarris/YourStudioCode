@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="~/https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/https://unpkg.com/bs-brain@2.0.3/components/password-resets/password-reset-10/assets/css/password-reset-10.css">
     <link href="~/css/booking/payment.css" rel="stylesheet" />
-    
+
 
 </head>
 
@@ -14,16 +14,15 @@
     <header>
         <div class="wrapper-nav">
 
-         
+
     </header>
     <section class="grid-container">
-    <section>
-          <form asp-controller="Booking" asp-action="submitPayment" method="post" enctype="multipart/form-data">
-            <div class="row justify-content-center">
-                <!-- Column 1 -->
-                    <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0">
+        <section>
+            <form asp-controller="Booking" asp-action="submitPayment" method="post" enctype="multipart/form-data">
+                <div class="row justify-content-center">
+                    <!-- Column 1 -->
+                    <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0  style=" margin-bottom: 20px;"">
                         <div class="card-body p-3 p-md-4 p-xl-5" style="position: relative;">
-
                             <div class="form-floating mb-3">
                                 <p class="bQuest">Select Mode of Payment</p>
                                 <select class="dropitlow" id="selectPayment1" required>
@@ -45,15 +44,14 @@
                         </div>
                     </div>
 
-                <!-- Column 2 -->
-                    <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0">
+                    <!-- Column 2 -->
+                    <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0  style=" margin-bottom: 20px;"">
                         <div class="card-body p-3 p-md-4 p-xl-5" style="position: relative;">
-
                             <p class="bQuest">Which booking do you want to pay?</p>
                             <div class="form-floating mb-3">
                                 <select class="dropitlow" name="Id" id="Id" required>
                                     @{
-                                        var selectedValue = Model.FirstOrDefault()?.Id; 
+                                        var selectedValue = Model.FirstOrDefault()?.Id;
                                         if (string.IsNullOrEmpty(selectedValue))
                                         {
                                             <option value="" selected>Select Booking:</option>
@@ -133,7 +131,7 @@
                                                         <th>Price:</th>
                                                         <td>@booking.totalPrice</td>
                                                     </tr>
-                                                    
+
                                                     <tr>
                                                         <th>Down Payment:</th>
                                                         <td>@booking.downPayment</td>
@@ -149,9 +147,9 @@
 
 
 
-                <!-- Column 3 -->
-                    <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0">
-                        <div class="card-body p-3 p-md-4 p-xl-5">
+                    <!-- Column 3 -->
+                    <div class="col-12 col-sm-10 col-md-4 mb-4 mb-md-0" style="margin-bottom: 20px;">
+                        <div class="card-body p-3 p-md-4 p-xl-5" style="position: relative;">
                             <p class="scrnsht">Provide the Screenshot of your payment</p>
                             <!-- Dynamic label for total price -->
                             <div class="topay">
@@ -175,12 +173,12 @@
                         </div>
                     </div>
                 </div>
-                </form>
-    </section>
+            </form>
+        </section>
     </section>
 
     <script>
-      @*  function previewImage(input) {
+        @*  function previewImage(input) {
             console.log('previewImage function called');
             const preview = document.getElementById('imagePreview');
             // Clear the contents of the imagePreview div before adding a new image
@@ -188,38 +186,38 @@
 
             const file = input.files[0];
             if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    const img = document.createElement('img');
-                    img.src = e.target.result;
-                    img.classList.add('img-fluid');
-                    preview.appendChild(img);
-                }
-                reader.readAsDataURL(file);
-
-            }
-            
-        }*@
-        function previewImage(input) {
-    const preview = document.getElementById('imagePreview');
-
-    // Remove any existing child nodes (images) from the imagePreview element
-    while (preview.firstChild) {
-        preview.removeChild(preview.firstChild);
-    }
-
-    const file = input.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
             const img = document.createElement('img');
             img.src = e.target.result;
             img.classList.add('img-fluid');
             preview.appendChild(img);
-        }
-        reader.readAsDataURL(file);
-    }
-}
+            }
+            reader.readAsDataURL(file);
+
+            }
+
+            }*@
+            function previewImage(input) {
+                const preview = document.getElementById('imagePreview');
+
+                // Remove any existing child nodes (images) from the imagePreview element
+                while (preview.firstChild) {
+                    preview.removeChild(preview.firstChild);
+                }
+
+                const file = input.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.classList.add('img-fluid');
+                        preview.appendChild(img);
+                    }
+                    reader.readAsDataURL(file);
+                }
+            }
 
 
     </script>
@@ -249,7 +247,7 @@
             });
         });
     </script>
-   
+
     <script>
         document.getElementById("Id").addEventListener('change', function () {
             var selectedBookingId = this.value;
@@ -268,7 +266,7 @@
             }
         });
     </script>
-    
+
     <script>
         $(document).ready(function () {
             $('.dropitlow').select2({
@@ -278,7 +276,7 @@
             });
         });
     </script>
-<script>
+    <script>
         // Wait for the page to finish loading
         document.addEventListener('DOMContentLoaded', function () {
             // Get the select element
@@ -288,29 +286,29 @@
             selectPayment.dispatchEvent(new Event('change'));
         });
 
-    // Event listener for select change
-    document.getElementById("selectPayment1").addEventListener('change', function () {
-        var paymentImage = document.getElementById('payment-image1'); // Corrected ID
-        var bpiImage = document.getElementById('payment-image2'); // Get the BPI image element
-        switch (this.value) {
-            case 'G-Cash':
-                paymentImage.src = '/modeofpayment/GCash.jpg';
-                paymentImage.style.display = 'block';
-                bpiImage.style.display = 'none'; // Hide the BPI image
-                break;
-            case 'BPI':
-                paymentImage.src = '/modeofpayment/BPI.png';
-                paymentImage.style.display = 'none'; // Hide the G-Cash image
-                bpiImage.style.display = 'none';
-                break;
-            default:
-                paymentImage.src = '';
-                paymentImage.style.display = 'none';
-                break;
-        }
-    });
-</script>
-<script>
+        // Event listener for select change
+        document.getElementById("selectPayment1").addEventListener('change', function () {
+            var paymentImage = document.getElementById('payment-image1'); // Corrected ID
+            var bpiImage = document.getElementById('payment-image2'); // Get the BPI image element
+            switch (this.value) {
+                case 'G-Cash':
+                    paymentImage.src = '/modeofpayment/GCash.jpg';
+                    paymentImage.style.display = 'block';
+                    bpiImage.style.display = 'none'; // Hide the BPI image
+                    break;
+                case 'BPI':
+                    paymentImage.src = '/modeofpayment/BPI.png';
+                    paymentImage.style.display = 'none'; // Hide the G-Cash image
+                    bpiImage.style.display = 'none';
+                    break;
+                default:
+                    paymentImage.src = '';
+                    paymentImage.style.display = 'none';
+                    break;
+            }
+        });
+    </script>
+    <script>
         document.getElementById('selectPayment1').addEventListener('change', function () {
             var paymentImage = document.getElementById('payment-image1'); // Corrected ID
             var detailsContent = document.getElementById('detailsContent1'); // Corrected ID
@@ -332,9 +330,9 @@
             }
         });
 
-</script>
-<script>
+    </script>
+    <script>
 
-</script>
+    </script>
 </body>
 </html>
