@@ -61,7 +61,7 @@
                                     @if (Model[i].payment != null)
                                     {
                                     @* <td><input type="button" onclick="location.href='@System.IO.Path.Combine("../uploads/", @Model[i].payment?.fileName)';" value="See Receipt" /></td> *@
-                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter3" onclick='changeModelImage("@Model[i].payment.fileName", "@Model[i].Id")'>Confirmation</button></td>
+                                        <td><button type="button" id="confirmationButton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter3" onclick='changeModelImage("@Model[i].payment.fileName", "@Model[i].Id")'>Confirmation</button></td>
                                     }
                                     else
                                     {
@@ -93,8 +93,8 @@
                         <br/>
                         <br/>
                         <div style="text-align: center">
-                                <a asp-action="changeToDP_Paid" asp-route-Id="abcdefg" asp-controller="Booking" id="acceptPayment" class="button no-underline">Accept</a>
-                                <a asp-action="changeStatusToReject" asp-route-Id="abcdefg" asp-controller="Booking" id="rejectPayment" class="button reject">Reject</a>
+                                <a onclick="alert('Downpayment Booking Paid.')" asp-action="changeToDP_Paid" asp-route-Id="abcdefg" asp-controller="Booking" id="acceptPayment" class="button no-underline">Accept</a>
+                                <a onclick="alert('Booking Rejected')" asp-action="changeStatusToReject" asp-route-Id="abcdefg" asp-controller="Booking" id="rejectPayment" class="button reject">Reject</a>
                         </div>
                     </div>
                     <div class="modal-footer">
