@@ -54,6 +54,12 @@ public class BookingController : Controller
             TempData["Error"] = "You need to login to access this page";
             return RedirectToAction("Index", "Account");
         }
+        
+        ViewBag.Bookings = _context.Booking
+            .Where(x => x.accountUser.Id == UserDetails.Id)
+            .ToList();
+
+        
         return View();
     }
     
@@ -324,23 +330,23 @@ public class BookingController : Controller
         //     }
         // }
         
-        // var apiKey = "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";
-        // var client = new SendGridClient(apiKey);
-        // var from_email = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudio");
-        // var subject = "Booking Confirmation";
-        // var to_email = new EmailAddress(email);
-        // var hostURL = new Uri($"{Request.Scheme}://{Request.Host}/Booking/Payment");
-        // var htmlContent44 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Dear</h3><h3>We hope this message finds you well,</h3><h3>We are delighted to inform you that your booking with YourStudio has been successfully accepted! We look forward to welcome you on " + bookingmodel.date + " at " + bookingmodel.time + " for you scheduled services.</h3><h3>We kindly request that you proceed with the payment at your earliest convention. You are given time to pay minimum 500 down payment to ensure the settled booking. Note that if you have avail the YourStudent Package Deal you are required to pay a downpayment of 50%</h3><h3>Should you have any special request or require further assistance, please do not hesitate to reach out to our team.</h3><h3>Your satisfaction is our top priority, and we are committed to ensuring that your experience with us exceed your expectionations! Thank you for choosing YourStudio. We are honored to have the opportunity to serve you and look forward to prroviding you with an exceptional experience.</h3><h3>Here is the link of the payment " + hostURL + "</h3><br><br><h4>Thank you for you understanding and continued support.</h4><h4>Best Regards,</h4><h4>Your Studio</h4></div>";
-        // var plainTextContent = "Your Booking has been Accepted! Please upload your payment receipt to confirm your booking." 
-        //                        + Environment.NewLine
-        //                        + Environment.NewLine
-        //                        + "Here is the link to upload your payment receipt: "
-        //                        + hostURL
-        //                        + Environment.NewLine
-        //                        + Environment.NewLine
-        //                        + "Thank you for choosing YourStudio!";
-        // var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent44);
-        // var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+        var apiKey = "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";
+        var client = new SendGridClient(apiKey);
+        var from_email = new EmailAddress("yourstudio.bacoor@gmail.com", "YourStudio");
+        var subject = "Booking Confirmation";
+        var to_email = new EmailAddress(email);
+        var hostURL = new Uri($"{Request.Scheme}://{Request.Host}/Booking/Payment");
+        var htmlContent44 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Dear</h3><h3>We hope this message finds you well,</h3><h3>We are delighted to inform you that your booking with YourStudio has been successfully accepted! We look forward to welcome you on " + bookingmodel.date + " at " + bookingmodel.time + " for you scheduled services.</h3><h3>We kindly request that you proceed with the payment at your earliest convention. You are given time to pay minimum 500 down payment to ensure the settled booking. Note that if you have avail the YourStudent Package Deal you are required to pay a downpayment of 50%</h3><h3>Should you have any special request or require further assistance, please do not hesitate to reach out to our team.</h3><h3>Your satisfaction is our top priority, and we are committed to ensuring that your experience with us exceed your expectionations! Thank you for choosing YourStudio. We are honored to have the opportunity to serve you and look forward to prroviding you with an exceptional experience.</h3><h3>Here is the link of the payment " + hostURL + "</h3><br><br><h4>Thank you for you understanding and continued support.</h4><h4>Best Regards,</h4><h4>Your Studio</h4></div>";
+        var plainTextContent = "Your Booking has been Accepted! Please upload your payment receipt to confirm your booking." 
+                               + Environment.NewLine
+                               + Environment.NewLine
+                               + "Here is the link to upload your payment receipt: "
+                               + hostURL
+                               + Environment.NewLine
+                               + Environment.NewLine
+                               + "Thank you for choosing YourStudio!";
+        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent44);
+        var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         return RedirectToAction("BList");
     }
     

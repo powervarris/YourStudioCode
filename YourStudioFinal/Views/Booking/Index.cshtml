@@ -1,5 +1,7 @@
 @using System.Runtime.CompilerServices
+@using Microsoft.AspNetCore.Mvc.TagHelpers
 @using Microsoft.EntityFrameworkCore.Metadata.Internal
+@using Newtonsoft.Json
 @model YourStudioFinal.Models.Booking.BookingModel
 @{
 	ViewBag.Title = "Create Booking";
@@ -56,19 +58,12 @@
 
 		<div class="status-box-container">
 			<div class="status-box">
-				<div class="boxlg"></div>
-				<span class="textlg">FULLY BOOKED</span>
+				<div class="boxlg" style="background-color:#E9BC42;;"></div>
+				<span class="textlg">CURRENT DATE</span>
 			</div>
 			<div class="status-box">
 				<div class="boxlg" style="background-color:#cfcfcf;"></div>
 				<span class="textlg">NOT AVAILABLE</span>
-			</div>
-		</div>
-
-		<div class="status-box-container" style="margin-top: 420px;">
-			<div class="status-box">
-				<div class="boxlg" style="background-color:#E9BC42;;"></div>
-				<span class="textlg">CURRENT DATE</span>
 			</div>
 		</div>
 	</section>
@@ -231,17 +226,6 @@
 
 </section>
 
-<script>
-
-// document.getElementById('BookingForm').addEventListener('submit', function(event) {
-//     var confirmation = confirm("Are you sure you want to book?");
-//     if (!confirmation) {
-//         event.preventDefault();
-//     }
-// });
-
-</script>
-
 @* <script> *@
 	@* *@
 	@* $(document).ready(function() { *@
@@ -401,10 +385,6 @@
 			return true;
 		}
 	</script> *@
-
-<script>
-
-</script>
 
 <script>
 		function changePrice(price) {
@@ -597,17 +577,20 @@
 		setInterval(updateTime, 1000);
 	</script>
 
-	<script>
+
+<script>
 		function checkDateTime() {
             console.log("Checking date, time, and package...");
             var date = $("#formDate").val();
             var time = $("#formTime").val();
             var selectedPackage = document.getElementById("package").value;
             if (date === "" || time === "") {
-                alert("Please select a date and time.");	
+                alert("Please select a date and time.");
+				$("#slctDate2").text('');
                 return false;
             } else if (selectedPackage === "None | 0 PHP") {
                 alert("Please select a package");
+				$("#slctDate2").text('');
 				event.preventDefault();
                 return false;
             } else {
@@ -619,6 +602,105 @@
             }
             return true;
         }
+	</script>
+
+@* <script> *@
+@* var selectedDate = $("#slctDate2").text(); *@
+@* var allBooked = $(".btnT").not(".disabled").length === 0; *@
+@*                     if (allBooked) { *@
+@*                          *@
+@*                         $(".table .row .cell span").each(function () { *@
+@*                             if ($(this).text() === selectedDate) { *@
+@*                                 $(this).addClass("disabled"); *@
+@*                             } *@
+@*                         }); *@
+@*                     } else { *@
+@*                          *@
+@*                         $(".table .row .cell span").each(function () { *@
+@*                             if ($(this).text() === selectedDate) { *@
+@*                                 $(this).removeClass("disabled"); *@
+@*                             } *@
+@*                         }); *@
+@*                     } *@
+@*                  *@
+@* </script> *@
+
+<script>
+        		$(document).ready(function () {
+        			var bookings = @Html.Raw(JsonConvert.SerializeObject(ViewBag.Bookings, new Newtonsoft.Json.JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+        
+        		function checkBookingStatus() {
+                    // Reset all buttons before checking the booking status
+                    $(".btnT").removeClass("disabled");
+                    $(".btnT").css("background-color", "");
+                    $(".btnT").on("click");
+                
+                    var selectedDate = $("#slctDate2").text();
+                    bookings.forEach(booking => {
+                        if (booking.status === "Accepted" && booking.date === selectedDate) {
+                            $(".btnT").each(function () {
+                                if ($(this).text() === booking.time) {
+                                    $(this).addClass("disabled");
+                                    $(this).css("background-color", "#cfcfcf");
+                                    $(this).off("click");
+                                }
+                            });
+                        }
+                    });
+					
+					}
+					
+					// var allBooked = $(".btnT").not(".disabled").length === 0;
+                    //         if (allBooked) {
+                    //             // Find the corresponding date in the calendar and add the "disabled" class
+                    //             $(".table .row .cell span").each(function () {
+                    //                 if ($(this).text() === selectedDate) {
+                    //                     $(this).addClass("disabled");
+                    //                 }
+                    //             });
+                    //         }
+					//
+					// }
+					
+					       
+        			var $prevButton = null;
+        
+        			$(".btnT").on("mousedown", function () {
+        				if ($prevButton && $prevButton[0] !== this) {
+        					$prevButton.addClass("released").removeClass("pressed");
+        					$prevButton.css("background-color", $prevButton.data("original-color"));
+        				}
+        				$prevButton = $(this);
+        				$(this).addClass("pressed").removeClass("released");
+        				$(this).css("background-color", "grey");
+        			});
+        
+        			$(".btnT").on("mouseup mouseleave", function () {
+        			});
+        
+        			$(".btnT").on("click", function () {
+        				$prevButton = $(this);
+        			});
+        
+        			$(document).on("click", ".table .row .cell span", ".calendar .header .text span", function () {
+                        var selectedDate = $(this).text();
+                        var selectedMonth = $(".calendar .header .text span").text();
+                        $("#slctDay").text(selectedDate);
+                        $("#formDate").val(selectedDate + ' ' + selectedMonth);
+                        $("#slctDate").text(selectedDate + ' ' + selectedMonth);
+                        $("#slctDate2").text(selectedDate + ' ' + selectedMonth);
+                    
+                        checkBookingStatus(); 
+                    });
+        
+        			$(".time .btnT").on("click", function () {
+        				var selectedTime = $(this).text();
+        				$("#slctTime").text(selectedTime);
+        				$("#formTime").val(selectedTime);
+        				console.log('Selected time:', selectedTime);
+        			});
+        
+        		});
 	</script>
 
 </body>

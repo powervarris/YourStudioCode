@@ -12137,3 +12137,12 @@ h1, h2, h3, h4, h5,
 .header.active [data-action] {
     opacity: 1;
 }
+
+.btnT.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.table .row .cell span.disabled {
+    color: #cfcfcf;
+}
