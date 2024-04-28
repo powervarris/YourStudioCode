@@ -136,7 +136,6 @@
             </div>
         </div>
 
-
         <!-- JavaScript Section -->
         <script>
 
@@ -161,6 +160,7 @@
                     // No file selected, you can handle this case as needed
                     alert('Please select a file.');
                 }
+                $(this).prop('disabled', true);
             });
         </script>
 
@@ -245,8 +245,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-
-    <script>
+<script>
         setDelete = function () {
             var checked = document.querySelectorAll('input[type="checkbox"]:checked');
             var deleteContent = document.getElementById('deleteContent');

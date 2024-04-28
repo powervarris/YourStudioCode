@@ -20,40 +20,6 @@ namespace YourStudioFinal.Controllers
             _userManager = userManager;
         }
 
-        public async Task<IActionResult> ChildAdminIndex()
-        {
-            var UserDetails = await _userManager.GetUserAsync(User);
-            if (UserDetails != null)
-            {
-                ViewBag.User = UserDetails;
-                ViewBag.isLogged = true;
-            }
-            else
-            {
-                ViewBag.isLogged = false;
-            }
-            
-            var gallery = await _context.Gallery.FirstOrDefaultAsync();
-
-            if (gallery == null)
-            {
-                gallery = new Models.Gallery.Gallery();
-                gallery.Id = Guid.NewGuid().ToString();
-                gallery.GalleryFiles = new();
-                _context.Gallery.Add(gallery);
-                await _context.SaveChangesAsync();
-                gallery = await _context.Gallery.FirstOrDefaultAsync();
-            }
-            else
-            {
-                var files = _context.GalleryFiles.Where(e => e.GalleryId == gallery.Id).OrderByDescending(x => x.DateUploaded)
-                    .Where(x => x.category == "Child");
-                gallery.GalleryFiles = files.ToList();
-            }
-
-            return View(gallery);
-        }
-        
         public async Task<IActionResult> CoupleAdminIndex()
         {
             var UserDetails = await _userManager.GetUserAsync(User);
@@ -182,8 +148,7 @@ namespace YourStudioFinal.Controllers
             }
             else
             {
-                var files = _context.GalleryFiles.Where(e => e.GalleryId == gallery.Id).OrderByDescending(x => x.DateUploaded)
-                    .Where(x => x.category == "Solo");
+                var files = _context.GalleryFiles.Where(e => e.GalleryId == gallery.Id).OrderByDescending(x => x.DateUploaded).Where(x => x.category == "Solo");
                 gallery.GalleryFiles = files.ToList();
             }
 

@@ -88,7 +88,7 @@ public class GalleryCustomerController : Controller
         }
         else
         {
-            var files = _context.GalleryFiles.Where(e => e.GalleryId == gallery.Id).Where(e => e.category == "Solo");
+            var files = _context.GalleryFiles.Where(e => e.GalleryId == gallery.Id).OrderByDescending(x => x.DateUploaded).Where(e => e.category == "Solo");
             gallery.GalleryFiles = files.ToList();
         }
 
@@ -121,7 +121,7 @@ public class GalleryCustomerController : Controller
         }
         else
         {
-            var files = _context.GalleryFiles.Where(e => e.category == "Fur Families").Where(e => e.GalleryId == gallery.Id);
+            var files = _context.GalleryFiles.Where(e => e.category == "Fur Families").OrderByDescending(x => x.DateUploaded).Where(e => e.GalleryId == gallery.Id);
             gallery.GalleryFiles = files.ToList();
         }
 
@@ -154,7 +154,7 @@ public class GalleryCustomerController : Controller
         }
         else
         {
-            var files = _context.GalleryFiles.Where(e => e.category == "Family").Where(e => e.GalleryId == gallery.Id);
+            var files = _context.GalleryFiles.Where(e => e.category == "Family").OrderByDescending(x => x.DateUploaded).Where(e => e.GalleryId == gallery.Id);
             gallery.GalleryFiles = files.ToList();
         }
 
@@ -187,40 +187,7 @@ public class GalleryCustomerController : Controller
         }
         else
         {
-            var files = _context.GalleryFiles.Where(e => e.category == "Couples").Where(e => e.GalleryId == gallery.Id);
-            gallery.GalleryFiles = files.ToList();
-        }
-
-        return View(gallery);
-    }
-    
-    public async Task<ActionResult> ChildIndex()
-    {
-        var gallery = await _context.Gallery.FirstOrDefaultAsync();
-        
-        var UserDetails = await _userManager.GetUserAsync(User);
-        if (UserDetails != null)
-        {
-            ViewBag.User = UserDetails;
-            ViewBag.isLogged = true;
-        }
-        else
-        {
-            ViewBag.isLogged = false;
-        }
-
-        if (gallery == null)
-        {
-            gallery = new Models.Gallery.Gallery();
-            gallery.Id = Guid.NewGuid().ToString();
-            gallery.GalleryFiles = new();
-            _context.Gallery.Add(gallery);
-            await _context.SaveChangesAsync();
-            gallery = await _context.Gallery.FirstOrDefaultAsync();
-        }
-        else
-        {
-            var files = _context.GalleryFiles.Where(e => e.category == "Child").Where(e => e.GalleryId == gallery.Id);
+            var files = _context.GalleryFiles.Where(e => e.category == "Couples").OrderByDescending(x => x.DateUploaded).Where(e => e.GalleryId == gallery.Id);
             gallery.GalleryFiles = files.ToList();
         }
 
