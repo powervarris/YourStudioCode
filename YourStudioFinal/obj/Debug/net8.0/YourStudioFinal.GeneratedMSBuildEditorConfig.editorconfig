@@ -90,10 +90,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xQYXltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/ChildIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXENoaWxkSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/CoupleIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXENvdXBsZUluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -112,10 +108,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/GalleryCustomer/SoloIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeUN1c3RvbWVyXFNvbG9JbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Gallery/ChildAdminIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeVxDaGlsZEFkbWluSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Varris/YourStudioCode/YourStudioFinal/Views/Gallery/CoupleAdminIndex.cshtml]

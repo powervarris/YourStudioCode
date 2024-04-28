@@ -388,6 +388,18 @@ public class BookingController : Controller
             _context.SaveChanges();
         }
         
+        // var bookingModels = _context.Booking.Where(x => x.Id == Id);
+        // foreach (var bookingModel in bookingModels)
+        // {
+        //     if (bookingModel != null)
+        //     {
+        //         bookingModel.status = "Rejected";
+        //         _context.Update(bookingModel);
+        //     }
+        // }
+        // _context.SaveChanges();
+        
+        
         var UserDetails = await _userManager.GetUserAsync(User);
         var email2 = UserDetails.Email;
         
