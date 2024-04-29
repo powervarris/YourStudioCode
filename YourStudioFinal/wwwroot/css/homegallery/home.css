@@ -457,68 +457,13 @@ body, html {
     margin-left: -40px;
     margin-bottom: -40px;
     margin-right: -170px;
+    padding:37px;
     color: #FDF8F2;
-    margin-top:10px;
+    margin-top:-10px;
 }
 
 
 
-
-
-
-
-
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background: linear-gradient(130deg, rgb(0, 0, 0), transparent);
-    color: wheat;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-    /* The navigation menu links */
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-
-        /* When you mouse over the navigation links, change their color */
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-    /* Position and style the close button (top right corner) */
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-        .sidenav a {
-            font-size: 18px;
-        }
-}
 
 .logos {
 }
@@ -575,12 +520,31 @@ body, html {
         overflow-x: hidden;
     }
 
+    input[type=radio] {
+        position: relative;
+        top: 85%;
+        left: 70%;
+        width: 12px;
+        height: 18px;
+        margin: auto;
+        opacity: 0.4;
+        transform: translateX(-83px);
+        cursor: pointer;
+        color: black;
+        margin-top: -800px;
+    }
+
+    .img-tmb-responsive{
+        margin-top:-50px;
+    }
+
     .logos {
         width: 2000%;
     }
 
     .freeze {
         font-size: 30px;
+        padding-left:40px;
     }
 
     .time {
@@ -599,15 +563,7 @@ body, html {
         font-size: 30px;
     }
 
-    .learn1 {
-        font-size: 10px;
-        margin-left: -420px;
-        font-weight: bold;
-        text-decoration: underline;
-        font-style: italic;
-        margin-bottom: 100px;
-        margin-top:-20px;
-    }
+    
 
     .learn2 {
         font-size: 10px;
@@ -621,7 +577,7 @@ body, html {
 
     .card {
         width: 410px;
-        height: 200px;
+        height: 400px;
     }
 
     .card-header {
@@ -668,7 +624,7 @@ body, html {
 
     .img-thumbnail2 {
         width: 60px;
-        margin-top: -310px;
+        margin-top: -320px;
         margin-left: 270px;
         margin-bottom: 60px;
     }
@@ -682,7 +638,7 @@ body, html {
 
     .img-thumbnail4 {
         width: 60px;
-        margin-top: -310px;
+        margin-top: -320px;
         margin-left: 270px;
     }
 
@@ -694,13 +650,13 @@ body, html {
         width: 120px;
     }
 
-    .site-footer {
+    .footer-container {
         background-color: #26272b;
         padding: 45px 0 20px;
         line-height: 15px;
         color: #737373;
         width: 100%;
-        height: 200px;
+        height: 500px;
     }
     .text-center2 {
       
@@ -710,24 +666,27 @@ body, html {
 
     .pright {
         margin-left: 150px;
-        margin-top: -70px;
+        margin-top: 0px;
         font-size: 5px;
-        
+        padding:5px;
         
     }
+
+  
 
     .imgresize {
         width: 90px;
-        margin-top: -30px;
-
+        margin-top: -20px;
     }
-
+    .text-center2{
+        margin-top:-40px;
+    }
     .about {
         
        
         font-family: Calibri;
         font-weight: bold;
-       margin-top:-100px;
+       margin-top:-20px;
         font-size: 20px;
         margin-left: 150px;
         color: white;
@@ -738,7 +697,7 @@ body, html {
         font-weight: bold;
         color: #E89C3B;
         font-size: 20px;
-        margin-left: 5px;
+        margin-left: 1px;
         
     }
 
@@ -746,18 +705,18 @@ body, html {
         font-family: calibri;
         font-weight: bolder;
         display: flex;
-        font-size: 15px;
+        font-size: 20px;
         margin-top: -25px;
-        margin-left: 300px;
+        margin-left: -10px;
     }
 
     .price2 {
         font-family: calibri;
         font-weight: bolder;
         display: flex;
-        font-size: 15px;
+        font-size: 20px;
         margin-top: -25px;
-        margin-left: 300px;
+        margin-left: -10px;
     }
    
 

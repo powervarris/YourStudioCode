@@ -4912,6 +4912,198 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\438237613_409895815296518_9021774703689421207_n.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\434716123_7044038495701140_7270656446042814328_n.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/434716123_7044038495701140_7270656446042814328_n.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\434716123_7044038495701140_7270656446042814328_n.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\434978415_311899545031145_1472048622893834599_n.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/434978415_311899545031145_1472048622893834599_n.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\434978415_311899545031145_1472048622893834599_n.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\ACTIVITY 6_Hernandez_3ITF.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/ACTIVITY 6_Hernandez_3ITF.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\ACTIVITY 6_Hernandez_3ITF.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Host-based IDPS.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/Host-based IDPS.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Host-based IDPS.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Intrusion Detection and Preven (1).png))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/Intrusion Detection and Preven (1).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Intrusion Detection and Preven (1).png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Intrusion Detection and Preven.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/Intrusion Detection and Preven.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Intrusion Detection and Preven.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Intrusion Lifecycle.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/Intrusion Lifecycle.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Intrusion Lifecycle.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Network Behavior Analysis.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/Network Behavior Analysis.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Network Behavior Analysis.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Network-based IDPS.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/Network-based IDPS.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Network-based IDPS.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Types of IDPS.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/Types of IDPS.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Types of IDPS.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Why Use an IDPS_.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/Why Use an IDPS_.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Why Use an IDPS_.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Wireless IDPS.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>YourStudioFinal</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/YourStudioFinal</BasePath>
+      <RelativePath>uploads/553dd78a-812d-42cb-9fbf-8d57f3665e49/Wireless IDPS.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\553dd78a-812d-42cb-9fbf-8d57f3665e49\Wireless IDPS.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\c6c23f06-fc25-4fdc-aa68-27642a855287\DSC_3377.JPG))">
       <SourceType>Package</SourceType>
       <SourceId>YourStudioFinal</SourceId>
