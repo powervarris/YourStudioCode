@@ -122,111 +122,111 @@
 		</section>
 	</section>
 
-<section id="Srvc">
+	<section id="Srvc">
 
 
-	<div class="info-box">
-		<div id="SrvcDtl">SERVICE DETAILS</div>
-		<div>
-			<h6>
-				<b>Name:</b> <span style="left: -5px; margin-left: 3px; position: relative;">@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</span>
-			</h6>
-		</div>
-		<div>
-			<h6><b>Date:</b> <span id="slctDate2"></span></h6>
-		</div>
-		<div>
-			<h6><b>Time:</b> <span id="slctTime"></span></h6>
-		</div>
-		<div>
-			<div id="packages">Package: <span>0</span></div> @*KUNG POSSIBLE GANTO SANA PAGKAKAHIWA-HIWALAY NILA :))*@
-		</div>
-		<div>
-			<div id="addOns">Add-Ons: <span>0</span></div>
-		</div>
-		<div>
-			<div id="totalPrice">Price: <span>0</span></div>
-		</div>
-		<div>
-			<div id="downPayment">Downpayment: <span>500 PHP</span></div>
-		</div>
-	</div>
-
-	<hr />
-	<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm">
-
-		<input name="date" id="formDate" hidden required/>
-		<input name="time" id="formTime" hidden required/>
-		<input name="packages" id="formPackage" hidden required/>
-		<input name="addOns" id="formAddOns" hidden />
-		<input name="totalPrice" id="formPrice" hidden />
-		<input name="downPayment" id="formDownPayment" hidden />
-		<button type="submit" id="btnB" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;" onclick="checkDateTime()">
-			BOOK NOW!
-		</button>
-		@* <button type="button" id="btnB" data-toggle="modal" data-target="#exampleModalCenter" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;"> *@
-		@* 	BOOK NOW! *@
-		@* </button> *@
-	</form>
-
-	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content" style="height: 700px">
-				<div class="modal-body">
-					<img src="~/photos/logofull.png" class="mlPic" alt="">
-					<div class="mlTitle" style="font-size: 24px;">You booked an appointment with the following service details. Please verify the information below and click "Confirm" to complete the booking process.</div>
-
-					<div>
-						<h6>
-							<b>Name:</b> <span style="left: -5px; margin-left: 3px; position: relative;">@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</span>
-						</h6>
-					</div>
-					<div>
-						<h6><b>Date:</b> <span id="slctDate2"></span></h6>
-					</div>
-					<div>
-						<h6><b>Time:</b> <span id="slctTime"></span></h6>
-					</div>
-					<div>
-						<div id="packages">Package: <span>0</span></div>
-					</div>
-					<div>
-						<div id="addOns">Add-Ons: <span>0</span></div>
-					</div>
-					<div>
-						<div id="totalPrice">Price: <span>0</span></div>
-					</div>
-
-				</div>
-				<form>
-					<button type="button" class="btnMR" data-toggle="modal" data-dismiss="modal" data-target="#exampleModalCenter2">
-						CONFIRM
-					</button>
-					<button type="button" class="btnC" data-dismiss="modal" style="border-radius: 5px;background-color: black; position: relative; top: -10px; font-weight: bold; padding: 6px 16px 6px 16px; margin-right: 20px; color: white; border: hidden;">CLOSE</button>
-				</form>
+		<div class="info-box">
+			<div id="SrvcDtl">SERVICE DETAILS</div>
+			<div>
+				<h6>
+					<b>Name:</b> <span style="left: -5px; margin-left: 3px; position: relative;">@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</span>
+				</h6>
+			</div>
+			<div>
+				<h6><b>Date:</b> <span id="slctDate2"></span></h6>
+			</div>
+			<div>
+				<h6><b>Time:</b> <span id="slctTime"></span></h6>
+			</div>
+			<div>
+				<div id="packages">Package: <span>0</span></div> @*KUNG POSSIBLE GANTO SANA PAGKAKAHIWA-HIWALAY NILA :))*@
+			</div>
+			<div>
+				<div id="addOns">Add-Ons: <span>0</span></div>
+			</div>
+			<div>
+				<div id="totalPrice">Price: <span>0</span></div>
+			</div>
+			<div>
+				<div id="downPayment">Downpayment: <span>500 PHP</span></div>
 			</div>
 		</div>
-	</div>
 
-	<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<img src="~/photos/logofull.png" class="mlPic" style="left: 25%" alt="">
-					<div class="mlTitle2">Booking Successful!</div>
-					<div class="mlBody">Please check your email for your updated booking status.</div>
-					<div class="mlBody"><b>Reminder:</b> if your booking has been accepted, a payment link will be sent to your email. You may now proceed to the down-payment process.</div>
+		<hr />
+		<form asp-controller="Booking" asp-action="AddBooking" method="post" id="BookingForm">
+
+			<input name="date" id="formDate" hidden required />
+			<input name="time" id="formTime" hidden required />
+			<input name="packages" id="formPackage" hidden required />
+			<input name="addOns" id="formAddOns" hidden />
+			<input name="totalPrice" id="formPrice" hidden />
+			<input name="downPayment" id="formDownPayment" hidden />
+			<button type="submit" id="btnB" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;" onclick="checkDateTime()">
+				BOOK NOW!
+			</button>
+			@* <button type="button" id="btnB" data-toggle="modal" data-target="#exampleModalCenter" style="padding: 5px 10px;margin: 5px;background-color: black;color: white;font-size: 20px;text-align: center;"> *@
+			@* 	BOOK NOW! *@
+			@* </button> *@
+		</form>
+
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content" style="height: 700px">
+					<div class="modal-body">
+						<img src="~/photos/logofull.png" class="mlPic" alt="">
+						<div class="mlTitle" style="font-size: 24px;">You booked an appointment with the following service details. Please verify the information below and click "Confirm" to complete the booking process.</div>
+
+						<div>
+							<h6>
+								<b>Name:</b> <span style="left: -5px; margin-left: 3px; position: relative;">@(ViewBag.isLogged ? ViewBag.User.UserName : "Not Logged in")</span>
+							</h6>
+						</div>
+						<div>
+							<h6><b>Date:</b> <span id="slctDate2"></span></h6>
+						</div>
+						<div>
+							<h6><b>Time:</b> <span id="slctTime"></span></h6>
+						</div>
+						<div>
+							<div id="packages">Package: <span>0</span></div>
+						</div>
+						<div>
+							<div id="addOns">Add-Ons: <span>0</span></div>
+						</div>
+						<div>
+							<div id="totalPrice">Price: <span>0</span></div>
+						</div>
+
+					</div>
 					<form>
-						<button type="button" class="btnMG" data-dismiss="modal">OKAY!</button>
+						<button type="button" class="btnMR" data-toggle="modal" data-dismiss="modal" data-target="#exampleModalCenter2">
+							CONFIRM
+						</button>
+						<button type="button" class="btnC" data-dismiss="modal" style="border-radius: 5px;background-color: black; position: relative; top: -10px; font-weight: bold; padding: 6px 16px 6px 16px; margin-right: 20px; color: white; border: hidden;">CLOSE</button>
 					</form>
 				</div>
 			</div>
 		</div>
-	</div>
 
-</section>
+		<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<img src="~/photos/logofull.png" class="mlPic" style="left: 25%" alt="">
+						<div class="mlTitle2">Booking Successful!</div>
+						<div class="mlBody">Please check your email for your updated booking status.</div>
+						<div class="mlBody"><b>Reminder:</b> if your booking has been accepted, a payment link will be sent to your email. You may now proceed to the down-payment process.</div>
+						<form>
+							<button type="button" class="btnMG" data-dismiss="modal">OKAY!</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
-@* <script> *@
+	</section>
+
+	@* <script> *@
 	@* *@
 	@* $(document).ready(function() { *@
 	@*     $('#btnB').on('click', function() { *@
@@ -287,38 +287,38 @@
 		<script src="~/js/main.js"></script>
 
 	}
-	
+
 	<script>
-    
-    $(document).ready(function() {
-        $('#btnB').on('click', function() {
-            // Get the values
-            var date = $('#Srvc #slctDate2').text();
-            var time = $('.time .btnT.pressed').text();
-            var packages = $('#package option:selected').text();
-            var addOns = $('#addOn option:selected').text();
-    		var totalPrice = $('#totalPrice span').text();
-    
-            // Set the values in the modal
-            $('#exampleModalCenter #slctDate2').text(date);
-            $('#exampleModalCenter #slctTime').text(time);
-            $('#exampleModalCenter #packages span').text(packages);
-            $('#exampleModalCenter #addOns span').text(addOns);
-    		$('#exampleModalCenter #totalPrice span').text(totalPrice);
-    		
-    		// Set the values in the form fields
-            $('#formDate').val(date);
-            $('#formTime').val(time);
-            $('#formPackage').val(packages);
-            $('#formAddOns').val(addOns);
-            $('#formPrice').val(totalPrice);
-        });
-    });
-    
-    
-    
-    </script>
-	
+
+		$(document).ready(function () {
+			$('#btnB').on('click', function () {
+				// Get the values
+				var date = $('#Srvc #slctDate2').text();
+				var time = $('.time .btnT.pressed').text();
+				var packages = $('#package option:selected').text();
+				var addOns = $('#addOn option:selected').text();
+				var totalPrice = $('#totalPrice span').text();
+
+				// Set the values in the modal
+				$('#exampleModalCenter #slctDate2').text(date);
+				$('#exampleModalCenter #slctTime').text(time);
+				$('#exampleModalCenter #packages span').text(packages);
+				$('#exampleModalCenter #addOns span').text(addOns);
+				$('#exampleModalCenter #totalPrice span').text(totalPrice);
+
+				// Set the values in the form fields
+				$('#formDate').val(date);
+				$('#formTime').val(time);
+				$('#formPackage').val(packages);
+				$('#formAddOns').val(addOns);
+				$('#formPrice').val(totalPrice);
+			});
+		});
+
+
+
+	</script>
+
 	<script>
 		$(document).ready(function () {
 			var $prevButton = null;
@@ -365,28 +365,80 @@
 				$("#formTime").val(selectedTime);
 				console.log('Selected time:', selectedTime);
 			});
-			// $(".btnB").on("click", function () {
-			// 	var selectedPackage = $(this).val();
-			// 	$("#packagelist").text('Selected Package: ' + selectedPackage);
-			// 	console.log('Selected package:', selectedPackage);
-			// });
 
-		});
+			var bookings = @Html.Raw(JsonConvert.SerializeObject(ViewBag.Bookings, new Newtonsoft.Json.JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+			var allAccountBookings = @Html.Raw(JsonConvert.SerializeObject(ViewBag.AllAccountBookings, new Newtonsoft.Json.JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
 
-	</script>
-@* <script>
-		function checkBooking() {
-			var selectedPackage = document.getElementById("package").value;
+			var fullyBookedDates = {};
 
-			if (selectedPackage === "None | 0 PHP") {
-				alert("Please select a package.");
-				return false;
+			function countAcceptedBookings(date) {
+				var count = 0;
+				allAccountBookings.forEach(booking => {
+					if (booking.status === "Accepted" && booking.date === date) {
+						count++;
+					}
+				});
+				return count;
 			}
-			return true;
-		}
-	</script> *@
 
-<script>
+			function checkBookingStatus() {
+				$(".btnT").removeClass("disabled").css("background-color", "");
+
+				var selectedDate = $("#slctDate2").text();
+				var acceptedBookingsCount = countAcceptedBookings(selectedDate);
+				console.log("Selected date:", selectedDate);
+				console.log("Accepted bookings count:", acceptedBookingsCount);
+
+				// Disable time slots if all time slots are fully booked for the selected date
+				if (acceptedBookingsCount >= 4) {
+					$(".btnT").addClass("disabled").css("background-color", "#cfcfcf");
+				} else {
+					allAccountBookings.forEach(booking => {
+						if (booking.status === "Accepted" && booking.date === selectedDate) {
+							$(".btnT").each(function () {
+								if ($(this).text() === booking.time) {
+									$(this).addClass("disabled").css("background-color", "#cfcfcf");
+								}
+							});
+						}
+					});
+				}
+				$(".table .row .cell span").each(function () {
+					var date = $(this).text().trim() + ' ' + $(".calendar .header .text span").text().trim();
+					console.log("Date:", date);
+					var bookingsCount = countAcceptedBookings(date);
+					console.log("Bookings count:", bookingsCount);
+				});
+				// Disable the selected date in the calendar if all time slots are fully booked for that date
+				if (acceptedBookingsCount === 4) {
+					$(".table .row .cell span[data-date='" + selectedDate + "']").addClass("fully-booked disabled");
+					$(".table .row .cell span[data-date='" + selectedDate + "']").prop("disabled", true);
+					console.log(selectedDate + ' is fully booked.');
+				} else {
+					$(".table .row .cell span[data-date='" + selectedDate + "']").removeClass("fully-booked disabled");
+					$(".table .row .cell span[data-date='" + selectedDate + "']").prop("disabled", false);
+					console.log(selectedDate + ' is not fully booked.');
+				}
+				console.log("Selected date:", selectedDate);
+				console.log("Accepted bookings count:", acceptedBookingsCount);
+			}
+
+			$(document).on("click", ".table .row .cell span, .calendar .header .text span", function () {
+				var selectedDate = $(this).attr("data-date");
+				var selectedMonth = $(".calendar .header .text span").text();
+				$("#slctDay").text(selectedDate);
+				$("#formDate").val(selectedDate + ' ' + selectedMonth);
+				$("#slctDate").text(selectedDate + ' ' + selectedMonth);
+				$("#slctDate2").text(selectedDate + ' ' + selectedMonth);
+
+				checkBookingStatus();
+			});
+
+			checkBookingStatus();
+		});
+	</script>
+
+	<script>
 		function changePrice(price) {
 			switch (price) {
 				// $("#packages").text("Total Package: " + price);
@@ -537,7 +589,7 @@
 					console.log('Selected package:', price2);
 					$("#formPackage").val(price2);
 					break
-				
+
 			};
 
 			var packagePrice = parseInt($("#packages").text().split(" ")[2]);
@@ -549,21 +601,21 @@
 
 			$("#totalPrice").text("Total Price: " + (packagePrice + addOnPrice));
 			$("#formPrice").val(packagePrice + addOnPrice);
-			
-			document.getElementById('BookingForm').addEventListener('submit', function(event) {
-                var totalPrice = parseInt($("#totalPrice").text().split(" ")[2]);
-                document.getElementById('formPrice').value = totalPrice;
-            });
-			
-			
-			if(price2 === "Your Student | 399") {
-            $("#downPayment").text("Downpayment: " + "200 PHP");
-			$("#formDownPayment").val(200);
-			
-            }
+
+			document.getElementById('BookingForm').addEventListener('submit', function (event) {
+				var totalPrice = parseInt($("#totalPrice").text().split(" ")[2]);
+				document.getElementById('formPrice').value = totalPrice;
+			});
+
+
+			if (price2 === "Your Student | 399") {
+				$("#downPayment").text("Downpayment: " + "200 PHP");
+				$("#formDownPayment").val(200);
+
+			}
 			else {
-			document.getElementById('downPayment').innerText = 'Downpayment: 500 PHP';
-			$("#formDownPayment").val(500);
+				document.getElementById('downPayment').innerText = 'Downpayment: 500 PHP';
+				$("#formDownPayment").val(500);
 			}
 		};
 	</script>
@@ -578,130 +630,83 @@
 	</script>
 
 
-<script>
+	<script>
 		function checkDateTime() {
-            console.log("Checking date, time, and package...");
-            var date = $("#formDate").val();
-            var time = $("#formTime").val();
-            var selectedPackage = document.getElementById("package").value;
-            if (date === "" || time === "") {
-                alert("Please select a date and time.");
+			console.log("Checking date, time, and package...");
+			var date = $("#formDate").val();
+			var time = $("#formTime").val();
+			var selectedPackage = document.getElementById("package").value;
+			if (date === "" || time === "") {
+				alert("Please select a date and time.");
 				$("#slctDate2").text('');
-                return false;
-            } else if (selectedPackage === "None | 0 PHP") {
-                alert("Please select a package");
+				return false;
+			} else if (selectedPackage === "None | 0 PHP") {
+				alert("Please select a package");
 				$("#slctDate2").text('');
 				event.preventDefault();
-                return false;
-            } else {
-                var confirmation = confirm("Are you sure you want to book?");
-                if (!confirmation) {
+				return false;
+			} else {
+				var confirmation = confirm("Are you sure you want to book?");
+				if (!confirmation) {
 					event.preventDefault()
-                    return false;
-                }
-            }
-            return true;
-        }
+					return false;
+				}
+			}
+			return true;
+		}
 	</script>
 
-@* <script> *@
-@* var selectedDate = $("#slctDate2").text(); *@
-@* var allBooked = $(".btnT").not(".disabled").length === 0; *@
-@*                     if (allBooked) { *@
-@*                          *@
-@*                         $(".table .row .cell span").each(function () { *@
-@*                             if ($(this).text() === selectedDate) { *@
-@*                                 $(this).addClass("disabled"); *@
-@*                             } *@
-@*                         }); *@
-@*                     } else { *@
-@*                          *@
-@*                         $(".table .row .cell span").each(function () { *@
-@*                             if ($(this).text() === selectedDate) { *@
-@*                                 $(this).removeClass("disabled"); *@
-@*                             } *@
-@*                         }); *@
-@*                     } *@
-@*                  *@
-@* </script> *@
+	
 
-<script>
-        		$(document).ready(function () {
-        			var bookings = @Html.Raw(JsonConvert.SerializeObject(ViewBag.Bookings, new Newtonsoft.Json.JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
-        
-        		function checkBookingStatus() {
-                    // Reset all buttons before checking the booking status
-                    $(".btnT").removeClass("disabled");
-                    $(".btnT").css("background-color", "");
-                    $(".btnT").on("click");
-                
-                    var selectedDate = $("#slctDate2").text();
-                    bookings.forEach(booking => {
-                        if (booking.status === "Accepted" && booking.date === selectedDate) {
-                            $(".btnT").each(function () {
-                                if ($(this).text() === booking.time) {
-                                    $(this).addClass("disabled");
-                                    $(this).css("background-color", "#cfcfcf");
-                                    $(this).off("click");
-                                }
-                            });
-                        }
-                    });
-					
+
+	@* <script>
+
+		$(document).ready(function () {
+			var bookings = @Html.Raw(JsonConvert.SerializeObject(ViewBag.Bookings, new Newtonsoft.Json.JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+			var allAccountBookings = @Html.Raw(JsonConvert.SerializeObject(ViewBag.AllAccountBookings, new Newtonsoft.Json.JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+
+			var fullyBookedDates = {};
+
+			function checkBookingStatus() {
+				$(".btnT").removeClass("disabled").css("background-color", "");
+				//$(".calendar .header .text span").removeClass("disabled").css("background-color", "");
+
+				var selectedDate = $("#slctDate2").text();
+				var timeSlots = ["09:00 am", "12:00 nn", "03:00 pm", "06:00 pm"]; // Updated time slots
+				var allSlotsBooked = true;
+
+				allAccountBookings.forEach(booking => {
+					if (booking.status === "Accepted" && booking.date === selectedDate) {
+						allSlotsBooked = allSlotsBooked && timeSlots.includes(booking.time);
+						$(".btnT").each(function () {
+							if ($(this).text() === booking.time) {
+								$(this).addClass("disabled").css("background-color", "#cfcfcf");
+							}
+						});
 					}
-					
-					// var allBooked = $(".btnT").not(".disabled").length === 0;
-                    //         if (allBooked) {
-                    //             // Find the corresponding date in the calendar and add the "disabled" class
-                    //             $(".table .row .cell span").each(function () {
-                    //                 if ($(this).text() === selectedDate) {
-                    //                     $(this).addClass("disabled");
-                    //                 }
-                    //             });
-                    //         }
-					//
-					// }
-					
-					       
-        			var $prevButton = null;
-        
-        			$(".btnT").on("mousedown", function () {
-        				if ($prevButton && $prevButton[0] !== this) {
-        					$prevButton.addClass("released").removeClass("pressed");
-        					$prevButton.css("background-color", $prevButton.data("original-color"));
-        				}
-        				$prevButton = $(this);
-        				$(this).addClass("pressed").removeClass("released");
-        				$(this).css("background-color", "grey");
-        			});
-        
-        			$(".btnT").on("mouseup mouseleave", function () {
-        			});
-        
-        			$(".btnT").on("click", function () {
-        				$prevButton = $(this);
-        			});
-        
-        			$(document).on("click", ".table .row .cell span", ".calendar .header .text span", function () {
-                        var selectedDate = $(this).text();
-                        var selectedMonth = $(".calendar .header .text span").text();
-                        $("#slctDay").text(selectedDate);
-                        $("#formDate").val(selectedDate + ' ' + selectedMonth);
-                        $("#slctDate").text(selectedDate + ' ' + selectedMonth);
-                        $("#slctDate2").text(selectedDate + ' ' + selectedMonth);
-                    
-                        checkBookingStatus(); 
-                    });
-        
-        			$(".time .btnT").on("click", function () {
-        				var selectedTime = $(this).text();
-        				$("#slctTime").text(selectedTime);
-        				$("#formTime").val(selectedTime);
-        				console.log('Selected time:', selectedTime);
-        			});
-        
-        		});
-	</script>
+				});
+
+				if (!allSlotsBooked) {
+					$(".calendar .header .text span").removeClass("disabled").css("background-color", "");
+				} else {
+					$(".calendar .header .text span").addClass("disabled").css("background-color", "#cfcfcf");
+				}
+			}
+
+			$(document).on("click", ".table .row .cell span, .calendar .header .text span", function () {
+				var selectedDate = $(this).text();
+				var selectedMonth = $(".calendar .header .text span").text();
+				$("#slctDay").text(selectedDate);
+				$("#formDate").val(selectedDate + ' ' + selectedMonth);
+				$("#slctDate").text(selectedDate + ' ' + selectedMonth);
+				$("#slctDate2").text(selectedDate + ' ' + selectedMonth);
+
+				checkBookingStatus();
+			});
+
+			checkBookingStatus();
+		});
+	</script> *@
 
 </body>
 </html>

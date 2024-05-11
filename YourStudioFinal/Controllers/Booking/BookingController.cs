@@ -38,50 +38,54 @@ public class BookingController : Controller
         }
         return View(_context.Booking.Where(x => x.accountUser.Id == UserDetails.Id).Where(x => x.status == "Accepted").Include(x => x.accountUser).Include(x => x.payment).ToList());
     }
-    
-    // GET
-    public async Task<ActionResult> Index()
-    {
-        var UserDetails = await _userManager.GetUserAsync(User);
-        if (UserDetails != null)
-        {
-            ViewBag.User = UserDetails;
-            ViewBag.isLogged = true;
-        }
-        else
-        {
-            ViewBag.isLogged = false;
-            TempData["Error"] = "You need to login to access this page";
-            return RedirectToAction("Index", "Account");
-        }
-        
-        ViewBag.Bookings = _context.Booking
-            .Where(x => x.accountUser.Id == UserDetails.Id)
-            .ToList();
 
-        
-        return View();
-    }
-    
-    // public async Task<ActionResult> Index(string package)
-    // {
-    //     var UserDetails = await _userManager.GetUserAsync(User);
-    //     if (UserDetails != null)
-    //     {
-    //         ViewBag.User = UserDetails;
-    //         ViewBag.isLogged = true;
-    //     }
-    //     else
-    //     {
-    //         ViewBag.isLogged = false;
-    //         TempData["Error"] = "You need to login to access this page";
-    //         return RedirectToAction("Index", "Account");
-    //     }
-    //     ViewBag.selectedPackage = package;
-    //     return View();
-    // }
-    
-    [Authorize(Roles = "User, Admin")]
+	// GET
+	public async Task<ActionResult> Index()
+	{
+		var UserDetails = await _userManager.GetUserAsync(User);
+		if (UserDetails != null)
+		{
+			ViewBag.User = UserDetails;
+			ViewBag.isLogged = true;
+		}
+		else
+		{
+			ViewBag.isLogged = false;
+			TempData["Error"] = "You need to login to access this page";
+			return RedirectToAction("Index", "Account");
+		}
+
+		ViewBag.Bookings = _context.Booking
+	   .Where(x => x.accountUser.Id == UserDetails.Id)
+	   .ToList();
+
+		ViewBag.AllAccountBookings = _context.Booking
+		   .Include(x => x.accountUser)
+		   .ToList();
+
+
+		return View();
+	}
+
+	// public async Task<ActionResult> Index(string package)
+	// {
+	//     var UserDetails = await _userManager.GetUserAsync(User);
+	//     if (UserDetails != null)
+	//     {
+	//         ViewBag.User = UserDetails;
+	//         ViewBag.isLogged = true;
+	//     }
+	//     else
+	//     {
+	//         ViewBag.isLogged = false;
+	//         TempData["Error"] = "You need to login to access this page";
+	//         return RedirectToAction("Index", "Account");
+	//     }
+	//     ViewBag.selectedPackage = package;
+	//     return View();
+	// }
+
+	[Authorize(Roles = "User, Admin")]
     [HttpPost]
     public async Task<IActionResult> AddBooking(BookingModel bookingModel, [FromForm(Name = "image")]IFormFile image)
     {

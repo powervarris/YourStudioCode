@@ -6,7 +6,45 @@
     padding-right: 0.5rem;
 }
 
+disabled-date {
+    opacity: 0.5;
+    pointer-events: none;
+}
 
+.btnT.accepted {
+    pointer-events: none;
+    background-color: #ccc;
+}
+.cell.fully-booked {
+    pointer-events: none; /* Disable clicking on fully booked dates */
+    opacity: 0.5; /* Make fully booked dates semi-transparent */
+    background-color:red;
+}
+.fully-booked {
+    background-color: red;
+    color: #999;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.disabled {
+    pointer-events: none; /* Prevent clicking on disabled elements */
+    opacity: 0.5; /* Make the element semi-transparent */
+    background-color: #ccc; /* Background color for disabled elements */
+    color: #666; /* Text color for disabled elements */
+}
+.table .row .cell.span.fully-booked {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+    color: red;
+}
+
+.fully-booked {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+    color: red;
+}
 /* xs */
 @media (min-width: 475px) {
     .container.one {
