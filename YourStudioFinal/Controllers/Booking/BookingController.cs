@@ -135,8 +135,8 @@ public class BookingController : Controller
                                + Environment.NewLine
                                + Environment.NewLine
                                + "Thank you for choosing YourStudio!"; ;
-        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent2);
-        var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+        // var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent2);
+        // var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         
         // admin side email
          var apiKeyAdmin = "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";
@@ -214,8 +214,8 @@ public class BookingController : Controller
                                    + "Hope to see you there! "
                                    + Environment.NewLine
                                    + "Thank you for choosing YourStudio!";
-            var msg = MailHelper.CreateSingleEmail(from_emailAdmin, to_emailAdmin, subjectAdmin, "", htmlContent4);
-            var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+            // var msg = MailHelper.CreateSingleEmail(from_emailAdmin, to_emailAdmin, subjectAdmin, "", htmlContent4);
+            // var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         }
         return RedirectToAction("Payment");
     }
@@ -238,8 +238,8 @@ public class BookingController : Controller
             var to_email = new EmailAddress(email);
             var htmlContent5 = "<div style=background-image:url(https://i.imgur.com/ak8FrvS.png);padding:20px;text-align:center;list-style-type:none><img src=https://i.imgur.com/Grjb8On.png style=height:30%><h3>Dear</h3><h3>We hope this message finds you well,</h3><h3>Your recent down payment have been successfully submitted. Your prompt action is greatly appreciated and serves as a testament to your commitment.</h3><h3>Your payment has been successfully processed, and we are pleased to confirm that your reservation is secured.</h3><h3>Once again, thank you for choosing YourStudio. We are honored to ahve the opportunity to serve you, and we are committed to making your expeirence with us memorable and enjoyable.</h3><br><br><h4>Thank you for you understanding and continued support.</h4><h4>Best Regards,</h4><h4>Your Studio</h4></div>";
             var plainTextContent = "";
-            var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent5);
-            var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+            // var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent5);
+            // var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         }
         return RedirectToAction("BookingListAdminAccepted", "Booking");
     }
@@ -349,8 +349,8 @@ public class BookingController : Controller
                                + Environment.NewLine
                                + Environment.NewLine
                                + "Thank you for choosing YourStudio!";
-        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent44);
-        var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+        // var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent44);
+        // var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         return RedirectToAction("BList");
     }
     
@@ -419,8 +419,8 @@ public class BookingController : Controller
                                + "Womp womp"
                                + Environment.NewLine
                                + "Thank you for choosing YourStudio!";
-        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent3);
-        var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+        // var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent3);
+        // var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         return RedirectToAction("BList");
     }
     
