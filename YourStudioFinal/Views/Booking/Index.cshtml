@@ -370,7 +370,7 @@
 			function countAcceptedBookings(date) {
 				var count = 0;
 				allAccountBookings.forEach(booking => {
-					if (booking.status === "Accepted" && booking.date === date) {
+					if (booking.status === "Accepted" || booking.status === "DP_Paid" && booking.date === date) {
 						count++;
 					}
 				});
@@ -387,7 +387,7 @@
 					$(".btnT").addClass("disabled").css("background-color", "#cfcfcf");
 				} else {
 					allAccountBookings.forEach(booking => {
-						if ((booking.status === "Accepted" || booking.status === "Paid") && booking.date === selectedDate) {
+						if ((booking.status === "Accepted" || booking.status === "DP_Paid") && booking.date === selectedDate) {
 							$(".btnT").each(function () {
 								if ($(this).text() === booking.time) {
 									$(this).addClass("disabled").css("background-color", "#cfcfcf");
