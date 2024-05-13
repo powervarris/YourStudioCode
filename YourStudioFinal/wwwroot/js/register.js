@@ -92,19 +92,20 @@ lnameInput.addEventListener('input', function (event) {
     }
 });
 
-passwordInput.addEventListener('keyup', function (event) {
-    if (event.key === 'Enter') {
-        event.preventDefault();
-    }
-    confirmPasswordInput.setCustomValidity('');
-    passwordChanged = false;
+passwordInput.addEventListener('input', function () {
+    passwordChanged = true;
+    validatePassword();
+});
+
+passwordInput.addEventListener('keyup', function () {
+    validatePassword();
 });
 
 confirmPasswordInput.addEventListener('keyup', function (event) {
     if (event.key === 'Enter') {
         event.preventDefault();
     }
-    validatePassword();
+    validatePassword(); 
 });
 
 emailInput.addEventListener('keyup', function (event) {
@@ -132,14 +133,14 @@ function validatePassword() {
     var passwordRegex = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
 
     if (passwordRegex.test(passwordValue)) {
-        passwordFormat.style.display = 'none'; 
+        passwordFormat.style.display = 'none';
         if (passwordValue === confirmPasswordValue) {
-            confirmPasswordInput.setCustomValidity(''); 
+            confirmPasswordInput.setCustomValidity(''); // Clear custom validity
         } else {
-            confirmPasswordInput.setCustomValidity('Passwords must match'); y
+            confirmPasswordInput.setCustomValidity('Passwords must match');
         }
     } else {
-        passwordFormat.style.display = 'inline'; 
-        confirmPasswordInput.setCustomValidity(''); 
+        passwordFormat.style.display = 'inline';
+        confirmPasswordInput.setCustomValidity('');
     }
 }
