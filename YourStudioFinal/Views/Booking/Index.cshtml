@@ -340,7 +340,7 @@
 				$prevButton = $(this);
 			});
 
-			$(document).on("click", ".table .row .cell span", ".calendar .header .text span", function () {
+			$(document).on("click", ".table .row .cell span, .calendar .header .text span", function () {
 				var selectedDate = $(this).text();
 				var selectedMonth = $(".calendar .header .text span").text();
 				var clickedDate = new Date(selectedMonth + " " + selectedDate + ", " + new Date().getFullYear());
@@ -352,18 +352,14 @@
 
 				$("#slctDay").text(selectedDate);
 				$("#formDate").val(selectedDate + ' ' + selectedMonth);
-				console.log('Selected date:', selectedDate);
 				$("#slctDate").text(selectedDate + ' ' + selectedMonth);
-				console.log('Selected month:', selectedMonth);
 				$("#slctDate2").text(selectedDate + ' ' + selectedMonth);
-				console.log('Selected month:', selectedMonth);
 			});
 
 			$(".time .btnT").on("click", function () {
 				var selectedTime = $(this).text();
 				$("#slctTime").text(selectedTime);
 				$("#formTime").val(selectedTime);
-				console.log('Selected time:', selectedTime);
 			});
 
 			var bookings = @Html.Raw(JsonConvert.SerializeObject(ViewBag.Bookings, new Newtonsoft.Json.JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
@@ -386,15 +382,12 @@
 
 				var selectedDate = $("#slctDate2").text();
 				var acceptedBookingsCount = countAcceptedBookings(selectedDate);
-				console.log("Selected date:", selectedDate);
-				console.log("Accepted bookings count:", acceptedBookingsCount);
 
-				// Disable time slots if all time slots are fully booked for the selected date
 				if (acceptedBookingsCount >= 4) {
 					$(".btnT").addClass("disabled").css("background-color", "#cfcfcf");
 				} else {
 					allAccountBookings.forEach(booking => {
-						if (booking.status === "Accepted" && booking.date === selectedDate) {
+						if ((booking.status === "Accepted" || booking.status === "Paid") && booking.date === selectedDate) {
 							$(".btnT").each(function () {
 								if ($(this).text() === booking.time) {
 									$(this).addClass("disabled").css("background-color", "#cfcfcf");
@@ -403,24 +396,14 @@
 						}
 					});
 				}
-				$(".table .row .cell span").each(function () {
-					var date = $(this).text().trim() + ' ' + $(".calendar .header .text span").text().trim();
-					console.log("Date:", date);
-					var bookingsCount = countAcceptedBookings(date);
-					console.log("Bookings count:", bookingsCount);
-				});
-				// Disable the selected date in the calendar if all time slots are fully booked for that date
+
 				if (acceptedBookingsCount === 4) {
 					$(".table .row .cell span[data-date='" + selectedDate + "']").addClass("fully-booked disabled");
 					$(".table .row .cell span[data-date='" + selectedDate + "']").prop("disabled", true);
-					console.log(selectedDate + ' is fully booked.');
 				} else {
 					$(".table .row .cell span[data-date='" + selectedDate + "']").removeClass("fully-booked disabled");
 					$(".table .row .cell span[data-date='" + selectedDate + "']").prop("disabled", false);
-					console.log(selectedDate + ' is not fully booked.');
 				}
-				console.log("Selected date:", selectedDate);
-				console.log("Accepted bookings count:", acceptedBookingsCount);
 			}
 
 			$(document).on("click", ".table .row .cell span, .calendar .header .text span", function () {
@@ -436,6 +419,7 @@
 
 			checkBookingStatus();
 		});
+
 	</script>
 
 	<script>

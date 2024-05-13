@@ -469,7 +469,7 @@ html, body {
     letter-spacing: 2px;
 }
 
-#btnG {
+.btnG {
     font-weight: bold;
     padding: 6px 16px 6px 16px;
     margin-right: 20px;
@@ -519,9 +519,8 @@ html, body {
     border: hidden;
 }
 
-#btnAG {
+.btn-primary {
     position: relative;
-    left: 79%;
     font-weight: bold;
     padding: 6px 16px 6px 16px;
     margin-right: 20px;
@@ -531,7 +530,7 @@ html, body {
     border-radius: 5px;
 }
 
-#btnR {
+.btnR {
     font-weight: bold;
     padding: 6px 16px 6px 16px;
     margin-right: 20px;
@@ -545,7 +544,7 @@ html, body {
     margin-right: 20px;
 }
 
-#btnGR {
+.btnGR {
     margin-right: 20px;
     background-color: gray;
     border: hidden;
