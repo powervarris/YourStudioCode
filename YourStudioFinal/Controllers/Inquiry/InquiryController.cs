@@ -22,9 +22,18 @@ public class InquiryController : Controller
         _context = context;
         _logger = logger;
     }
-    public ActionResult clientInquiry()
+    public async Task<ActionResult> clientInquiry()
     {
-        ViewBag.isLogged = false;
+        var UserDetails = await _userManager.GetUserAsync(User);
+        if (UserDetails != null)
+        {
+            ViewBag.User = UserDetails;
+            ViewBag.isLogged = true;
+        }
+        else
+        {
+            ViewBag.isLogged = false;
+        }
         return View();
     }
 
