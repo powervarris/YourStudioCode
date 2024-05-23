@@ -6,6 +6,8 @@
 
 
 
+
+
 body {
     background-image: url(/assets/Background.png);
 }
@@ -62,10 +64,10 @@ nav2 {
 .nav2list-position {
     margin-bottom: 50px;
     margin-top: 40px;
-    text-align:center;
-        
+    text-align: center;
 }
-    .hrline {
+
+.hrline {
     margin: auto;
     width: 1400px;
     height: 2px;
@@ -392,6 +394,11 @@ div.desc {
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+    }
+
+    .noitems {
+        padding: 40px;
+        font-size: 30px;
     }
 
     .gall {
