@@ -137,29 +137,40 @@ disabled-date {
         max-width: 768px;
     }
 
+    .status-box-container {
+        left: 370px;
+        margin-left: -160px;
+        margin-top: 380px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
     .PST, .DAT {
-        display: inline-block;
+        display: hidden;
     }
 
     .ftco-section {
-        margin-left: unset;
+        margin-top: -100px;
+        margin-left: 200px;
         float: left;
     }
 
     .pack {
-        margin: 20px 0 0 470px;
+        margin: 20px 0 0 220px;
     }
 
     .Adds {
-        margin: 0 0 0 470px;
+        margin: 0 0 0 220px;
     }
 
     #slctDate {
-        left: 74%;
+        left: 51%;
     }
 
     .time-container {
-        margin-left: unset;
+        margin-left: 180px;
     }
 
     .time-container .time {
@@ -168,7 +179,7 @@ disabled-date {
 
     #Srvc {
         margin-top: 80px;
-        margin-left: 270px;
+        margin-left: 240px;
     }
 }
 
@@ -178,18 +189,25 @@ disabled-date {
         max-width: 1024px;
     }
 
+    .PST, .DAT {
+        display: inline-block;
+    }
+
+    .status-box-container {
+        display: none;
+    }
+
     .ftco-section {
         margin-left: 100px;
         position: relative;
-        top: -80px;
     }
 
     .pack {
-        margin: 60px 0 0 640px;
+        margin: 60px 0 0 570px;
     }
 
     .Adds {
-        margin: 0 0 0 640px;
+        margin: 0 0 0 570px;
     }
 
     #Srvc {
@@ -198,11 +216,11 @@ disabled-date {
     }
 
     #slctDate {
-        left: 74%;
+        left: 73%;
     }
 
     .time-container .time {
-        margin-left: 100px
+        margin-left: 70px
     }
 
     .time-container {
@@ -263,7 +281,7 @@ disabled-date {
     .ftco-section {
         margin-left: 100px;
         position: relative;
-        top: -80px;
+        top: 20px;
     }
 
     #slctDate {
@@ -272,6 +290,16 @@ disabled-date {
 
     .pack {
         margin: 60px 0 0 675px;
+    }
+
+    .status-box-container {
+        left: 200px;
+        margin-left: 110px;
+        margin-top: 380px;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
     }
 
     .Adds {
@@ -345,15 +373,6 @@ label {
         border: 1px solid black;
         box-sizing: border-box;
     }
-
-.status-box-container {
-    margin-left: 110px;
-    margin-top: 380px;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
 
 .status-box {
     display: flex;
