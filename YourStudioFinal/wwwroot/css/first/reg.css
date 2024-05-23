@@ -1,9 +1,18 @@
-﻿.login {
-    min-height: 100%;
+﻿.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.login {
+    min-height: 100vh; /* Use vh for full viewport height */
     background-color: #F5F2F0;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px; /* Add padding for better spacing */
 }
 
 .form-control {
@@ -60,9 +69,6 @@ h1 {
     font-size: 55px;
 }
 
-
-
-
 @media (min-width: 768px) {
     .bg-image {
         margin: 0;
@@ -71,10 +77,108 @@ h1 {
     }
 }
 
-.form-floating label {
-    font-family: 'Palatino Linotype'
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .greeting-container {
+        font-size: 40vw;
+    }
+
+    .login {
+        padding: 15px;
+    }
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .greeting-container {
+        font-size: 30vw;
+    }
+
+    .btn-login {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .greeting-container {
+        font-size: 20vw;
+    }
+
+    .btn-login {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+
+    .login {
+        padding: 10px;
+    }
+
+    /* Hide elements for mobile devices */
+    .kanawan,
+    .signing-in-text,
+    .your-signing-in-text {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    /* Specific styles for iPad Mini in landscape mode */
+    h1 {
+        font-size: 40px;
+    }
+
+    .greeting-container {
+        font-size: 35vw;
+    }
+
+    .btn-login {
+        font-size: 0.85rem;
+        padding: 0.7rem 0.95rem;
+    }
+
+    .signing-in-text,
+    .your-signing-in-text {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+    /* Specific styles for iPad Mini in portrait mode */
+    h1 {
+        font-size: 30px;
+    }
+
+    .greeting-container {
+        font-size: 25vw;
+    }
+
+    .btn-login {
+        font-size: 0.75rem;
+        padding: 0.6rem 0.85rem;
+    }
+
+    .signing-in-text,
+    .your-signing-in-text {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.form-floating label {
+    font-family: 'Palatino Linotype';
+}
 
 h2.tag {
     font-size: 24px;
@@ -94,21 +198,18 @@ h2.tag {
     font-weight: bold;
     font-family: Verdana;
     display: flex;
-    width: 100px
 }
 
 .signing-in-text {
     color: black;
     margin-top: 2rem;
     margin-right: 5%;
-    display: flex;
 }
 
 .your-signing-in-text {
     color: #E89C3B;
     margin-top: -1.5rem;
     margin-right: 10%;
-    display: flex;
 }
 
 body {
@@ -117,27 +218,24 @@ body {
     margin: 0;
     background-image: url('background.png');
     padding: 0;
+    background-size: cover;
+    background-position: center;
 }
-
-
 
 .kanawan {
     min-height: 100vh;
     margin: 0;
     box-sizing: border-box;
-    background-size: 100% auto;
+    background-size: cover; /* Adjusted for full coverage */
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../../reghalf.png');
 }
 
-
-
-
 .fa-solid, .fas {
     font-weight: 900;
     color: black;
-    height: auto
+    height: auto;
 }
 
 .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
