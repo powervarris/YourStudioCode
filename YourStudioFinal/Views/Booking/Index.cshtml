@@ -370,7 +370,7 @@
 			function countAcceptedBookings(date) {
 				var count = 0;
 				allAccountBookings.forEach(booking => {
-					if (booking.status === "Accepted" || booking.status === "DP_Paid" && booking.date === date) {
+					if (booking.status === "Accepted" && booking.date === date) {
 						count++;
 					}
 				});
@@ -387,7 +387,7 @@
 					$(".btnT").addClass("disabled").css("background-color", "#cfcfcf");
 				} else {
 					allAccountBookings.forEach(booking => {
-						if ((booking.status === "Accepted" || booking.status === "DP_Paid") && booking.date === selectedDate) {
+						if ((booking.status === "Accepted" || booking.status === "Paid") && booking.date === selectedDate) {
 							$(".btnT").each(function () {
 								if ($(this).text() === booking.time) {
 									$(this).addClass("disabled").css("background-color", "#cfcfcf");
@@ -640,56 +640,56 @@
 		}
 	</script>
 
-	
+
 
 
 	@* <script>
 
-		$(document).ready(function () {
-			var bookings = @Html.Raw(JsonConvert.SerializeObject(ViewBag.Bookings, new Newtonsoft.Json.JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
-			var allAccountBookings = @Html.Raw(JsonConvert.SerializeObject(ViewBag.AllAccountBookings, new Newtonsoft.Json.JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+	$(document).ready(function () {
+	var bookings = @Html.Raw(JsonConvert.SerializeObject(ViewBag.Bookings, new Newtonsoft.Json.JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+	var allAccountBookings = @Html.Raw(JsonConvert.SerializeObject(ViewBag.AllAccountBookings, new Newtonsoft.Json.JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
 
-			var fullyBookedDates = {};
+	var fullyBookedDates = {};
 
-			function checkBookingStatus() {
-				$(".btnT").removeClass("disabled").css("background-color", "");
-				//$(".calendar .header .text span").removeClass("disabled").css("background-color", "");
+	function checkBookingStatus() {
+	$(".btnT").removeClass("disabled").css("background-color", "");
+	//$(".calendar .header .text span").removeClass("disabled").css("background-color", "");
 
-				var selectedDate = $("#slctDate2").text();
-				var timeSlots = ["09:00 am", "12:00 nn", "03:00 pm", "06:00 pm"]; // Updated time slots
-				var allSlotsBooked = true;
+	var selectedDate = $("#slctDate2").text();
+	var timeSlots = ["09:00 am", "12:00 nn", "03:00 pm", "06:00 pm"]; // Updated time slots
+	var allSlotsBooked = true;
 
-				allAccountBookings.forEach(booking => {
-					if (booking.status === "Accepted" && booking.date === selectedDate) {
-						allSlotsBooked = allSlotsBooked && timeSlots.includes(booking.time);
-						$(".btnT").each(function () {
-							if ($(this).text() === booking.time) {
-								$(this).addClass("disabled").css("background-color", "#cfcfcf");
-							}
-						});
-					}
-				});
+	allAccountBookings.forEach(booking => {
+	if (booking.status === "Accepted" && booking.date === selectedDate) {
+	allSlotsBooked = allSlotsBooked && timeSlots.includes(booking.time);
+	$(".btnT").each(function () {
+	if ($(this).text() === booking.time) {
+	$(this).addClass("disabled").css("background-color", "#cfcfcf");
+	}
+	});
+	}
+	});
 
-				if (!allSlotsBooked) {
-					$(".calendar .header .text span").removeClass("disabled").css("background-color", "");
-				} else {
-					$(".calendar .header .text span").addClass("disabled").css("background-color", "#cfcfcf");
-				}
-			}
+	if (!allSlotsBooked) {
+	$(".calendar .header .text span").removeClass("disabled").css("background-color", "");
+	} else {
+	$(".calendar .header .text span").addClass("disabled").css("background-color", "#cfcfcf");
+	}
+	}
 
-			$(document).on("click", ".table .row .cell span, .calendar .header .text span", function () {
-				var selectedDate = $(this).text();
-				var selectedMonth = $(".calendar .header .text span").text();
-				$("#slctDay").text(selectedDate);
-				$("#formDate").val(selectedDate + ' ' + selectedMonth);
-				$("#slctDate").text(selectedDate + ' ' + selectedMonth);
-				$("#slctDate2").text(selectedDate + ' ' + selectedMonth);
+	$(document).on("click", ".table .row .cell span, .calendar .header .text span", function () {
+	var selectedDate = $(this).text();
+	var selectedMonth = $(".calendar .header .text span").text();
+	$("#slctDay").text(selectedDate);
+	$("#formDate").val(selectedDate + ' ' + selectedMonth);
+	$("#slctDate").text(selectedDate + ' ' + selectedMonth);
+	$("#slctDate2").text(selectedDate + ' ' + selectedMonth);
 
-				checkBookingStatus();
-			});
+	checkBookingStatus();
+	});
 
-			checkBookingStatus();
-		});
+	checkBookingStatus();
+	});
 	</script> *@
 
 </body>

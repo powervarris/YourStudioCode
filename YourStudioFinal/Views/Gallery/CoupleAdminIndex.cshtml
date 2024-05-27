@@ -253,13 +253,16 @@
         setDelete = function () {
             var checked = document.querySelectorAll('input[type="checkbox"]:checked');
             var deleteContent = document.getElementById('deleteContent');
-
+        
             if (checked.length === 0) {
                 alert('Please select at least one item to delete.');
             }
             else {
-                deleteContent.action = '/Gallery/Delete?ids=' + Array.from(checked).map(x => x.getAttribute('data-id')).join(',');
-                deleteContent.submit();
+                var confirmation = confirm("Are you sure you want to delete this image?");
+                if (confirmation) {
+                    deleteContent.action = '/Gallery/Delete?ids=' + Array.from(checked).map(x => x.getAttribute('data-id')).join(',');
+                    deleteContent.submit();
+                }
             }
         }
     </script>

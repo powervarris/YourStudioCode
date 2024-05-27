@@ -135,8 +135,8 @@ public class BookingController : Controller
                                + Environment.NewLine
                                + Environment.NewLine
                                + "Thank you for choosing YourStudio!"; ;
-        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent2);
-        var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+        // var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent2);
+        // var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         
         // admin side email
          var apiKeyAdmin = "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";
@@ -349,8 +349,8 @@ public class BookingController : Controller
                                + Environment.NewLine
                                + Environment.NewLine
                                + "Thank you for choosing YourStudio!";
-        var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent44);
-        var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
+        // var msg = MailHelper.CreateSingleEmail(from_email, to_email, subject, "", htmlContent44);
+        // var response = await client.SendEmailAsync(msg).ConfigureAwait(false);
         return RedirectToAction("BList");
     }
     
